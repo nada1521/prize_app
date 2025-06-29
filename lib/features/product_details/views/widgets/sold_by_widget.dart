@@ -1,6 +1,8 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:prize/core/constant/app_images.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_rating_widget.dart';
@@ -38,7 +40,7 @@ class SoldByWidget extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Text('Sold by '), // ned localization
+                  Text(LocaleKeys.product_details_sold_by.tr()), // ned localization
                   Text('Defacto') // no neded ❌
                 ],
               ),
