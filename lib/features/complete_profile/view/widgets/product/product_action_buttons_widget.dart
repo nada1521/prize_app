@@ -28,7 +28,8 @@ class ProductActionsWidget extends StatelessWidget {
     );
   }
 
-  Widget _buildActionButton({required String iconPath, required Color iconColor}) {
+  Widget _buildActionButton(
+      {required String iconPath, required Color iconColor}) {
     return InkWell(
       child: Container(
         decoration: BoxDecoration(

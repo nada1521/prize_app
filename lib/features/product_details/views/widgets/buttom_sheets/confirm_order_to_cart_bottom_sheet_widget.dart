@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:prize/core/constant/app_images.dart';
 import 'package:prize/core/utils/helper/navigation/push_replacement.dart';
@@ -10,10 +11,11 @@ import 'package:prize/core/widgets/app_fill_background_button.dart';
 import 'package:prize/features/complete_profile/data/models/product_model.dart';
 import 'package:prize/features/complete_profile/view/screens/complete_profile_screen.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_image_widget.dart';
+import 'package:prize/features/complete_profile/view/widgets/product/show_product_price_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_title_widget.dart';
 
-class ConfirmOrderSuccessfullyBottomSheetWidget extends StatelessWidget {
-  const ConfirmOrderSuccessfullyBottomSheetWidget(
+class ConfirmOrderToCartBottomSheetWidget extends StatelessWidget {
+  const ConfirmOrderToCartBottomSheetWidget(
       {super.key, required this.itemData});
   final ProductModel itemData;
 
@@ -29,6 +31,7 @@ class ConfirmOrderSuccessfullyBottomSheetWidget extends StatelessWidget {
         color: AppWidgetColor.fillBackgroundColor(context),
         padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -73,23 +76,54 @@ class ConfirmOrderSuccessfullyBottomSheetWidget extends StatelessWidget {
                 ),
               ],
             ),
+            verticalSpace(10),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 10.w),
+              padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 5.h),
+              decoration: BoxDecoration(
+                color: AppWidgetColor.fillIconButtonWidgetColor(context),
+                borderRadius: BorderRadius.circular(16.r),
+                shape: BoxShape.rectangle,
+              ),
+              height: 50.h,
+              child: Row(
+                children: [
+                  Text("Total",
+                      style:
+                          AppTextStyles.meduimBody16W500TitleTextStyle(context)
+                              .copyWith(
+                        fontSize: 16,
+                      )),
+                  Spacer(),
+                  ShowProductPriceWidget(
+                    newPrice: "500",
+                    oldPrice: "",
+                  )
+                ],
+              ),
+            ),
+            verticalSpace(10),
             Spacer(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Expanded(
-                    child: AppOutLineButton(
-                        onTap: () {
-                          Navigator.pop(context);
-                        },
-                        title: 'See more items')),
+                  child: AppOutLineButton(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    title: 'See more items',
+                  ),
+                ),
                 horizontalSpace(12),
                 Expanded(
-                    child: AppFillBckgroundButton(
-                        onTap: () {
-                          pushReplacement(context, CompleteProfileScreen());
-                        },
-                        title: 'View wishlist')),
+                  child: AppFillBckgroundButton(
+                    onTap: () {
+                      pushReplacement(context, CompleteProfileScreen());
+                    },
+                    title: 'View wishlist',
+                  ),
+                ),
               ],
             ),
             verticalSpace(10),
