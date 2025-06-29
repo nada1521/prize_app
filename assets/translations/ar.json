@@ -150,7 +150,7 @@
       "email":"الإميل",
       "label":"تفعيل رمز التحقق",
       "enter_verification_code": "أدخل رمز التحقق",
-      "we_have_sent_code_to_phone_number": "تم بنجاح! \n تم إرسال رسالة استعادة كلمة المرور إلى رقم واتساب. \nيرجى التحقق من رسائل واتساب، قد تستغرق الرسالة بضع لحظات للوصول",
+      "we_have_sent_code_to_phone_number": "تم بنجاح! \n تم إرسال رسالة استعادة كلمة المرور إلى رقم واتساب. \nيرجى التحقق من رسائل واتساب ، قد تستغرق الرسالة بضع لحظات للوصول",
       "we_have_sent_code_to_email":"تم بنجاح! \n لقد أرسلنا رسالة استعادة كلمة المرور إلى بريدك الإلكتروني.‎يرجى التحقق من صندوق الوارد أو مجلد الرسائل غير المرغوب فيها (Spam).",
       "did_not_receive_code": "لم تتلقى الرمز؟",
       "code": "الكود",
@@ -387,6 +387,19 @@
 
 "product" : {
   "offer": "وفر"
- }
+ },
+ "product_details": {
+  "Product_details_title": "تفاصيل المنتج",
+  "show_varilable_color": "الألوان",
+  "quantity_title": "الكمية",
+  "over_view_review_tab": {
+    "overview_title": "نظرة عامة",
+    "review_title": "مراجعة"
+     }, 
+ "review_content_goes_here": "يظهر محتوى المراجعة هنا...",
+"sold_by": "تم البيع بواسطة"
+
+}
+
 
 }

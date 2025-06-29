@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
@@ -13,7 +15,6 @@ import 'package:prize/features/complete_profile/view/widgets/product/show_produc
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_title_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/select_size_multi_choise.dart';
 import 'package:prize/features/complete_profile/view/widgets/show_available_colors_widget.dart';
-import 'package:prize/features/home/view/widgets/mothers_day_gifts/mothers_day_gifts_appbar.dart';
 import 'package:prize/features/home/view/widgets/mothers_day_gifts/mothers_day_gifts_widget.dart';
 import 'package:prize/features/product_details/views/widgets/overview_review_tab_widget.dart';
 import 'package:prize/features/product_details/views/widgets/product_details_appbar_widget.dart';
@@ -80,7 +81,7 @@ class ProductDetailsScreen extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Quantity',
+                              LocaleKeys.product_details_quantity_title.tr(),
                               style:
                                   AppTextStyles.meduimHead16w500TitleTextStyle(
                                 context,
@@ -107,6 +108,6 @@ class ProductDetailsScreen extends StatelessWidget {
       ),
     );
 
-    // ud
+    // ssss
   }
 }

@@ -378,6 +378,16 @@
  },
  "product" : {
   "offer": "OFF"
+ },
+ "product_details":{
+  "Product_details_title":"Product Details",
+  "show_varilable_color":"Colors",
+  "quantity_title":"Quantity",
+  "over_view_review_tab":{
+    "overview_title":"Overview",
+    "review_title":"Review"
+  },
+  "review_content_goes_here":"Review content goes here...",
+  "sold_by":"Sold by"
  }
-
 }
