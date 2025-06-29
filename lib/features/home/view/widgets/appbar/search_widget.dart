@@ -1,8 +1,10 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/extensions/context_extension.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
@@ -22,7 +24,7 @@ class SearchWidget extends StatelessWidget {
       child: AppTextFormField(
         fillColor: AppWidgetColor.fillWidgetByLightBackgroundColor(context)
             .withOpacity(.1),
-        hintText: 'Search',
+        hintText: LocaleKeys.search_search.tr(),
         validator: (s) {},
         prefixIcon: Padding(
           padding: EdgeInsets.symmetric(vertical: 15.h, horizontal: 15.w),

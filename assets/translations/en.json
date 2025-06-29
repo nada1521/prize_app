@@ -214,8 +214,18 @@
       "wishlist_empty":"Your wishlist is empty!",
       "get_to_wishing":"Get To wishing!",
       "add_items_to_wishlist":"+ Add items tho wishlist"
+    },
+    "confirm_order":{
+      "view_wishlist":"View wishlist",
+      "see_more_items":"See more items",
+      "save_and_confirm":"Save and Confirm"
+    },"sucsses_complet":{
+"sucsses_profile":"Your profile has been completed successfully.",
+    "start_your_journey":"start your journey"
+ 
     }
-  },
+
+     },
   
   "settings": {
     "language_changed_success": "The language has been successfully changed",
