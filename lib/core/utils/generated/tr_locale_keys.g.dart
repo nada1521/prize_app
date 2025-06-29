@@ -330,5 +330,14 @@ abstract class  LocaleKeys {
   static const home = 'home';
   static const product_offer = 'product.offer';
   static const product = 'product';
+  static const product_details_Product_details_title = 'product_details.Product_details_title';
+  static const product_details_show_varilable_color = 'product_details.show_varilable_color';
+  static const product_details_quantity_title = 'product_details.quantity_title';
+  static const product_details_over_view_review_tab_overview_title = 'product_details.over_view_review_tab.overview_title';
+  static const product_details_over_view_review_tab_review_title = 'product_details.over_view_review_tab.review_title';
+  static const product_details_over_view_review_tab = 'product_details.over_view_review_tab';
+  static const product_details_review_content_goes_here = 'product_details.review_content_goes_here';
+  static const product_details_sold_by = 'product_details.sold_by';
+  static const product_details = 'product_details';
 
 }

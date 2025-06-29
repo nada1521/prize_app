@@ -1,7 +1,8 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
-import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 
@@ -16,7 +17,10 @@ class OverviewReviewTabWidget extends StatefulWidget {
 class _OverviewReviewTabWidgetState extends State<OverviewReviewTabWidget> {
   int selectedIndex = 0;
 
-  final List<String> titles = ['Overview', 'Review'];
+  final List<String> titles = [
+    LocaleKeys.product_details_over_view_review_tab_overview_title.tr(),
+    LocaleKeys.product_details_over_view_review_tab_review_title
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -83,7 +87,7 @@ class _OverviewReviewTabWidgetState extends State<OverviewReviewTabWidget> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Overview",
+            LocaleKeys.product_details_over_view_review_tab_review_title.tr(),
             style: AppTextStyles.meduimHead16w500TitleTextStyle(context),
           ),
           verticalSpace(10),
@@ -105,9 +109,11 @@ class _OverviewReviewTabWidgetState extends State<OverviewReviewTabWidget> {
   }
 
   Widget _buildReview() {
-    return const Padding(
+    return  Padding(
       padding: EdgeInsets.symmetric(horizontal: 16),
-      child: Text("Review content goes here..."),
+      child: Text(
+        LocaleKeys.product_details_review_content_goes_here.tr(),
+      ),
     );
   }
 }
