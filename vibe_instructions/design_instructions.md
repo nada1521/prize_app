@@ -1,0 +1,20 @@
+- Use translations from `LocaleKeys` instead of typing it hard-coded
+- When finish coding, check for imports.
+- For validation, you can use ready validations from the @lib/core/utils/validation first for ready Validations to use.
+- Always prefer simple & smart solutions
+- Do not use Widget functions
+- The data does not come from the server or something like that, just make a dummy UI design
+- do not edit or change the current translations, just add to them.
+- for buttons use @app_button.dart  widget
+- for text fields use @AppTextField widget
+- Use textStyles in the @text_style_extension.dart , Do not write a custom TextStyle.
+- Make sure to be reusable widgets
+- make each widget in a separate file as you can
+- Avoid duplication of code whenever possible, which means checking for other areas of the codebase that might already have similar code and functionality
+- You are careful to only make changes that are requested or you are confident are well understood and related to the change being requested
+- Keep the codebase very clean and organized
+- Avoid having files over 200-300 lines of code. Refactor at that point.
+- First step, check the strings at the screen, then check if any has not exists in the localization files, then add it as the same pattern i used already to add a new translations into @ar.json  and then translate them to english and add them into @en.json exactly as the Arabic one in the same pattern and naming.
+- keep in mind that the given UI is rtl, so do not flip the design, and keep in your mind that the ui image design in RTL directionality; Do not change anything about the directionality in the design, so the localization has already set, and everything works fine.
+- do not edit or change the current translations, just add to them.
+- for padding, sizes, margins, it's prefer to use @AppSize class, and it's prefer to use AppSize.paddingDefault for horizontal & vertical for padding in the all screen.

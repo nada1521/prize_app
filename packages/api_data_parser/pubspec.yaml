@@ -1,0 +1,12 @@
+name: api_data_parser
+description: Parse data from APIs.
+version: 1.0.0
+
+environment:
+  sdk: ^3.2.3
+
+dev_dependencies:
+  lints: ^5.1.1
+
+dependencies:
+  intl: any

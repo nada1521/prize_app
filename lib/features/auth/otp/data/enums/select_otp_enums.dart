@@ -1,0 +1,4 @@
+  enum OtpMethods {
+    email,
+    phoneNumber
+  }

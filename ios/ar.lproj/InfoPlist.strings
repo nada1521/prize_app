@@ -1,0 +1,8 @@
+CFBundleDisplayName="عقاريون";
+NSCameraUsageDescription="يتطلب هذا التطبيق الوصول إلى الكاميرا لتحميل صورة الملف الشخصي.";
+NSLocationAlwaysUsageDescription="يتطلب هذا الإذن للوصول إلى الموقع للحصول على الموقع الحالي الخاص بالمستخدم.";
+NSLocationWhenInUseUsageDescription="يتطلب هذا الإذن للوصول إلى الموقع للحصول على الموقع الحالي الخاص بالمستخدم.";
+NSLocationAlwaysAndWhenInUseUsageDescription="يتطلب هذا الإذن للوصول إلى الموقع للحصول على الموقع الحالي الخاص بالمستخدم.";
+NSMicrophoneUsageDescription="يتطلب هذا التطبيق الوصول إلى الميكروفون عند استخدامه لتسجيل الصوت عند ضغط الزر Mic.";
+NSPhotoLibraryAddUsageDescription="يتطلب هذا الإذن الوصول إلى معرض الصور لتحميل صورة الملف الشخصي.";
+NSPhotoLibraryUsageDescription="يتطلب هذا الإذن الوصول إلى معرض الصور لتحميل صورة الملف الشخصي.";

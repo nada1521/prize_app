@@ -1,0 +1,383 @@
+{
+  "common": {
+    "message": {
+      "no_internet": "No internet",
+      "check_internet": "Please check the internet connection",
+      "sent_successfully": "Sent successfully",
+      "copied": "Copied",
+      "number_copied": "The number has been copied",
+      "congrats": "Congratulations",
+      "done_successfully": "Done Successfully",
+      "press_back_again_to_exit": "Press back again to exit",
+      "hello_user_param": "Hello, {}",
+      "all_rights_reserved": "All rights reserved to Niqat Co."
+    },
+    "errors": {
+      "error_occurred": "Error occurred",
+      "unexpected_error_occurred": "Unexpected error occurred",
+      "connection_timeout_error": "Connection to the server timed out",
+      "send_timeout_error": "Send request to the server timed out",
+      "receive_timeout_error": "Receive request from the server timed out",
+      "error_request_canceled": "Request to the server was canceled",
+      "bad_certificate_error": "\"Bad Certificate\" Error",
+      "connection_to_server_failed": "Connection to the server failed",
+      "connection_failed_check_internet": "@:errors.connection_to_server_failed, please check the internet connection and then try.",
+      "failed_to_load_data": "Fail to load data",
+      "failed_to_load_data_try_again": "@:errors.failed_to_load_data, please try again"
+    },
+    "navigation": {
+      "home_screen": "Home",
+      "my_props": "My props",
+      "marketing": "Marketing",
+      "settings": "Settings",
+      "back_home": "Back to Home"
+    },
+    "validation": {
+      "this_field_required": "This field is required",
+      "optional": "Optional"
+    },
+    "title": {
+      "hello": "Hello"
+    },
+    "show_all": "Show all",
+    "loading": "Loading..",
+    "by_click_on_Sign_Up_you_agree_on_our": "by click on Sign Up you agree on our",
+    "and_the":"and the",
+    "terms_and_conditions": "terms and conditions",
+    "terms_of_use": "terms of use",
+    "privacy_policy": "privacy policy",
+    "contact_us": "Contact us",
+    "accept_param_first": "Please read and accept {} first",
+    "page_not_found": "The page is not found",
+    "no_items": "No items",
+    "all": "All",
+    "any": "Any"
+  },
+  "action": {
+    "ok": "OK",
+    "confirm": "confirm",
+    "cancel": "Cancel",
+    "clear": "Clear",
+    "back": "Back",
+    "save": "Save",
+    "delete": "Delete",
+    "accept": "Accept",
+    "next": "Next",
+    "try_again": "Try again",
+    "show_more": "Show more",
+    "send": "Send",
+    "copy": "Copy",
+    "get_started": "Get started!",
+    "skip": "Skip"
+  },
+  "auth": {
+    "label": {
+      "login": "Login",
+      "logout": "Logout",
+      "guest": "a guest",
+      "sign_up": "Sign Up",
+      "delete_account": "Delete the account",
+      "or_skip_as_guest": "Or skip as a guest",
+      "name": "Name",
+      "first_name": "First name",
+      "last_name": "Last name",
+      "email": "E-mail",
+      "password": "Password",
+      "confirm_password": "Confirm the password",
+      "phone_number": "Phone number",
+      "new_password": "New password",
+      "address": "Address",
+      "birth_date": "Birth date",
+      "referral_code": "Referral code"
+    },
+    "title": {
+      "welcome_back": "Welcome back",
+      "signup_hint": "Sign up to your account.",
+      "login_hint": "Login to your account."
+    },
+    "placeholder": {
+      "type_your_name": "Enter your name",
+      "enter_your_email": "Enter your email",
+      "enter_phone_number_instruction": "Enter phone number",
+      "type_new_password": "Type the new password",
+      "referral_code_hint": "Example of a referral code: Aq12345"
+    },
+    "hint_texts": {
+      "type_your_phone_number": "0000000",
+      "enter_phone_number_instruction": "Enter phone number"
+    },
+    "message": {
+      "want_logout": "Do you want to log out?",
+      "not_logged_in": "You did not log in",
+      "login_again": "Please login again",
+      "login_first_to_continue": "Log in to continue",
+      "login_to_get_more_features_and_more": "Log in to continue your journey with Aqaryoun",
+      "registered_successfully": "The registration has been successful",
+      "you_can_login_now": "You can now log in",
+      "reset_password_successfully": "Password has changed successfully",
+      "you_can_login_with_new_password": "You can now login with the new password",
+      "enter_email_to_reset_password": "Enter your email to reset the password",
+      "enter_forget_password_code": "Enter the code sent to your email"
+    },
+    "prompt": {
+      "already_have_account": "Have an account ?",
+      "not_have_account": "Do not have an account?",
+      "forgot_password": "Forgot password?",
+      "i_agree_to": "I agree to"
+    },
+    "validation": {
+      "invalid_email": "Email is not valid!",
+      "passwords_not_match": "Passwords are not identical",
+      "password_is_short": "The password is very short",
+      "invalid_phone_number": "The phone number is not valid",
+      "password_short_length_param": "The password must be at least {} characters.",
+      "please_complete_sign_up_fields": "Please complete the registration fields",
+      "invalid_credentials": "Email or password is invalid",
+      "please_select_birth_date": "Please select your birth date",
+      "please_select_gender": "Please select your gender",
+      "invalid_name": "Invalid name, please type the name correctly"
+    },
+    "action": {
+      "login_now": "Login now",
+      "sign_in_to_account": "Log in to the account",
+      "reset_password": "Reset password"
+    },
+    "otp": {
+      "select_otp_method":"Select Otp Method",
+      "phone_number":"Phone Number",
+      "email":"Email",
+      "label":"Verification code",
+      "enter_verification_code": "Enter the verification code",
+      "we_have_sent_code_to_phone_number": "Success! \n We’ve sent a password recovery message to your WhatsApp \n number:.Please check your WhatsApp messages. It might take a few moments.",
+      "we_have_sent_code_to_email": "Success! \n We’ve sent a password recovery message to your email.Please check your inbox or Spam folder.",
+      "did_not_receive_code": "Didn’t receive code ?",
+      "code": "Code",
+      "otp_code_resent_check": "OTP code has been re-sent, please check",
+      "wrong_otp": "You have entered an incorrect OTP code. Re-enter the code or request a new OTP code",
+      "sending_code": "The code is being sent",
+      "code_resent": "The code has been re-sent",
+      "resend_again": "Resend",
+      "verify": "Verify",
+      "registered_successfully_dialog_title":"Congratulations",
+       "registered_successfully_dialog_body":"You have registered Successfully",
+       "navigate_to_complete_profile_button":"Complete your profile"
+    },
+    "delete_account_flow": {
+      "want_delete_account": "Sure you want to delete your account?\nYou cannot undo this action.",
+      "accept_terms_to_delete_account": "Please accept the conditions for deleting the account"
+    },
+    "forget_password":{
+      "title":"Forget Password?",
+      "label_emale":"Enter your email address to receive a password recovery message. \n Note: The message might be delivered to your Spam or Junk folder, so please check there if you don’t see it in your inbox.",
+      "label_phone":"Enter your phone number to receive a password recovery message on WhatsApp.",
+      "recover_password":"Recover Password",
+      "remember_your_password": "Remember Your Password ?"
+    }
+  },
+  
+  "complete_profile":{
+    "appbar_title":"Complete profile",
+    "favourite_color_title":"Favourite Color",
+    "favourite_color_place_holder":"enter your favourite color",
+    "size":"T-Shirt Size",
+    "paints_size_title":"Paints Size",
+    "paints_size_place_holder":"ex: 40",
+    "shoes_size_title":"Shoes Size",
+    "shoes_size_place_holder":"ex: 40",
+    "next_create_wishlist":"Next, Create Wishlist",
+    "next_add_items_to_wishlist":"Next, Add Items To Wishlist",
+    "add_items_to_wishlist":"Add Items To Wishlist",
+    "create_wishlist_widget":{
+            "appbar_title":"Create Wishlist",
+
+      "click_to":"Click To",
+      "upload_image":"Upload Image",
+      "cover":"Cover",
+      "birthday":"Birthday",
+      "birthday_placeholder":"ex: birthday",
+      "event_date":"Event Date",
+      "event_date_placeholder":"MM/DD/YY",
+      "address_in_details":"Address in details",
+      "address_in_details_placeholder":"add your address",
+      "address_in_details_hint_text":"we will use this for shipping your gift",
+      "description":"Description",
+      "description_placeholder":"write description ",
+      "who_can_see_your_wishlist":"Who can see your wishlist",
+      "public":"Public",
+      "public_placeholder":"Anyone on prize can see your wishlist",
+      "private":"Private",
+      "private_placeholder":"Only visible to you"
+    },
+
+    "sport_wishlist":{
+      "appbar_title":"Sport Wishlist",
+      "wishlist_empty":"Your wishlist is empty!",
+      "get_to_wishing":"Get To wishing!",
+      "add_items_to_wishlist":"+ Add items tho wishlist"
+    }
+  },
+  
+  "settings": {
+    "language_changed_success": "The language has been successfully changed",
+    "change_language": "Change language",
+    "select_language": "Choose the language",
+    "profile_settings": "Profile settings",
+    "profile": "Profile",
+    "edit_profile": "Edit profile",
+    "change_password": "Change password",
+    "invite_friends": "Invite friends",
+    "payments": "Payments",
+    "company_memberships": "Company memberships",
+    "help_center": "Help center",
+    "about_us": "About Aqaryoun",
+    "faq": "FAQs",
+    "blog": "Blog",
+    "customer_support": "Customer support"
+  },
+  "search": {
+    "search": "Search",
+    "search_here": "Search here",
+    "what_do_you_searching_for": "What are you looking for?",
+    "do_you_search_for_something": "Are you looking for something?"
+  },
+  "location": {
+    "location": "Location",
+    "you_denied_location_permission": "You denied location permission",
+    "ask_for_location_description": "Please allow the application to access your location to continue."
+  },
+  "image": {
+    "pick_image": "Choose an image",
+    "pick_image_camera": "Take a photo",
+    "edit_image": "Edit image",
+    "upload_image": "Upload an image",
+    "please_allow_camera_permission": "Please allow the application to access your camera to take a photo.",
+    "you_denied_camera_permission": "You have refused camera access forever!\nPlease enable camera access in your device settings to continue.",
+    "please_wait_while_image_processing": "Please wait until the image is processed..",
+    "error_occurred_while_processing_image": "An error occurred while processing the image"
+  },
+  "url": {
+    "could_not_launch_link": "Cannot open the link",
+    "invalid_link": "Invalid link",
+    "cannot_open_pdf_error": "Sorry, an error occurred!\nCannot open PDF file"
+  },
+  "gender": {
+    "label_male": "Male",
+    "label_female": "Female"
+  },
+  "date": {
+    "choose_date": "Choose date"
+  },
+  "maintenance": {
+    "force_update_title": "Please update the app",
+    "force_update_description": "A new update is available, please update the app first to continue using the app.",
+    "update_now": "Update now",
+    "under_maintenance_title": "App Under Maintenance",
+    "under_maintenance_description": "We are currently performing some technical updates and will be back shortly.\nThank you for your patience."
+  },
+  "on_boarding": {
+    "title_1": "Create Your Wishlist",
+    "subtitle_1": "Pick an occasion and add the items you truly want — it only takes a few taps.",
+    "title_2": "Share with Friends & Family",
+    "subtitle_2": "Send your wishlist link and let your loved ones buy or contribute to your perfect gift.",
+    "title_3": "Get Gifts You Actually Love",
+    "subtitle_3": "No more random surprises — receive thoughtful gifts that match your style.",
+    "skip": "Skip",
+    "next": "Next",
+    "get_started": "Start your journey"
+
+  },
+  "theme": {
+    "app_theme": "App theme",
+    "system_mode": "System mode",
+    "light_mode": "Light mode",
+    "dark_mode": "Dark mode",
+    "theme_changed_successfully": "Theme changed successfully"
+  },
+  "package": {
+    "choose_the_package_suits_you": "Choose the package that suits you",
+    "choose_package_hint_message": "Save at least 10% per year",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "main_features": "Main features",
+    "renew_subscription": "Renew subscription",
+    "subscription_info": "Subscription info",
+    "you_are_now_on_package_param": "You are now on {}",
+    "now_you_can_add_more_than_property_hint": "Now you can add more than one property and track them easily!",
+    "your_subscription_activated_message": "Your subscription has been activated successfully, you will receive a confirmation email soon."
+  },
+  "publish_property": {
+    "add_your_properties_now": "Add your properties now",
+    "screen_title": "Add Property",
+    "general_info": "General Information",
+    "upload_property_images_here": "Upload property images here",
+    "property_type": "Property Type",
+    "choose_property_type": "Choose property type",
+    "section": "Section",
+    "choose_section": "Choose section",
+    "region": "Region",
+    "choose_region": "Choose region",
+    "detailed_address": "Detailed Address",
+    "write_address": "Write address",
+    "property_name_en": "Property Name (English)",
+    "property_name": "Property Name",
+    "property_desc_en": "Description (English)",
+    "desc": "Description",
+    "property_name_ar": "Property Name (Arabic)",
+    "desc_ar": "Description (Arabic)",
+    "youtube_video_url": "YouTube Video URL"
+  },
+  "payment": {
+    "payment_method": "Payment method",
+    "payments": "Payments",
+    "payment_info": "Payment info",
+    "credit_card": "Credit card",
+    "e_wallet": "E-wallet",
+    "pay_param": "Pay {}",
+    "payment_done_successfully": "Payment done successfully"
+  },
+  "home":{
+  "wishist":{
+    "banar_title":"Create Your Wishlist",
+    "banar_button_title":"+ Create Your Wishlist"
+  },
+
+  "upcomming_events":{
+    "appbar_title":"My Upcoming events",
+    "events_title":{
+      "birthday":"birthday",
+      "grad":"gradulition"
+    }
+  },
+  "other_events":{
+    "appbar_title":"Other Events",
+    "event_model_title":"Birth day"
+  },
+  
+  "categories":{
+    "appbar_title":"Categories",
+    "categories_section":{
+      "kids_fashion":"Kid'\\s fashion",
+      "mens_fashion":"Men'\\s fashion",
+      "Womens_fashion":"Womens fashion",
+      "home_kitchen":"Home & Kitchen",
+      "appliances":"Appliances",
+      "mobiles":"Mobiles",
+      "video_games":"Video games",
+      "televisions":"Televisions",
+      "headphones":"Headphones",
+      "cameras":"Cameras"
+    }
+  } , 
+  "mothers_day_gifts":{
+  "appbar_title":"Mother's day gifts"
+  },
+  "best_gifts_forGrads":{
+    "appbar_title_best_gifts":"Best gifts for grads",
+    "appbar_title_birthday_gif":"Birthday gifts"
+  }
+ },
+ "product" : {
+  "offer": "OFF"
+ }
+
+}

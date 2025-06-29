@@ -1,0 +1,9 @@
+name: number_converter
+description: Convert numbers from Arabic to English and vice versa.
+version: 1.0.0
+
+environment:
+  sdk: ^3.2.3
+
+dev_dependencies:
+  lints: ^5.0.0
