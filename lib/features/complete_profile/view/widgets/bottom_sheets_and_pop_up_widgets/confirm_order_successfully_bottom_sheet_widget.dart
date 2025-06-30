@@ -87,12 +87,21 @@ class ConfirmOrderSuccessfullyBottomSheetWidget extends StatelessWidget {
                         title: LocaleKeys
                             .complete_profile_confirm_order_see_more_items
                             .tr())),
+                        title: LocaleKeys.confirm_order_see_more_items.tr())),
+                        title: LocaleKeys
+                            .complete_profile_confirm_order_see_more_items
+                            .tr())),
                 horizontalSpace(12),
                 Expanded(
                     child: AppFillBckgroundButton(
                         onTap: () {
                           pushReplacement(context, CompleteProfileScreen());
                         },
+                        title: LocaleKeys
+                            .complete_profile_confirm_order_view_wishlist
+                            .tr())),
+
+                        title: LocaleKeys.confirm_order_view_wishlist.tr())),
                         title: LocaleKeys
                             .complete_profile_confirm_order_view_wishlist
                             .tr())),
