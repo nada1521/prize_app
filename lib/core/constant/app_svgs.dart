@@ -23,6 +23,7 @@ class AppSvgs {
   static const String edit = 'assets/svgs/edit.svg';  
   static const String email = 'assets/svgs/email.svg';  
   static const String emojes = 'assets/svgs/emojes.svg';  
+  static const String emptyCart = 'assets/svgs/empty_cart.svg';  
   static const String gift = 'assets/svgs/gift.svg';  
   static const String heart = 'assets/svgs/heart.svg';  
   static const String home = 'assets/svgs/home.svg';  
@@ -32,6 +33,7 @@ class AppSvgs {
   static const String onboardingImageThree = 'assets/svgs/onboarding_image_three.svg';  
   static const String onboardingImageTwo = 'assets/svgs/onboarding_image_two.svg';  
   static const String profile = 'assets/svgs/profile.svg';  
+  static const String removeTrash = 'assets/svgs/remove_trash.svg';  
   static const String searchNormal = 'assets/svgs/search-normal.svg';  
   static const String setting = 'assets/svgs/setting.svg';  
   static const String shapeVector = 'assets/svgs/shape_vector.svg';  

@@ -9,7 +9,9 @@ class AppOutLineButton extends StatelessWidget {
   final double? width, height;
   final Function() onTap;
   final Widget? icon;
-
+  final Color? color;
+  final BoxBorder? border;
+  final TextStyle? style;
   const AppOutLineButton({
     super.key,
     required this.onTap,
@@ -17,6 +19,9 @@ class AppOutLineButton extends StatelessWidget {
     this.width,
     this.height,
     this.icon,
+    this.color,
+    this.border,
+    this.style,
   });
 
   @override
@@ -28,7 +33,7 @@ class AppOutLineButton extends StatelessWidget {
         height: height ?? 46.h,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16.r),
-          border: GlobalAppWidgetsStyles.containerOrangeBoxBorder(context),
+          border: border ?? GlobalAppWidgetsStyles.containerOrangeBoxBorder(context),
         ),
         child: Center(
           child: FittedBox(
@@ -41,7 +46,7 @@ class AppOutLineButton extends StatelessWidget {
                   Text(
                     title,
                     style:
-                        AppTextStyles.appEmptyFillColorButtonTextStyle(context),
+                       style ?? AppTextStyles.appEmptyFillColorButtonTextStyle(context),
                   ),
                 ],
               ),
