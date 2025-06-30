@@ -54,7 +54,7 @@ extension AppTextTheme on TextTheme {
         fontSize: 15,
         fontWeight: FontWeight.w400,
         color: Theme.of(context).brightness == Brightness.dark
-            ? AppColors.moreDarkPeriwinkle
+            ? AppColors.moreLightPeriwinkle
             : Theme.of(context).colorScheme.tertiary,
       );
   TextStyle font14RegularDarkPeriwinkle(BuildContext context) => TextStyle(

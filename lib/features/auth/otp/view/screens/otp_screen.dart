@@ -41,8 +41,10 @@ class _OtpScreenState extends State<OtpScreen> {
               RichText(
                 text: TextSpan(children: [
                   TextSpan(
-                    text: LocaleKeys.auth_otp_we_have_sent_code_to_phone_number.tr(),
-                    style: AppTextStyles.bodyTitle18w400TextStyle(context),
+                    text: LocaleKeys.auth_otp_we_have_sent_code_to_phone_number
+                        .tr(),
+                    style: AppTextStyles.bodyTitle18w400darkPeriwinkleTextStyle(
+                        context),
                   ),
 
                   // number or email

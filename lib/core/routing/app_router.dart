@@ -13,6 +13,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:prize/core/widgets/not_found_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:prize/features/product_details/views/screens/product_details_screen.dart';
+import 'package:prize/features/products_filter/views/screens/products_filter_screen.dart';
 import 'package:prize/features/tabs/view/cubit/tabs_cubit.dart';
 import 'package:prize/features/tabs/view/screens/tabs_screen.dart';
 
@@ -67,6 +68,10 @@ class MyRouter {
           child:  ProductDetailsScreen(
             product:product ,
           ),
+        );
+      case AppRoutes.productsFilter:
+        return _RouterBuilder.defaultPageRoute(
+          child:  ProductsFilterScreen(),
         );
 
       // todo: Check this ya Abdul-Rahman

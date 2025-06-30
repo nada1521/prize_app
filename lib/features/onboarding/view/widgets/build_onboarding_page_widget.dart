@@ -82,7 +82,8 @@ class BuildOnboardingPageWidget extends StatelessWidget {
                         maxLines: 3,
                         pageData.description,
                         textAlign: TextAlign.center,
-                        style: AppTextStyles.bodyTitle18w400TextStyle(context),
+                        style: AppTextStyles
+                            .bodyTitle18w400darkPeriwinkleTextStyle(context),
                       ),
                     ),
                   ),

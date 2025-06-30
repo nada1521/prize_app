@@ -33,7 +33,7 @@ class SearchWidget extends StatelessWidget {
           fontSize: 14,
           fontWeight: FontWeight.w400,
           color: context.isDarkTheme
-              ? AppColors.periwinkle.withOpacity(.8)
+              ? AppColors.moreLightPeriwinkle.withOpacity(.8)
               : AppColors.primaryWhite,
         ),
       ),
