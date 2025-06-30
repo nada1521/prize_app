@@ -30,7 +30,9 @@ class SportWishlistWidget extends StatelessWidget {
           children: [
             AppFillBckgroundButton(
               onTap: () {},
-              title: LocaleKeys.complete_profile_add_items_to_wishlist.tr(),
+              title: LocaleKeys
+                  .complete_profile_sport_wishlist_add_items_to_wishlist
+                  .tr(),
             ),
             verticalSpace(10),
             AppOutLineButton(
