@@ -11,7 +11,6 @@ import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/core/utils/resources/counter_app_widget.dart';
 import 'package:prize/core/widgets/app_disable_button.dart';
 import 'package:prize/core/widgets/app_fill_background_button.dart';
-import 'package:prize/core/widgets/dialog/base/pop_up_dialog.dart';
 import 'package:prize/features/complete_profile/data/models/product_model.dart';
 import 'package:prize/features/complete_profile/view/widgets/bottom_sheets_and_pop_up_widgets/confirm_order_successfully_bottom_sheet_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_image_widget.dart';
@@ -54,7 +53,7 @@ class ProductDetailsScreen extends StatelessWidget {
                     ),
                   );
                 },
-                title: "Add to wishlist",
+                title: LocaleKeys.product_details_add_to_wishlist.tr(),
                 icon: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 5.h),
                   child: SvgPicture.asset(
@@ -82,7 +81,7 @@ class ProductDetailsScreen extends StatelessWidget {
                     ),
                   );
                 },
-                title: "Add to cart",
+                title: LocaleKeys.product_details_add_to_wishlist.tr(),
                 icon: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 5.h),
                   child: SvgPicture.asset(
