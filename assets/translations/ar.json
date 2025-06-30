@@ -221,10 +221,6 @@
   "see_more_items": "عرض المزيد من العناصر"
 },
     "sport_wishlist": {
-<<<<<<< HEAD
-=======
-  "add_item": "إضافة عنصر",
->>>>>>> 4f059abfa36b0b1d29ce43a361c5ae61a11c5565
   "appbar_title":"تكملة ملفك الشخصي",
   "wishlist_empty": "قائمة الأمنيات الخاصة بك فارغة!",
   "get_to_wishing": "ابدأ بإضافة أمنياتك!",
