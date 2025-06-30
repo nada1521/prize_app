@@ -1,4 +1,6 @@
 import 'package:prize/core/constant/app_svgs.dart';
+import 'package:prize/core/routing/routers.dart';
+import 'package:prize/core/utils/extensions/navigation_extension.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/features/complete_profile/data/models/category_model.dart';
 import 'package:prize/features/complete_profile/view/widgets/category_widget.dart';
@@ -33,7 +35,9 @@ class BuildProductsItemsWidget extends StatelessWidget {
                 shape: BoxShape.circle,
               ),
               child: InkWell(
-                onTap: () {},
+                onTap: () {
+                  context.pushNamed(AppRoutes.productsFilter);
+                },
                 borderRadius: BorderRadius.circular(17.r),
                 child: Padding(
                   padding:

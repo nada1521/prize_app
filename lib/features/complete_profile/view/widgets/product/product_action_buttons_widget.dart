@@ -16,7 +16,7 @@ class ProductActionsWidget extends StatelessWidget {
         _buildActionButton(
           iconPath: AppSvgs.heart,
           iconColor: Theme.of(context).brightness == Brightness.light
-              ? AppColors.moreDarkPeriwinkle
+              ? AppColors.moreLightPeriwinkle
               : AppColors.white,
         ),
         horizontalSpace(10),

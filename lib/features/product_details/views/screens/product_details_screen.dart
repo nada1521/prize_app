@@ -11,6 +11,7 @@ import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/core/utils/resources/counter_app_widget.dart';
 import 'package:prize/core/widgets/app_disable_button.dart';
 import 'package:prize/core/widgets/app_fill_background_button.dart';
+import 'package:prize/core/widgets/orange_appbar_widget.dart';
 import 'package:prize/features/complete_profile/data/models/product_model.dart';
 import 'package:prize/features/complete_profile/view/widgets/bottom_sheets_and_pop_up_widgets/confirm_order_successfully_bottom_sheet_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_image_widget.dart';
@@ -22,7 +23,6 @@ import 'package:prize/features/complete_profile/view/widgets/show_available_colo
 import 'package:prize/features/home/view/widgets/mothers_day_gifts/mothers_day_gifts_widget.dart';
 import 'package:prize/features/product_details/views/widgets/buttom_sheets/confirm_order_to_cart_bottom_sheet_widget.dart';
 import 'package:prize/features/product_details/views/widgets/overview_review_tab_widget.dart';
-import 'package:prize/features/product_details/views/widgets/product_details_appbar_widget.dart';
 import 'package:prize/features/product_details/views/widgets/sold_by_widget.dart';
 
 class ProductDetailsScreen extends StatelessWidget {
@@ -98,7 +98,10 @@ class ProductDetailsScreen extends StatelessWidget {
       ),
       body: CustomScrollView(
         slivers: [
-          ProductDetailsAppbarWidget(),
+          OrangeAppbarWidget(
+            title: LocaleKeys.product_details_Product_details_title.tr(),
+            suffixIcon: AppSvgs.shareForward,
+          ),
           SliverToBoxAdapter(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

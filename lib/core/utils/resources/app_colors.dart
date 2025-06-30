@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 abstract class AppColors {
   //
   static const Color periwinkle = Color(0xFF50507D);
-  static const Color secondperiwinkle = Color(0xFF434465);
+  static const Color moreDarkPeriwinkle = Color(0xFF434465);
   // -- using for dark mode ----
   static const Color darkPeriwinkle = Color(0xFFB7BFD9);
   static const Color lightPeriwinkle = Color(0xFF696EA7);
@@ -35,7 +35,7 @@ abstract class AppColors {
   static const Color primaryWhite = Color(0xFFf4f6fa);
   static const Color secondryWhite = Color(0xFFFFFFFF);
   static const Color neutralColor = Color(0xFF5F5A6A);
-  static const Color moreDarkPeriwinkle = Color(0xFF7B83B6);
+  static const Color moreLightPeriwinkle = Color(0xFF7B83B6);
   static const Color offerYellowColor = Color(0xFFF4D655);
 
   /// Primary color for DarkMode

@@ -44,7 +44,16 @@ class AppTextStyles {
         fontWeight: FontWeight.w400,
         color: context.isDarkTheme
             ? AppColors.darkPeriwinkle
-            : AppColors.lightPeriwinkle,
+            : AppColors.moreLightPeriwinkle,
+      );
+  static TextStyle bodyTitle18w400darkPeriwinkleTextStyle(
+          BuildContext context) =>
+      TextStyle(
+        fontSize: 18,
+        fontWeight: FontWeight.w400,
+        color: context.isDarkTheme
+            ? AppColors.darkPeriwinkle
+            : AppColors.moreDarkPeriwinkle,
       );
 
   static TextStyle meduimBody16W500TitleTextStyle(BuildContext context) =>
@@ -53,7 +62,7 @@ class AppTextStyles {
         fontWeight: FontWeight.w500,
         color: context.isDarkTheme
             ? AppColors.darkPeriwinkle
-            : AppColors.periwinkle.withOpacity(.8),
+            : AppColors.moreLightPeriwinkle.withOpacity(.8),
       );
 
   static TextStyle smallBodyTitle12w400TextStyle(BuildContext context) =>
@@ -62,7 +71,7 @@ class AppTextStyles {
         fontWeight: FontWeight.w400,
         color: context.isDarkTheme
             ? AppColors.darkPeriwinkle
-            : AppColors.periwinkle,
+            : AppColors.moreLightPeriwinkle,
       );
   static TextStyle smallBodyTitle12w400WithContrastColorTextStyle(
           BuildContext context) =>
@@ -78,7 +87,7 @@ class AppTextStyles {
         fontWeight: FontWeight.w400,
         color: context.isDarkTheme
             ? AppColors.orangeTanHide
-            : AppColors.periwinkle,
+            : AppColors.moreLightPeriwinkle,
       );
 
   // signup
@@ -89,7 +98,7 @@ class AppTextStyles {
         fontWeight: FontWeight.w500,
         color: context.isDarkTheme
             ? AppColors.darkPeriwinkle
-            : AppColors.periwinkle,
+            : AppColors.moreLightPeriwinkle,
       );
 
   // navigation text
@@ -108,12 +117,12 @@ class AppTextStyles {
         fontWeight: FontWeight.w400,
         color: context.isDarkTheme
             ? AppColors.darkPeriwinkle
-            : AppColors.periwinkle,
+            : AppColors.moreLightPeriwinkle,
         decoration: TextDecoration.underline,
         // ignore: deprecated_member_use
         decorationColor: context.isDarkTheme
             ? AppColors.darkPeriwinkle
-            : AppColors.periwinkle,
+            : AppColors.moreLightPeriwinkle,
       );
 
   static TextStyle navigationTextTextStyle = TextStyle(
@@ -127,7 +136,7 @@ class AppTextStyles {
         fontWeight: FontWeight.w400,
         color: context.isDarkTheme
             ? AppColors.darkPeriwinkle
-            : AppColors.periwinkle,
+            : AppColors.moreLightPeriwinkle,
       );
 
   static TextStyle numbersTextStyle(BuildContext context) => TextStyle(
@@ -135,7 +144,7 @@ class AppTextStyles {
         fontWeight: FontWeight.w400,
         color: context.isDarkTheme
             ? AppColors.darkPeriwinkle
-            : AppColors.lightPeriwinkle,
+            : AppColors.moreLightPeriwinkle,
       );
 
   static TextStyle appBarHeadTitleTextStyle(BuildContext context) => TextStyle(
