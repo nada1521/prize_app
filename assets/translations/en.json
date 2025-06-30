@@ -384,6 +384,7 @@
  "confirm_order":{
 "view_wishlist":"View wishlist",
 "see_more_items":"See more items"
+
  },
  "product_details":{
   "Product_details_title":"Product Details",
@@ -397,5 +398,14 @@
   },
   "review_content_goes_here":"Review content goes here...",
   "sold_by":"Sold by"
+ }, "filter_product":{
+  "men":"Men",
+  "women":"Women",
+  "reset":"Reset",
+  "apply":"Apply",
+  "categories":"Categories",
+  "view_more":"View More",
+  "type":"Type"
+
  }
 }

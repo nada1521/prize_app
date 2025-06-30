@@ -347,5 +347,13 @@ abstract class  LocaleKeys {
   static const product_details_review_content_goes_here = 'product_details.review_content_goes_here';
   static const product_details_sold_by = 'product_details.sold_by';
   static const product_details = 'product_details';
+  static const filter_product_men = 'filter_product.men';
+  static const filter_product_women = 'filter_product.women';
+  static const filter_product_reset = 'filter_product.reset';
+  static const filter_product_apply = 'filter_product.apply';
+  static const filter_product_categories = 'filter_product.categories';
+  static const filter_product_view_more = 'filter_product.view_more';
+  static const filter_product_type = 'filter_product.type';
+  static const filter_product = 'filter_product';
 
 }

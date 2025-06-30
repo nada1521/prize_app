@@ -411,7 +411,16 @@
  "review_content_goes_here": "يظهر محتوى المراجعة هنا...",
 "sold_by": "تم البيع بواسطة"
 
+},"filter_product": {
+  "men": "رجال",
+  "women": "نساء",
+  "reset": "إعادة ضبط",
+  "apply": "تطبيق",
+  "categories": "الفئات",
+  "view_more": "عرض المزيد",
+  "type": "النوع"
 }
+
 
 
 }
