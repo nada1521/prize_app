@@ -221,6 +221,8 @@
   "see_more_items": "عرض المزيد من العناصر"
 },
     "sport_wishlist": {
+      "add_item": "إضافة عنصر",
+
   "appbar_title":"تكملة ملفك الشخصي",
   "wishlist_empty": "قائمة الأمنيات الخاصة بك فارغة!",
   "get_to_wishing": "ابدأ بإضافة أمنياتك!",

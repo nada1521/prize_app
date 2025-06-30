@@ -30,13 +30,7 @@ class SportWishlistWidget extends StatelessWidget {
           children: [
             AppFillBckgroundButton(
               onTap: () {},
-<<<<<<< HEAD
-              title: LocaleKeys
-                  .complete_profile_sport_wishlist_add_items_to_wishlist
-                  .tr(),
-=======
               title: LocaleKeys.complete_profile_add_items_to_wishlist.tr(),
->>>>>>> 4f059abfa36b0b1d29ce43a361c5ae61a11c5565
             ),
             verticalSpace(10),
             AppOutLineButton(
@@ -44,12 +38,8 @@ class SportWishlistWidget extends StatelessWidget {
                 showPopup(
                     context, YourProfileCompletedSuccessfullyPopUpWidget());
               },
-<<<<<<< HEAD
-              title: LocaleKeys.complete_profile_sport_wishlist_save_and_confirm
-=======
               title: LocaleKeys
                   .complete_profile_create_wishlist_widget_save_and_Confirm
->>>>>>> 4f059abfa36b0b1d29ce43a361c5ae61a11c5565
                   .tr(),
             ),
           ],

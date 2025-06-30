@@ -191,13 +191,10 @@ abstract class  LocaleKeys {
   static const complete_profile_create_wishlist_widget_private_placeholder = 'complete_profile.create_wishlist_widget.private_placeholder';
   static const complete_profile_create_wishlist_widget_save_and_Confirm = 'complete_profile.create_wishlist_widget.save_and_Confirm';
   static const complete_profile_create_wishlist_widget = 'complete_profile.create_wishlist_widget';
-<<<<<<< HEAD
   static const complete_profile_confirm_order_view_wishlist = 'complete_profile.confirm_order.view_wishlist';
   static const complete_profile_confirm_order_see_more_items = 'complete_profile.confirm_order.see_more_items';
   static const complete_profile_confirm_order = 'complete_profile.confirm_order';
-=======
   static const complete_profile_sport_wishlist_add_item = 'complete_profile.sport_wishlist.add_item';
->>>>>>> 4f059abfa36b0b1d29ce43a361c5ae61a11c5565
   static const complete_profile_sport_wishlist_appbar_title = 'complete_profile.sport_wishlist.appbar_title';
   static const complete_profile_sport_wishlist_wishlist_empty = 'complete_profile.sport_wishlist.wishlist_empty';
   static const complete_profile_sport_wishlist_get_to_wishing = 'complete_profile.sport_wishlist.get_to_wishing';
