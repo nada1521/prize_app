@@ -368,10 +368,14 @@ abstract class  LocaleKeys {
   static const filter_product_stars_low = 'filter_product.stars_low';
   static const filter_product_star_high = 'filter_product.star_high';
   static const filter_product = 'filter_product';
-  static const shop_screen_shop_appbar = 'shop_screen.shop_appbar';
   static const shop_screen_special_offers = 'shop_screen.special_offers';
   static const shop_screen_flash_sale = 'shop_screen.flash_sale';
   static const shop_screen_new_arri = 'shop_screen.new_arri';
   static const shop_screen = 'shop_screen';
+  static const nav_title_shop_title = 'nav_title.shop_title';
+  static const nav_title_home_title = 'nav_title.home_title';
+  static const nav_title_cart_title = 'nav_title.cart_title';
+  static const nav_title_profil_title = 'nav_title.profil_title';
+  static const nav_title = 'nav_title';
 
 }

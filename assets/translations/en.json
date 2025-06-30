@@ -348,6 +348,7 @@
     "payment_done_successfully": "Payment done successfully"
   },
   "home":{
+    
   "wishist":{
     "banar_title":"Create Your Wishlist",
     "banar_button_title":"+ Create Your Wishlist"
@@ -424,10 +425,16 @@
   "star_high":"5 Stars"
  },
  "shop_screen":{
-  "shop_appbar":"Shop",
+  
   "special_offers":"Special Offers",
   "flash_sale":"Flash sale",
   "new_arri":"New Arri"
   
+ },"nav_title":{
+  "shop_title":"Shop",
+  "home_title":"Home",
+  "cart_title":"Cart",
+  "profil_title":"Profil"
  }
+
 }

@@ -359,6 +359,8 @@
 
   "home": {
   "wishist": {
+    
+
     "banar_title": "أنشئ قائمة الأمنيات الخاصة بك",
     "banar_button_title": "+ أنشئ قائمة الأمنيات"
   },
@@ -439,10 +441,16 @@
 
 },
 "shop_screen": {
-  "shop_appbar": "المتجر",
   "special_offers": "عروض خاصة",
   "flash_sale": "تخفيضات فورية",
   "new_arri": "وصل حديثًا"
+},
+"nav_title": {
+  "shop_title": "المتجر",
+  "home_title": "الرئيسية",
+  "cart_title": "السلة",
+  "profil_title": "الملف الشخصي"
 }
+
 
 }

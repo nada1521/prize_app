@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
@@ -62,7 +63,7 @@ class ComingEventWidget extends StatelessWidget {
                   height: 14.h,
                 ),
                 Text(
-                  '7 days',
+                  LocaleKeys.home_upcomming_events_events_title_7_days.tr(),
                   style: AppTextStyles.smallBodyTitle12w400TextStyle(context)
                       .copyWith(
                     fontWeight: FontWeight.w500,
