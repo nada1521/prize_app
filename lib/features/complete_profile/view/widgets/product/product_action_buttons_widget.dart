@@ -16,7 +16,7 @@ class ProductActionsWidget extends StatelessWidget {
         _buildActionButton(
           iconPath: AppSvgs.heart,
           iconColor: Theme.of(context).brightness == Brightness.light
-              ? AppColors.moreDarkPeriwinkle
+              ? AppColors.moreLightPeriwinkle
               : AppColors.white,
         ),
         horizontalSpace(10),
@@ -28,7 +28,8 @@ class ProductActionsWidget extends StatelessWidget {
     );
   }
 
-  Widget _buildActionButton({required String iconPath, required Color iconColor}) {
+  Widget _buildActionButton(
+      {required String iconPath, required Color iconColor}) {
     return InkWell(
       child: Container(
         decoration: BoxDecoration(

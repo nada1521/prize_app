@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:prize/core/constant/app_svgs.dart';
+import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 
@@ -9,6 +12,7 @@ class AppFillBckgroundButton extends StatelessWidget {
   final Function() onTap;
   final Color? startColor;
   final Color? endColor;
+  final Widget? icon;
 
   const AppFillBckgroundButton({
     super.key,
@@ -18,6 +22,7 @@ class AppFillBckgroundButton extends StatelessWidget {
     this.height,
     this.startColor,
     this.endColor,
+    this.icon,
   });
 
   @override
@@ -45,9 +50,15 @@ class AppFillBckgroundButton extends StatelessWidget {
           child: FittedBox(
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 15.w),
-              child: Text(
-                title,
-                style: AppTextStyles.appFillColorButtonTextStyle(context),
+              child: Row(
+                children: [
+                  icon ?? SizedBox.shrink(),
+                  horizontalSpace(5),
+                  Text(
+                    title,
+                    style: AppTextStyles.appFillColorButtonTextStyle(context),
+                  ),
+                ],
               ),
             ),
           ),

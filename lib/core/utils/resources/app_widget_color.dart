@@ -35,10 +35,10 @@ class AppWidgetColor {
       context.isDarkMode ? AppColors.darkModeBackground : AppColors.white;
 
   static Color fillWithContrastColor(BuildContext context) =>
-      context.isDarkMode ? AppColors.white : AppColors.secondperiwinkle;
+      context.isDarkMode ? AppColors.white : AppColors.moreLightPeriwinkle;
 
   static Color fillWithGrayAndDiColor(BuildContext context) =>
-      context.isDarkMode ? AppColors.darkBlue : AppColors.secondperiwinkle;
+      context.isDarkMode ? AppColors.darkBlue : AppColors.moreLightPeriwinkle;
 
   // text field
   static Color outlineWidgetColor = AppColors.lightModeGray.withOpacity(.5);

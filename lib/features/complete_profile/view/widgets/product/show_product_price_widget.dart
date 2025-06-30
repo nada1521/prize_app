@@ -9,11 +9,11 @@ class ShowProductPriceWidget extends StatelessWidget {
   const ShowProductPriceWidget({
     super.key,
     required this.newPrice,
-    required this.oldPrice,
+    this.oldPrice,
   });
 
   final String newPrice;
-  final String oldPrice;
+  final String? oldPrice;
 
   @override
   Widget build(BuildContext context) {
@@ -33,23 +33,25 @@ class ShowProductPriceWidget extends StatelessWidget {
                 color: AppColors.lighterOrange,
               ),
             ),
-            horizontalSpace(4),
-            SvgPicture.asset(
-              AppSvgs.currency,
-              width: 16.w,
-              height: 16.h,
-              color: const Color(0xFFB7BFD9),
-            ),
-            horizontalSpace(2),
-            Text(
-              oldPrice,
-              style: const TextStyle(
-                decoration: TextDecoration.lineThrough,
-                fontWeight: FontWeight.bold,
-                fontSize: 12,
-                color: Color(0xFFB7BFD9),
+            if (oldPrice != null && oldPrice!.isNotEmpty) ...[
+              horizontalSpace(4),
+              SvgPicture.asset(
+                AppSvgs.currency,
+                width: 16.w,
+                height: 16.h,
+                color: const Color(0xFFB7BFD9),
               ),
-            ),
+              horizontalSpace(2),
+              Text(
+                oldPrice!,
+                style: const TextStyle(
+                  decoration: TextDecoration.lineThrough,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12,
+                  color: Color(0xFFB7BFD9),
+                ),
+              ),
+            ],
           ],
         ),
       ),

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/features/home/view/bottom_navbar/logic/bottom_nav_bar_navigator/bottom_nav_bar_navigator_cubit.dart';
+import 'package:prize/features/shop/views/screens/shop_products_screen.dart';
 import '../screens/home_screen.dart';
 import 'bottom_navbar_icon_widget.dart';
 
@@ -18,7 +18,7 @@ class BottomNavBar extends StatefulWidget {
 class _BottomNavBarState extends State<BottomNavBar> {
   final List<Widget> screens = const [
     HomeScreen(),
-    HomeScreen(),
+    ShopProductsScreen(),
     HomeScreen(),
     HomeScreen(),
   ];

@@ -53,7 +53,7 @@ void main() async {
       path: 'assets/translations',
       ignorePluralRules: false,
       child: InternetStateManagerInitializer.init(
-        options: InternetStateOptions(
+        options: InternetStateOptions( 
           autoCheckConnection: false,
           checkConnectionTimeout: const Duration(seconds: 5),
         ),

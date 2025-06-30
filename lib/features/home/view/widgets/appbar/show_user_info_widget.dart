@@ -48,7 +48,7 @@ class ShowUserInfoWidget extends StatelessWidget {
                       .copyWith(
                     fontSize: 12,
                     color: context.isDarkTheme
-                        ? AppColors.periwinkle.withOpacity(.8)
+                        ? AppColors.moreLightPeriwinkle.withOpacity(.8)
                         : AppColors.primaryWhite,
                   ),
                 ),

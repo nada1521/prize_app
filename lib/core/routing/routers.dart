@@ -8,6 +8,7 @@ sealed class AppRoutes {
   static const String home = '/home';
   static const String bottomNavBar = '/bottomNavBar';
   static const String productDetails = '/productDetails';
+  static const String productsFilter = '/productsFilter';
 
   static const String tabs = '/tabs';
   static const String onBoarding = '/boarding_screen';
