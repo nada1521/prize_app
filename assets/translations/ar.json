@@ -216,12 +216,23 @@
       "save_and_Confirm": "حفظ وتأكيد"
 
     },
+    "confirm_order": {
+  "view_wishlist": "عرض قائمة الأمنيات",
+  "see_more_items": "عرض المزيد من العناصر"
+},
     "sport_wishlist": {
-  "add_item": "إضافة عنصر",
+      "add_item": "إضافة عنصر",
+
   "appbar_title":"تكملة ملفك الشخصي",
   "wishlist_empty": "قائمة الأمنيات الخاصة بك فارغة!",
   "get_to_wishing": "ابدأ بإضافة أمنياتك!",
-  "add_items_to_wishlist": "أضف عناصر إلى قائمة الأمنيات +"
+  "add_items_to_wishlist": "أضف عناصر إلى قائمة الأمنيات +",
+  "save_and_confirm": "حفظ وتأكيد"
+
+},
+"sucsses_complet": {
+  "sucsses_profile": "تم إكمال ملفك الشخصي بنجاح.",
+  "start_your_journey": "ابدأ رحلتك"
 }
 
 

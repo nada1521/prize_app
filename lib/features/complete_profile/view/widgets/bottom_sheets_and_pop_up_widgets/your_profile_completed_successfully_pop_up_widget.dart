@@ -25,7 +25,7 @@ class YourProfileCompletedSuccessfullyPopUpWidget extends StatelessWidget {
         ),
         verticalSpace(10),
         Text(
-          LocaleKeys.complete_profile_profile_complete_succesed.tr(),
+          LocaleKeys.complete_profile_sucsses_complet_sucsses_profile.tr(),
           style: AppTextStyles.headTitle24w600TextStyle(context).copyWith(
             fontSize: 17,
           ),
@@ -36,7 +36,9 @@ class YourProfileCompletedSuccessfullyPopUpWidget extends StatelessWidget {
             onTap: () {
               pushReplacement(context, HomeScreen());
             },
-            title: LocaleKeys.on_boarding_get_started.tr())
+            title: LocaleKeys
+                .complete_profile_sucsses_complet_start_your_journey
+                .tr())
       ],
     );
   }

@@ -1,3 +1,4 @@
+
 import 'package:prize/core/utils/constants.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
@@ -17,7 +18,7 @@ class SportWishlsitAddItems extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          LocaleKeys.complete_profile_sport_wishlist_add_item.tr(),
+          LocaleKeys.complete_profile_sport_wishlist_add_item,
           style: AppTextStyles.appBarHeadTitleTextStyle(context),
         ),
         automaticallyImplyLeading: false,
