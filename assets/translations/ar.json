@@ -221,6 +221,7 @@
   "see_more_items": "عرض المزيد من العناصر"
 },
     "sport_wishlist": {
+      "add_item": "إضافة عنصر",
   "appbar_title":"تكملة ملفك الشخصي",
   "wishlist_empty": "قائمة الأمنيات الخاصة بك فارغة!",
   "get_to_wishing": "ابدأ بإضافة أمنياتك!",
@@ -420,7 +421,16 @@
  "review_content_goes_here": "يظهر محتوى المراجعة هنا...",
 "sold_by": "تم البيع بواسطة"
 
+},"filter_product": {
+  "men": "رجال",
+  "women": "نساء",
+  "reset": "إعادة ضبط",
+  "apply": "تطبيق",
+  "categories": "الفئات",
+  "view_more": "عرض المزيد",
+  "type": "النوع"
 }
+
 
 
 }

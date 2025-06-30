@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
@@ -15,15 +17,18 @@ class ProductsFilterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<String> categories = [
-      "Men’s fashion",
-      "Women’s fashion",
-      "Home & Kitchen",
-      "Mobiles",
-      "Video games",
-      "Televisions",
+      LocaleKeys.home_categories_categories_section_mens_fashion.tr(),
+      LocaleKeys.home_categories_categories_section_Womens_fashion.tr(),
+      LocaleKeys.home_categories_categories_section_home_kitchen.tr(),
+      LocaleKeys.home_categories_categories_section_mobiles.tr(),
+      LocaleKeys.home_categories_categories_section_video_games.tr(),
+      LocaleKeys.home_categories_categories_section_televisions.tr(),
     ];
 
-    List<String> type = ["Men", "Women"];
+    List<String> type = [
+      LocaleKeys.filter_product_men.tr(),
+      LocaleKeys.filter_product_women.tr()
+    ];
 
     RangeValues priceRange = const RangeValues(200, 1200);
 
@@ -36,12 +41,14 @@ class ProductsFilterScreen extends StatelessWidget {
             children: [
               Expanded(
                 flex: 1,
-                child: AppOutLineButton(onTap: () {}, title: "Reset"),
+                child: AppOutLineButton(
+                    onTap: () {}, title: LocaleKeys.filter_product_reset.tr()),
               ),
               horizontalSpace(10),
               Expanded(
                 flex: 2,
-                child: AppFillBckgroundButton(onTap: () {}, title: "Apply"),
+                child: AppFillBckgroundButton(
+                    onTap: () {}, title: LocaleKeys.filter_product_apply.tr()),
               )
             ],
           ),
@@ -64,7 +71,7 @@ class ProductsFilterScreen extends StatelessWidget {
               Row(
                 children: [
                   Text(
-                    "Categories",
+                    LocaleKeys.filter_product_categories.tr(),
                     style: AppTextStyles.bodyTitle18w400darkPeriwinkleTextStyle(
                             context)
                         .copyWith(
@@ -75,7 +82,7 @@ class ProductsFilterScreen extends StatelessWidget {
                   TextButton(
                     onPressed: () {},
                     child: Text(
-                      "View More",
+                      LocaleKeys.filter_product_view_more.tr(),
                       style: TextStyle(
                         color: AppColors.darkModeTanOrange,
                       ),
@@ -109,7 +116,7 @@ class ProductsFilterScreen extends StatelessWidget {
           ),
           verticalSpace(15),
           Text(
-            "Type",
+            LocaleKeys.filter_product_type.tr(),
             style: AppTextStyles.bodyTitle18w400darkPeriwinkleTextStyle(context)
                 .copyWith(
               fontWeight: FontWeight.w600,

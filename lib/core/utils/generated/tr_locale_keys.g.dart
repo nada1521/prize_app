@@ -194,6 +194,7 @@ abstract class  LocaleKeys {
   static const complete_profile_confirm_order_view_wishlist = 'complete_profile.confirm_order.view_wishlist';
   static const complete_profile_confirm_order_see_more_items = 'complete_profile.confirm_order.see_more_items';
   static const complete_profile_confirm_order = 'complete_profile.confirm_order';
+  static const complete_profile_sport_wishlist_add_item = 'complete_profile.sport_wishlist.add_item';
   static const complete_profile_sport_wishlist_appbar_title = 'complete_profile.sport_wishlist.appbar_title';
   static const complete_profile_sport_wishlist_wishlist_empty = 'complete_profile.sport_wishlist.wishlist_empty';
   static const complete_profile_sport_wishlist_get_to_wishing = 'complete_profile.sport_wishlist.get_to_wishing';
@@ -353,5 +354,13 @@ abstract class  LocaleKeys {
   static const product_details_review_content_goes_here = 'product_details.review_content_goes_here';
   static const product_details_sold_by = 'product_details.sold_by';
   static const product_details = 'product_details';
+  static const filter_product_men = 'filter_product.men';
+  static const filter_product_women = 'filter_product.women';
+  static const filter_product_reset = 'filter_product.reset';
+  static const filter_product_apply = 'filter_product.apply';
+  static const filter_product_categories = 'filter_product.categories';
+  static const filter_product_view_more = 'filter_product.view_more';
+  static const filter_product_type = 'filter_product.type';
+  static const filter_product = 'filter_product';
 
 }

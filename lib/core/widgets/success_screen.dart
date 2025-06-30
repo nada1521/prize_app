@@ -3,7 +3,6 @@ import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_images.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:prize/core/routing/app_router.dart';
 import 'package:prize/core/utils/extensions/text_style_extension.dart';
 import 'package:prize/core/utils/extensions/navigation_extension.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
