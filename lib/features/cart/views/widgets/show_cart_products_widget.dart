@@ -1,8 +1,10 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/constants.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
@@ -58,7 +60,7 @@ class ShowCartProductsWidget extends StatelessWidget {
                     ),
 
                     Container(
-                      height: 30.h,
+                      height: 29.h,
                       width: 100.w,
                       decoration: BoxDecoration(
                           color:
@@ -75,7 +77,9 @@ class ShowCartProductsWidget extends StatelessWidget {
                   ],
                 ),
                 InkWell(
-                  child: SvgPicture.asset(AppSvgs.heart),
+                  child: SvgPicture.asset(
+                    AppSvgs.heart,
+                  ),
                 ),
               ],
             ),
@@ -87,7 +91,7 @@ class ShowCartProductsWidget extends StatelessWidget {
                   height: 40.h,
                   width: 100.w,
                   onTap: () {},
-                  title: "Remove",
+                  title: LocaleKeys.cart_screen_remove.tr(),
                   icon: SvgPicture.asset(AppSvgs.removeTrash),
                   border: GlobalAppWidgetsStyles.containerPeriwinkleBoxBorder(
                       context),

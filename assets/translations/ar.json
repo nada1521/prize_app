@@ -450,7 +450,16 @@
   "home_title": "الرئيسية",
   "cart_title": "السلة",
   "profil_title": "الملف الشخصي"
+},
+"cart_screen": {
+  "cart_title": "سلة المشتريات",
+  "shopping_cart": "سلة التسوق الخاصة بك فارغة",
+  "shopping_title_button": "ابدأ التسوق",
+  "recently_viewed": "شوهد مؤخرًا",
+  "birthday_gifts": "هدايا عيد الميلاد",
+  "remove": "إزالة"
 }
+
 
 
 }

@@ -377,5 +377,12 @@ abstract class  LocaleKeys {
   static const nav_title_cart_title = 'nav_title.cart_title';
   static const nav_title_profil_title = 'nav_title.profil_title';
   static const nav_title = 'nav_title';
+  static const cart_screen_cart_title = 'cart_screen.cart_title';
+  static const cart_screen_shopping_cart = 'cart_screen.shopping_cart';
+  static const cart_screen_shopping_title_button = 'cart_screen.shopping_title_button';
+  static const cart_screen_recently_viewed = 'cart_screen.recently_viewed';
+  static const cart_screen_birthday_gifts = 'cart_screen.birthday_gifts';
+  static const cart_screen_remove = 'cart_screen.remove';
+  static const cart_screen = 'cart_screen';
 
 }

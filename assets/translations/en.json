@@ -435,6 +435,14 @@
   "home_title":"Home",
   "cart_title":"Cart",
   "profil_title":"Profil"
+ }, "cart_screen":{
+  "cart_title":"Cart",
+  "shopping_cart":"Your shopping cart looks empty",
+  "shopping_title_button":"Go Shopping",
+  "recently_viewed":"Recently viewed",
+  "birthday_gifts":"Birthday gifts",
+  "remove":"Remove"
+
  }
 
 }
