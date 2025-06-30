@@ -1,6 +1,8 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:prize/core/constant/app_svgs.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/features/home/view/bottom_navbar/logic/bottom_nav_bar_navigator/bottom_nav_bar_navigator_cubit.dart';
@@ -46,23 +48,22 @@ class _BottomNavBarState extends State<BottomNavBar> {
                   selectedIndex: 0,
                   iconPath: AppSvgs.home,
                 ),
-                label: 'Home',
+                label: LocaleKeys.nav_title_home_title.tr(),
               ),
               BottomNavigationBarItem(
-                icon: BottomNavbarIconWidget(
-                  cuttentIndex: cubit.currentIndex,
-                  selectedIndex: 1,
-                  iconPath: AppSvgs.shop,
-                ),
-                label: 'Shop',
-              ),
+                  icon: BottomNavbarIconWidget(
+                    cuttentIndex: cubit.currentIndex,
+                    selectedIndex: 1,
+                    iconPath: AppSvgs.shop,
+                  ),
+                  label: LocaleKeys.nav_title_shop_title.tr()),
               BottomNavigationBarItem(
                 icon: BottomNavbarIconWidget(
                   cuttentIndex: cubit.currentIndex,
                   selectedIndex: 2,
                   iconPath: AppSvgs.cart,
                 ),
-                label: 'Cart',
+                label: LocaleKeys.nav_title_cart_title.tr(),
               ),
               BottomNavigationBarItem(
                 icon: BottomNavbarIconWidget(
@@ -70,7 +71,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
                   selectedIndex: 3,
                   iconPath: AppSvgs.profile,
                 ),
-                label: 'Profile',
+                label: LocaleKeys.nav_title_profil_title.tr(),
               ),
             ],
           ),

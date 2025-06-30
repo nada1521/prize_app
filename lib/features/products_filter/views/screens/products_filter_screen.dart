@@ -56,7 +56,7 @@ class ProductsFilterScreen extends StatelessWidget {
       ),
       appBar: AppBar(
         title: Text(
-          'Filter',
+          LocaleKeys.filter_product_filter.tr(),
           style: AppTextStyles.headTitle24w600TextStyle(context),
         ),
         centerTitle: false,
