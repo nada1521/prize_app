@@ -61,7 +61,7 @@ class _DetailsItemBottomSheetWidgetState
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'Product Details',
+                        LocaleKeys.product_details_Product_details_title.tr(),
                         style: AppTextStyles.headTitle24w600TextStyle(context)
                             .copyWith(
                           fontSize: 16,

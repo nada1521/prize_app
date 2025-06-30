@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 
@@ -7,6 +8,7 @@ class AppOutLineButton extends StatelessWidget {
   final String title;
   final double? width, height;
   final Function() onTap;
+  final Widget? icon;
 
   const AppOutLineButton({
     super.key,
@@ -14,6 +16,7 @@ class AppOutLineButton extends StatelessWidget {
     required this.title,
     this.width,
     this.height,
+    this.icon,
   });
 
   @override
@@ -31,9 +34,16 @@ class AppOutLineButton extends StatelessWidget {
           child: FittedBox(
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 15.w),
-              child: Text(
-                title,
-                style: AppTextStyles.appEmptyFillColorButtonTextStyle(context),
+              child: Row(
+                children: [
+                  icon ?? SizedBox.shrink(),
+                  horizontalSpace(5),
+                  Text(
+                    title,
+                    style:
+                        AppTextStyles.appEmptyFillColorButtonTextStyle(context),
+                  ),
+                ],
               ),
             ),
           ),

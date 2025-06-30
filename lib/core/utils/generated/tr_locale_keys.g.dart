@@ -170,6 +170,7 @@ abstract class  LocaleKeys {
   static const complete_profile_next_create_wishlist = 'complete_profile.next_create_wishlist';
   static const complete_profile_next_add_items_to_wishlist = 'complete_profile.next_add_items_to_wishlist';
   static const complete_profile_add_items_to_wishlist = 'complete_profile.add_items_to_wishlist';
+  static const complete_profile_profile_complete_succesed = 'complete_profile.profile_complete_succesed';
   static const complete_profile_create_wishlist_widget_appbar_title = 'complete_profile.create_wishlist_widget.appbar_title';
   static const complete_profile_create_wishlist_widget_click_to = 'complete_profile.create_wishlist_widget.click_to';
   static const complete_profile_create_wishlist_widget_upload_image = 'complete_profile.create_wishlist_widget.upload_image';
@@ -188,10 +189,15 @@ abstract class  LocaleKeys {
   static const complete_profile_create_wishlist_widget_public_placeholder = 'complete_profile.create_wishlist_widget.public_placeholder';
   static const complete_profile_create_wishlist_widget_private = 'complete_profile.create_wishlist_widget.private';
   static const complete_profile_create_wishlist_widget_private_placeholder = 'complete_profile.create_wishlist_widget.private_placeholder';
+  static const complete_profile_create_wishlist_widget_save_and_Confirm = 'complete_profile.create_wishlist_widget.save_and_Confirm';
   static const complete_profile_create_wishlist_widget = 'complete_profile.create_wishlist_widget';
+<<<<<<< HEAD
   static const complete_profile_confirm_order_view_wishlist = 'complete_profile.confirm_order.view_wishlist';
   static const complete_profile_confirm_order_see_more_items = 'complete_profile.confirm_order.see_more_items';
   static const complete_profile_confirm_order = 'complete_profile.confirm_order';
+=======
+  static const complete_profile_sport_wishlist_add_item = 'complete_profile.sport_wishlist.add_item';
+>>>>>>> 4f059abfa36b0b1d29ce43a361c5ae61a11c5565
   static const complete_profile_sport_wishlist_appbar_title = 'complete_profile.sport_wishlist.appbar_title';
   static const complete_profile_sport_wishlist_wishlist_empty = 'complete_profile.sport_wishlist.wishlist_empty';
   static const complete_profile_sport_wishlist_get_to_wishing = 'complete_profile.sport_wishlist.get_to_wishing';
@@ -337,7 +343,12 @@ abstract class  LocaleKeys {
   static const home = 'home';
   static const product_offer = 'product.offer';
   static const product = 'product';
+  static const confirm_order_view_wishlist = 'confirm_order.view_wishlist';
+  static const confirm_order_see_more_items = 'confirm_order.see_more_items';
+  static const confirm_order = 'confirm_order';
   static const product_details_Product_details_title = 'product_details.Product_details_title';
+  static const product_details_add_to_wishlist = 'product_details.add_to_wishlist';
+  static const product_details_add_to_cart = 'product_details.add_to_cart';
   static const product_details_show_varilable_color = 'product_details.show_varilable_color';
   static const product_details_quantity_title = 'product_details.quantity_title';
   static const product_details_over_view_review_tab_overview_title = 'product_details.over_view_review_tab.overview_title';

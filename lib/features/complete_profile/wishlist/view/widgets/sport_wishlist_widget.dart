@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/widgets/app_disable_button.dart';
-import 'package:prize/core/widgets/app_enable_button.dart';
+import 'package:prize/core/widgets/app_fill_background_button.dart';
 import 'package:prize/core/widgets/dialog/base/pop_up_dialog.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/build_products_grid.dart';
 import 'package:flutter/material.dart';
@@ -30,9 +30,13 @@ class SportWishlistWidget extends StatelessWidget {
           children: [
             AppFillBckgroundButton(
               onTap: () {},
+<<<<<<< HEAD
               title: LocaleKeys
                   .complete_profile_sport_wishlist_add_items_to_wishlist
                   .tr(),
+=======
+              title: LocaleKeys.complete_profile_add_items_to_wishlist.tr(),
+>>>>>>> 4f059abfa36b0b1d29ce43a361c5ae61a11c5565
             ),
             verticalSpace(10),
             AppOutLineButton(
@@ -40,7 +44,12 @@ class SportWishlistWidget extends StatelessWidget {
                 showPopup(
                     context, YourProfileCompletedSuccessfullyPopUpWidget());
               },
+<<<<<<< HEAD
               title: LocaleKeys.complete_profile_sport_wishlist_save_and_confirm
+=======
+              title: LocaleKeys
+                  .complete_profile_create_wishlist_widget_save_and_Confirm
+>>>>>>> 4f059abfa36b0b1d29ce43a361c5ae61a11c5565
                   .tr(),
             ),
           ],

@@ -25,6 +25,10 @@ class SearchWidget extends StatelessWidget {
         fillColor: AppWidgetColor.fillWidgetByLightBackgroundColor(context)
             .withOpacity(.1),
         hintText: LocaleKeys.search_search.tr(),
+<<<<<<< HEAD
+=======
+      
+>>>>>>> 4f059abfa36b0b1d29ce43a361c5ae61a11c5565
         validator: (s) {},
         prefixIcon: Padding(
           padding: EdgeInsets.symmetric(vertical: 15.h, horizontal: 15.w),

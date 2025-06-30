@@ -6,7 +6,7 @@ import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/navigation/push_replacement.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
-import 'package:prize/core/widgets/app_enable_button.dart';
+import 'package:prize/core/widgets/app_fill_background_button.dart';
 import 'package:prize/features/home/view/screens/home_screen.dart';
 
 class YourProfileCompletedSuccessfullyPopUpWidget extends StatelessWidget {
@@ -25,7 +25,11 @@ class YourProfileCompletedSuccessfullyPopUpWidget extends StatelessWidget {
         ),
         verticalSpace(10),
         Text(
+<<<<<<< HEAD
           LocaleKeys.complete_profile_sucsses_complet_sucsses_profile.tr(),
+=======
+          LocaleKeys.complete_profile_profile_complete_succesed.tr(),
+>>>>>>> 4f059abfa36b0b1d29ce43a361c5ae61a11c5565
           style: AppTextStyles.headTitle24w600TextStyle(context).copyWith(
             fontSize: 17,
           ),
@@ -36,9 +40,13 @@ class YourProfileCompletedSuccessfullyPopUpWidget extends StatelessWidget {
             onTap: () {
               pushReplacement(context, HomeScreen());
             },
+<<<<<<< HEAD
             title: LocaleKeys
                 .complete_profile_sucsses_complet_start_your_journey
                 .tr())
+=======
+            title: LocaleKeys.on_boarding_get_started.tr())
+>>>>>>> 4f059abfa36b0b1d29ce43a361c5ae61a11c5565
       ],
     );
   }
