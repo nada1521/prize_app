@@ -58,7 +58,8 @@ class _SignupScreenState extends State<SignupScreen> {
                 verticalSpace(10),
                 Text(
                   LocaleKeys.auth_title_signup_hint.tr(),
-                  style: AppTextStyles.bodyTitle18w400TextStyle(context),
+                  style: AppTextStyles.bodyTitle18w400darkPeriwinkleTextStyle(
+                      context),
                 ),
                 verticalSpace(40),
                 SignUpFormFieldWidget(
