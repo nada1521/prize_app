@@ -2,7 +2,7 @@
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/widgets/app_disable_button.dart';
-import 'package:prize/core/widgets/app_enable_button.dart';
+import 'package:prize/core/widgets/app_fill_background_button.dart';
 import 'package:prize/core/widgets/dialog/base/pop_up_dialog.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/build_products_grid.dart';
 import 'package:flutter/material.dart';

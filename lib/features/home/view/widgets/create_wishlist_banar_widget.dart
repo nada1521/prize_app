@@ -7,7 +7,7 @@ import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
-import 'package:prize/core/widgets/app_enable_button.dart';
+import 'package:prize/core/widgets/app_fill_background_button.dart';
 
 class CreateWishlistBanarWidget extends StatelessWidget {
   const CreateWishlistBanarWidget({super.key});

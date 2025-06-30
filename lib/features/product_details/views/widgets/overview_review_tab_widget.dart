@@ -19,7 +19,7 @@ class _OverviewReviewTabWidgetState extends State<OverviewReviewTabWidget> {
 
   final List<String> titles = [
     LocaleKeys.product_details_over_view_review_tab_overview_title.tr(),
-    LocaleKeys.product_details_over_view_review_tab_review_title
+    LocaleKeys.product_details_over_view_review_tab_review_title.tr(),
   ];
 
   @override
@@ -109,7 +109,7 @@ class _OverviewReviewTabWidgetState extends State<OverviewReviewTabWidget> {
   }
 
   Widget _buildReview() {
-    return  Padding(
+    return Padding(
       padding: EdgeInsets.symmetric(horizontal: 16),
       child: Text(
         LocaleKeys.product_details_review_content_goes_here.tr(),
