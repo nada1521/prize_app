@@ -33,12 +33,12 @@ class YourProfileCompletedSuccessfullyPopUpWidget extends StatelessWidget {
         ),
         verticalSpace(10),
         AppFillBckgroundButton(
-            onTap: () {
-              pushReplacement(context, HomeScreen());
-            },
-            title: LocaleKeys
-                .complete_profile_sucsses_complet_start_your_journey
-                .tr())
+          onTap: () {
+            pushReplacement(context, HomeScreen());
+          },
+          title: LocaleKeys.complete_profile_sucsses_complet_start_your_journey
+              .tr(),
+        )
       ],
     );
   }

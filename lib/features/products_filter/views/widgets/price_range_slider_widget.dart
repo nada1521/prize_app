@@ -106,10 +106,15 @@ class _PriceRangeSliderWidgetState extends State<PriceRangeSliderWidget> {
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 8.w),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
               _minOrMaxValue(AppSvgs.currency, widget.min.toInt()),
-              Text("₺ ${widget.max.toInt()}",
+              Spacer(),
+              SvgPicture.asset(
+                AppSvgs.currency,
+                color: AppWidgetColor.fillWithContrastColor(context),
+              ),
+              Text("${widget.max.toInt()}",
                   style: AppTextStyles.meduimBody16W500TitleTextStyle(context)
                       .copyWith(fontSize: 14, color: AppColors.darkBlue)),
             ],
@@ -141,7 +146,10 @@ class _PriceRangeSliderWidgetState extends State<PriceRangeSliderWidget> {
           child: FittedBox(
             child: Row(
               children: [
-                SvgPicture.asset(AppSvgs.currency),
+                SvgPicture.asset(
+                  AppSvgs.currency,
+                  color: AppWidgetColor.fillWithContrastColor(context),
+                ),
                 Text(
                   value,
                   style: AppTextStyles.meduimBody16W500TitleTextStyle(context)
@@ -158,7 +166,10 @@ class _PriceRangeSliderWidgetState extends State<PriceRangeSliderWidget> {
   Widget _minOrMaxValue(String iconPath, int value) {
     return Row(
       children: [
-        SvgPicture.asset(iconPath),
+        SvgPicture.asset(
+          iconPath,
+          color: AppWidgetColor.fillWithContrastColor(context),
+        ),
         horizontalSpace(4),
         Text(
           "$value",

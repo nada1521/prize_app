@@ -5,6 +5,7 @@ import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
+import 'package:prize/features/cart/views/screens/cart_screen.dart';
 import 'package:prize/features/home/view/bottom_navbar/logic/bottom_nav_bar_navigator/bottom_nav_bar_navigator_cubit.dart';
 import 'package:prize/features/shop/views/screens/shop_products_screen.dart';
 import '../screens/home_screen.dart';
@@ -21,7 +22,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   final List<Widget> screens = const [
     HomeScreen(),
     ShopProductsScreen(),
-    HomeScreen(),
+    CartScreen(),
     HomeScreen(),
   ];
 
