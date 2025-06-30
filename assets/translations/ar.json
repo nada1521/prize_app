@@ -367,7 +367,9 @@
     "appbar_title": "مناسباتي القادمة",
     "events_title": {
       "birthday": "عيد ميلاد",
-      "grad": "التخرج"
+      "grad": "التخرج",
+      "7_days": "٧ أيام"
+
     }
   },"other_events": {
   "appbar_title": "مناسبات أخرى",
@@ -428,9 +430,19 @@
   "apply": "تطبيق",
   "categories": "الفئات",
   "view_more": "عرض المزيد",
-  "type": "النوع"
+  "type": "النوع",
+  "rating": "التقييم",
+"filter": "تصفية",
+"price": "السعر",
+"stars_low": "١.٢ نجمة",
+"star_high": "٥ نجوم"
+
+},
+"shop_screen": {
+  "shop_appbar": "المتجر",
+  "special_offers": "عروض خاصة",
+  "flash_sale": "تخفيضات فورية",
+  "new_arri": "وصل حديثًا"
 }
-
-
 
 }

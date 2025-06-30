@@ -36,7 +36,6 @@ class SportWishlistWidget extends StatelessWidget {
               title: LocaleKeys
                   .complete_profile_sport_wishlist_add_items_to_wishlist
                   .tr(),
-
             ),
             verticalSpace(10),
             AppOutLineButton(

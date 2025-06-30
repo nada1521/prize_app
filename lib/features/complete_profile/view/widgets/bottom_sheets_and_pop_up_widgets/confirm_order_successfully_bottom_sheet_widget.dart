@@ -30,78 +30,84 @@ class ConfirmOrderSuccessfullyBottomSheetWidget extends StatelessWidget {
         height: 400.h,
         color: AppWidgetColor.fillBackgroundColor(context),
         padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
-        child: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  width: 32.w,
-                  height: 5.h,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.circular(20.r),
-                    color: AppWidgetColor.fillWidgetColor(context),
-                  ),
-                )
-              ],
-            ),
-            verticalSpace(15),
-            Row(
-              children: [
-                Image.asset(
-                  AppImages.successImage,
-                  width: 32.w,
-                  height: 32.h,
+        child: Column(children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                width: 32.w,
+                height: 5.h,
+                decoration: BoxDecoration(
+                  shape: BoxShape.rectangle,
+                  borderRadius: BorderRadius.circular(20.r),
+                  color: AppWidgetColor.fillWidgetColor(context),
                 ),
-                horizontalSpace(5),
-                ShowProductImageWidget(
-                  imageUrl: itemData.image,
-                  height: 56.h,
-                  maxHeight: 56.h,
-                  imageScale: 1,
-                  width: 50.w,
+              )
+            ],
+          ),
+          verticalSpace(15),
+          Row(
+            children: [
+              Image.asset(
+                AppImages.successImage,
+                width: 32.w,
+                height: 32.h,
+              ),
+              horizontalSpace(5),
+              ShowProductImageWidget(
+                imageUrl: itemData.image,
+                height: 56.h,
+                maxHeight: 56.h,
+                imageScale: 1,
+                width: 50.w,
+              ),
+              verticalSpace(8),
+              ShowProductTitleWidget(
+                title: itemData.title,
+                maxLines: 2,
+                textHeight: 50.h,
+                maxHeight: 60.h,
+                style: AppTextStyles.smallHeadTitle22w400TextStyle(context)
+                    .copyWith(
+                  fontSize: 14,
                 ),
-                verticalSpace(8),
-                ShowProductTitleWidget(
-                  title: itemData.title,
-                  maxLines: 2,
-                  textHeight: 50.h,
-                  maxHeight: 60.h,
-                  style: AppTextStyles.smallHeadTitle22w400TextStyle(context)
-                      .copyWith(
-                    fontSize: 14,
-                  ),
-                ),
-              ],
-            ),
-            Spacer(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Expanded(
-                  child: AppOutLineButton(
+              ),
+            ],
+          ),
+          Spacer(),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Expanded(
+                child: AppOutLineButton(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    title: LocaleKeys
+                        .complete_profile_confirm_order_see_more_items
+                        .tr()),
+              ),
+              horizontalSpace(10),
+              AppOutLineButton(
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                  title: LocaleKeys
+                      .complete_profile_confirm_order_see_more_items
+                      .tr()),
+              horizontalSpace(12),
+              Expanded(
+                  child: AppFillBckgroundButton(
                       onTap: () {
-                        Navigator.pop(context);
+                        pushReplacement(context, CompleteProfileScreen());
                       },
                       title: LocaleKeys
-                          .complete_profile_confirm_order_see_more_items
-                          .tr()),
-                ),
-                horizontalSpace(10),
-                Expanded(
-                    child: AppFillBckgroundButton(
-                        onTap: () {
-                          pushReplacement(context, CompleteProfileScreen());
-                        },
-                        title: LocaleKeys
-                            .complete_profile_confirm_order_view_wishlist
-                            .tr())),
-              ],
-            ),
-            verticalSpace(10),
-          ],
-        ),
+                          .complete_profile_confirm_order_view_wishlist
+                          .tr())),
+              verticalSpace(10),
+            ],
+          ),
+        ]),
       ),
     );
   }

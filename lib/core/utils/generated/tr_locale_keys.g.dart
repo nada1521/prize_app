@@ -314,6 +314,7 @@ abstract class  LocaleKeys {
   static const home_upcomming_events_appbar_title = 'home.upcomming_events.appbar_title';
   static const home_upcomming_events_events_title_birthday = 'home.upcomming_events.events_title.birthday';
   static const home_upcomming_events_events_title_grad = 'home.upcomming_events.events_title.grad';
+  static const home_upcomming_events_events_title_7_days = 'home.upcomming_events.events_title.7_days';
   static const home_upcomming_events_events_title = 'home.upcomming_events.events_title';
   static const home_upcomming_events = 'home.upcomming_events';
   static const home_other_events_appbar_title = 'home.other_events.appbar_title';
@@ -361,6 +362,16 @@ abstract class  LocaleKeys {
   static const filter_product_categories = 'filter_product.categories';
   static const filter_product_view_more = 'filter_product.view_more';
   static const filter_product_type = 'filter_product.type';
+  static const filter_product_rating = 'filter_product.rating';
+  static const filter_product_filter = 'filter_product.filter';
+  static const filter_product_price = 'filter_product.price';
+  static const filter_product_stars_low = 'filter_product.stars_low';
+  static const filter_product_star_high = 'filter_product.star_high';
   static const filter_product = 'filter_product';
+  static const shop_screen_shop_appbar = 'shop_screen.shop_appbar';
+  static const shop_screen_special_offers = 'shop_screen.special_offers';
+  static const shop_screen_flash_sale = 'shop_screen.flash_sale';
+  static const shop_screen_new_arri = 'shop_screen.new_arri';
+  static const shop_screen = 'shop_screen';
 
 }
