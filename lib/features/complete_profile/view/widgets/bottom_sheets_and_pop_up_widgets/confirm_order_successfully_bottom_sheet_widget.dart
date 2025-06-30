@@ -80,28 +80,20 @@ class ConfirmOrderSuccessfullyBottomSheetWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Expanded(
-                    child: AppOutLineButton(
-                        onTap: () {
-                          Navigator.pop(context);
-                        },
-                        title: LocaleKeys
-                            .complete_profile_confirm_order_see_more_items
-                            .tr())),
-                        title: LocaleKeys.confirm_order_see_more_items.tr())),
-                        title: LocaleKeys
-                            .complete_profile_confirm_order_see_more_items
-                            .tr())),
-                horizontalSpace(12),
+                  child: AppOutLineButton(
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                      title: LocaleKeys
+                          .complete_profile_confirm_order_see_more_items
+                          .tr()),
+                ),
+                horizontalSpace(10),
                 Expanded(
                     child: AppFillBckgroundButton(
                         onTap: () {
                           pushReplacement(context, CompleteProfileScreen());
                         },
-                        title: LocaleKeys
-                            .complete_profile_confirm_order_view_wishlist
-                            .tr())),
-
-                        title: LocaleKeys.confirm_order_view_wishlist.tr())),
                         title: LocaleKeys
                             .complete_profile_confirm_order_view_wishlist
                             .tr())),
