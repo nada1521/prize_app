@@ -187,9 +187,9 @@
     "next_create_wishlist":"Next, Create Wishlist",
     "next_add_items_to_wishlist":"Next, Add Items To Wishlist",
     "add_items_to_wishlist":"Add Items To Wishlist",
+    "profile_complete_succesed":"Your profile has been completed successfully.",
     "create_wishlist_widget":{
-            "appbar_title":"Create Wishlist",
-
+      "appbar_title":"Create Wishlist",
       "click_to":"Click To",
       "upload_image":"Upload Image",
       "cover":"Cover",
@@ -206,10 +206,12 @@
       "public":"Public",
       "public_placeholder":"Anyone on prize can see your wishlist",
       "private":"Private",
-      "private_placeholder":"Only visible to you"
+      "private_placeholder":"Only visible to you",
+      "save_and_Confirm":"Save and Confirm"
     },
 
     "sport_wishlist":{
+      "add_item":"Add item",
       "appbar_title":"Sport Wishlist",
       "wishlist_empty":"Your wishlist is empty!",
       "get_to_wishing":"Get To wishing!",
@@ -379,8 +381,14 @@
  "product" : {
   "offer": "OFF"
  },
+ "confirm_order":{
+"view_wishlist":"View wishlist",
+"see_more_items":"See more items"
+ },
  "product_details":{
   "Product_details_title":"Product Details",
+  "add_to_wishlist":"Add to wishlist",
+  "add_to_cart":"Add to cart",
   "show_varilable_color":"Colors",
   "quantity_title":"Quantity",
   "over_view_review_tab":{

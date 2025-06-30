@@ -1,5 +1,8 @@
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:prize/core/utils/constants.dart';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/widgets/app_disable_button.dart';
 import 'package:prize/core/widgets/app_fill_background_button.dart';
@@ -32,7 +35,7 @@ class SportWishlistWidget extends StatelessWidget {
           children: [
             AppFillBckgroundButton(
               onTap: () {},
-              title: '+ Add items to wishlist',
+              title: LocaleKeys.complete_profile_add_items_to_wishlist.tr(),
             ),
             verticalSpace(10),
             AppOutLineButton(
@@ -40,7 +43,9 @@ class SportWishlistWidget extends StatelessWidget {
                 showPopup(
                     context, YourProfileCompletedSuccessfullyPopUpWidget());
               },
-              title: 'Save and Confirm',
+              title: LocaleKeys
+                  .complete_profile_create_wishlist_widget_save_and_Confirm
+                  .tr(),
             ),
           ],
         ),

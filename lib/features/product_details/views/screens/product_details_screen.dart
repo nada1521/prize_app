@@ -53,7 +53,7 @@ class ProductDetailsScreen extends StatelessWidget {
                     ),
                   );
                 },
-                title: "Add to wishlist",
+                title: LocaleKeys.product_details_add_to_wishlist.tr(),
                 icon: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 5.h),
                   child: SvgPicture.asset(
@@ -81,7 +81,7 @@ class ProductDetailsScreen extends StatelessWidget {
                     ),
                   );
                 },
-                title: "Add to cart",
+                title: LocaleKeys.product_details_add_to_wishlist.tr(),
                 icon: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 5.h),
                   child: SvgPicture.asset(
