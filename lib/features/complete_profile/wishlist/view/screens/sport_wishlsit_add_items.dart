@@ -5,7 +5,6 @@ import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/widgets/app_close_button.dart';
-import 'package:prize/features/complete_profile/data/models/product_model.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/build_products_items_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/build_products_grid.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +17,7 @@ class SportWishlsitAddItems extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          LocaleKeys.complete_profile_sport_wishlist_add_item,
+          LocaleKeys.complete_profile_sport_wishlist_add_item.tr(),
           style: AppTextStyles.appBarHeadTitleTextStyle(context),
         ),
         automaticallyImplyLeading: false,
