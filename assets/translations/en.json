@@ -357,7 +357,8 @@
     "appbar_title":"My Upcoming events",
     "events_title":{
       "birthday":"birthday",
-      "grad":"gradulition"
+      "grad":"gradulition",
+      "7_days":"7 days"
     }
   },
   "other_events":{
@@ -415,7 +416,18 @@
   "apply":"Apply",
   "categories":"Categories",
   "view_more":"View More",
-  "type":"Type"
-
+  "type":"Type",
+  "rating":"Rating",
+  "filter":"Filter",
+  "price":"Price",
+  "stars_low":"1.2 Stars",
+  "star_high":"5 Stars"
+ },
+ "shop_screen":{
+  "shop_appbar":"Shop",
+  "special_offers":"Special Offers",
+  "flash_sale":"Flash sale",
+  "new_arri":"New Arri"
+  
  }
 }
