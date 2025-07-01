@@ -7,6 +7,7 @@ import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/features/cart/views/screens/cart_screen.dart';
 import 'package:prize/features/home/view/bottom_navbar/logic/bottom_nav_bar_navigator/bottom_nav_bar_navigator_cubit.dart';
+import 'package:prize/features/profile/view/screen/profile_screen.dart';
 import 'package:prize/features/shop/views/screens/shop_products_screen.dart';
 import '../screens/home_screen.dart';
 import 'bottom_navbar_icon_widget.dart';
@@ -23,7 +24,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
     HomeScreen(),
     ShopProductsScreen(),
     CartScreen(),
-    HomeScreen(),
+    ProfileScreen(),
   ];
 
   @override

@@ -44,7 +44,9 @@ class EventWidget extends StatelessWidget {
           Text(
             event.eventTitle,
             style:
-                AppTextStyles.meduimBody16W500TitleTextStyle(context).copyWith(
+                AppTextStyles.meduimBody16W500DarkAndLightThemeTitleTextStyle(
+                        context)
+                    .copyWith(
               fontSize: 14,
             ),
           ),

@@ -1,4 +1,3 @@
-
 import 'package:prize/core/routing/routers.dart';
 import 'package:prize/core/utils/extensions/navigation_extension.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
@@ -62,8 +61,9 @@ class LoginScreen extends StatelessWidget {
                   verticalSpace(10),
                   Text(
                     LocaleKeys.auth_title_login_hint.tr(),
-                    style:
-                        AppTextStyles.meduimBody16W500TitleTextStyle(context),
+                    style: AppTextStyles
+                        .meduimBody16W500DarkAndLightThemeTitleTextStyle(
+                            context),
                   ),
                   verticalSpace(40),
                   LoginFormField(textFieldModels: textFieldModels),

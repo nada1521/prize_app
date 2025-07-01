@@ -115,7 +115,9 @@ class _PriceRangeSliderWidgetState extends State<PriceRangeSliderWidget> {
                 color: AppWidgetColor.fillWithContrastColor(context),
               ),
               Text("${widget.max.toInt()}",
-                  style: AppTextStyles.meduimBody16W500TitleTextStyle(context)
+                  style: AppTextStyles
+                          .meduimBody16W500DarkAndLightThemeTitleTextStyle(
+                              context)
                       .copyWith(fontSize: 14, color: AppColors.darkBlue)),
             ],
           ),
@@ -152,7 +154,9 @@ class _PriceRangeSliderWidgetState extends State<PriceRangeSliderWidget> {
                 ),
                 Text(
                   value,
-                  style: AppTextStyles.meduimBody16W500TitleTextStyle(context)
+                  style: AppTextStyles
+                          .meduimBody16W500DarkAndLightThemeTitleTextStyle(
+                              context)
                       .copyWith(fontSize: 12, color: AppColors.darkBlue),
                 ),
               ],
@@ -173,7 +177,8 @@ class _PriceRangeSliderWidgetState extends State<PriceRangeSliderWidget> {
         horizontalSpace(4),
         Text(
           "$value",
-          style: AppTextStyles.meduimBody16W500TitleTextStyle(context)
+          style: AppTextStyles.meduimBody16W500DarkAndLightThemeTitleTextStyle(
+                  context)
               .copyWith(fontSize: 14, color: AppColors.darkBlue),
         ),
       ],

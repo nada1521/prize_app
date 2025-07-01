@@ -90,9 +90,10 @@ class ConfirmOrderToCartBottomSheetWidget extends StatelessWidget {
               child: Row(
                 children: [
                   Text("Total",
-                      style:
-                          AppTextStyles.meduimBody16W500TitleTextStyle(context)
-                              .copyWith(
+                      style: AppTextStyles
+                              .meduimBody16W500DarkAndLightThemeTitleTextStyle(
+                                  context)
+                          .copyWith(
                         fontSize: 16,
                       )),
                   Spacer(),

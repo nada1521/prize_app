@@ -19,7 +19,9 @@ class AlreadyHaveAccountText extends StatelessWidget {
           TextSpan(
             text: LocaleKeys.auth_prompt_already_have_account.tr(),
             style:
-                AppTextStyles.meduimBody16W500TitleTextStyle(context).copyWith(
+                AppTextStyles.meduimBody16W500DarkAndLightThemeTitleTextStyle(
+                        context)
+                    .copyWith(
               fontSize: 14,
             ),
           ),

@@ -69,8 +69,9 @@ class UploadImageWidget extends StatelessWidget {
                           LocaleKeys
                               .complete_profile_create_wishlist_widget_click_to
                               .tr(),
-                          style: AppTextStyles.meduimBody16W500TitleTextStyle(
-                                  context)
+                          style: AppTextStyles
+                                  .meduimBody16W500DarkAndLightThemeTitleTextStyle(
+                                      context)
                               .copyWith(
                             fontSize: 14,
                           ),
@@ -80,8 +81,9 @@ class UploadImageWidget extends StatelessWidget {
                           LocaleKeys
                               .complete_profile_create_wishlist_widget_upload_image
                               .tr(),
-                          style: AppTextStyles.meduimBody16W500TitleTextStyle(
-                                  context)
+                          style: AppTextStyles
+                                  .meduimBody16W500DarkAndLightThemeTitleTextStyle(
+                                      context)
                               .copyWith(
                             fontSize: 14,
                             color: AppColors.darkModeTanOrange,

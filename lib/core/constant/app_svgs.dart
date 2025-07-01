@@ -12,6 +12,7 @@ class AppSvgs {
   static const String arrowLeft = 'assets/svgs/arrow-left.svg';  
   static const String arrowRight = 'assets/svgs/arrow-right.svg';  
   static const String calendar = 'assets/svgs/calendar.svg';  
+  static const String calendarProfileCommingEvent = 'assets/svgs/calendar_profile_comming_event.svg';  
   static const String calendarWithDay = 'assets/svgs/calendar_with_day.svg';  
   static const String callCalling = 'assets/svgs/call-calling.svg';  
   static const String cart = 'assets/svgs/cart.svg';  
@@ -20,6 +21,7 @@ class AppSvgs {
   static const String closeSquare = 'assets/svgs/close-square.svg';  
   static const String currency = 'assets/svgs/currency.svg';  
   static const String documentUpload = 'assets/svgs/document-upload.svg';  
+  static const String editPrfileIconButton = 'assets/svgs/edit-prfile_icon_button.svg';  
   static const String edit = 'assets/svgs/edit.svg';  
   static const String email = 'assets/svgs/email.svg';  
   static const String emojes = 'assets/svgs/emojes.svg';  
@@ -32,12 +34,16 @@ class AppSvgs {
   static const String onboardingImageOne = 'assets/svgs/onboarding_image_one.svg';  
   static const String onboardingImageThree = 'assets/svgs/onboarding_image_three.svg';  
   static const String onboardingImageTwo = 'assets/svgs/onboarding_image_two.svg';  
+  static const String points = 'assets/svgs/points.svg';  
+  static const String pointsIcon = 'assets/svgs/points_icon.svg';  
   static const String profile = 'assets/svgs/profile.svg';  
   static const String removeTrash = 'assets/svgs/remove_trash.svg';  
   static const String searchNormal = 'assets/svgs/search-normal.svg';  
   static const String setting = 'assets/svgs/setting.svg';  
+  static const String settingIcon = 'assets/svgs/setting_icon.svg';  
   static const String shapeVector = 'assets/svgs/shape_vector.svg';  
   static const String shareForward = 'assets/svgs/share-forward.svg';  
+  static const String shareProfileIconButton = 'assets/svgs/share_profile_icon_button.svg';  
   static const String shop = 'assets/svgs/shop.svg';  
   static const String star = 'assets/svgs/star.svg';  
   static const String successImage = 'assets/svgs/success_image.svg';  

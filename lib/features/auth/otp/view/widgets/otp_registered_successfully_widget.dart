@@ -31,7 +31,9 @@ class OtpRegisteredSuccessfullyWidget extends StatelessWidget {
         Text(
           LocaleKeys.auth_otp_registered_successfully_dialog_body.tr(),
           textAlign: TextAlign.center,
-          style: AppTextStyles.meduimBody16W500TitleTextStyle(context).copyWith(
+          style: AppTextStyles.meduimBody16W500DarkAndLightThemeTitleTextStyle(
+                  context)
+              .copyWith(
             letterSpacing: 0.5,
           ),
         ),

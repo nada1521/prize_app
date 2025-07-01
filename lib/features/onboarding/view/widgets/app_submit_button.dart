@@ -45,7 +45,7 @@ class AppSubmitButton extends StatelessWidget {
         child: Center(
           child: Text(
             title,
-            style: AppTextStyles.appFillColorButtonTextStyle(context),
+            style: AppTextStyles.appFillColorButton16w500TextStyle(context),
           ),
         ),
       ),

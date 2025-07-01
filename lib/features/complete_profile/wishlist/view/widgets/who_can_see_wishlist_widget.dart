@@ -27,7 +27,9 @@ class _WhoCanSeeWishlistWidgetState extends State<WhoCanSeeWishlistWidget> {
           LocaleKeys
               .complete_profile_create_wishlist_widget_who_can_see_your_wishlist
               .tr(),
-          style: AppTextStyles.meduimBody16W500TitleTextStyle(context).copyWith(
+          style: AppTextStyles.meduimBody16W500DarkAndLightThemeTitleTextStyle(
+                  context)
+              .copyWith(
             fontSize: 14,
           ),
         ),
@@ -90,7 +92,8 @@ class WishlistOptionTile extends StatelessWidget {
       ),
       subtitle: Text(
         subtitle,
-        style: AppTextStyles.meduimBody16W500TitleTextStyle(context),
+        style: AppTextStyles.meduimBody16W500DarkAndLightThemeTitleTextStyle(
+            context),
       ),
     );
   }

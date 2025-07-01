@@ -31,7 +31,9 @@ class SearchWidget extends StatelessWidget {
           child: SvgPicture.asset(AppSvgs.searchNormal),
         ),
         hintStyle:
-            AppTextStyles.meduimBody16W500TitleTextStyle(context).copyWith(
+            AppTextStyles.meduimBody16W500DarkAndLightThemeTitleTextStyle(
+                    context)
+                .copyWith(
           fontSize: 14,
           fontWeight: FontWeight.w400,
           color: context.isDarkTheme

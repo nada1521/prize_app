@@ -54,7 +54,8 @@ class AppFillBckgroundButton extends StatelessWidget {
                   horizontalSpace(5),
                   Text(
                     title,
-                    style: AppTextStyles.appFillColorButtonTextStyle(context),
+                    style: AppTextStyles.appFillColorButton16w500TextStyle(
+                        context),
                   ),
                 ],
               ),

@@ -42,11 +42,11 @@ class SoldByWidget extends StatelessWidget {
               Row(
                 children: [
                   Text("${LocaleKeys.product_details_sold_by.tr()}  ",
-                      style:
-                          AppTextStyles.meduimBody16W500TitleTextStyle(context)
-                              .copyWith(
+                      style: AppTextStyles
+                              .meduimBody16W500DarkAndLightThemeTitleTextStyle(
+                                  context)
+                          .copyWith(
                         fontSize: 14,
-
                       )),
                   Text('Defacto')
                 ],

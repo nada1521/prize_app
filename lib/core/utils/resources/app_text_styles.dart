@@ -7,7 +7,7 @@ class AppTextStyles {
   AppTextStyles._();
   // Global Styles //
   // ---- app button styles
-  static TextStyle appFillColorButtonTextStyle(BuildContext context) =>
+  static TextStyle appFillColorButton16w500TextStyle(BuildContext context) =>
       TextStyle(
         fontSize: 16,
         fontWeight: FontWeight.w500,
@@ -23,6 +23,11 @@ class AppTextStyles {
   static TextStyle headTitle24w600TextStyle(BuildContext context) => TextStyle(
         fontSize: 24,
         fontWeight: FontWeight.w600,
+        color: context.isDarkTheme ? AppColors.white : AppColors.darkBlue,
+      );
+  static TextStyle headTitle14w500WhiteAndDarkBlueTextStyle(BuildContext context) => TextStyle(
+        fontSize: 14,
+        fontWeight: FontWeight.w500,
         color: context.isDarkTheme ? AppColors.white : AppColors.darkBlue,
       );
   static TextStyle smallHeadTitle22w400TextStyle(BuildContext context) =>
@@ -56,13 +61,21 @@ class AppTextStyles {
             : AppColors.moreDarkPeriwinkle,
       );
 
-  static TextStyle meduimBody16W500TitleTextStyle(BuildContext context) =>
+  static TextStyle meduimBody16W500DarkAndLightThemeTitleTextStyle(
+          BuildContext context) =>
       TextStyle(
         fontSize: 16,
         fontWeight: FontWeight.w500,
         color: context.isDarkTheme
             ? AppColors.darkPeriwinkle
             : AppColors.moreLightPeriwinkle.withOpacity(.8),
+      );
+  static TextStyle meduimBody16W500WhiteOnlyTitleTextStyle(
+          BuildContext context) =>
+      TextStyle(
+        fontSize: 16,
+        fontWeight: FontWeight.w500,
+        color: AppColors.white,
       );
 
   static TextStyle smallBodyTitle12w400TextStyle(BuildContext context) =>
@@ -73,12 +86,27 @@ class AppTextStyles {
             ? AppColors.darkPeriwinkle
             : AppColors.moreLightPeriwinkle,
       );
+  static TextStyle smallBodyTitle12w500TextStyle(BuildContext context) =>
+      TextStyle(
+        fontSize: 12,
+        fontWeight: FontWeight.w500,
+        color: context.isDarkTheme
+            ? AppColors.darkPeriwinkle
+            : AppColors.moreLightPeriwinkle,
+      );
   static TextStyle smallBodyTitle12w400WithContrastColorTextStyle(
           BuildContext context) =>
       TextStyle(
         fontSize: 12,
         fontWeight: FontWeight.w400,
         color: AppWidgetColor.fillWithContrastColor(context),
+      );
+  static TextStyle smallBodyTitle12w500WhiteOnlyTextStyle(
+          BuildContext context) =>
+      TextStyle(
+        fontSize: 12,
+        fontWeight: FontWeight.w500,
+        color: AppColors.white,
       );
 
   // onBoarding

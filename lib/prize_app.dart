@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
                 navigatorKey: NavigatorManager.navigatorKey,
                 theme: AppThemes.light(context.locale.languageCode),
                 darkTheme: AppThemes.dark(context.locale.languageCode),
-                themeMode: ThemeMode.light,
+                themeMode: ThemeMode.system,
                 debugShowCheckedModeBanner: false,
                 localizationsDelegates: context.localizationDelegates,
                 supportedLocales: context.supportedLocales,

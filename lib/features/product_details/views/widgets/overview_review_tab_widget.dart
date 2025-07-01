@@ -99,7 +99,9 @@ class _OverviewReviewTabWidgetState extends State<OverviewReviewTabWidget> {
             "sed do eiusmod tempor incididunt ut labore dolore magna aliqua. "
             "Ut enim ad veniam,aliquip ex ea commodo consequat.",
             style:
-                AppTextStyles.meduimBody16W500TitleTextStyle(context).copyWith(
+                AppTextStyles.meduimBody16W500DarkAndLightThemeTitleTextStyle(
+                        context)
+                    .copyWith(
               fontWeight: FontWeight.w400,
             ),
           ),

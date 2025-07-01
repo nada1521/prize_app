@@ -41,7 +41,7 @@ class _RatingSliderWidgetState extends State<RatingSliderWidget> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-         LocaleKeys.filter_product_rating.tr(),
+          LocaleKeys.filter_product_rating.tr(),
           style: AppTextStyles.bodyTitle18w400darkPeriwinkleTextStyle(context)
               .copyWith(
             fontWeight: FontWeight.w600,
@@ -113,10 +113,10 @@ class _RatingSliderWidgetState extends State<RatingSliderWidget> {
                           child: Center(
                             child: Text(
                               currentRating.toStringAsFixed(1),
-                              style:
-                                  AppTextStyles.meduimBody16W500TitleTextStyle(
+                              style: AppTextStyles
+                                      .meduimBody16W500DarkAndLightThemeTitleTextStyle(
                                           context)
-                                      .copyWith(
+                                  .copyWith(
                                 fontSize: 12,
                                 color: AppColors.darkBlue,
                               ),
@@ -138,15 +138,19 @@ class _RatingSliderWidgetState extends State<RatingSliderWidget> {
             children: [
               Text(
                 LocaleKeys.filter_product_stars_low.tr(),
-                style: AppTextStyles.meduimBody16W500TitleTextStyle(context)
+                style: AppTextStyles
+                        .meduimBody16W500DarkAndLightThemeTitleTextStyle(
+                            context)
                     .copyWith(
                   fontSize: 14,
                   color: AppColors.darkBlue,
                 ),
               ),
               Text(
-               LocaleKeys.filter_product_star_high.tr(),
-                style: AppTextStyles.meduimBody16W500TitleTextStyle(context)
+                LocaleKeys.filter_product_star_high.tr(),
+                style: AppTextStyles
+                        .meduimBody16W500DarkAndLightThemeTitleTextStyle(
+                            context)
                     .copyWith(
                   fontSize: 14,
                   color: AppColors.darkBlue,

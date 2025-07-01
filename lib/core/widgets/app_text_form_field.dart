@@ -50,7 +50,7 @@ class _AppTextFormFieldState extends State<AppTextFormField> {
   late bool _obscureText;
 
   TextStyle get _defaultTextStyle =>
-      AppTextStyles.meduimBody16W500TitleTextStyle(context);
+      AppTextStyles.meduimBody16W500DarkAndLightThemeTitleTextStyle(context);
 
   @override
   void initState() {

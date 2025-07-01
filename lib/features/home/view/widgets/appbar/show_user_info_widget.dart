@@ -29,8 +29,10 @@ class ShowUserInfoWidget extends StatelessWidget {
           children: [
             Text(
               'Abdelrahman',
-              style: AppTextStyles.meduimBody16W500TitleTextStyle(context)
-                  .copyWith(
+              style:
+                  AppTextStyles.meduimBody16W500DarkAndLightThemeTitleTextStyle(
+                          context)
+                      .copyWith(
                 color: AppColors.primaryWhite,
               ),
             ),
@@ -44,7 +46,9 @@ class ShowUserInfoWidget extends StatelessWidget {
                 ),
                 Text(
                   'Mansoura, Egypt',
-                  style: AppTextStyles.meduimBody16W500TitleTextStyle(context)
+                  style: AppTextStyles
+                          .meduimBody16W500DarkAndLightThemeTitleTextStyle(
+                              context)
                       .copyWith(
                     fontSize: 12,
                     color: context.isDarkTheme
