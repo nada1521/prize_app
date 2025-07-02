@@ -148,9 +148,9 @@
       "email":"Email",
       "label":"Verification code",
       "enter_verification_code": "Enter the verification code",
-      "we_have_sent_code_to_phone_number": "Success! \n We’ve sent a password recovery message to your WhatsApp \n number:.Please check your WhatsApp messages. It might take a few moments.",
-      "we_have_sent_code_to_email": "Success! \n We’ve sent a password recovery message to your email.Please check your inbox or Spam folder.",
-      "did_not_receive_code": "Didn’t receive code ?",
+      "we_have_sent_code_to_phone_number": "Success! \n We've sent a password recovery message to your WhatsApp \n number:.Please check your WhatsApp messages. It might take a few moments.",
+      "we_have_sent_code_to_email": "Success! \n We've sent a password recovery message to your email.Please check your inbox or Spam folder.",
+      "did_not_receive_code": "Didn't receive code ?",
       "code": "Code",
       "otp_code_resent_check": "OTP code has been re-sent, please check",
       "wrong_otp": "You have entered an incorrect OTP code. Re-enter the code or request a new OTP code",
@@ -359,7 +359,7 @@
     "events_title":{
       "birthday":"birthday",
       "grad":"gradulition",
-      "7_days":"7 days"
+      "days":"days"
     }
   },
   "other_events":{
@@ -419,10 +419,11 @@
   "view_more":"View More",
   "type":"Type",
   "rating":"Rating",
+  "product_rat":"This is the score of the product from a customer who purchased a product",
   "filter":"Filter",
   "price":"Price",
-  "stars_low":"1.2 Stars",
-  "star_high":"5 Stars"
+  "star_low":"Star",
+  "stars_high":"Stars"
  },
  "shop_screen":{
   
@@ -443,6 +444,22 @@
   "birthday_gifts":"Birthday gifts",
   "remove":"Remove"
 
+ },"profile_screen":{
+  "edit_profile":"Edit Profile",
+  "share_profile":"Share Profile",
+  "graduation":"Graduation",
+  "birthday":"Birthday",
+  "wedding":"Wedding",
+  "user_info":{
+    "wishlist":"Wishlist",
+    "followers":"Followers",
+    "following":"Following"
+  },"personal_size":{
+    "shoes_size":"shoes size :",
+    "pants_size":"Pants size:",
+    "favourite_color":"Favourite color :",
+    "t_shirt_size":"T-shirt size:"
+  }
  }
 
 }

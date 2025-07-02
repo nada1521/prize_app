@@ -370,7 +370,7 @@
     "events_title": {
       "birthday": "عيد ميلاد",
       "grad": "التخرج",
-      "7_days": "٧ أيام"
+      "days": "أيام"
 
     }
   },"other_events": {
@@ -434,10 +434,12 @@
   "view_more": "عرض المزيد",
   "type": "النوع",
   "rating": "التقييم",
+  "product_rat": "هذا هو تقييم المنتج من عميل قام بشرائه",
+
 "filter": "تصفية",
 "price": "السعر",
-"stars_low": "١.٢ نجمة",
-"star_high": "٥ نجوم"
+"star_low": "نجمة",
+"stars_high": "نجوم"
 
 },
 "shop_screen": {
@@ -458,7 +460,25 @@
   "recently_viewed": "شوهد مؤخرًا",
   "birthday_gifts": "هدايا عيد الميلاد",
   "remove": "إزالة"
+},"profile_screen": {
+  "edit_profile": "تعديل الملف الشخصي",
+  "share_profile": "مشاركة الملف الشخصي",
+  "graduation": "التخرج",
+  "birthday": "تاريخ الميلاد",
+  "wedding": "الزفاف",
+  "user_info": {
+    "wishlist": "قائمة الرغبات",
+    "followers": "المتابِعون",
+    "following": "المتابَعون"
+  },
+  "personal_size": {
+    "shoes_size": "مقاس الحذاء:",
+    "pants_size": "مقاس البنطال:",
+    "favourite_color": "اللون المفضل:",
+    "t_shirt_size": "مقاس التيشيرت:"
+  }
 }
+
 
 
 
