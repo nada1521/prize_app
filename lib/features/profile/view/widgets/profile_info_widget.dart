@@ -1,9 +1,9 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
-import 'package:prize/core/utils/resources/app_circular_icon_button.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/features/home/view/widgets/user_avatar_widget.dart';
 import 'package:prize/features/profile/view/widgets/Bio_widget.dart';
@@ -60,14 +60,14 @@ class ProfileInfoWidget extends StatelessWidget {
                     Expanded(
                       child: ActionBottonWidget(
                         iconPath: AppSvgs.editPrfileIconButton,
-                        title: "Edit Profile",
+                        title: LocaleKeys.profile_screen_edit_profile.tr(),
                       ),
                     ),
                     horizontalSpace(10),
                     Expanded(
                       child: ActionBottonWidget(
                         iconPath: AppSvgs.shareProfileIconButton,
-                        title: "Share Profile",
+                        title: LocaleKeys.profile_screen_share_profile.tr(),
                       ),
                     )
                   ],

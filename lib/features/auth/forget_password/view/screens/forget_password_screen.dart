@@ -28,12 +28,13 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
   final phoneController = TextEditingController();
   final emailController = TextEditingController();
   late TextFieldModel _textField;
-
+  String? textLabel;
   @override
   void initState() {
     super.initState();
 
     if (widget.otpMethod == OtpMethods.phoneNumber) {
+      textLabel = LocaleKeys.auth_forget_password_label_phone.tr();
       _textField = TextFieldModel(
         isPhoneNumber: true,
         controller: phoneController,
@@ -45,6 +46,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
         ),
       );
     } else {
+      textLabel = LocaleKeys.auth_forget_password_label_male.tr();
       _textField = TextFieldModel(
         isPhoneNumber: false,
         controller: emailController,
@@ -81,7 +83,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
               ),
               verticalSpace(10),
               Text(
-                LocaleKeys.auth_forget_password_label_male.tr(),
+                textLabel!,
                 style: Theme.of(context)
                     .textTheme
                     .font16RegularDarkPeriwinkle(context),

@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:prize/core/constant/app_images.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/features/profile/data/personal_event_model.dart';
 
@@ -13,22 +14,22 @@ class ShowAllUserEvents extends StatelessWidget {
     final List<PersonalEventModel> commingEvent = [
       PersonalEventModel(
         image: AppImages.happyEmoje,
-        title: "Graduation",
+        title: LocaleKeys.profile_screen_graduation.tr(),
         date: DateTime.now(),
       ),
       PersonalEventModel(
         image: AppImages.happyEmoje,
-        title: "Birthday",
+        title: LocaleKeys.profile_screen_birthday.tr(),
         date: DateTime.now(),
       ),
       PersonalEventModel(
         image: AppImages.happyEmoje,
-        title: "Wedding",
+        title: LocaleKeys.profile_screen_wedding.tr(),
         date: DateTime.now(),
       ),
       PersonalEventModel(
         image: AppImages.happyEmoje,
-        title: "Wedding",
+        title: LocaleKeys.profile_screen_wedding.tr(),
         date: DateTime.now(),
       ),
     ];

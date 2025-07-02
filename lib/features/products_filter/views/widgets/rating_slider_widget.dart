@@ -49,7 +49,7 @@ class _RatingSliderWidgetState extends State<RatingSliderWidget> {
         ),
         verticalSpace(5),
         Text(
-          "This is the score of the product from a customer who purchased a product",
+          LocaleKeys.filter_product_product_rat.tr(),
           style: AppTextStyles.smallBodyTitle12w400TextStyle(context),
         ),
         verticalSpace(5),
@@ -137,7 +137,7 @@ class _RatingSliderWidgetState extends State<RatingSliderWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                LocaleKeys.filter_product_stars_low.tr(),
+                "${LocaleKeys.filter_product_star_low.tr()} 1.5",
                 style: AppTextStyles
                         .meduimBody16W500DarkAndLightThemeTitleTextStyle(
                             context)
@@ -147,7 +147,7 @@ class _RatingSliderWidgetState extends State<RatingSliderWidget> {
                 ),
               ),
               Text(
-                LocaleKeys.filter_product_star_high.tr(),
+                "${LocaleKeys.filter_product_stars_high.tr()}5",
                 style: AppTextStyles
                         .meduimBody16W500DarkAndLightThemeTitleTextStyle(
                             context)

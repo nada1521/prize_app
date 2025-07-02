@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 
@@ -21,15 +23,15 @@ class UserInfoWidget extends StatelessWidget {
           children: [
             InfoNumberWidget(
               number: '14',
-              title: 'Wishlist',
+              title: LocaleKeys.profile_screen_user_info_wishlist.tr(),
             ),
             InfoNumberWidget(
               number: '20',
-              title: 'Followers',
+              title: LocaleKeys.profile_screen_user_info_followers.tr(),
             ),
             InfoNumberWidget(
               number: '310',
-              title: 'Following',
+              title: LocaleKeys.profile_screen_user_info_following.tr(),
             ),
           ],
         )

@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'dart:io';
 
 void main() {
@@ -28,10 +29,10 @@ void convertTextStylesInDirectory(Directory dir) {
     );
 
     if (oldContent != newContent) {
-      print('✅ Modified: ${file.path}');
+     log('✅ Modified: ${file.path}');
       file.writeAsStringSync(newContent);
     }
   }
 
-  print('\n🎉 Done replacing AppTextStyles with Theme.of(context).textTheme');
+  log('\n🎉 Done replacing AppTextStyles with Theme.of(context).textTheme');
 }

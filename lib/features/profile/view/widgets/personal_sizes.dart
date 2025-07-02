@@ -1,15 +1,17 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 
 class PersonalSizes extends StatelessWidget {
-  const PersonalSizes({super.key});
+  PersonalSizes({super.key});
 
-  final List<String> sizes = const [
-    "shoes size : 30",
-    "Pants size: 40",
-    "Favourite color : blue",
-    "T-shirt size: XL",
+  final List<String> sizes = [
+    "${LocaleKeys.profile_screen_personal_size_shoes_size.tr()} 30",
+    "${LocaleKeys.profile_screen_personal_size_pants_size.tr()} 40",
+    "${LocaleKeys.profile_screen_personal_size_favourite_color.tr()} blue",
+    "${LocaleKeys.profile_screen_personal_size_t_shirt_size.tr()} XL",
   ];
 
   @override

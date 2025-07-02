@@ -63,7 +63,7 @@ class ComingEventWidget extends StatelessWidget {
                   height: 14.h,
                 ),
                 Text(
-                  LocaleKeys.home_upcomming_events_events_title_7_days.tr(),
+                  "${LocaleKeys.home_upcomming_events_events_title_days.tr()}7",
                   style: AppTextStyles.smallBodyTitle12w400TextStyle(context)
                       .copyWith(
                     fontWeight: FontWeight.w500,

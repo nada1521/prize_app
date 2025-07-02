@@ -1,7 +1,9 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
@@ -25,7 +27,7 @@ class CommingEventWidget extends StatelessWidget {
           SvgPicture.asset(AppSvgs.calendarProfileCommingEvent),
           horizontalSpace(10),
           Text(
-            "Birthday",
+            LocaleKeys.profile_screen_birthday.tr(),
             style: AppTextStyles.headTitle24w600TextStyle(context).copyWith(
               fontSize: 16,
               fontWeight: FontWeight.w500,
