@@ -34,6 +34,8 @@ class ProfileInfoWidget extends StatelessWidget {
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+
+              Text("${LocaleKeys.action.tr()} 1.3"),
               Expanded(
                 flex: 2,
                 child: Row(
