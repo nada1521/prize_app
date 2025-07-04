@@ -7,13 +7,15 @@ import 'package:prize/core/utils/resources/app_widget_color.dart';
 
 class ActionBottonWidget extends StatelessWidget {
   const ActionBottonWidget(
-      {super.key, required this.iconPath, required this.title});
+      {super.key, required this.iconPath, required this.title, required this.onTap});
 
   final String iconPath;
   final String title;
+  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      onTap: onTap,
         child: Container(
       padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 15.h),
       decoration: BoxDecoration(

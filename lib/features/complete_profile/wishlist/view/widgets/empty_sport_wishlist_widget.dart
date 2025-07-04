@@ -45,7 +45,7 @@ class EmptySportWishlistWidget extends StatelessWidget {
           verticalSpace(15),
           AppSubmitButton(
               onTap: () {
-                AppNavigator.pushSlideX(context, SportWishlsitAddItems());
+                AppNavigator.pushSlideX(context, SportWishlsitAddItems());  
               },
               title: LocaleKeys
                   .complete_profile_sport_wishlist_add_items_to_wishlist

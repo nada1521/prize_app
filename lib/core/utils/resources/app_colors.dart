@@ -17,7 +17,7 @@ abstract class AppColors {
   static const Color lightModeBackground = Color(0xFFFFFFFF);
   // widget color
   static const Color lightModeGray = Color(0xFFE7E9F2);
-  // static const Color outlineGray = Color(0xFFE7E9F21A);
+  static const Color gray = Color(0xFFBBC3CC);
   static const Color fillwidgetSecondDarkBlue = Color(0xFF242A36);
 
   static const Color browen = Color(0xFF440C06);
