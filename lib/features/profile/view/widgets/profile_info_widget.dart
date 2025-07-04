@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
+import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/features/home/view/widgets/user_avatar_widget.dart';
+import 'package:prize/features/profile/view/screen/edit_profile_screen.dart';
 import 'package:prize/features/profile/view/widgets/Bio_widget.dart';
 import 'package:prize/features/profile/view/widgets/action_botton_widget.dart';
 import 'package:prize/features/profile/view/widgets/comming_event_widget.dart';
@@ -34,8 +36,6 @@ class ProfileInfoWidget extends StatelessWidget {
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-
-              Text("${LocaleKeys.action.tr()} 1.3"),
               Expanded(
                 flex: 2,
                 child: Row(
@@ -61,6 +61,9 @@ class ProfileInfoWidget extends StatelessWidget {
                   children: [
                     Expanded(
                       child: ActionBottonWidget(
+                        onTap: () {
+                          pushTo(context, EditProfileScreen());
+                        },
                         iconPath: AppSvgs.editPrfileIconButton,
                         title: LocaleKeys.profile_screen_edit_profile.tr(),
                       ),
@@ -68,6 +71,7 @@ class ProfileInfoWidget extends StatelessWidget {
                     horizontalSpace(10),
                     Expanded(
                       child: ActionBottonWidget(
+                        onTap: () {},
                         iconPath: AppSvgs.shareProfileIconButton,
                         title: LocaleKeys.profile_screen_share_profile.tr(),
                       ),

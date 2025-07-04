@@ -7,6 +7,7 @@ import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/core/widgets/app_close_button.dart';
 import 'package:prize/features/complete_profile/data/models/product_model.dart';
+import 'package:prize/features/complete_profile/view/widgets/bottom_sheets_and_pop_up_widgets/bottom_sheet_doted_border_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/bottom_sheets_and_pop_up_widgets/confirm_order_successfully_bottom_sheet_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/select_size_multi_choise.dart';
 import 'package:prize/features/complete_profile/view/widgets/show_available_colors_widget.dart';
@@ -43,20 +44,7 @@ class _DetailsItemBottomSheetWidgetState
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Container(
-                        width: 32.w,
-                        height: 5.h,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.rectangle,
-                          borderRadius: BorderRadius.circular(20.r),
-                          color: AppWidgetColor.fillWidgetColor(context),
-                        ),
-                      )
-                    ],
-                  ),
+                BottomSheetDotedBorderWidget(),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [

@@ -13,12 +13,12 @@ class ShopProductsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: OrangeAppbarWidget(
+        title: LocaleKeys.nav_title_shop_title.tr(),
+        showBackButton: false,
+      ),
       body: CustomScrollView(
         slivers: [
-          OrangeAppbarWidget(
-            title: LocaleKeys.nav_title_shop_title.tr(),
-            showBackButton: false,
-          ),
           SliverToBoxAdapter(
             child: verticalSpace(10),
           ),

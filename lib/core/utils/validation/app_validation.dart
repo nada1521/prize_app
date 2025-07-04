@@ -79,6 +79,13 @@ abstract class AppValidation {
     return null;
   }
 
+  static String? bioValidation(String? password) {
+    if (password!.isEmpty) {
+      return LocaleKeys.common_validation_this_field_required.tr();
+    } 
+    return null;
+  }
+
   static String? confirmPasswordValidation(
       String password, String? confirmPassword) {
     if (confirmPassword!.isEmpty) {

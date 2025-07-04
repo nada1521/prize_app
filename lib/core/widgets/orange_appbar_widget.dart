@@ -7,14 +7,14 @@ import 'package:prize/core/utils/resources/app_colors.dart' show AppColors;
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 
-class OrangeAppbarWidget extends StatelessWidget {
+class OrangeAppbarWidget extends StatelessWidget
+    implements PreferredSizeWidget {
   const OrangeAppbarWidget({
     super.key,
     required this.title,
     this.showBackButton = true,
     this.onBackTap,
     this.suffixIcon,
-    this.onSuffixTap,
     this.height,
   });
 
@@ -22,21 +22,21 @@ class OrangeAppbarWidget extends StatelessWidget {
   final bool showBackButton;
   final VoidCallback? onBackTap;
   final double? height;
-  final String? suffixIcon;
-  final VoidCallback? onSuffixTap;
+  final Widget? suffixIcon;
+
+  @override
+  Size get preferredSize => Size.fromHeight(height ?? 90.h);
 
   @override
   Widget build(BuildContext context) {
-    return SliverAppBar(
-      toolbarHeight: 0,
-      pinned: true,
-      automaticallyImplyLeading: false,
-      bottom: PreferredSize(
-        preferredSize: Size.fromHeight(height ?? 90.h),
-        child: Container(
-          constraints: BoxConstraints(maxHeight: 90.h),
-          padding: EdgeInsets.symmetric(vertical: 10.h, horizontal: 15.w),
-          color: AppWidgetColor.fillWidgetWithOrangeAndDarkColor(context),
+    return PreferredSize(
+      preferredSize: Size.fromHeight(height ?? 90.h),
+      child: Container(
+        constraints: BoxConstraints(maxHeight: 90.h),
+        padding: EdgeInsets.symmetric(vertical: 10.h, horizontal: 15.w),
+        color: AppWidgetColor.fillWidgetWithOrangeAndDarkColor(context),
+        child: Padding(
+          padding: EdgeInsets.only(top: 10.h),
           child: Row(
             children: [
               // Back button (optional)
@@ -62,11 +62,7 @@ class OrangeAppbarWidget extends StatelessWidget {
               if (suffixIcon != null) Spacer(),
 
               // Suffix icon (optional)
-              if (suffixIcon != null)
-                AppCircularIconButton(
-                  iconPath: suffixIcon!,
-                  onTap: onSuffixTap ?? () {},
-                ),
+              if (suffixIcon != null) suffixIcon!
             ],
           ),
         ),

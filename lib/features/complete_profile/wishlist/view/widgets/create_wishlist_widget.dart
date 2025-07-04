@@ -12,9 +12,10 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 class CreateWishlistWidget extends StatelessWidget {
-  const CreateWishlistWidget({super.key, required this.pageController});
-  final PageController pageController;
+  const CreateWishlistWidget({super.key, this.pageController , this.nextButton});
+  final PageController? pageController;
 
+  final Widget? nextButton;
   @override
   Widget build(BuildContext context) {
     final birthdayController = TextEditingController();
@@ -102,8 +103,8 @@ class CreateWishlistWidget extends StatelessWidget {
           verticalSpace(15),
           WhoCanSeeWishlistWidget(),
           verticalSpace(15),
-          NextButtonWidget(
-            pageController: pageController,
+         nextButton ??  NextButtonWidget(
+            pageController: pageController!,
           ),
         ],
       ),

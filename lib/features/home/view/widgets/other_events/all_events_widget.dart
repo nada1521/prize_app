@@ -12,23 +12,23 @@ class AllEventsWidget extends StatelessWidget {
     List<EventModel> events = [
       EventModel(
         speakerImage:
-            'https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-1/484433372_611971701821074_6534602678444115531_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=M8AHQ14Khf0Q7kNvwHnm5xH&_nc_oc=AdliMK6KO7LpRjYsbNg1xGWPtEKyjnsIomO5WW9vpcU_NwUPLImNYdt8Ot34jf8aWuY&_nc_zt=24&_nc_ht=scontent.fcai19-11.fna&_nc_gid=P5vZBcXVWB50UOvyUSgxnQ&oh=00_AfPLs-RaVsV7cmhTBUI0asM62K4l4JBgajYUyBZDdoDt0A&oe=6864B99C',
+            'https://cdn.pixabay.com/photo/2023/06/23/11/23/ai-generated-8083323_1280.jpg',
         speakerName: "Mostfa Omar",
         eventTitle: LocaleKeys.home_other_events_event_model_title.tr(),
         date: DateTime.now(),
       ),
       EventModel(
         speakerImage:
-            'https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-1/484433372_611971701821074_6534602678444115531_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=M8AHQ14Khf0Q7kNvwHnm5xH&_nc_oc=AdliMK6KO7LpRjYsbNg1xGWPtEKyjnsIomO5WW9vpcU_NwUPLImNYdt8Ot34jf8aWuY&_nc_zt=24&_nc_ht=scontent.fcai19-11.fna&_nc_gid=P5vZBcXVWB50UOvyUSgxnQ&oh=00_AfPLs-RaVsV7cmhTBUI0asM62K4l4JBgajYUyBZDdoDt0A&oe=6864B99C',
+            'https://cdn.pixabay.com/photo/2023/06/23/11/23/ai-generated-8083323_1280.jpg',
         speakerName: "Ali Ahmed",
-        eventTitle:  LocaleKeys.home_other_events_event_model_title.tr(),
+        eventTitle: LocaleKeys.home_other_events_event_model_title.tr(),
         date: DateTime.now(),
       ),
       EventModel(
         speakerImage:
-            'https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-1/484433372_611971701821074_6534602678444115531_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=M8AHQ14Khf0Q7kNvwHnm5xH&_nc_oc=AdliMK6KO7LpRjYsbNg1xGWPtEKyjnsIomO5WW9vpcU_NwUPLImNYdt8Ot34jf8aWuY&_nc_zt=24&_nc_ht=scontent.fcai19-11.fna&_nc_gid=P5vZBcXVWB50UOvyUSgxnQ&oh=00_AfPLs-RaVsV7cmhTBUI0asM62K4l4JBgajYUyBZDdoDt0A&oe=6864B99C',
+            'https://cdn.pixabay.com/photo/2023/06/23/11/23/ai-generated-8083323_1280.jpg',
         speakerName: "Omar Ahmed",
-        eventTitle:  LocaleKeys.home_other_events_event_model_title.tr(),
+        eventTitle: LocaleKeys.home_other_events_event_model_title.tr(),
         date: DateTime.now(),
       ),
     ];
