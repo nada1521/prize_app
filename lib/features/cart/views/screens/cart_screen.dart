@@ -13,47 +13,49 @@ class CartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(
-      slivers: [
-        OrangeAppbarWidget(
-          title: " ${LocaleKeys.cart_screen_cart_title.tr()} 0 ",
-          showBackButton: false,
-        ),
-        SliverToBoxAdapter(
-          child: ShowCartProductsWidget(),
-        ),
-        SliverToBoxAdapter(
-          child: EmptyShoppingCartWidget(),
-        ),
-        SliverToBoxAdapter(
-          child: HomeFeaturesAppbar(
-              featureLable: LocaleKeys.cart_screen_recently_viewed.tr()),
-        ),
-        SliverToBoxAdapter(
-          child: SizedBox(
-            width: double.infinity,
-            height: 350.h,
-            child: Padding(
-              padding: EdgeInsetsDirectional.only(start: 10.w, end: 10.w),
-              child: AllMothersDayGiftsWidget(),
+    return Scaffold(
+      appBar: OrangeAppbarWidget(
+        title: " ${LocaleKeys.cart_screen_cart_title.tr()} 0 ",
+        showBackButton: false,
+      ),
+      body: CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(
+            child: ShowCartProductsWidget(),
+          ),
+          SliverToBoxAdapter(
+            child: EmptyShoppingCartWidget(),
+          ),
+          SliverToBoxAdapter(
+            child: HomeFeaturesAppbar(
+                featureLable: LocaleKeys.cart_screen_recently_viewed.tr()),
+          ),
+          SliverToBoxAdapter(
+            child: SizedBox(
+              width: double.infinity,
+              height: 350.h,
+              child: Padding(
+                padding: EdgeInsetsDirectional.only(start: 10.w, end: 10.w),
+                child: AllMothersDayGiftsWidget(),
+              ),
             ),
           ),
-        ),
-        SliverToBoxAdapter(
-          child: HomeFeaturesAppbar(
-              featureLable: LocaleKeys.cart_screen_birthday_gifts.tr()),
-        ),
-        SliverToBoxAdapter(
-          child: SizedBox(
-            width: double.infinity,
-            height: 350.h,
-            child: Padding(
-              padding: EdgeInsetsDirectional.only(start: 10.w, end: 10.w),
-              child: AllMothersDayGiftsWidget(),
+          SliverToBoxAdapter(
+            child: HomeFeaturesAppbar(
+                featureLable: LocaleKeys.cart_screen_birthday_gifts.tr()),
+          ),
+          SliverToBoxAdapter(
+            child: SizedBox(
+              width: double.infinity,
+              height: 350.h,
+              child: Padding(
+                padding: EdgeInsetsDirectional.only(start: 10.w, end: 10.w),
+                child: AllMothersDayGiftsWidget(),
+              ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

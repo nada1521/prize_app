@@ -42,6 +42,7 @@ class AppWidgetColor {
 
   // text field
   static Color outlineWidgetColor = AppColors.lightModeGray.withOpacity(.5);
+  static Color dotedFillColor(BuildContext context) => context.isDarkMode ? AppColors.darkBlue : AppColors.gray;
 
   static Color fillBackgroundColor(BuildContext context) =>
       context.isDarkMode ? AppColors.darkModeBackground : AppColors.white;

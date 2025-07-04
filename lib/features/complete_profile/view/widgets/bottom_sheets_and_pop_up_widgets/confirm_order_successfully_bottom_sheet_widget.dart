@@ -11,6 +11,7 @@ import 'package:prize/core/widgets/app_disable_button.dart';
 import 'package:prize/core/widgets/app_fill_background_button.dart';
 import 'package:prize/features/complete_profile/data/models/product_model.dart';
 import 'package:prize/features/complete_profile/view/screens/complete_profile_screen.dart';
+import 'package:prize/features/complete_profile/view/widgets/bottom_sheets_and_pop_up_widgets/bottom_sheet_doted_border_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_image_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_title_widget.dart';
 
@@ -32,20 +33,7 @@ class ConfirmOrderSuccessfullyBottomSheetWidget extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
         child: Column(
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  width: 32.w,
-                  height: 5.h,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.circular(20.r),
-                    color: AppWidgetColor.fillWidgetColor(context),
-                  ),
-                )
-              ],
-            ),
+           BottomSheetDotedBorderWidget(),
             verticalSpace(15),
             Row(
               children: [

@@ -33,7 +33,8 @@ class DaysLeftWidget extends StatelessWidget {
           FittedBox(
             child: Padding(
               padding: EdgeInsetsDirectional.only(end: 5.w, start: 5.w),
-              child: Text("${LocaleKeys.home_upcomming_events_events_title_days.tr()}7"),
+              child: Text(
+                  "7 ${LocaleKeys.home_upcomming_events_events_title_days.tr()}"),
             ),
           ),
         ],

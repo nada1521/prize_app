@@ -5,6 +5,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
+import 'package:prize/core/utils/resources/app_circular_icon_button.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
@@ -100,7 +101,10 @@ class ProductDetailsScreen extends StatelessWidget {
         slivers: [
           OrangeAppbarWidget(
             title: LocaleKeys.product_details_Product_details_title.tr(),
-            suffixIcon: AppSvgs.shareForward,
+            suffixIcon: AppCircularIconButton(
+              iconPath: AppSvgs.shareForward,
+              onTap: () {},
+            ),
           ),
           SliverToBoxAdapter(
             child: Column(
