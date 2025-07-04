@@ -5,8 +5,6 @@ import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
-import 'package:prize/features/auth/signup/data/text_field_model.dart';
-import 'package:prize/features/auth/signup/view/widgets/signup_form_field_widget.dart';
 import 'package:prize/features/home/view/widgets/user_avatar_widget.dart';
 import 'package:prize/features/onboarding/view/widgets/app_submit_button.dart';
 import 'package:prize/features/profile/view/widgets/edit_profile_form_field_widget.dart';

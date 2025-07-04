@@ -400,5 +400,30 @@ abstract class  LocaleKeys {
   static const profile_screen_personal_size_t_shirt_size = 'profile_screen.personal_size.t_shirt_size';
   static const profile_screen_personal_size = 'profile_screen.personal_size';
   static const profile_screen = 'profile_screen';
+  static const setting_screen_screen_name = 'setting_screen.screen_name';
+  static const setting_screen_points = 'setting_screen.points';
+  static const setting_screen_general_settings_items_mode = 'setting_screen.general_settings_items.mode';
+  static const setting_screen_general_settings_items_change_password = 'setting_screen.general_settings_items.change_password';
+  static const setting_screen_general_settings_items_notification = 'setting_screen.general_settings_items.notification';
+  static const setting_screen_general_settings_items_language = 'setting_screen.general_settings_items.language';
+  static const setting_screen_general_settings_items_my_orders = 'setting_screen.general_settings_items.my_orders';
+  static const setting_screen_general_settings_items_my_address = 'setting_screen.general_settings_items.my_address';
+  static const setting_screen_general_settings_items_my_wallet = 'setting_screen.general_settings_items.my_wallet';
+  static const setting_screen_general_settings_items = 'setting_screen.general_settings_items';
+  static const setting_screen_info_settings_items_contact_us = 'setting_screen.info_settings_items.contact_us';
+  static const setting_screen_info_settings_items_customer_support = 'setting_screen.info_settings_items.customer_support';
+  static const setting_screen_info_settings_items_faqs = 'setting_screen.info_settings_items.faqs';
+  static const setting_screen_info_settings_items_blog = 'setting_screen.info_settings_items.blog';
+  static const setting_screen_info_settings_items_about = 'setting_screen.info_settings_items.about';
+  static const setting_screen_info_settings_items = 'setting_screen.info_settings_items';
+  static const setting_screen_policy_settings_items_privacy_policy = 'setting_screen.policy_settings_items.privacy_policy';
+  static const setting_screen_policy_settings_items_terms_and_condition = 'setting_screen.policy_settings_items.terms_and_condition';
+  static const setting_screen_policy_settings_items_warranty_policy = 'setting_screen.policy_settings_items.warranty_policy';
+  static const setting_screen_policy_settings_items_return_and_exchange = 'setting_screen.policy_settings_items.return_and_exchange';
+  static const setting_screen_policy_settings_items_become_a_Seller = 'setting_screen.policy_settings_items.become_a_Seller';
+  static const setting_screen_policy_settings_items_logout = 'setting_screen.policy_settings_items.logout';
+  static const setting_screen_policy_settings_items_delete_account = 'setting_screen.policy_settings_items.delete_account';
+  static const setting_screen_policy_settings_items = 'setting_screen.policy_settings_items';
+  static const setting_screen = 'setting_screen';
 
 }
