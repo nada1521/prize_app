@@ -1,10 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
-import 'package:prize/core/utils/common/languages.dart';
 import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
@@ -20,9 +18,7 @@ import 'package:prize/features/setting/notifications/views/screens/notifications
 import 'package:prize/features/setting/policy/screens/privacy_policy_screen.dart';
 import 'package:prize/features/setting/view/widget/change_language_button.dart';
 import 'package:prize/features/setting/view/widget/change_theme_button.dart';
-import 'package:prize/features/setting/view/widget/custom_theme_switch_button_widget.dart';
 import 'package:prize/features/setting/view/widget/points_widget.dart';
-import 'package:prize/features/theme/bloc/theme_cubit.dart';
 
 class SettingScreen extends StatefulWidget {
   const SettingScreen({super.key});
@@ -37,12 +33,13 @@ class _SettingScreenState extends State<SettingScreen> {
     List<SettingItemModel> generalSettingsItems = [
       SettingItemModel(
         imagePath: AppSvgs.moonSettingChangeModeIcon,
-        title: "Mode",
+        title: LocaleKeys.setting_screen_general_settings_items_mode.tr(),
         isDarkModeButton: true,
       ),
       SettingItemModel(
         imagePath: AppSvgs.lockSettingChangePasswordIcon,
-        title: "Change Password",
+        title: LocaleKeys.setting_screen_general_settings_items_change_password
+            .tr(),
         onTap: () => pushTo(
           context,
           ChangePasswordScreen(),
@@ -50,7 +47,8 @@ class _SettingScreenState extends State<SettingScreen> {
       ),
       SettingItemModel(
         imagePath: AppSvgs.notificationBingSettingsIcon,
-        title: "Notification",
+        title:
+            LocaleKeys.setting_screen_general_settings_items_notification.tr(),
         onTap: () => pushTo(
           context,
           NotificationsScreen(),
@@ -58,63 +56,27 @@ class _SettingScreenState extends State<SettingScreen> {
       ),
       SettingItemModel(
         imagePath: AppSvgs.changeLanguageIcon,
-        title: "Language",
+        title: LocaleKeys.setting_screen_general_settings_items_language.tr(),
         isChangeLanguageButton: true,
       ),
-      SettingItemModel(imagePath: AppSvgs.ordersIcon, title: "My Orders"),
-          imagePath: AppSvgs.moonSettingChangeModeIcon,
-          title: LocaleKeys.setting_screen_general_settings_items_mode.tr()),
-      SettingItemModel(
-          imagePath: AppSvgs.lockSettingChangePasswordIcon,
-          title: LocaleKeys
-              .setting_screen_general_settings_items_change_password
-              .tr()),
-      SettingItemModel(
-          imagePath: AppSvgs.notificationBingSettingsIcon,
-          title: LocaleKeys.setting_screen_general_settings_items_notification
-              .tr()),
-      SettingItemModel(
-          imagePath: AppSvgs.changeLanguageIcon,
-          title:
-              LocaleKeys.setting_screen_general_settings_items_language.tr()),
       SettingItemModel(
           imagePath: AppSvgs.ordersIcon,
           title:
               LocaleKeys.setting_screen_general_settings_items_my_orders.tr()),
       SettingItemModel(
-          imagePath: AppSvgs.locationSettingIcon,
-          title:
-              LocaleKeys.setting_screen_general_settings_items_my_address.tr()),
-      SettingItemModel(
           imagePath: AppSvgs.wallet,
           title:
               LocaleKeys.setting_screen_general_settings_items_my_wallet.tr()),
     ];
-
     List<SettingItemModel> infoSettingsItems = [
       SettingItemModel(
         imagePath: AppSvgs.callContactUsSettingIcon,
-        title: "Contact us",
+        title: LocaleKeys.setting_screen_info_settings_items_contact_us.tr(),
         onTap: () => pushTo(
           context,
           ContactUsScreens(),
         ),
       ),
-      SettingItemModel(
-          imagePath: AppSvgs.callContactUsSettingIcon,
-          title: "Customer Support"),
-      SettingItemModel(imagePath: AppSvgs.messageQuestion, title: "FAQs"),
-      SettingItemModel(imagePath: AppSvgs.blogIcon, title: "Blog"),
-      SettingItemModel(
-        imagePath: AppSvgs.infoCircle,
-        title: "About",
-        onTap: () => pushTo(
-          context,
-          AboutScreen(),
-        ),
-      ),
-          imagePath: AppSvgs.callContactUsSettingIcon,
-          title: LocaleKeys.setting_screen_info_settings_items_contact_us.tr()),
       SettingItemModel(
           imagePath: AppSvgs.callContactUsSettingIcon,
           title: LocaleKeys.setting_screen_info_settings_items_customer_support
@@ -124,22 +86,24 @@ class _SettingScreenState extends State<SettingScreen> {
           title: LocaleKeys.setting_screen_info_settings_items_faqs.tr()),
       SettingItemModel(
           imagePath: AppSvgs.blogIcon,
-          title: LocaleKeys.setting_screen_info_settings_items_faqs.tr()),
+          title: LocaleKeys.setting_screen_info_settings_items_blog.tr()),
       SettingItemModel(
-          imagePath: AppSvgs.infoCircle,
-          title: LocaleKeys.setting_screen_info_settings_items_about.tr()),
+        imagePath: AppSvgs.infoCircle,
+        title: LocaleKeys.setting_screen_info_settings_items_about.tr(),
+        onTap: () => pushTo(
+          context,
+          AboutScreen(),
+        ),
+      ),
     ];
 
     List<SettingItemModel> policySettingsItems = [
       SettingItemModel(
-        imagePath: AppSvgs.documentText,
-        title: "Privacy Policy",
-        onTap: () => pushTo(
-          context,
-          PrivacyPolicyScreen(),
-        ),
-      ),
           imagePath: AppSvgs.documentText,
+          onTap: () => pushTo(
+                context,
+                PrivacyPolicyScreen(),
+              ),
           title: LocaleKeys.setting_screen_policy_settings_items_privacy_policy
               .tr()),
       SettingItemModel(
