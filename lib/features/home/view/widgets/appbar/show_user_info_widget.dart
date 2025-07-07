@@ -40,9 +40,10 @@ class ShowUserInfoWidget extends StatelessWidget {
               spacing: 7.w,
               children: [
                 SvgPicture.asset(
-                  AppSvgs.location,
+                  AppSvgs.homeLocationIcon,
                   width: 16.w,
                   height: 16.h,
+                  color: AppColors.white,
                 ),
                 Text(
                   'Mansoura, Egypt',
@@ -77,7 +78,7 @@ class ShowUserInfoWidget extends StatelessWidget {
               child: Stack(
                 children: [
                   SvgPicture.asset(
-                    AppSvgs.notificationBing,
+                    AppSvgs.homeNotificationBingIcon,
                     // fit: BoxFit.cover,
                   ),
                   Positioned(

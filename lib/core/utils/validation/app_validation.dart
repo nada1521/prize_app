@@ -82,7 +82,7 @@ abstract class AppValidation {
   static String? bioValidation(String? password) {
     if (password!.isEmpty) {
       return LocaleKeys.common_validation_this_field_required.tr();
-    } 
+    }
     return null;
   }
 
@@ -95,17 +95,20 @@ abstract class AppValidation {
     }
     return null;
   }
-  static String? favouriteColorValidation(
-      String color) {
+
+  static String? favouriteColorValidation(String color) {
     return null;
   }
-  static String? paintsSizeValidation(
-      String color) {
+
+  static String? paintsSizeValidation(String color) {
     return null;
   }
-  static String? shoesSizeValidation(
-      String color) {
+
+  static String? shoesSizeValidation(String color) {
     return null;
   }
-  
+
+  static String? contactUsMessageValidation(String message) {
+    return null;
+  }
 }

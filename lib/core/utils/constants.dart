@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:prize/core/utils/extensions/context_extension.dart';
 import 'package:prize/features/complete_profile/data/models/product_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -124,3 +126,6 @@ checkFirstTimeChecker() async {
   final bool isFirstTime = prefs.getBool('isFirstTime') ?? true;
   isFirstTimeForUser = isFirstTime;
 }
+
+
+EdgeInsetsGeometry screensPadding = EdgeInsets.symmetric(horizontal: 20.w , vertical: 20.h ,); 

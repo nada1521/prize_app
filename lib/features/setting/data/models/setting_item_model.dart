@@ -3,9 +3,13 @@ class SettingItemModel {
   final String imagePath;
   final String title;
   void Function()? onTap;
+  final bool? isDarkModeButton;
+  final bool? isChangeLanguageButton;
   SettingItemModel({
     required this.imagePath,
     required this.title,
     this.onTap,
+    this.isChangeLanguageButton,
+    this.isDarkModeButton,
   });
 }
