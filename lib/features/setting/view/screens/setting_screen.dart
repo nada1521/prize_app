@@ -1,23 +1,67 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
+import 'package:prize/core/utils/common/languages.dart';
+import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
+import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
+import 'package:prize/features/setting/about/views/screens/about_screen.dart';
+import 'package:prize/features/setting/change_password/views/screens/change_password_screen.dart';
+import 'package:prize/features/setting/contact_us/view/screens/contact_us_screens.dart';
 import 'package:prize/features/setting/data/models/setting_item_model.dart';
+import 'package:prize/features/setting/notifications/views/screens/notifications_screen.dart';
+import 'package:prize/features/setting/policy/screens/privacy_policy_screen.dart';
+import 'package:prize/features/setting/view/widget/change_language_button.dart';
+import 'package:prize/features/setting/view/widget/change_theme_button.dart';
+import 'package:prize/features/setting/view/widget/custom_theme_switch_button_widget.dart';
 import 'package:prize/features/setting/view/widget/points_widget.dart';
+import 'package:prize/features/theme/bloc/theme_cubit.dart';
 
-class SettingScreen extends StatelessWidget {
+class SettingScreen extends StatefulWidget {
   const SettingScreen({super.key});
 
+  @override
+  State<SettingScreen> createState() => _SettingScreenState();
+}
+
+class _SettingScreenState extends State<SettingScreen> {
   @override
   Widget build(BuildContext context) {
     List<SettingItemModel> generalSettingsItems = [
       SettingItemModel(
+        imagePath: AppSvgs.moonSettingChangeModeIcon,
+        title: "Mode",
+        isDarkModeButton: true,
+      ),
+      SettingItemModel(
+        imagePath: AppSvgs.lockSettingChangePasswordIcon,
+        title: "Change Password",
+        onTap: () => pushTo(
+          context,
+          ChangePasswordScreen(),
+        ),
+      ),
+      SettingItemModel(
+        imagePath: AppSvgs.notificationBingSettingsIcon,
+        title: "Notification",
+        onTap: () => pushTo(
+          context,
+          NotificationsScreen(),
+        ),
+      ),
+      SettingItemModel(
+        imagePath: AppSvgs.changeLanguageIcon,
+        title: "Language",
+        isChangeLanguageButton: true,
+      ),
+      SettingItemModel(imagePath: AppSvgs.ordersIcon, title: "My Orders"),
           imagePath: AppSvgs.moonSettingChangeModeIcon,
           title: LocaleKeys.setting_screen_general_settings_items_mode.tr()),
       SettingItemModel(
@@ -49,6 +93,26 @@ class SettingScreen extends StatelessWidget {
 
     List<SettingItemModel> infoSettingsItems = [
       SettingItemModel(
+        imagePath: AppSvgs.callContactUsSettingIcon,
+        title: "Contact us",
+        onTap: () => pushTo(
+          context,
+          ContactUsScreens(),
+        ),
+      ),
+      SettingItemModel(
+          imagePath: AppSvgs.callContactUsSettingIcon,
+          title: "Customer Support"),
+      SettingItemModel(imagePath: AppSvgs.messageQuestion, title: "FAQs"),
+      SettingItemModel(imagePath: AppSvgs.blogIcon, title: "Blog"),
+      SettingItemModel(
+        imagePath: AppSvgs.infoCircle,
+        title: "About",
+        onTap: () => pushTo(
+          context,
+          AboutScreen(),
+        ),
+      ),
           imagePath: AppSvgs.callContactUsSettingIcon,
           title: LocaleKeys.setting_screen_info_settings_items_contact_us.tr()),
       SettingItemModel(
@@ -68,6 +132,13 @@ class SettingScreen extends StatelessWidget {
 
     List<SettingItemModel> policySettingsItems = [
       SettingItemModel(
+        imagePath: AppSvgs.documentText,
+        title: "Privacy Policy",
+        onTap: () => pushTo(
+          context,
+          PrivacyPolicyScreen(),
+        ),
+      ),
           imagePath: AppSvgs.documentText,
           title: LocaleKeys.setting_screen_policy_settings_items_privacy_policy
               .tr()),
@@ -141,25 +212,46 @@ class SettingScreen extends StatelessWidget {
                   final group = groupedItems[groupIndex];
                   return Column(
                     children: group
-                        .map((item) => ListTile(
-                              title: Text(
-                                item.title,
-                                style: AppTextStyles
-                                    .meduimHead16w500TitleTextStyle(context),
+                        .map(
+                          (item) => ListTile(
+                            title: InkWell(
+                              onTap: item.onTap,
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    item.title,
+                                    style: AppTextStyles
+                                        .meduimHead16w500TitleTextStyle(
+                                            context),
+                                  ),
+                                  Spacer(),
+                                  if (item.isChangeLanguageButton == true)
+                                    ChangeLanguageButton(),
+                                  if (item.isDarkModeButton != null)
+                                    ChangeThemeButton(),
+                                  item.isDarkModeButton == null
+                                      ? GlobalAppWidgetsStyles
+                                          .settingArrowWidget(context)
+                                      : SizedBox.shrink()
+                                ],
                               ),
-                              leading: Container(
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: 10.w, vertical: 10.h),
-                                decoration: BoxDecoration(
-                                  color: groupIndex == 3
-                                      ? AppColors.darkModeTanOrange
-                                      : AppColors.white,
-                                  shape: BoxShape.rectangle,
-                                  borderRadius: BorderRadius.circular(16.r),
-                                ),
-                                child: SvgPicture.asset(item.imagePath),
+                            ),
+                            leading: Container(
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 10.w, vertical: 10.h),
+                              decoration: BoxDecoration(
+                                color: groupIndex == 3
+                                    ? AppColors.darkModeTanOrange
+                                    : AppColors.white,
+                                shape: BoxShape.rectangle,
+                                borderRadius: BorderRadius.circular(16.r),
                               ),
-                            ))
+                              child: SvgPicture.asset(item.imagePath),
+                            ),
+                          ),
+                        )
                         .toList(),
                   );
                 },

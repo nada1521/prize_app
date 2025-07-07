@@ -23,6 +23,7 @@ class AppSvgs {
   static const String closeCircle = 'assets/svgs/close-circle.svg';  
   static const String closeSquare = 'assets/svgs/close-square.svg';  
   static const String currency = 'assets/svgs/currency.svg';  
+  static const String darkModeChangeThemeToDark = 'assets/svgs/dark_mode_change_theme_to_dark.svg';  
   static const String darkModeIcon = 'assets/svgs/dark_mode_icon.svg';  
   static const String documentText = 'assets/svgs/document-text.svg';  
   static const String documentUpload = 'assets/svgs/document-upload.svg';  
@@ -34,6 +35,8 @@ class AppSvgs {
   static const String gift = 'assets/svgs/gift.svg';  
   static const String heart = 'assets/svgs/heart.svg';  
   static const String home = 'assets/svgs/home.svg';  
+  static const String homeLocationIcon = 'assets/svgs/home_location_icon.svg';  
+  static const String homeNotificationBingIcon = 'assets/svgs/home_notification-bing_icon.svg';  
   static const String infoCircle = 'assets/svgs/info-circle.svg';  
   static const String lightModeIcon = 'assets/svgs/light_mode_icon.svg';  
   static const String location = 'assets/svgs/location.svg';  
@@ -55,6 +58,8 @@ class AppSvgs {
   static const String removeTrash = 'assets/svgs/remove_trash.svg';  
   static const String searchNormal = 'assets/svgs/search-normal.svg';  
   static const String setting = 'assets/svgs/setting.svg';  
+  static const String settingsArrowLeft = 'assets/svgs/settings_arrow_left.svg';  
+  static const String settingsArrowRight = 'assets/svgs/settings_arrow_right.svg';  
   static const String settingIcon = 'assets/svgs/setting_icon.svg';  
   static const String shapeVector = 'assets/svgs/shape_vector.svg';  
   static const String shareForward = 'assets/svgs/share-forward.svg';  

@@ -1,8 +1,11 @@
 // ignore_for_file: deprecated_member_use
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:pinput/pinput.dart';
+import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/extensions/context_extension.dart';
 import 'package:prize/core/utils/extensions/is_dark_mode_extension.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
@@ -42,7 +45,8 @@ class AppWidgetColor {
 
   // text field
   static Color outlineWidgetColor = AppColors.lightModeGray.withOpacity(.5);
-  static Color dotedFillColor(BuildContext context) => context.isDarkMode ? AppColors.darkBlue : AppColors.gray;
+  static Color dotedFillColor(BuildContext context) =>
+      context.isDarkMode ? AppColors.darkBlue : AppColors.gray;
 
   static Color fillBackgroundColor(BuildContext context) =>
       context.isDarkMode ? AppColors.darkModeBackground : AppColors.white;
@@ -131,5 +135,17 @@ class GlobalAppWidgetsStyles {
           borderRadius: BorderRadius.circular(12.r),
           border: containerGrayBoxBorder(context),
         ),
+      );
+  // static Widget settingArrowWidget(BuildContext context) => SvgPicture.asset(
+  //       context.locale.languageCode == "ar"
+  //           ? AppSvgs.settingsArrowLeft
+  //           : AppSvgs.settingsArrowLeft,
+  //       color: AppColors.redColor,
+  //     );
+  static Widget settingArrowWidget(BuildContext context) => Icon(
+        context.locale.languageCode == "ar"
+            ? Icons.arrow_back_ios_new_sharp
+            : Icons.arrow_forward_ios_rounded,
+        color: AppColors.moreLighterDarkPeriwinkle,
       );
 }
