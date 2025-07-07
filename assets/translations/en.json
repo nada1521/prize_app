@@ -460,6 +460,39 @@
     "favourite_color":"Favourite color :",
     "t_shirt_size":"T-shirt size:"
   }
- }
+ },
+ "setting_screen":{
+   "screen_name":"Setting",
+   "points":"Points",
+  "general_settings_items":{
+    "mode":"Mode",
+    "change_password":"Change Password",
+    "notification":"Notification",
+    "language":"Language",
+    "my_orders":"My Orders",
+    "my_address":"My Address",
+    "my_wallet":"My Wallet"
+  }, 
 
+  "info_settings_items":{
+     "contact_us":"Contact us",
+     "customer_support":"Customer Support",
+     "faqs":"FAQs",
+     "blog":"Blog",
+     "about":"About"
+     
+  },
+  
+  "policy_settings_items":{
+     "privacy_policy":"Privacy Policy",
+    "terms_and_condition":"Terms and Condition",
+    "warranty_policy":"Warranty Policy",
+    "return_and_exchange":"Return and Exchange",
+    "become_a_Seller":"Become a Seller",
+    "logout":"Logout",
+    "delete_account":"Delete Account"
+  }
+ 
+ 
+ }
 }
