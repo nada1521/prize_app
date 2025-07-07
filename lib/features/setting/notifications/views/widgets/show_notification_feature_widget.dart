@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
-import 'package:prize/core/widgets/custom_animated_switcher.dart';
 import 'package:prize/features/setting/notifications/data/models/notification_feature_model.dart';
 
 class ShowNotificationFeatureWidget extends StatefulWidget {

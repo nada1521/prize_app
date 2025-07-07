@@ -506,7 +506,70 @@
     "become_a_Seller": "كن بائعًا",
     "logout": "تسجيل الخروج",
     "delete_account": "حذف الحساب"
-  }
+  },
+  "about": {
+  "about_prize": "عن الجائزة",
+  "vision": "الرؤية",
+  "mission": "الرسالة"
+},
+
+  "change_password": {
+  "change_password": "تغيير كلمة المرور",
+  "current_password": "كلمة المرور الحالية",
+  "new_password": "كلمة المرور الجديدة",
+  "hint_new_password": "كلمة مرور جديدة",
+  "confirm_new_password": "تأكيد كلمة المرور الجديدة",
+  "hint_confirm_password": "أعد إدخال كلمة المرور الجديدة",
+  "change_pssword": "تغيير كلمة المرور",
+  "change": "تغيير"
+},
+"notification": {
+  
+    "notification": "الإشعارات",
+    "following_and_followers": "المتابَعين والمتابعين",
+    "you_just_got_a_new_follower": "لقد حصلت على متابع جديد",
+    "giftful_updates": "تحديثات Giftful",
+    "new_features_gift_guides_etc": "ميزات جديدة، أدلة هدايا، وغيرها",
+    "email_notifications": "إشعارات البريد الإلكتروني",
+    "you_have_been_invited_to_collaborate": "تمت دعوتك للتعاون"
+  
+},
+"contact_us": {
+  "name": "الاسم",
+  "enter_your_name": "أدخل اسمك",
+  "phone_number": "رقم الهاتف",
+  "email": "البريد الإلكتروني",
+  "message": "الرسالة",
+  "write_your_message": "اكتب رسالتك",
+  "contact_us": "تواصل معنا",
+  "haveing_a_problem": "هل تواجه مشكلة؟ كيف يمكننا مساعدتك؟",
+  "problems_in_our_application": "يسعدنا أن ترسل لنا أي مشاكل تواجهك في تطبيقنا",
+  "send": "إرسال"
+},
+"privacy_policy": {
+  "privacy_policy": "سياسة الخصوصية",
+  "information_we_collect": "المعلومات التي نجمعها",
+  "how_we_use_your_information": "كيف نستخدم معلوماتك",
+  "privacy_body_titel": "نحن ملتزمون بحماية معلوماتك الشخصية وحقك في الخصوصية. توضح سياسة الخصوصية هذه كيف نقوم بجمع معلوماتك واستخدامها والكشف عنها وحمايتها.",
+  "last_update_date": "22 مارس 2025",
+
+  "title_personal_information": "المعلومات الشخصية:",
+  "description_personal_information": "الاسم، عنوان البريد الإلكتروني، رقم الهاتف، إلخ.",
+
+  "title_usage_data": "بيانات الاستخدام:",
+  "description_usage_data": "كيفية تفاعلك مع تطبيقنا أو موقعنا، مثل الصفحات التي تمت زيارتها، الوقت المستغرق، النقرات، إلخ.",
+
+  "title_device_information": "معلومات الجهاز:",
+  "description_device_information": "عنوان الـ IP، نوع المتصفح، نوع الجهاز، نظام التشغيل، إلخ.",
+
+  "title_cookies": "ملفات تعريف الارتباط وتقنيات التتبع:",
+  "description_cookies": "قد نستخدم ملفات تعريف الارتباط أو أدوات تتبع مشابهة لتحسين تجربة المستخدم."
+}
+
+
+
+
+
 }
 
 
