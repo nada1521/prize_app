@@ -4,9 +4,12 @@ import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_images.dart';
 import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/extensions/context_extension.dart';
+import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
+import 'package:prize/features/home/view/screens/notifcation_screen.dart';
+import 'package:prize/features/profile/view/screen/profile_screen.dart';
 
 class ShowUserInfoWidget extends StatelessWidget {
   const ShowUserInfoWidget({super.key});
@@ -16,13 +19,22 @@ class ShowUserInfoWidget extends StatelessWidget {
     return Row(
       spacing: 10.w,
       children: [
-        Container(
-          width: 48.w,
-          height: 48.h,
-          decoration: BoxDecoration(
-              border: GlobalAppWidgetsStyles.containerGrayBoxBorder(context),
-              shape: BoxShape.circle,
-              image: DecorationImage(image: AssetImage(AppImages.userAvatar))),
+        InkWell(
+          onTap: () {
+            pushTo(
+              context,
+              ProfileScreen(),
+            );
+          },
+          child: Container(
+            width: 48.w,
+            height: 48.h,
+            decoration: BoxDecoration(
+                border: GlobalAppWidgetsStyles.containerGrayBoxBorder(context),
+                shape: BoxShape.circle,
+                image:
+                    DecorationImage(image: AssetImage(AppImages.userAvatar))),
+          ),
         ),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -66,6 +78,9 @@ class ShowUserInfoWidget extends StatelessWidget {
         ),
         Spacer(),
         InkWell(
+          onTap: () {
+            pushTo(context, NotifcationScreen());
+          },
           child: Container(
             width: 48.w,
             height: 48.h,
@@ -77,6 +92,7 @@ class ShowUserInfoWidget extends StatelessWidget {
             child: Center(
               child: Stack(
                 children: [
+                  
                   SvgPicture.asset(
                     AppSvgs.homeNotificationBingIcon,
                     // fit: BoxFit.cover,

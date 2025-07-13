@@ -21,9 +21,7 @@ class AppIconWidget extends StatelessWidget {
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
             child: InkWell(
-              onTap: () {
-                Navigator.pop(context);
-              },
+              onTap: onTap,
               child: SvgPicture.asset(
                 svgIconPath,
                 // ignore: deprecated_member_use

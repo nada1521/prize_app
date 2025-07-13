@@ -1,5 +1,10 @@
+<<<<<<< HEAD
+=======
+import 'package:easy_localization/easy_localization.dart';
+>>>>>>> 1140b940fa691cbec04c71b8e0b6a9406c8c6bbf
 import 'package:flutter/material.dart';
 import 'package:prize/core/utils/constants.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
 import 'package:prize/features/setting/policy/widgets/build_normal_paragraph_widget.dart';
@@ -13,28 +18,36 @@ class PrivacyPolicyScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Map<String, String>> informationWeCollect = [
       {
-        "title": "Personal Information:",
-        "description": "Name, email address, phone number, etc.",
+        "title": LocaleKeys
+            .setting_screen_privacy_policy_title_personal_information
+            .tr(),
+        "description": LocaleKeys
+            .setting_screen_privacy_policy_description_personal_information
+            .tr(),
       },
       {
-        "title": "Usage Data:",
-        "description":
-            "How you interact with our app or website, such as pages visited, time spent, clicks, etc.",
+        "title": LocaleKeys.setting_screen_privacy_policy_title_usage_data.tr(),
+        "description": LocaleKeys
+            .setting_screen_privacy_policy_description_usage_data
+            .tr(),
       },
       {
-        "title": "Device Information:",
-        "description":
-            "IP address, browser type, device type, operating system, etc.",
+        "title": LocaleKeys
+            .setting_screen_privacy_policy_title_device_information
+            .tr(),
+        "description": LocaleKeys
+            .setting_screen_privacy_policy_description_device_information
+            .tr(),
       },
       {
-        "title": "Cookies and Tracking Technologies:",
+        "title": LocaleKeys.setting_screen_privacy_policy_title_cookies.tr(),
         "description":
-            "We may use cookies or similar tracking tools to enhance user experience.",
+            LocaleKeys.setting_screen_privacy_policy_description_cookies.tr(),
       },
     ];
     return Scaffold(
       appBar: OrangeAppbarWidget(
-        title: "Privacy Policy",
+        title: LocaleKeys.setting_screen_privacy_policy_privacy_policy.tr(),
         showBackButton: true,
       ),
       body: ListView(
@@ -42,20 +55,28 @@ class PrivacyPolicyScreen extends StatelessWidget {
         children: [
           verticalSpace(25),
           BuildParagraphWithDateWidget(
-              headTitle: "Privacy Policy",
-              lastUpdateDate: "22 Mar 2025",
-              bodyTitle:
-                  "we are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information"),
+            headTitle:
+                LocaleKeys.setting_screen_privacy_policy_privacy_policy.tr(),
+            lastUpdateDate:
+                LocaleKeys.setting_screen_privacy_policy_last_update_date.tr(),
+            bodyTitle: LocaleKeys
+                .setting_screen_privacy_policy_privacy_body_titel
+                .tr(),
+          ),
           verticalSpace(25),
           BuildParagraphWithBulletWidget(
             index: 1,
-            paragraphTitle: "Information We Collect",
+            paragraphTitle: LocaleKeys
+                .setting_screen_privacy_policy_information_we_collect
+                .tr(),
             paragraphData: informationWeCollect,
           ),
           verticalSpace(25),
           BuildNormalParagraphWidget(
             index: 2,
-            headTitle: "How We Use Your Information",
+            headTitle: LocaleKeys
+                .setting_screen_privacy_policy_how_we_use_your_information
+                .tr(),
             bodyTitle:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ',
           )

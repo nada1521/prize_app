@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
+import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/widgets/app_icon_widget.dart';
+import 'package:prize/features/shop/views/screens/shop_products_screen.dart';
 
 class HomeFeaturesAppbar extends StatelessWidget {
   const HomeFeaturesAppbar(
@@ -29,7 +31,9 @@ class HomeFeaturesAppbar extends StatelessWidget {
           Spacer(),
           AppIconWidget(
             svgIconPath: AppSvgs.arrowRight,
-            onTap: () {},
+            onTap: () {
+              pushTo(context, ShopProductsScreen());
+            },
           ),
         ],
       ),

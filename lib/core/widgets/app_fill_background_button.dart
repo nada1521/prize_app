@@ -11,6 +11,7 @@ class AppFillBckgroundButton extends StatelessWidget {
   final Color? startColor;
   final Color? endColor;
   final Widget? icon;
+  final BorderRadiusGeometry? borderRadius;
 
   const AppFillBckgroundButton({
     super.key,
@@ -21,6 +22,7 @@ class AppFillBckgroundButton extends StatelessWidget {
     this.startColor,
     this.endColor,
     this.icon,
+    this.borderRadius,
   });
 
   @override
@@ -41,7 +43,7 @@ class AppFillBckgroundButton extends StatelessWidget {
         width: width ?? double.infinity,
         height: height ?? 46.h,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16.r),
+          borderRadius: borderRadius ?? BorderRadius.circular(16.r),
           gradient: gradient,
         ),
         child: Center(

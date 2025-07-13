@@ -26,6 +26,9 @@ class RatingSliderWidget extends StatefulWidget {
 class _RatingSliderWidgetState extends State<RatingSliderWidget> {
   late double currentRating;
 
+  static const double min = 1.2;
+  static const double max = 5.0;
+
   @override
   void initState() {
     super.initState();
@@ -34,75 +37,38 @@ class _RatingSliderWidgetState extends State<RatingSliderWidget> {
 
   @override
   Widget build(BuildContext context) {
-    const double min = 1.2;
-    const double max = 5.0;
-
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           LocaleKeys.filter_product_rating.tr(),
           style: AppTextStyles.bodyTitle18w400darkPeriwinkleTextStyle(context)
-              .copyWith(
-            fontWeight: FontWeight.w600,
-          ),
+              .copyWith(fontWeight: FontWeight.w600),
         ),
         verticalSpace(5),
         Text(
           LocaleKeys.filter_product_product_rat.tr(),
           style: AppTextStyles.smallBodyTitle12w400TextStyle(context),
         ),
-        verticalSpace(5),
+        verticalSpace(10),
         LayoutBuilder(
           builder: (context, constraints) {
             final double sliderWidth = constraints.maxWidth;
-
-            double percent = (currentRating - min) / (max - min);
-            double left = percent * sliderWidth;
-
+            final double percent = (currentRating - min) / (max - min);
+            final double left = percent * (sliderWidth - 56);
             return SizedBox(
-              height: 70.h,
+              height: 90.h,
               child: Stack(
+                clipBehavior: Clip.none,
+                alignment: Alignment.center,
                 children: [
-                  SliderTheme(
-                    data: SliderTheme.of(context).copyWith(
-                      thumbShape: CustomSliderThumbShape(
-                        fillColor: AppWidgetColor.fillBackgroundColor(context),
-                        borderColor: AppColors.darkModeTanOrange,
-                      ),
-                    ),
-                    child: Slider(
-                      value: currentRating,
-                      onChanged: (val) {
-                        setState(() {
-                          currentRating = val;
-                        });
-                        widget.onChanged?.call(val);
-                      },
-                      min: min,
-                      max: max,
-                      activeColor: Colors.orange,
-                      inactiveColor:
-                          AppWidgetColor.fillIconButtonWidgetColor(context),
-                    ),
-                  ),
                   Positioned(
-                    left: left.clamp(0, sliderWidth - 64),
-                    bottom: 10,
-                    child: Stack(
-                      alignment: AlignmentDirectional.center,
+                    left: left.clamp(0, sliderWidth - 56.w),
+                    top: 15,
+                    child: Column(
                       children: [
-                        Positioned(
-                            bottom: 32,
-                            child: TriangleWidget(
-                              size: Size(20.w, 14.h),
-                              fillColor:
-                                  AppWidgetColor.fillIconButtonWidgetColor(
-                                      context),
-                            )),
                         Container(
                           width: 56.w,
-                          margin: EdgeInsets.only(bottom: 36.h),
                           padding: EdgeInsets.symmetric(
                               horizontal: 10.w, vertical: 5.h),
                           decoration: BoxDecoration(
@@ -123,7 +89,40 @@ class _RatingSliderWidgetState extends State<RatingSliderWidget> {
                             ),
                           ),
                         ),
+                        TriangleWidget(
+                          size: Size(20.w, 14.h),
+                          fillColor:
+                              AppWidgetColor.fillIconButtonWidgetColor(context),
+                        ),
                       ],
+                    ),
+                  ),
+                  Positioned(
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    child: SliderTheme(
+                      data: SliderTheme.of(context).copyWith(
+                        thumbShape: CustomSliderThumbShape(
+                          fillColor:
+                              AppWidgetColor.fillBackgroundColor(context),
+                          borderColor: AppColors.darkModeTanOrange,
+                        ),
+                      ),
+                      child: Slider(
+                        value: currentRating,
+                        onChanged: (val) {
+                          setState(() {
+                            currentRating = val;
+                          });
+                          widget.onChanged?.call(val);
+                        },
+                        min: min,
+                        max: max,
+                        activeColor: Colors.orange,
+                        inactiveColor:
+                            AppWidgetColor.fillIconButtonWidgetColor(context),
+                      ),
                     ),
                   ),
                 ],
@@ -131,6 +130,7 @@ class _RatingSliderWidgetState extends State<RatingSliderWidget> {
             );
           },
         ),
+        // verticalSpace(8),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 8),
           child: Row(
@@ -141,20 +141,14 @@ class _RatingSliderWidgetState extends State<RatingSliderWidget> {
                 style: AppTextStyles
                         .meduimBody16W500DarkAndLightThemeTitleTextStyle(
                             context)
-                    .copyWith(
-                  fontSize: 14,
-                  color: AppColors.darkBlue,
-                ),
+                    .copyWith(fontSize: 14, color: AppColors.darkBlue),
               ),
               Text(
                 "${LocaleKeys.filter_product_stars_high.tr()}5",
                 style: AppTextStyles
                         .meduimBody16W500DarkAndLightThemeTitleTextStyle(
                             context)
-                    .copyWith(
-                  fontSize: 14,
-                  color: AppColors.darkBlue,
-                ),
+                    .copyWith(fontSize: 14, color: AppColors.darkBlue),
               ),
             ],
           ),

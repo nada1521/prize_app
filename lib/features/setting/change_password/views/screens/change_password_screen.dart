@@ -1,5 +1,11 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1140b940fa691cbec04c71b8e0b6a9406c8c6bbf
 import 'package:prize/core/utils/constants.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/validation/app_validation.dart';
 import 'package:prize/core/widgets/app_fill_background_button.dart';
@@ -20,8 +26,9 @@ class ChangePasswordScreen extends StatelessWidget {
     final List<TextFieldModel> textFieldModels = [
       TextFieldModel(
         isPassword: true,
-        title: "Current Password",
-        hintText: "your current password",
+        title: LocaleKeys.setting_screen_change_password_change_password.tr(),
+        hintText:
+            LocaleKeys.setting_screen_change_password_current_password.tr(),
         validator: (p0) {
           return AppValidation.passwordValidation(p0);
         },
@@ -29,8 +36,9 @@ class ChangePasswordScreen extends StatelessWidget {
       ),
       TextFieldModel(
         isPassword: true,
-        title: "New Password",
-        hintText: "new password",
+        title: LocaleKeys.setting_screen_change_password_new_password.tr(),
+        hintText:
+            LocaleKeys.setting_screen_change_password_hint_new_password.tr(),
         validator: (p0) {
           return AppValidation.passwordValidation(p0);
         },
@@ -38,8 +46,11 @@ class ChangePasswordScreen extends StatelessWidget {
       ),
       TextFieldModel(
         isPassword: true,
-        title: "Confirm New Password",
-        hintText: "enter new password again",
+        title:
+            LocaleKeys.setting_screen_change_password_confirm_new_password.tr(),
+        hintText: LocaleKeys
+            .setting_screen_change_password_hint_confirm_password
+            .tr(),
         validator: (p0) {
           return AppValidation.passwordValidation(p0);
         },
@@ -48,7 +59,7 @@ class ChangePasswordScreen extends StatelessWidget {
     ];
     return Scaffold(
       appBar: OrangeAppbarWidget(
-        title: "Change Pssword",
+        title: LocaleKeys.setting_screen_change_password_change_password.tr(),
         showBackButton: true,
       ),
       body: Padding(
@@ -67,7 +78,7 @@ class ChangePasswordScreen extends StatelessWidget {
         padding: screensPadding,
         child: AppFillBckgroundButton(
           onTap: () {},
-          title: "Change",
+          title: LocaleKeys.setting_screen_change_password_change.tr(),
         ),
       ),
     );

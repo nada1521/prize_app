@@ -168,7 +168,7 @@
     },
     "forget_password":{
       "title":"Forget Password?",
-      "label_emale":"Enter your email address to receive a password recovery message. \n Note: The message might be delivered to your Spam or Junk folder, so please check there if you don’t see it in your inbox.",
+      "label_email":"Enter your email address to receive a password recovery message. Note: The message might be delivered to your Spam or Junk folder, so please check there if you don’t see it in your inbox.",
       "label_phone":"Enter your phone number to receive a password recovery message on WhatsApp.",
       "recover_password":"Recover Password",
       "remember_your_password": "Remember Your Password ?"
@@ -492,6 +492,81 @@
     "become_a_Seller":"Become a Seller",
     "logout":"Logout",
     "delete_account":"Delete Account"
+  },
+   "about":{
+   
+    "about_prize":"About Prize",
+    "vision":"Vision",
+    "mission":"Mission"
+
+
+  },
+  "change_password":{
+    "change_password":"Change Password",
+    "current_password":"your current password",
+    "new_password":"New Password",
+    "hint_new_password":"new password",
+    "confirm_new_password":"Confirm New Password",
+    "hint_confirm_password":"enter new password again",
+    "change_pssword":"Change Pssword",
+    "change":"Change"
+  },
+  "notification":{
+    "notification":"Notification",
+    
+      "following_and_followers":"Following & Followers",
+      "you_just_got_a_new_follower":"You just got a new follower",
+      "giftful_updates":"Giftful Updates",
+      "new_features_gift_guides_etc":"New features, gift guides, etc.",
+      "email_notifications":"Email Notifications",
+      "you_have_been_invited_to_collaborate":"You have been invited to collaborate"
+
+    
+  },
+  "contact_us":{    
+    "name":"Name",
+    "enter_your_name":"enter your name",
+    "phone_number":"Phone Number",
+    "email":"Email",
+    "message":"Message",
+    "write_your_message":"write your message",
+    "contact_us":"Contact Us",
+    "haveing_a_problem":"Are you haveing a problem? How can we help you?",
+    "problems_in_our_application":"We are happy for you to send us any problems you face in our application",
+    "send":"Send"
+  },
+  "privacy_policy":{
+    "privacy_policy":"Privacy Policy",
+    "information_we_collect":"Information We Collect",
+    "how_we_use_your_information":"How We Use Your Information",
+    "privacy_body_titel":"we are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information",
+    "last_update_date":"22 Mar 2025",
+    
+      
+        "title_personal_information": "Personal Information:",
+        "description_personal_information": "Name, email address, phone number, etc."
+      ,
+      
+        "title_usage_data": "Usage Data:",
+        "description_usage_data":
+            "How you interact with our app or website, such as pages visited, time spent, clicks, etc.",
+      
+      
+        "title_device_information": "Device Information:",
+        "description_device_information": "IP address, browser type, device type, operating system, etc.",
+       "title_cookies": "Cookies and Tracking Technologies:",
+        "description_cookies":
+            "We may use cookies or similar tracking tools to enhance user experience."
+     
+    
+
+  
+ 
+ 
   }
+<<<<<<< HEAD
  }
+=======
+}
+>>>>>>> 1140b940fa691cbec04c71b8e0b6a9406c8c6bbf
 }

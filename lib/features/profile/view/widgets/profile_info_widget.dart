@@ -13,6 +13,7 @@ import 'package:prize/features/profile/view/widgets/action_botton_widget.dart';
 import 'package:prize/features/profile/view/widgets/comming_event_widget.dart';
 import 'package:prize/features/profile/view/widgets/personal_sizes.dart';
 import 'package:prize/features/profile/view/widgets/user_info_widget.dart';
+import 'package:share_plus/share_plus.dart';
 
 class ProfileInfoWidget extends StatelessWidget {
   const ProfileInfoWidget({super.key});
@@ -71,7 +72,9 @@ class ProfileInfoWidget extends StatelessWidget {
                     horizontalSpace(10),
                     Expanded(
                       child: ActionBottonWidget(
-                        onTap: () {},
+                        onTap: () {
+                          Share.share("profile");
+                        },
                         iconPath: AppSvgs.shareProfileIconButton,
                         title: LocaleKeys.profile_screen_share_profile.tr(),
                       ),

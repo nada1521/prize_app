@@ -36,7 +36,7 @@ class OrangeAppbarWidget extends StatelessWidget
         padding: EdgeInsets.symmetric(vertical: 10.h, horizontal: 15.w),
         color: AppWidgetColor.fillWidgetWithOrangeAndDarkColor(context),
         child: Padding(
-          padding: EdgeInsets.only(top: 10.h),
+          padding: EdgeInsets.only(top: 20.h, bottom: 10.h),
           child: Row(
             children: [
               // Back button (optional)
@@ -48,13 +48,19 @@ class OrangeAppbarWidget extends StatelessWidget
               horizontalSpace(10),
 
               // Title (centered with Expanded)
-              Center(
-                child: Text(
-                  title,
-                  style:
-                      AppTextStyles.headTitle24w600TextStyle(context).copyWith(
-                    fontSize: 18,
-                    color: AppColors.primaryWhite,
+              Container(
+                constraints: BoxConstraints(
+                  maxWidth: 200.w,
+                ),
+                child: FittedBox(
+                  child: Text(
+                    title,
+                    style: AppTextStyles.headTitle24w600TextStyle(context)
+                        .copyWith(
+                      fontSize: 18,
+                      color: AppColors.primaryWhite,
+                    ),
+                    overflow: TextOverflow.ellipsis,
                   ),
                 ),
               ),

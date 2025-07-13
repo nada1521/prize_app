@@ -4,6 +4,7 @@ import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_theme_text_styles.dart';
+import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/features/auth/forget_password/view/screens/forget_password_screen.dart';
 import 'package:prize/features/auth/otp/data/enums/select_otp_enums.dart';
 import 'package:prize/features/auth/otp/view/widgets/otp_method_card.dart';
@@ -19,7 +20,7 @@ class SelectOtpMethodWidget extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),
       decoration: BoxDecoration(
-        color: Theme.of(context).colorScheme.primary,
+        color: AppWidgetColor.fillBackgroundColor(context),
         borderRadius: BorderRadius.vertical(top: Radius.circular(30.r)),
       ),
       child: Column(
