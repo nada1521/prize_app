@@ -92,6 +92,7 @@ class ShowUserInfoWidget extends StatelessWidget {
             child: Center(
               child: Stack(
                 children: [
+                  
                   SvgPicture.asset(
                     AppSvgs.homeNotificationBingIcon,
                     // fit: BoxFit.cover,
