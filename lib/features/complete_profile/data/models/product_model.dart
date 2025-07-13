@@ -4,6 +4,7 @@ class ProductModel {
   final String oldPrice;
   final String title;
   final bool? isOffer;
+  int? quantity;
 
   ProductModel({
     required this.image,
@@ -11,5 +12,6 @@ class ProductModel {
     required this.oldPrice,
     required this.title,
      this.isOffer,
+     this.quantity = 0,
   });
 }

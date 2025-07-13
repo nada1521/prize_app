@@ -119,7 +119,6 @@ class _SettingScreenState extends State<SettingScreen> {
         ),
       ),
     ];
-
     List<SettingItemModel> policySettingsItems = [
       SettingItemModel(
         imagePath: AppSvgs.documentText,

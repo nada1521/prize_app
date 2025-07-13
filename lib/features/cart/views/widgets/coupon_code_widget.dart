@@ -5,20 +5,29 @@ import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
+
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/core/widgets/app_outline_button.dart';
 import 'package:prize/core/widgets/app_text_form_field.dart';
+import 'package:prize/features/cart/views/widgets/order_summary_widget.dart';
 
-class CouponCodeWidget extends StatelessWidget {
+class CouponCodeWidget extends StatefulWidget {
   const CouponCodeWidget({super.key});
 
   @override
+  State<CouponCodeWidget> createState() => _CouponCodeWidgetState();
+}
+
+class _CouponCodeWidgetState extends State<CouponCodeWidget> {
+  final GlobalKey<FormState> kay = GlobalKey<FormState>();
+  final TextEditingController? couponController = TextEditingController();
+  bool isValid = false;
+
+  @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
-      decoration: BoxDecoration(
-          color: AppWidgetColor.fillWidgetByLightBackgroundColor(context)),
-      child: Row(
+    return Form(
+      key: kay,
+      child: Column(
         children: [
           Expanded(
             flex: 3,
@@ -56,6 +65,10 @@ class CouponCodeWidget extends StatelessWidget {
               title: LocaleKeys.cart_screen_apply.tr(),
             ),
           ),
+          verticalSpace(10),
+          OrderSummaryWidget(
+            isCouponValid: isValid,
+          )
         ],
       ),
     );

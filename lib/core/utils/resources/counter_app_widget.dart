@@ -5,11 +5,9 @@ import 'package:prize/core/utils/resources/app_widget_color.dart';
 class CounterAppWidget extends StatefulWidget {
   const CounterAppWidget({
     super.key,
-    required this.value,
     required this.onChanged,
   });
 
-  final int value;
   final ValueChanged<int> onChanged;
 
   @override
@@ -18,6 +16,7 @@ class CounterAppWidget extends StatefulWidget {
 
 class _CounterAppWidgetState extends State<CounterAppWidget> {
   int count = 0;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -38,9 +37,11 @@ class _CounterAppWidgetState extends State<CounterAppWidget> {
         children: [
           IconButton(
             onPressed: () {
-              count--;
-
-              setState(() {});
+              if (count > 0) {
+                count--;
+                widget.onChanged(count);
+                setState(() {});
+              }
             },
             icon: const Icon(Icons.remove),
           ),
@@ -51,7 +52,7 @@ class _CounterAppWidgetState extends State<CounterAppWidget> {
           IconButton(
             onPressed: () {
               count++;
-
+              widget.onChanged(count);
               setState(() {});
             },
             icon: const Icon(Icons.add),
