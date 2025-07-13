@@ -43,8 +43,8 @@ class _SettingScreenState extends State<SettingScreen> {
   Widget build(BuildContext context) {
     List<SettingItemModel> generalSettingsItems = [
       SettingItemModel(
-        imagePath: AppSvgs.moonSettingChangeModeIcon,
-        title: "Mode",
+         imagePath: AppSvgs.moonSettingChangeModeIcon,
+          title: LocaleKeys.setting_screen_general_settings_items_mode.tr(),
         isDarkModeButton: true,
       ),
       SettingItemModel(
@@ -69,8 +69,7 @@ class _SettingScreenState extends State<SettingScreen> {
         isChangeLanguageButton: true,
       ),
       SettingItemModel(imagePath: AppSvgs.ordersIcon, title: "My Orders"),
-          imagePath: AppSvgs.moonSettingChangeModeIcon,
-          title: LocaleKeys.setting_screen_general_settings_items_mode.tr()),
+        
       SettingItemModel(
           imagePath: AppSvgs.lockSettingChangePasswordIcon,
           title: LocaleKeys
@@ -101,7 +100,7 @@ class _SettingScreenState extends State<SettingScreen> {
     List<SettingItemModel> infoSettingsItems = [
       SettingItemModel(
         imagePath: AppSvgs.callContactUsSettingIcon,
-        title: "Contact us",
+        title: LocaleKeys.setting_screen_info_settings_items_contact_us.tr(),
         onTap: () => pushTo(
           context,
           ContactUsScreens(),
@@ -132,8 +131,6 @@ class _SettingScreenState extends State<SettingScreen> {
           AboutScreen(),
         ),
       ),
-          imagePath: AppSvgs.callContactUsSettingIcon,
-          title: LocaleKeys.setting_screen_info_settings_items_contact_us.tr()),
       SettingItemModel(
           imagePath: AppSvgs.callContactUsSettingIcon,
           title: LocaleKeys.setting_screen_info_settings_items_customer_support
@@ -151,21 +148,19 @@ class _SettingScreenState extends State<SettingScreen> {
 
     List<SettingItemModel> policySettingsItems = [
       SettingItemModel(
-        imagePath: AppSvgs.documentText,
-        title: "Privacy Policy",
+          imagePath: AppSvgs.documentText,
+          title: LocaleKeys.setting_screen_policy_settings_items_privacy_policy
+              .tr(),
         onTap: () => pushTo(
           context,
           PrivacyPolicyScreen(),
         ),
       ),
-          imagePath: AppSvgs.documentText,
-          title: LocaleKeys.setting_screen_policy_settings_items_privacy_policy
-              .tr()),
       SettingItemModel(
-<<<<<<< HEAD
-        imagePath: AppSvgs.documentText,
-        title: "Terms and Condition",
-        onTap: () => pushTo(
+  imagePath: AppSvgs.documentText,
+          title: LocaleKeys
+              .setting_screen_policy_settings_items_terms_and_condition
+              .tr(),        onTap: () => pushTo(
           context,
           TermsAndConditionsScreen(),
         ),
@@ -178,6 +173,7 @@ class _SettingScreenState extends State<SettingScreen> {
           WarrantyPolicyScreen(),
         ),
       ),
+      
       SettingItemModel(
         imagePath: AppSvgs.documentText,
         title: "Return and Exchange",
@@ -186,11 +182,6 @@ class _SettingScreenState extends State<SettingScreen> {
           ReturnAndExchangeScreen(),
         ),
       ),
-=======
-          imagePath: AppSvgs.documentText,
-          title: LocaleKeys
-              .setting_screen_policy_settings_items_terms_and_condition
-              .tr()),
       SettingItemModel(
           imagePath: AppSvgs.documentText,
           title: LocaleKeys.setting_screen_policy_settings_items_warranty_policy
@@ -200,13 +191,13 @@ class _SettingScreenState extends State<SettingScreen> {
           title: LocaleKeys
               .setting_screen_policy_settings_items_return_and_exchange
               .tr()),
->>>>>>> fa732c33159091a8c5e2bdcbb8ea03040850e070
     ];
 
     List<SettingItemModel> becimeAsellerItems = [
       SettingItemModel(
           imagePath: AppSvgs.userTag,
-          title: "Become a Seller",
+          title: LocaleKeys.setting_screen_policy_settings_items_become_a_Seller
+              .tr(),
           onTap: () async {
             final Uri url = Uri.parse(AppUrls.becameAsellerUrl(context));
             if (await canLaunchUrl(url)) {
@@ -215,8 +206,6 @@ class _SettingScreenState extends State<SettingScreen> {
               debugPrint('Could not launch $url');
             }
           }),
-          title: LocaleKeys.setting_screen_policy_settings_items_become_a_Seller
-              .tr()),
     ];
     List<SettingItemModel> accountSettingsItems = [
       SettingItemModel(
