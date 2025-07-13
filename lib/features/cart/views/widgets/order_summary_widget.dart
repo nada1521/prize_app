@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
@@ -6,12 +7,17 @@ import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
+import 'package:prize/features/complete_profile/wishlist/logic/adding_product_to_cart_cubit/adding_product_to_cart_cubit.dart';
 
 class OrderSummaryWidget extends StatelessWidget {
-  const OrderSummaryWidget({super.key});
+  const OrderSummaryWidget({super.key, this.isCouponValid});
 
+  final bool? isCouponValid;
   @override
   Widget build(BuildContext context) {
+    final selectedProducts =
+        context.watch<AddingProductToCartCubit>().state.selectedProducts;
+
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 20.h),
       decoration: BoxDecoration(
@@ -32,7 +38,7 @@ class OrderSummaryWidget extends StatelessWidget {
               ),
               horizontalSpace(10),
               Text(
-                "(2 items)",
+                "(${selectedProducts.length} items)",
                 style: AppTextStyles.smallBodyTitle12w400TextStyle(context)
                     .copyWith(
                   color: AppColors.periwinkle,
@@ -40,6 +46,7 @@ class OrderSummaryWidget extends StatelessWidget {
               ),
             ],
           ),
+          verticalSpace(16),
           Row(
             children: [
               Text(
@@ -62,7 +69,7 @@ class OrderSummaryWidget extends StatelessWidget {
                   ),
                   horizontalSpace(8),
                   Text(
-                    "644",
+                    selectedProducts.first.newPrice,
                     style: AppTextStyles
                             .meduimBody16W500BlackAndWhiteTitleTextStyle(
                                 context)
@@ -74,7 +81,40 @@ class OrderSummaryWidget extends StatelessWidget {
               )
             ],
           ),
-          verticalSpace(5),
+          verticalSpace(16),
+          if (isCouponValid != null && isCouponValid!)
+            Row(
+              children: [
+                Text(
+                  "Coupon:",
+                  style: AppTextStyles.smallBodyTitle12w400TextStyle(context)
+                      .copyWith(
+                    color: AppColors.periwinkle,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+                Spacer(),
+                SvgPicture.asset(
+                  AppSvgs.currency,
+                  width: 20.w,
+                  height: 20.h,
+                  color: AppColors.greenColor,
+                ),
+                horizontalSpace(8),
+                Text(
+                  "-20",
+                  style:
+                      AppTextStyles.meduimBody16W500BlackAndWhiteTitleTextStyle(
+                              context)
+                          .copyWith(
+                    fontWeight: FontWeight.w600,
+                    color: AppColors.greenColor,
+                  ),
+                )
+              ],
+            ),
+          verticalSpace(10),
           Row(
             children: [
               Row(
@@ -108,14 +148,20 @@ class OrderSummaryWidget extends StatelessWidget {
                   ),
                   horizontalSpace(8),
                   Text(
-                    "644",
+                    selectedProducts.fold<double>(0.0, (total, product) {
+                      if (isCouponValid != null && isCouponValid!) {
+                        return total +
+                            double.tryParse(product.newPrice)! -
+                            20.0;
+                      } else {
+                        return total + double.tryParse(product.newPrice)!;
+                      }
+                    }).toStringAsFixed(2),
                     style: AppTextStyles
                             .meduimBody16W500BlackAndWhiteTitleTextStyle(
                                 context)
-                        .copyWith(
-                      fontWeight: FontWeight.w600,
-                    ),
-                  )
+                        .copyWith(fontWeight: FontWeight.w600),
+                  ),
                 ],
               )
             ],

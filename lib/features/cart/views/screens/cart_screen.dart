@@ -3,15 +3,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
+import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
+import 'package:prize/features/cart/checkout/views/screens/chekout_screen.dart';
 import 'package:prize/features/cart/views/widgets/all_cart_products_items_widget.dart';
 import 'package:prize/features/cart/views/widgets/coupon_code_widget.dart';
 import 'package:prize/features/cart/views/widgets/empty_shopping_cart_widget.dart';
-import 'package:prize/features/cart/views/widgets/order_summary_widget.dart';
 import 'package:prize/features/complete_profile/wishlist/logic/adding_product_to_cart_cubit/adding_product_to_cart_cubit.dart';
 import 'package:prize/features/home/view/widgets/appbar/home_features_appbar.dart';
 import 'package:prize/features/home/view/widgets/mothers_day_gifts/all_mothers_day_gifts_widget.dart';
+import 'package:prize/features/onboarding/view/widgets/app_submit_button.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
@@ -23,7 +25,8 @@ class CartScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: OrangeAppbarWidget(
-        title: " ${LocaleKeys.cart_screen_cart_title.tr()} 0 ",
+        title:
+            " ${LocaleKeys.cart_screen_cart_title.tr()} (${selectedProducts.length}) ",
         showBackButton: false,
       ),
       body: CustomScrollView(
@@ -45,11 +48,6 @@ class CartScreen extends StatelessWidget {
           ),
           SliverToBoxAdapter(
             child: verticalSpace(10),
-          ),
-          SliverToBoxAdapter(
-            child: selectedProducts.isEmpty
-                ? SizedBox.shrink()
-                : OrderSummaryWidget(),
           ),
           SliverToBoxAdapter(
             child: HomeFeaturesAppbar(
@@ -81,6 +79,20 @@ class CartScreen extends StatelessWidget {
           ),
         ],
       ),
+      bottomNavigationBar: selectedProducts.any(
+              (product) => product.quantity != null && product.quantity != 0)
+          ? Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
+              child: AppSubmitButton(
+                  onTap: () {
+                    pushTo(
+                      context,
+                      ChekoutScreen(),
+                    );
+                  },
+                  title: "Checkout"),
+            )
+          : SizedBox.shrink(),
     );
   }
 }

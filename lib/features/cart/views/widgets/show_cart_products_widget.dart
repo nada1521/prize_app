@@ -33,6 +33,8 @@ class _ShowCartProductsWidgetState extends State<ShowCartProductsWidget> {
 
   @override
   Widget build(BuildContext context) {
+    final selectedProducts = context.watch<AddingProductToCartCubit>();
+
     return Visibility(
       visible: isVisible,
       child: Container(
@@ -141,8 +143,21 @@ class _ShowCartProductsWidgetState extends State<ShowCartProductsWidget> {
                 ),
                 const Spacer(),
                 CounterAppWidget(
-                  value: 4,
-                  onChanged: (v) {},
+                  onChanged: (v) {
+                    widget.product.quantity = v;
+                    debugPrint("=========== $v");
+                    debugPrint("=======68==== ${widget.product.quantity}");
+                    context.read<AddingProductToCartCubit>().updateProduct(
+                          ProductModel(
+                            image: widget.product.image,
+                            newPrice: widget.product.newPrice,
+                            oldPrice: widget.product.oldPrice,
+                            title: widget.product.title,
+                            quantity: v,
+                            isOffer: widget.product.isOffer,
+                          ),
+                        );
+                  },
                 ),
               ],
             )
