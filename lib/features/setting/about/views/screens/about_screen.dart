@@ -11,7 +11,7 @@ class AboutScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<Map<String, String>> aboutSection = [
+    List<Map<String, String>> sections = [
       {
         "head_title": LocaleKeys.setting_screen_about_about_prize.tr(),
         "body_title":
@@ -44,14 +44,14 @@ class AboutScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  aboutSection[index]['head_title']!,
+                  sections[index]['head_title']!,
                   style:
                       AppTextStyles.headTitle24w600TextStyle(context).copyWith(
                     fontSize: 20,
                   ),
                 ),
                 Text(
-                  aboutSection[index]['body_title']!,
+                  sections[index]['body_title']!,
                   style: AppTextStyles.bodyTitle18w400darkPeriwinkleTextStyle(
                           context)
                       .copyWith(
@@ -61,7 +61,7 @@ class AboutScreen extends StatelessWidget {
               ],
             ),
             separatorBuilder: (context, index) => verticalSpace(32),
-            itemCount: aboutSection.length,
+            itemCount: sections.length,
           ),
         ],
       ),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 
-class CounterAppWidget extends StatelessWidget {
+class CounterAppWidget extends StatefulWidget {
   const CounterAppWidget({
     super.key,
     required this.value,
@@ -13,6 +13,12 @@ class CounterAppWidget extends StatelessWidget {
   final ValueChanged<int> onChanged;
 
   @override
+  State<CounterAppWidget> createState() => _CounterAppWidgetState();
+}
+
+class _CounterAppWidgetState extends State<CounterAppWidget> {
+  int count = 0;
+  @override
   Widget build(BuildContext context) {
     return Container(
       width: 140.w,
@@ -21,26 +27,33 @@ class CounterAppWidget extends StatelessWidget {
         maxWidth: 140.w,
       ),
       decoration: BoxDecoration(
-        color: AppWidgetColor.fillWidgetByLightBackgroundColor(context),
-        shape: BoxShape.rectangle,
-        borderRadius: BorderRadius.circular(16),
-      ),
+          color: AppWidgetColor.fillWidgetByLightBackgroundColor(context),
+          shape: BoxShape.rectangle,
+          borderRadius: BorderRadius.circular(16),
+          border:
+              Border.all(width: 2, color: AppWidgetColor.outlineWidgetColor)),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           IconButton(
             onPressed: () {
-              if (value > 0) onChanged(value - 1);
+              count--;
+
+              setState(() {});
             },
             icon: const Icon(Icons.remove),
           ),
           Text(
-            '$value',
+            '$count',
             style: Theme.of(context).textTheme.titleMedium,
           ),
           IconButton(
-            onPressed: () => onChanged(value + 1),
+            onPressed: () {
+              count++;
+
+              setState(() {});
+            },
             icon: const Icon(Icons.add),
           ),
         ],

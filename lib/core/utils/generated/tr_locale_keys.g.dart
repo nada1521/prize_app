@@ -153,7 +153,7 @@ abstract class  LocaleKeys {
   static const auth_delete_account_flow_accept_terms_to_delete_account = 'auth.delete_account_flow.accept_terms_to_delete_account';
   static const auth_delete_account_flow = 'auth.delete_account_flow';
   static const auth_forget_password_title = 'auth.forget_password.title';
-  static const auth_forget_password_label_male = 'auth.forget_password.label_male';
+  static const auth_forget_password_label_email = 'auth.forget_password.label_email';
   static const auth_forget_password_label_phone = 'auth.forget_password.label_phone';
   static const auth_forget_password_recover_password = 'auth.forget_password.recover_password';
   static const auth_forget_password_remember_your_password = 'auth.forget_password.remember_your_password';

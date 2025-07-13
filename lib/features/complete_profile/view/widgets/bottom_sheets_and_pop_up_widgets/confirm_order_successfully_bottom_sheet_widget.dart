@@ -7,7 +7,7 @@ import 'package:prize/core/utils/helper/navigation/push_replacement.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
-import 'package:prize/core/widgets/app_disable_button.dart';
+import 'package:prize/core/widgets/app_outline_button.dart';
 import 'package:prize/core/widgets/app_fill_background_button.dart';
 import 'package:prize/features/complete_profile/data/models/product_model.dart';
 import 'package:prize/features/complete_profile/view/screens/complete_profile_screen.dart';

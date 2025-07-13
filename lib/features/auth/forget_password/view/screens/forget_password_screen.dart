@@ -46,7 +46,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
         ),
       );
     } else {
-      textLabel = LocaleKeys.auth_forget_password_label_male.tr();
+      textLabel = LocaleKeys.auth_forget_password_label_email.tr();
       _textField = TextFieldModel(
         isPhoneNumber: false,
         controller: emailController,

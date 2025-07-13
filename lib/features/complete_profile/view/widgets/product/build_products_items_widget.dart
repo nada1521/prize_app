@@ -10,14 +10,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
+// ignore: must_be_immutableproductsWithoutOffer
 class BuildProductsItemsWidget extends StatelessWidget {
-  BuildProductsItemsWidget({super.key});
+  BuildProductsItemsWidget({super.key, required this.onTap});
+
+  final ValueChanged<CategorysNames> onTap;
+
   final List<CategoryModel> categorys = [
-    CategoryModel(titel: LocaleKeys.shop_screen_special_offers.tr()),
-    CategoryModel(titel: LocaleKeys.shop_screen_flash_sale.tr()),
-    CategoryModel(titel: LocaleKeys.shop_screen_new_arri.tr()),
-    CategoryModel(titel: LocaleKeys.shop_screen_special_offers.tr()),
-    CategoryModel(titel: LocaleKeys.shop_screen_flash_sale.tr()),
+    CategoryModel(
+      titel: LocaleKeys.shop_screen_special_offers.tr(),
+      categorysNames: CategorysNames.specialOffers,
+    ),
+    CategoryModel(
+      titel: LocaleKeys.shop_screen_flash_sale.tr(),
+      categorysNames: CategorysNames.flashSale,
+    ),
+    CategoryModel(
+      titel: LocaleKeys.shop_screen_new_arri.tr(),
+      categorysNames: CategorysNames.newArri,
+    ),
   ];
   @override
   Widget build(BuildContext context) {
@@ -55,7 +66,9 @@ class BuildProductsItemsWidget extends StatelessWidget {
               ),
             ),
           ),
-          ...categorys.map((category) => CategoryWidget(category: category)),
+          ...categorys.map((category) => InkWell(
+              onTap: () => onTap(category.categorysNames),
+              child: CategoryWidget(category: category))),
         ],
       ),
     );

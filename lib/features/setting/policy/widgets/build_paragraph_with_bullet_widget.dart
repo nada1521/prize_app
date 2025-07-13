@@ -10,10 +10,12 @@ class BuildParagraphWithBulletWidget extends StatelessWidget {
     required this.index,
     required this.paragraphTitle,
     required this.paragraphData,
+     this.hintText,
   });
 
   final int index;
   final String paragraphTitle;
+  final String? hintText;
   final List<Map<String, String>> paragraphData;
   @override
   Widget build(BuildContext context) {
@@ -27,6 +29,13 @@ class BuildParagraphWithBulletWidget extends StatelessWidget {
           ),
         ),
         verticalSpace(10),
+        if(hintText != null)
+        Text(hintText!,
+        
+        style:  AppTextStyles.smallBodyTitle12w400TextStyle(context)
+                              .copyWith(
+                        fontSize: 14,
+        ),),
         ListView.builder(
           shrinkWrap: true,
           physics: NeverScrollableScrollPhysics(),
@@ -63,19 +72,21 @@ class BuildParagraphWithBulletWidget extends StatelessWidget {
               text: TextSpan(
                 children: [
                   TextSpan(
-                    text: "$title ",
+                    text: title,
                     style: AppTextStyles.smallBodyTitle12w400TextStyle(context)
                         .copyWith(
                       fontSize: 14,
                     ),
                   ),
-                  TextSpan(
-                    text: description,
-                    style: AppTextStyles.smallBodyTitle12w400TextStyle(context)
-                        .copyWith(
-                      fontSize: 14,
+                  if (description.isNotEmpty)
+                    TextSpan(
+                      text: description,
+                      style:
+                          AppTextStyles.smallBodyTitle12w400TextStyle(context)
+                              .copyWith(
+                        fontSize: 14,
+                      ),
                     ),
-                  ),
                 ],
               ),
             ),

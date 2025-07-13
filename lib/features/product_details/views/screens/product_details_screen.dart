@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
@@ -10,29 +11,46 @@ import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/core/utils/resources/counter_app_widget.dart';
-import 'package:prize/core/widgets/app_disable_button.dart';
+import 'package:prize/core/widgets/app_outline_button.dart';
 import 'package:prize/core/widgets/app_fill_background_button.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
 import 'package:prize/features/complete_profile/data/models/product_model.dart';
 import 'package:prize/features/complete_profile/view/widgets/bottom_sheets_and_pop_up_widgets/confirm_order_successfully_bottom_sheet_widget.dart';
-import 'package:prize/features/complete_profile/view/widgets/product/show_product_image_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_price_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_rating_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_title_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/select_size_multi_choise.dart';
 import 'package:prize/features/complete_profile/view/widgets/show_available_colors_widget.dart';
+import 'package:prize/features/complete_profile/wishlist/logic/adding_product_to_cart_cubit/adding_product_to_cart_cubit.dart';
 import 'package:prize/features/home/view/widgets/mothers_day_gifts/mothers_day_gifts_widget.dart';
 import 'package:prize/features/product_details/views/widgets/buttom_sheets/confirm_order_to_cart_bottom_sheet_widget.dart';
+import 'package:prize/features/product_details/views/widgets/images_slider_widget.dart';
 import 'package:prize/features/product_details/views/widgets/overview_review_tab_widget.dart';
 import 'package:prize/features/product_details/views/widgets/sold_by_widget.dart';
+import 'package:share_plus/share_plus.dart';
 
-class ProductDetailsScreen extends StatelessWidget {
+class ProductDetailsScreen extends StatefulWidget {
   const ProductDetailsScreen({super.key, required this.product});
 
   final ProductModel product;
+
+  @override
+  State<ProductDetailsScreen> createState() => _ProductDetailsScreenState();
+}
+
+class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: OrangeAppbarWidget(
+        title: widget.product.title,
+        suffixIcon: AppCircularIconButton(
+          iconPath: AppSvgs.shareForward,
+          onTap: () {
+            Share.share(widget.product.title);
+          },
+        ),
+      ),
       bottomNavigationBar: Container(
         padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 10.h),
         height: 80.h,
@@ -49,7 +67,7 @@ class ProductDetailsScreen extends StatelessWidget {
                     builder: (context) => SizedBox(
                       height: height / 4,
                       child: ConfirmOrderSuccessfullyBottomSheetWidget(
-                        itemData: product,
+                        itemData: widget.product,
                       ),
                     ),
                   );
@@ -77,12 +95,16 @@ class ProductDetailsScreen extends StatelessWidget {
                     builder: (context) => SizedBox(
                       height: height / 3,
                       child: ConfirmOrderToCartBottomSheetWidget(
-                        itemData: product,
+                        itemData: widget.product,
                       ),
                     ),
                   );
+
+                  context
+                      .read<AddingProductToCartCubit>()
+                      .addProduct(widget.product);
                 },
-                title: LocaleKeys.product_details_add_to_wishlist.tr(),
+                title: LocaleKeys.product_details_add_to_cart.tr(),
                 icon: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 5.h),
                   child: SvgPicture.asset(
@@ -99,13 +121,6 @@ class ProductDetailsScreen extends StatelessWidget {
       ),
       body: CustomScrollView(
         slivers: [
-          OrangeAppbarWidget(
-            title: LocaleKeys.product_details_Product_details_title.tr(),
-            suffixIcon: AppCircularIconButton(
-              iconPath: AppSvgs.shareForward,
-              onTap: () {},
-            ),
-          ),
           SliverToBoxAdapter(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -118,17 +133,16 @@ class ProductDetailsScreen extends StatelessWidget {
                       Container(
                         color: AppWidgetColor.fillWidgetByLightBackgroundColor(
                             context),
-                        child: ShowProductImageWidget(
-                          imageUrl: product.image,
-                          height: 300.h,
-                          width: double.infinity,
-                          fillWidgetColor: false,
-                          imageScale: 2,
+                        child: ImagesSliderWidget(
+                          images: [
+                            widget.product.image,
+                            widget.product.image,
+                            widget.product.image,
+                          ],
                         ),
                       ),
                       Container(
-                        color:
-                            AppWidgetColor.fillIconButtonWidgetColor(context),
+                        color: AppWidgetColor.fillWidgetColor(context),
                         padding: EdgeInsets.symmetric(
                             horizontal: 10.w, vertical: 10.h),
                         child: Column(
@@ -137,14 +151,14 @@ class ProductDetailsScreen extends StatelessWidget {
                             verticalSpace(10),
                             ShowProductRatingWidget(rating: '4.1'),
                             ShowProductTitleWidget(
-                              title: product.title,
+                              title: widget.product.title,
                               maxLines: 3,
                               textHeight: 50.h,
                               maxHeight: 50.h,
                             ),
                             ShowProductPriceWidget(
-                              newPrice: product.newPrice,
-                              oldPrice: product.oldPrice,
+                              newPrice: widget.product.newPrice,
+                              oldPrice: widget.product.oldPrice,
                             ),
                             verticalSpace(10),
                             ShowAvailableColorsWidget(),
@@ -176,9 +190,9 @@ class ProductDetailsScreen extends StatelessWidget {
                 ),
                 verticalSpace(10),
                 OverviewReviewTabWidget(),
-                verticalSpace(10),
+                verticalSpace(30),
                 Container(
-                  color: AppWidgetColor.fillIconButtonWidgetColor(context),
+                  color: AppWidgetColor.fillWidgetColor(context),
                   child: Column(
                     children: [
                       SoldByWidget(),

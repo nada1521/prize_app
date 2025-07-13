@@ -1,4 +1,5 @@
 import 'package:prize/core/utils/helper/spacing.dart';
+import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/features/complete_profile/data/models/product_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -72,13 +73,24 @@ class ProductWidget extends StatelessWidget {
                 ],
               ),
             ),
-
+            Container(
+              height: 1.2,
+              width: 200.w,
+              margin: EdgeInsets.only(
+                bottom: 10.h,
+              ),
+              decoration: BoxDecoration(
+                color: AppWidgetColor.outlineWidgetColor,
+              ),
+            ),
             // icon Buttons
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  ProductActionsWidget(),
+                  ProductActionsWidget(
+                    itemData: itemData,
+                  ),
                 ],
               ),
             ),

@@ -5,11 +5,12 @@ import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
-import 'package:prize/core/widgets/app_disable_button.dart';
+import 'package:prize/core/widgets/app_outline_button.dart';
 import 'package:prize/core/widgets/app_fill_background_button.dart';
 import 'package:prize/core/widgets/main/app_checkbox.dart';
 import 'package:prize/features/products_filter/views/widgets/price_range_slider_widget.dart';
 import 'package:prize/features/products_filter/views/widgets/rating_slider_widget.dart';
+import 'package:syncfusion_flutter_sliders/sliders.dart';
 
 class ProductsFilterScreen extends StatelessWidget {
   const ProductsFilterScreen({super.key});
@@ -142,10 +143,9 @@ class ProductsFilterScreen extends StatelessWidget {
             initialRating: 4.8,
             onChanged: (val) {},
           ),
-          verticalSpace(15),
+          verticalSpace(30),
           PriceRangeSliderWidget(
-            initialValues: priceRange,
-            onChanged: (val) {},
+            initialValues: SfRangeValues(priceRange.start, priceRange.end),
           ),
           verticalSpace(20)
         ],

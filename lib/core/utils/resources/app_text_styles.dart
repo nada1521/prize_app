@@ -78,6 +78,14 @@ class AppTextStyles {
         color: AppColors.white,
       );
 
+  static TextStyle meduimBody16W500BlackAndWhiteTitleTextStyle(
+          BuildContext context) =>
+      TextStyle(
+        fontSize: 16,
+        fontWeight: FontWeight.w500,
+        color: AppColors.secondDarkBlue,
+      );
+
   static TextStyle smallBodyTitle12w400TextStyle(BuildContext context) =>
       TextStyle(
         fontSize: 12,

@@ -21,6 +21,7 @@ abstract class AppColors {
   static const Color fillwidgetSecondDarkBlue = Color(0xFF242A36);
 
   static const Color browen = Color(0xFF440C06);
+  static const Color regentBlue = Color(0xFF369AC1);
   static const Color darkModeGray = Color(0xFF4C515B);
   static const Color tanOrange = Color(0xFFFE7839);
   static const Color lightModeTanOrange = Color(0xFFFC5313);
