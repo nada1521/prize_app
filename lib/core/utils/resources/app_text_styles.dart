@@ -25,7 +25,9 @@ class AppTextStyles {
         fontWeight: FontWeight.w600,
         color: context.isDarkTheme ? AppColors.white : AppColors.darkBlue,
       );
-  static TextStyle headTitle14w500WhiteAndDarkBlueTextStyle(BuildContext context) => TextStyle(
+  static TextStyle headTitle14w500WhiteAndDarkBlueTextStyle(
+          BuildContext context) =>
+      TextStyle(
         fontSize: 14,
         fontWeight: FontWeight.w500,
         color: context.isDarkTheme ? AppColors.white : AppColors.darkBlue,

@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 import 'package:easy_localization/easy_localization.dart';
->>>>>>> 1140b940fa691cbec04c71b8e0b6a9406c8c6bbf
 import 'package:flutter/material.dart';
 import 'package:prize/core/utils/constants.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
