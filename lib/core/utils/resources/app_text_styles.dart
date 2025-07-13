@@ -32,6 +32,12 @@ class AppTextStyles {
         fontWeight: FontWeight.w500,
         color: context.isDarkTheme ? AppColors.white : AppColors.darkBlue,
       );
+  static TextStyle headTitle14w400GreenTextStyle(BuildContext context) =>
+      TextStyle(
+        fontSize: 14,
+        fontWeight: FontWeight.w400,
+        color: AppColors.greenColor,
+      );
   static TextStyle smallHeadTitle22w400TextStyle(BuildContext context) =>
       TextStyle(
         fontSize: 12,
@@ -86,6 +92,13 @@ class AppTextStyles {
         fontSize: 16,
         fontWeight: FontWeight.w500,
         color: AppColors.secondDarkBlue,
+      );
+  static TextStyle meduimBody16W600BlackAndWhiteTitleTextStyle(
+          BuildContext context) =>
+      TextStyle(
+        fontSize: 16,
+        fontWeight: FontWeight.w600,
+        color: context.isDarkTheme ? AppColors.white : AppColors.darkBlue,
       );
 
   static TextStyle smallBodyTitle12w400TextStyle(BuildContext context) =>
@@ -214,4 +227,16 @@ class AppTextStyles {
                 ? AppColors.secondDarkBlue
                 : AppColors.white,
       );
+
+
+
+  //  chekOut screen 
+   static TextStyle bodyTitle14w500PeriwinkleTextStyle(BuildContext context) => TextStyle(
+        fontSize: 16,
+        fontWeight: FontWeight.w400,
+        color: context.isDarkTheme
+            ? AppColors.darkPeriwinkle
+            : AppColors.periwinkle,
+      );
+   
 }

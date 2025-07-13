@@ -66,6 +66,23 @@ class _SettingScreenState extends State<SettingScreen> {
         title: LocaleKeys.setting_screen_general_settings_items_language.tr(),
         isChangeLanguageButton: true,
       ),
+<<<<<<< HEAD
+=======
+      SettingItemModel(imagePath: AppSvgs.ordersIcon, title: "My Orders"),
+      SettingItemModel(
+          imagePath: AppSvgs.lockSettingChangePasswordIcon,
+          title: LocaleKeys
+              .setting_screen_general_settings_items_change_password
+              .tr()),
+      SettingItemModel(
+          imagePath: AppSvgs.notificationBingSettingsIcon,
+          title: LocaleKeys.setting_screen_general_settings_items_notification
+              .tr()),
+      SettingItemModel(
+          imagePath: AppSvgs.changeLanguageIcon,
+          title:
+              LocaleKeys.setting_screen_general_settings_items_language.tr()),
+>>>>>>> 01028019757195676e9ba2fedd61b610652b54d3
       SettingItemModel(
           imagePath: AppSvgs.ordersIcon,
           title:
@@ -112,14 +129,40 @@ class _SettingScreenState extends State<SettingScreen> {
       ),
       SettingItemModel(
         imagePath: AppSvgs.infoCircle,
+<<<<<<< HEAD
         title: LocaleKeys.setting_screen_info_settings_items_about.tr(),
+=======
+        title: "About",
+        onTap: () => pushTo(
+          context,
+          AboutScreen(),
+        ),
+      ),
+      SettingItemModel(
+          imagePath: AppSvgs.callContactUsSettingIcon,
+          title: LocaleKeys.setting_screen_info_settings_items_customer_support
+              .tr()),
+      SettingItemModel(
+          imagePath: AppSvgs.messageQuestion,
+          title: LocaleKeys.setting_screen_info_settings_items_faqs.tr()),
+      SettingItemModel(
+          imagePath: AppSvgs.blogIcon,
+          title: LocaleKeys.setting_screen_info_settings_items_blog.tr()),
+      SettingItemModel(
+        imagePath: AppSvgs.documentText,
+        title:
+            LocaleKeys.setting_screen_policy_settings_items_privacy_policy.tr(),
+>>>>>>> 01028019757195676e9ba2fedd61b610652b54d3
         onTap: () => pushTo(
           context,
           AboutScreen(),
         ),
       ),
     ];
+<<<<<<< HEAD
 
+=======
+>>>>>>> 01028019757195676e9ba2fedd61b610652b54d3
     List<SettingItemModel> policySettingsItems = [
       SettingItemModel(
         imagePath: AppSvgs.documentText,
@@ -133,7 +176,11 @@ class _SettingScreenState extends State<SettingScreen> {
       SettingItemModel(
         imagePath: AppSvgs.documentText,
         title: LocaleKeys
+<<<<<<< HEAD
             .setting_screen_policy_settings_items_terms_and_condition_terms_and_condition
+=======
+            .setting_screen_policy_settings_items_terms_and_condition
+>>>>>>> 01028019757195676e9ba2fedd61b610652b54d3
             .tr(),
         onTap: () => pushTo(
           context,
