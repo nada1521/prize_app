@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:prize/core/utils/constants.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
 import 'package:prize/features/setting/policy/widgets/build_normal_paragraph_widget.dart';
@@ -13,28 +15,43 @@ class WarrantyPolicyScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Map<String, String>> informationWeCollect = [
       {
-        "title": "Personal Information:",
-        "description": "Name, email address, phone number, etc.",
+        "title": LocaleKeys
+            .setting_screen_policy_settings_items_warranty_policy_information_we_collect_title_informatiom
+            .tr(),
+        "description": LocaleKeys
+            .setting_screen_policy_settings_items_warranty_policy_information_we_collect_desc_personal_information
+            .tr(),
       },
       {
-        "title": "Usage Data:",
-        "description":
-            "How you interact with our app or website, such as pages visited, time spent, clicks, etc.",
+        "title": LocaleKeys
+            .setting_screen_policy_settings_items_warranty_policy_information_we_collect_usage_data
+            .tr(),
+        "description": LocaleKeys
+            .setting_screen_policy_settings_items_warranty_policy_information_we_collect_desc_usage_data
+            .tr(),
       },
       {
-        "title": "Device Information:",
-        "description":
-            "IP address, browser type, device type, operating system, etc.",
+        "title": LocaleKeys
+            .setting_screen_policy_settings_items_warranty_policy_information_we_collect_device_information
+            .tr(),
+        "description": LocaleKeys
+            .setting_screen_policy_settings_items_warranty_policy_information_we_collect_desc_device_information
+            .tr(),
       },
       {
-        "title": "Cookies and Tracking Technologies:",
-        "description":
-            "We may use cookies or similar tracking tools to enhance user experience.",
+        "title": LocaleKeys
+            .setting_screen_policy_settings_items_warranty_policy_information_we_collect_cookies_and_technologies
+            .tr(),
+        "description": LocaleKeys
+            .setting_screen_policy_settings_items_warranty_policy_information_we_collect_desc_cookies_and_technologies
+            .tr(),
       },
     ];
     return Scaffold(
       appBar: OrangeAppbarWidget(
-        title: "Warranty Policy",
+        title: LocaleKeys
+            .setting_screen_policy_settings_items_warranty_policy_warranty_policy
+            .tr(),
         showBackButton: true,
       ),
       body: ListView(
@@ -42,23 +59,33 @@ class WarrantyPolicyScreen extends StatelessWidget {
         children: [
           verticalSpace(25),
           BuildParagraphWithDateWidget(
-              headTitle: "Warranty Policy",
+              headTitle: LocaleKeys
+                  .setting_screen_policy_settings_items_warranty_policy_warranty_policy
+                  .tr(),
               lastUpdateDate: "22 Mar 2025",
-              bodyTitle:
-                  "we are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information"),
+              bodyTitle: LocaleKeys
+                  .setting_screen_policy_settings_items_warranty_policy_body_title_warranty_policy
+                  .tr()),
           verticalSpace(25),
           BuildParagraphWithBulletWidget(
             index: 1,
-            paragraphTitle: "Information We Collect",
+            paragraphTitle: LocaleKeys
+                .setting_screen_policy_settings_items_warranty_policy_information_we_collect_title_informatiom
+                .tr(),
             paragraphData: informationWeCollect,
-            hintText: "We may collect the following types of information:",
+            hintText: LocaleKeys
+                .setting_screen_policy_settings_items_warranty_policy_hint_text
+                .tr(),
           ),
           verticalSpace(25),
           BuildNormalParagraphWidget(
             index: 2,
-            headTitle: "How We Use Your Information",
-            bodyTitle:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ',
+            headTitle: LocaleKeys
+                .setting_screen_policy_settings_items_warranty_policy_how_We_use_your_information
+                .tr(),
+            bodyTitle: LocaleKeys
+                .setting_screen_policy_settings_items_warranty_policy_body_title_how_are_information
+                .tr(),
           )
         ],
       ),
