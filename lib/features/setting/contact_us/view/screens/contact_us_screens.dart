@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:prize/core/utils/constants.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/validation/app_validation.dart';
@@ -20,8 +22,8 @@ class ContactUsScreens extends StatelessWidget {
 
     final List<TextFieldModel> textFieldModels = [
       TextFieldModel(
-        title: "Name",
-        hintText: "enter your name",
+        title: LocaleKeys.setting_screen_contact_us_name.tr(),
+        hintText: LocaleKeys.setting_screen_contact_us_enter_your_name.tr(),
         validator: (data) {
           return AppValidation.nameValidation(data);
         },
@@ -29,7 +31,7 @@ class ContactUsScreens extends StatelessWidget {
       ),
       TextFieldModel(
         isPhoneNumber: true,
-        title: "Phone Number",
+        title: LocaleKeys.setting_screen_contact_us_phone_number.tr(),
         hintText: "00000000",
         validator: (data) {
           return AppValidation.phoneNumberValidation(data);
@@ -37,7 +39,7 @@ class ContactUsScreens extends StatelessWidget {
         controller: phoneNumberController,
       ),
       TextFieldModel(
-        title: "Email",
+        title: LocaleKeys.setting_screen_contact_us_email.tr(),
         hintText: "example@gmail.com",
         validator: (data) {
           return AppValidation.emailValidation(data);
@@ -45,8 +47,8 @@ class ContactUsScreens extends StatelessWidget {
         controller: emailController,
       ),
       TextFieldModel(
-        title: "Message",
-        hintText: "write your message",
+        title: LocaleKeys.setting_screen_contact_us_message.tr(),
+        hintText: LocaleKeys.setting_screen_contact_us_write_your_message.tr(),
         validator: (data) {
           return AppValidation.contactUsMessageValidation(data!);
         },
@@ -57,7 +59,7 @@ class ContactUsScreens extends StatelessWidget {
 
     return Scaffold(
       appBar: OrangeAppbarWidget(
-        title: "Contact Us",
+        title: LocaleKeys.setting_screen_contact_us_contact_us.tr(),
         showBackButton: true,
       ),
       body: Padding(
@@ -65,13 +67,14 @@ class ContactUsScreens extends StatelessWidget {
         child: ListView(
           children: [
             Text(
-              "Are you having a problem? How can we help you?",
+              LocaleKeys.setting_screen_contact_us_haveing_a_problem.tr(),
               style: AppTextStyles.headTitle24w600TextStyle(context).copyWith(
                 fontSize: 20,
               ),
             ),
             Text(
-              "We are happy for you to send us any problems you face in our application.",
+              LocaleKeys.setting_screen_contact_us_problems_in_our_application
+                  .tr(),
               style:
                   AppTextStyles.bodyTitle18w400darkPeriwinkleTextStyle(context)
                       .copyWith(
@@ -97,7 +100,7 @@ class ContactUsScreens extends StatelessWidget {
         padding: screensPadding,
         child: AppFillBckgroundButton(
           onTap: () {},
-          title: "Send",
+          title: LocaleKeys.setting_screen_contact_us_send.tr(),
         ),
       ),
     );
