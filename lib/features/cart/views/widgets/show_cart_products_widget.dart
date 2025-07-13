@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
@@ -10,87 +11,127 @@ import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/core/utils/resources/counter_app_widget.dart';
-import 'package:prize/core/widgets/app_disable_button.dart';
+import 'package:prize/core/widgets/app_outline_button.dart';
+import 'package:prize/features/complete_profile/data/models/product_model.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_image_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_price_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_title_widget.dart';
+import 'package:prize/features/complete_profile/wishlist/logic/adding_product_to_cart_cubit/adding_product_to_cart_cubit.dart';
 
-class ShowCartProductsWidget extends StatelessWidget {
-  const ShowCartProductsWidget({super.key});
+class ShowCartProductsWidget extends StatefulWidget {
+  const ShowCartProductsWidget({super.key, required this.product});
+
+  final ProductModel product;
+
+  @override
+  State<ShowCartProductsWidget> createState() => _ShowCartProductsWidgetState();
+}
+
+class _ShowCartProductsWidgetState extends State<ShowCartProductsWidget> {
+  bool isVisible = true;
+  bool isFavorite = false;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      // color: Colors.amber,
-      constraints: BoxConstraints(
-        maxHeight: 231.h,
-      ),
-      margin: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          Expanded(
-            child: Row(
+    return Visibility(
+      visible: isVisible,
+      child: Container(
+        width: double.infinity,
+        color: AppWidgetColor.fillWidgetByLightBackgroundColor(context),
+        padding: EdgeInsets.symmetric(horizontal: 10.h),
+        constraints: BoxConstraints(
+          maxHeight: 235.h,
+        ),
+        margin: EdgeInsets.only(
+          bottom: 10.h,
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 ShowProductImageWidget(
                   imageUrl: productsWithoutOffer[0].image,
-                  width: 100.w,
-                  height: 100.h,
+                  width: 90.w,
+                  height: 130.h,
                 ),
                 horizontalSpace(10),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text("Defacto"), // no need localizition ❌
-
-                    ShowProductTitleWidget(
-                      title: productsWithoutOffer[0].title,
-                      maxLines: 2,
-                      textHeight: 60.h,
-                      maxHeight: 40.h,
+                    Text("Defacto"),
+                    ConstrainedBox(
+                      constraints: BoxConstraints(
+                        maxWidth: 160.w,
+                      ),
+                      child: ShowProductTitleWidget(
+                        title: widget.product.title,
+                        maxLines: 2,
+                        textHeight: 60.h,
+                        maxHeight: 40.h,
+                      ),
                     ),
-
                     ShowProductPriceWidget(
-                      newPrice: "644",
-                      oldPrice: "810",
+                      newPrice: widget.product.newPrice,
+                      oldPrice: widget.product.oldPrice,
                     ),
-
                     Container(
                       height: 29.h,
                       width: 100.w,
                       decoration: BoxDecoration(
-                          color:
-                              AppWidgetColor.fillIconButtonWidgetColor(context),
-                          borderRadius: BorderRadius.circular(48.r)),
+                        color:
+                            AppWidgetColor.fillIconButtonWidgetColor(context),
+                        borderRadius: BorderRadius.circular(48.r),
+                      ),
                       child: FittedBox(
                         child: Padding(
-                          padding:
-                              EdgeInsetsGeometry.symmetric(horizontal: 10.w),
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 8.w, vertical: 8.h),
                           child: Text("Black / XL"),
                         ),
                       ),
                     ),
                   ],
                 ),
+                const Spacer(),
                 InkWell(
+                  onTap: () {
+                    setState(() {
+                      isFavorite = !isFavorite;
+                    });
+                  },
                   child: SvgPicture.asset(
-                    AppSvgs.heart,
+                    isFavorite ? AppSvgs.fiilHeartIcon : AppSvgs.heart,
+                    color: isFavorite
+                        ? AppWidgetColor.favoriteSelectedIconColor
+                        : AppWidgetColor.favoriteUnSelectedIconColor(context),
+                    height: 24.h,
+                    width: 24.w,
                   ),
                 ),
               ],
             ),
-          ),
-          Expanded(
-            child: Row(
+            verticalSpace(20),
+            Row(
               children: [
                 AppOutLineButton(
                   height: 40.h,
                   width: 100.w,
-                  onTap: () {},
+                  onTap: () {
+                    final selectedProducts = context
+                        .watch<AddingProductToCartCubit>()
+                        .state
+                        .selectedProducts;
+                    selectedProducts.removeWhere(
+                      (element) => element.title == widget.product.title,
+                    );
+                    setState(() {
+                      isVisible = false;
+                    });
+                  },
                   title: LocaleKeys.cart_screen_remove.tr(),
                   icon: SvgPicture.asset(AppSvgs.removeTrash),
                   border: GlobalAppWidgetsStyles.containerPeriwinkleBoxBorder(
@@ -98,15 +139,15 @@ class ShowCartProductsWidget extends StatelessWidget {
                   style: AppTextStyles.appEmptyFillColorButtonTextStyle(context)
                       .copyWith(color: AppColors.darkPeriwinkle),
                 ),
-                Spacer(),
+                const Spacer(),
                 CounterAppWidget(
                   value: 4,
                   onChanged: (v) {},
                 ),
               ],
-            ),
-          )
-        ],
+            )
+          ],
+        ),
       ),
     );
   }

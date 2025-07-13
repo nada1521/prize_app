@@ -29,14 +29,6 @@ class ShowProductRatingWidget extends StatelessWidget {
               ),
             ],
           ),
-          verticalSpace(5),
-          Flexible(
-            child: Divider(
-              height: 1.5,
-              thickness: 1.5,
-              color: Theme.of(context).colorScheme.outline.withOpacity(.3),
-            ),
-          ),
         ],
       ),
     );

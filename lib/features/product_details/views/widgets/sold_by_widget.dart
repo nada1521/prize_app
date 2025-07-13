@@ -32,7 +32,7 @@ class SoldByWidget extends StatelessWidget {
                 shape: BoxShape.rectangle,
                 borderRadius: BorderRadius.circular(14.r),
                 image: DecorationImage(
-                  image: AssetImage(AppImages.happyEmoje),
+                  image: AssetImage(AppImages.saller),
                 )),
           ),
           horizontalSpace(10),

@@ -19,6 +19,7 @@ class AppSvgs {
   static const String callContactUsSettingIcon = 'assets/svgs/call-contact-us_setting_icon.svg';  
   static const String cart = 'assets/svgs/cart.svg';  
   static const String changeLanguageIcon = 'assets/svgs/change_language_icon.svg';  
+  static const String chatWithUsMessagesIcon = 'assets/svgs/chat_with_us_messages_icon.svg';  
   static const String clock = 'assets/svgs/clock.svg';  
   static const String closeCircle = 'assets/svgs/close-circle.svg';  
   static const String closeSquare = 'assets/svgs/close-square.svg';  
@@ -32,6 +33,7 @@ class AppSvgs {
   static const String email = 'assets/svgs/email.svg';  
   static const String emojes = 'assets/svgs/emojes.svg';  
   static const String emptyCart = 'assets/svgs/empty_cart.svg';  
+  static const String fiilHeartIcon = 'assets/svgs/fiil_heart_icon.svg';  
   static const String gift = 'assets/svgs/gift.svg';  
   static const String heart = 'assets/svgs/heart.svg';  
   static const String home = 'assets/svgs/home.svg';  
@@ -69,7 +71,9 @@ class AppSvgs {
   static const String sportWishlistTrushIconButtomSheet = 'assets/svgs/sport_wishlist_trush_icon_buttom_sheet.svg';  
   static const String star = 'assets/svgs/star.svg';  
   static const String successImage = 'assets/svgs/success_image.svg';  
+  static const String ticket = 'assets/svgs/ticket.svg';  
   static const String trash = 'assets/svgs/trash.svg';  
+  static const String userAdd = 'assets/svgs/user-add.svg';  
   static const String userTag = 'assets/svgs/user-tag.svg';  
   static const String userAvatar = 'assets/svgs/user_avatar.svg';  
   static const String wallet = 'assets/svgs/wallet.svg';  

@@ -27,7 +27,8 @@ class TermsAndConditionsText extends StatelessWidget {
             recognizer: TapGestureRecognizer()
               ..onTap = () async {
                 // Navigation To TermsAndConditionsScreen
-                final Uri uri = Uri.parse(AppUrls.policyUrl);
+                final Uri uri =
+                    Uri.parse(AppUrls.teremsAndConditionUrl(context));
 
                 await launchUrl(
                   uri,
@@ -47,7 +48,7 @@ class TermsAndConditionsText extends StatelessWidget {
             recognizer: TapGestureRecognizer()
               ..onTap = () async {
                 // Navigation To TermsAndConditionsScreen
-                final Uri uri = Uri.parse(AppUrls.policyUrl);
+                final Uri uri = Uri.parse(AppUrls.policyUrl(context));
 
                 await launchUrl(
                   uri,

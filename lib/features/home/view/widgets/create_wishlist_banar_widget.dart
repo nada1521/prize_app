@@ -5,9 +5,11 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:prize/core/constant/app_images.dart';
 import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
+import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/widgets/app_fill_background_button.dart';
+import 'package:prize/features/profile/view/screen/create_wishlist_from_profile_screen.dart';
 
 class CreateWishlistBanarWidget extends StatelessWidget {
   const CreateWishlistBanarWidget({super.key});
@@ -66,7 +68,11 @@ class CreateWishlistBanarWidget extends StatelessWidget {
                         maxWidth: 160.w,
                       ),
                       child: AppFillBckgroundButton(
-                          onTap: () {}, title: LocaleKeys.home_wishist_banar_button_title.tr()),
+                          onTap: () {
+                            pushTo(context, CreateWishlistFromProfileScreen());
+                          },
+                          title:
+                              LocaleKeys.home_wishist_banar_button_title.tr()),
                     ),
                   )
                 ],

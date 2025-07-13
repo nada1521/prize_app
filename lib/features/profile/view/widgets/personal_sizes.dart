@@ -5,7 +5,7 @@ import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 
 class PersonalSizes extends StatelessWidget {
-  PersonalSizes({super.key});
+  PersonalSizes({super.key, this.textColor, this.backGroundColor});
 
   final List<String> sizes = [
     "${LocaleKeys.profile_screen_personal_size_shoes_size.tr()} 30",
@@ -14,6 +14,8 @@ class PersonalSizes extends StatelessWidget {
     "${LocaleKeys.profile_screen_personal_size_t_shirt_size.tr()} XL",
   ];
 
+  final Color? textColor;
+  final Color? backGroundColor;
   @override
   Widget build(BuildContext context) {
     return Wrap(
@@ -23,8 +25,9 @@ class PersonalSizes extends StatelessWidget {
         return Container(
           padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 8.h),
           decoration: BoxDecoration(
-            color: AppWidgetColor.fillWidgetByLightBackgroundColor(context)
-                .withOpacity(.25),
+            color: backGroundColor ??
+                AppWidgetColor.fillWidgetByLightBackgroundColor(context)
+                    .withOpacity(.25),
             borderRadius: BorderRadius.circular(12.r),
             border: GlobalAppWidgetsStyles.containerGrayBoxBorder(context),
           ),
@@ -32,7 +35,7 @@ class PersonalSizes extends StatelessWidget {
             text,
             style: TextStyle(
               fontSize: 14.sp,
-              color: Colors.white,
+              color: textColor ?? Colors.white,
               fontWeight: FontWeight.w500,
             ),
           ),

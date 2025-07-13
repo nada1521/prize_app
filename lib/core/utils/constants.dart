@@ -10,93 +10,107 @@ bool isFirstTimeForUser = false;
 
 final List<ProductModel> productsWithoutOffer = [
   ProductModel(
-    image: 'https://m.media-amazon.com/images/I/21Ja9ORL97L._AC_.jpg',
+    image:
+        'https://vfgvipnlrjvzdoxiiaoj.supabase.co/storage/v1/object/public/product_images//Screenshot_2025-07-10_213549-removebg-preview.png',
     newPrice: '644',
     oldPrice: r'844',
-    title: 'Philips PowerPro\nCompact Bagless Vacu nada',
+    title: 'Phidlps PowerPro\nCompact Bagless Vacu nada',
     isOffer: false,
   ),
   ProductModel(
-    image: 'https://m.media-amazon.com/images/I/21Ja9ORL97L._AC_.jpg',
+    image:
+        'https://vfgvipnlrjvzdoxiiaoj.supabase.co/storage/v1/object/public/product_images//Screenshot_2025-07-10_213549-removebg-preview.png',
     newPrice: '644',
     oldPrice: '844',
-    title: 'Philips PowerPro\nCompact Bagless Vacu nada',
+    title: 'Phiips PowerPro\nCompact Bagless Vacu nada',
     isOffer: false,
   ),
   ProductModel(
-    image: 'https://m.media-amazon.com/images/I/21Ja9ORL97L._AC_.jpg',
+    image:
+        'https://vfgvipnlrjvzdoxiiaoj.supabase.co/storage/v1/object/public/product_images//Screenshot_2025-07-10_213549-removebg-preview.png',
     newPrice: '644',
     oldPrice: '844',
-    title: 'Philips PowerPro\nCompact Bagless Vacu nada',
+    title: 'hilips PowerPro\nCompact Bagless Vacu nada',
     isOffer: false,
   ),
   ProductModel(
-    image: 'https://m.media-amazon.com/images/I/21Ja9ORL97L._AC_.jpg',
+    image:
+        'https://vfgvipnlrjvzdoxiiaoj.supabase.co/storage/v1/object/public/product_images//Screenshot_2025-07-10_213549-removebg-preview.png',
     newPrice: '644',
     oldPrice: '844',
-    title: 'Philips PowerPro\nCompact Bagless Vacu nada',
+    title: 'Philip PowerPro\nCompact Bagless Vacu nada',
     isOffer: false,
   ),
   ProductModel(
-    image: 'https://m.media-amazon.com/images/I/21Ja9ORL97L._AC_.jpg',
+    image:
+        'https://vfgvipnlrjvzdoxiiaoj.supabase.co/storage/v1/object/public/product_images//Screenshot_2025-07-10_213549-removebg-preview.png',
     newPrice: '644',
     oldPrice: '844',
-    title: 'Philips PowerPro\nCompact Bagless Vacu nada',
+    title: 'Phlips PowerPro\nCompact Bagless Vacu nada',
     isOffer: false,
   ),
   ProductModel(
-    image: 'https://m.media-amazon.com/images/I/21Ja9ORL97L._AC_.jpg',
+    image:
+        'https://vfgvipnlrjvzdoxiiaoj.supabase.co/storage/v1/object/public/product_images//Screenshot_2025-07-10_213549-removebg-preview.png',
     newPrice: '644',
     oldPrice: '844',
-    title: 'Philips PowerPro\nCompact Bagless Vacu nada',
+    title: 'Philps PowerPro\nCompact Bagless Vacu nada',
     isOffer: false,
   ),
 ];
 
 final List<ProductModel> productsWitOffer = [
   ProductModel(
-    image: 'https://m.media-amazon.com/images/I/21Ja9ORL97L._AC_.jpg',
+    image:
+        'https://vfgvipnlrjvzdoxiiaoj.supabase.co/storage/v1/object/public/product_images//Screenshot_2025-07-10_213549-removebg-preview.png',
     newPrice: '644',
     oldPrice: r'844',
-    title: 'Philips PowerPro\nCompact Bagless Vacu nada',
+    title: 'Pidlips PowerPro\nCompact Bagless Vacu nada',
     isOffer: true,
   ),
   ProductModel(
-    image: 'https://m.media-amazon.com/images/I/21Ja9ORL97L._AC_.jpg',
+    image:
+        'https://vfgvipnlrjvzdoxiiaoj.supabase.co/storage/v1/object/public/product_images//Screenshot_2025-07-10_213549-removebg-preview.png',
+    newPrice: '644',
+    oldPrice: '844',
+    title: 'Phidlip PowerPro\nCompact Bagless Vacu nada',
+    isOffer: true,
+  ),
+  ProductModel(
+    image:
+        'https://vfgvipnlrjvzdoxiiaoj.supabase.co/storage/v1/object/public/product_images//Screenshot_2025-07-10_213549-removebg-preview.png',
+    newPrice: '644',
+    oldPrice: '844',
+    title: 'Phidlps PowerPro\nCompact Bagless Vacu nada',
+    isOffer: true,
+  ),
+  ProductModel(
+    image:
+        'https://vfgvipnlrjvzdoxiiaoj.supabase.co/storage/v1/object/public/product_images//Screenshot_2025-07-10_213549-removebg-preview.png',
     newPrice: '644',
     oldPrice: '844',
     title: 'Philips PowerPro\nCompact Bagless Vacu nada',
     isOffer: true,
   ),
   ProductModel(
-    image: 'https://m.media-amazon.com/images/I/21Ja9ORL97L._AC_.jpg',
+    image:
+        'https://vfgvipnlrjvzdoxiiaoj.supabase.co/storage/v1/object/public/product_images//Screenshot_2025-07-10_213549-removebg-preview.png',
     newPrice: '644',
     oldPrice: '844',
-    title: 'Philips PowerPro\nCompact Bagless Vacu nada',
+    title: 'Phdlips PowerPro\nCompact Bagless Vacu nada',
     isOffer: true,
   ),
   ProductModel(
-    image: 'https://m.media-amazon.com/images/I/21Ja9ORL97L._AC_.jpg',
+    image:
+        'https://vfgvipnlrjvzdoxiiaoj.supabase.co/storage/v1/object/public/product_images//Screenshot_2025-07-10_213549-removebg-preview.png',
     newPrice: '644',
     oldPrice: '844',
-    title: 'Philips PowerPro\nCompact Bagless Vacu nada',
-    isOffer: true,
-  ),
-  ProductModel(
-    image: 'https://m.media-amazon.com/images/I/21Ja9ORL97L._AC_.jpg',
-    newPrice: '644',
-    oldPrice: '844',
-    title: 'Philips PowerPro\nCompact Bagless Vacu nada',
-    isOffer: true,
-  ),
-  ProductModel(
-    image: 'https://m.media-amazon.com/images/I/21Ja9ORL97L._AC_.jpg',
-    newPrice: '644',
-    oldPrice: '844',
-    title: 'Philips PowerPro\nCompact Bagless Vacu nada',
+    title: 'Phidlisps PowerPro\nCompact Bagless Vacu nada',
     isOffer: true,
   ),
 ];
+
+List<ProductModel> selectedProducts = [];
 
 abstract class AppConstants {
   static const String dialCode = "20";
@@ -127,5 +141,7 @@ checkFirstTimeChecker() async {
   isFirstTimeForUser = isFirstTime;
 }
 
-
-EdgeInsetsGeometry screensPadding = EdgeInsets.symmetric(horizontal: 20.w , vertical: 20.h ,); 
+EdgeInsetsGeometry screensPadding = EdgeInsets.symmetric(
+  horizontal: 20.w,
+  vertical: 20.h,
+);

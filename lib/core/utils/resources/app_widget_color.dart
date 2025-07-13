@@ -35,7 +35,7 @@ class AppWidgetColor {
       context.isDarkMode ? AppColors.darkModeGray : AppColors.lightModeGray;
 
   static Color fillWidgetByLightBackgroundColor(BuildContext context) =>
-      context.isDarkMode ? AppColors.darkModeBackground : AppColors.white;
+      context.isDarkMode ? AppColors.white : AppColors.white;
 
   static Color fillWithContrastColor(BuildContext context) =>
       context.isDarkMode ? AppColors.white : AppColors.darkBlue;
@@ -57,6 +57,11 @@ class AppWidgetColor {
 
   static Color iconColor(BuildContext context) =>
       context.isDarkMode ? AppColors.white : AppColors.darkBlue;
+
+  static Color favoriteUnSelectedIconColor(BuildContext context) =>
+      context.isDarkMode ? AppColors.white : AppColors.moreLightPeriwinkle;
+  static Color favoriteSelectedIconColor = AppColors.lightModeTanOrange;
+
   static Decoration multiSelectChoiseDecoration(
           BuildContext context, bool isSelected) =>
       BoxDecoration(
@@ -65,7 +70,9 @@ class AppWidgetColor {
                 ? AppColors.primary.withOpacity(.15)
                 : AppColors.white
             : fillBackgroundColor(context),
-        border: GlobalAppWidgetsStyles.containerGrayBoxBorder(context),
+        border: isSelected
+            ? GlobalAppWidgetsStyles.containerOrangeBoxBorder(context)
+            : null,
         borderRadius: BorderRadius.circular(12.r),
       );
 }
@@ -78,7 +85,7 @@ class GlobalAppWidgetsStyles {
         borderSide: BorderSide(
           color: context.isDarkMode
               ? AppColors.darkModeTanOrange
-              : AppColors.lightModeTanOrange,
+              : AppColors.darkModeTanOrange,
           width: 1.3,
         ),
         borderRadius: BorderRadius.circular(16.0),

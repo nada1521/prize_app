@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
+import 'package:prize/core/constant/app_urls.dart';
 import 'package:prize/core/utils/common/languages.dart';
 import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
@@ -12,16 +13,22 @@ import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
 import 'package:prize/features/setting/about/views/screens/about_screen.dart';
+import 'package:prize/features/setting/blog/view/screens/blog_screen.dart';
 import 'package:prize/features/setting/change_password/views/screens/change_password_screen.dart';
 import 'package:prize/features/setting/contact_us/view/screens/contact_us_screens.dart';
 import 'package:prize/features/setting/data/models/setting_item_model.dart';
 import 'package:prize/features/setting/notifications/views/screens/notifications_screen.dart';
 import 'package:prize/features/setting/policy/screens/privacy_policy_screen.dart';
+import 'package:prize/features/setting/policy/screens/return_and_exchange_screen.dart';
+import 'package:prize/features/setting/policy/screens/terms_and_conditions_screen.dart';
+import 'package:prize/features/setting/policy/screens/warranty_policy_screen.dart';
+import 'package:prize/features/setting/help_center/view/screens/help_center_screen.dart';
 import 'package:prize/features/setting/view/widget/change_language_button.dart';
 import 'package:prize/features/setting/view/widget/change_theme_button.dart';
 import 'package:prize/features/setting/view/widget/custom_theme_switch_button_widget.dart';
 import 'package:prize/features/setting/view/widget/points_widget.dart';
 import 'package:prize/features/theme/bloc/theme_cubit.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SettingScreen extends StatefulWidget {
   const SettingScreen({super.key});
@@ -76,10 +83,22 @@ class _SettingScreenState extends State<SettingScreen> {
         ),
       ),
       SettingItemModel(
-          imagePath: AppSvgs.callContactUsSettingIcon,
-          title: "Customer Support"),
+        imagePath: AppSvgs.callContactUsSettingIcon,
+        title: "Customer Support",
+        onTap: () => pushTo(
+          context,
+          HelpCenterScreen(),
+        ),
+      ),
       SettingItemModel(imagePath: AppSvgs.messageQuestion, title: "FAQs"),
-      SettingItemModel(imagePath: AppSvgs.blogIcon, title: "Blog"),
+      SettingItemModel(
+        imagePath: AppSvgs.blogIcon,
+        title: "Blog",
+        onTap: () => pushTo(
+          context,
+          BlogScreen(),
+        ),
+      ),
       SettingItemModel(
         imagePath: AppSvgs.infoCircle,
         title: "About",
@@ -100,15 +119,43 @@ class _SettingScreenState extends State<SettingScreen> {
         ),
       ),
       SettingItemModel(
-          imagePath: AppSvgs.documentText, title: "Terms and Condition"),
+        imagePath: AppSvgs.documentText,
+        title: "Terms and Condition",
+        onTap: () => pushTo(
+          context,
+          TermsAndConditionsScreen(),
+        ),
+      ),
       SettingItemModel(
-          imagePath: AppSvgs.documentText, title: "Warranty Policy"),
+        imagePath: AppSvgs.documentText,
+        title: "Warranty Policy",
+        onTap: () => pushTo(
+          context,
+          WarrantyPolicyScreen(),
+        ),
+      ),
       SettingItemModel(
-          imagePath: AppSvgs.documentText, title: "Return and Exchange"),
+        imagePath: AppSvgs.documentText,
+        title: "Return and Exchange",
+        onTap: () => pushTo(
+          context,
+          ReturnAndExchangeScreen(),
+        ),
+      ),
     ];
 
     List<SettingItemModel> becimeAsellerItems = [
-      SettingItemModel(imagePath: AppSvgs.userTag, title: "Become a Seller"),
+      SettingItemModel(
+          imagePath: AppSvgs.userTag,
+          title: "Become a Seller",
+          onTap: () async {
+            final Uri url = Uri.parse(AppUrls.becameAsellerUrl(context));
+            if (await canLaunchUrl(url)) {
+              await launchUrl(url, mode: LaunchMode.externalApplication);
+            } else {
+              debugPrint('Could not launch $url');
+            }
+          }),
     ];
     List<SettingItemModel> accountSettingsItems = [
       SettingItemModel(imagePath: AppSvgs.logout, title: "Logout"),
