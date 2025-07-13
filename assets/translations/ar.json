@@ -477,8 +477,37 @@
     "favourite_color": "اللون المفضل:",
     "t_shirt_size": "مقاس التيشيرت:"
   }
-}
+},
 
+"setting_screen": {
+  "screen_name": "الإعدادات",
+  "points": "النقاط",
+  "general_settings_items": {
+    "mode": "الوضع",
+    "change_password": "تغيير كلمة المرور",
+    "notification": "الإشعارات",
+    "language": "اللغة",
+    "my_orders": "طلباتي",
+    "my_address": "عناويني",
+    "my_wallet": "محفظتي"
+  },
+  "info_settings_items": {
+    "contact_us": "اتصل بنا",
+    "customer_support": "دعم العملاء",
+    "faqs": "الأسئلة الشائعة",
+    "blog": "المدونة",
+    "about": "حول"
+  },
+  "policy_settings_items": {
+    "privacy_policy": "سياسة الخصوصية",
+    "terms_and_condition": "الشروط والأحكام",
+    "warranty_policy": "سياسة الضمان",
+    "return_and_exchange": "سياسة الاسترجاع والاستبدال",
+    "become_a_Seller": "كن بائعًا",
+    "logout": "تسجيل الخروج",
+    "delete_account": "حذف الحساب"
+  }
+}
 
 
 
