@@ -7,8 +7,10 @@ import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
+import 'package:prize/core/widgets/dialog/base/pop_up_dialog.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
 import 'package:prize/features/cart/checkout/views/widgets/address_widget.dart';
+import 'package:prize/features/cart/checkout/views/widgets/pop_up/order_successfully_placed_widget.dart';
 import 'package:prize/features/cart/checkout/views/widgets/select_payment_method_widget.dart';
 import 'package:prize/features/cart/checkout/views/widgets/show_products_in_order.dart';
 import 'package:prize/features/cart/views/widgets/order_summary_widget.dart';
@@ -75,7 +77,9 @@ class ChekoutScreen extends StatelessWidget {
             ),
             verticalSpace(16),
             AppSubmitButton(
-              onTap: () {},
+              onTap: () {
+                showPopup(context, OrderSuccessfullyPlacedWidget());
+              },
               title: "Submit",
             )
           ],
