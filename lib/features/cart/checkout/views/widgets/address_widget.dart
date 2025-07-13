@@ -3,9 +3,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/constants.dart';
+import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
+import 'package:prize/features/cart/change_address/views/screens/change_address_screen.dart';
 
 class AddressWidget extends StatelessWidget {
   const AddressWidget({super.key});
@@ -60,15 +62,13 @@ class AddressWidget extends StatelessWidget {
               ),
               Spacer(),
               IconButton(
-                onPressed: () {},
-                icon: InkWell(
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                    child: Icon(
-                      Icons.arrow_forward_ios_outlined,
-                      color: AppWidgetColor.fillWithContrastColor(context),
-                    )),
+                onPressed: () {
+                  pushTo(context, ChangeAddressScreen());
+                },
+                icon: Icon(
+                  Icons.arrow_forward_ios_outlined,
+                  color: AppWidgetColor.fillWithContrastColor(context),
+                ),
               ),
             ],
           )
