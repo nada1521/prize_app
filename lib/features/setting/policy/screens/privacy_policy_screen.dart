@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'package:flutter/material.dart';
 import 'package:prize/core/utils/constants.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
-import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
 import 'package:prize/features/setting/policy/widgets/build_normal_paragraph_widget.dart';
 import 'package:prize/features/setting/policy/widgets/build_paragraph_with_bullet_widget.dart';

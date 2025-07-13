@@ -1,10 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
-import 'package:prize/core/utils/common/languages.dart';
 import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
@@ -20,9 +18,7 @@ import 'package:prize/features/setting/notifications/views/screens/notifications
 import 'package:prize/features/setting/policy/screens/privacy_policy_screen.dart';
 import 'package:prize/features/setting/view/widget/change_language_button.dart';
 import 'package:prize/features/setting/view/widget/change_theme_button.dart';
-import 'package:prize/features/setting/view/widget/custom_theme_switch_button_widget.dart';
 import 'package:prize/features/setting/view/widget/points_widget.dart';
-import 'package:prize/features/theme/bloc/theme_cubit.dart';
 
 class SettingScreen extends StatefulWidget {
   const SettingScreen({super.key});
@@ -62,9 +58,7 @@ class _SettingScreenState extends State<SettingScreen> {
         isChangeLanguageButton: true,
       ),
       SettingItemModel(imagePath: AppSvgs.ordersIcon, title: "My Orders"),
-          imagePath: AppSvgs.moonSettingChangeModeIcon,
-          title: LocaleKeys.setting_screen_general_settings_items_mode.tr()),
-      SettingItemModel(
+          SettingItemModel(
           imagePath: AppSvgs.lockSettingChangePasswordIcon,
           title: LocaleKeys
               .setting_screen_general_settings_items_change_password
@@ -113,9 +107,7 @@ class _SettingScreenState extends State<SettingScreen> {
           AboutScreen(),
         ),
       ),
-          imagePath: AppSvgs.callContactUsSettingIcon,
-          title: LocaleKeys.setting_screen_info_settings_items_contact_us.tr()),
-      SettingItemModel(
+          SettingItemModel(
           imagePath: AppSvgs.callContactUsSettingIcon,
           title: LocaleKeys.setting_screen_info_settings_items_customer_support
               .tr()),
@@ -139,9 +131,7 @@ class _SettingScreenState extends State<SettingScreen> {
           PrivacyPolicyScreen(),
         ),
       ),
-          imagePath: AppSvgs.documentText,
-          title: LocaleKeys.setting_screen_policy_settings_items_privacy_policy
-              .tr()),
+        
       SettingItemModel(
           imagePath: AppSvgs.documentText,
           title: LocaleKeys

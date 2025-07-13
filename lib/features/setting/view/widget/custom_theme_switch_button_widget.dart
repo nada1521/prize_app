@@ -1,13 +1,13 @@
-import 'package:easy_localization/easy_localization.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
-import 'package:prize/core/utils/resources/app_theme.dart';
+
 import 'package:prize/core/utils/resources/app_widget_color.dart';
-import 'package:prize/features/theme/bloc/theme_cubit.dart';
+
 
 class CustomThemeSwitchWidget extends StatelessWidget {
   final bool isDarkMode;

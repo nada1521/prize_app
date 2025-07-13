@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:prize/core/utils/constants.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/validation/app_validation.dart';

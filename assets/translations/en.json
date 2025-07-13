@@ -425,8 +425,8 @@
   "star_low":"Star",
   "stars_high":"Stars"
  },
- "shop_screen":{
-  
+
+ "shop_screen":{ 
   "special_offers":"Special Offers",
   "flash_sale":"Flash sale",
   "new_arri":"New Arri"
@@ -443,8 +443,9 @@
   "recently_viewed":"Recently viewed",
   "birthday_gifts":"Birthday gifts",
   "remove":"Remove"
+ },
 
- },"profile_screen":{
+ "profile_screen":{
   "edit_profile":"Edit Profile",
   "share_profile":"Share Profile",
   "graduation":"Graduation",
@@ -492,7 +493,5 @@
     "logout":"Logout",
     "delete_account":"Delete Account"
   }
- 
- 
  }
 }
