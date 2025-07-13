@@ -3,11 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
-<<<<<<< HEAD
-=======
 import 'package:prize/core/constant/app_urls.dart';
 import 'package:prize/core/utils/common/languages.dart';
->>>>>>> 1140b940fa691cbec04c71b8e0b6a9406c8c6bbf
 import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
@@ -29,12 +26,8 @@ import 'package:prize/features/setting/help_center/view/screens/help_center_scre
 import 'package:prize/features/setting/view/widget/change_language_button.dart';
 import 'package:prize/features/setting/view/widget/change_theme_button.dart';
 import 'package:prize/features/setting/view/widget/points_widget.dart';
-<<<<<<< HEAD
-
-=======
 import 'package:prize/features/theme/bloc/theme_cubit.dart';
 import 'package:url_launcher/url_launcher.dart';
->>>>>>> 1140b940fa691cbec04c71b8e0b6a9406c8c6bbf
 class SettingScreen extends StatefulWidget {
   const SettingScreen({super.key});
 
@@ -74,13 +67,7 @@ class _SettingScreenState extends State<SettingScreen> {
         title: LocaleKeys.setting_screen_general_settings_items_language.tr(),
         isChangeLanguageButton: true,
       ),
-      SettingItemModel(imagePath: AppSvgs.ordersIcon, title: "My Orders"),
-<<<<<<< HEAD
-          SettingItemModel(
-=======
-        
       SettingItemModel(
->>>>>>> 1140b940fa691cbec04c71b8e0b6a9406c8c6bbf
           imagePath: AppSvgs.lockSettingChangePasswordIcon,
           title: LocaleKeys
               .setting_screen_general_settings_items_change_password
@@ -136,11 +123,7 @@ class _SettingScreenState extends State<SettingScreen> {
           AboutScreen(),
         ),
       ),
-<<<<<<< HEAD
-          SettingItemModel(
-=======
       SettingItemModel(
->>>>>>> 1140b940fa691cbec04c71b8e0b6a9406c8c6bbf
           imagePath: AppSvgs.callContactUsSettingIcon,
           title: LocaleKeys.setting_screen_info_settings_items_customer_support
               .tr()),
@@ -161,9 +144,6 @@ class _SettingScreenState extends State<SettingScreen> {
           AboutScreen(),
         ),
       ),
-<<<<<<< HEAD
-        
-=======
     List<SettingItemModel> policySettingsItems = [
       SettingItemModel(
           imagePath: AppSvgs.documentText,
@@ -173,7 +153,6 @@ class _SettingScreenState extends State<SettingScreen> {
               ),
           title: LocaleKeys.setting_screen_policy_settings_items_privacy_policy
               .tr()),
->>>>>>> 1140b940fa691cbec04c71b8e0b6a9406c8c6bbf
       SettingItemModel(
   imagePath: AppSvgs.documentText,
           title: LocaleKeys
