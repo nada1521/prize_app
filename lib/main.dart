@@ -1,4 +1,6 @@
 import 'package:prize/core/utils/constants.dart';
+import 'package:prize/features/complete_profile/wishlist/logic/adding_product_to_cart_cubit/adding_product_to_cart_cubit.dart';
+import 'package:prize/features/complete_profile/wishlist/logic/adding_product_to_wishlist_cubit/adding_product_to_wishlist_cubit.dart';
 import 'package:prize/features/theme/bloc/theme_cubit.dart';
 import 'package:flutter/foundation.dart';
 import 'package:prize/core/dependency_injection.dart';
@@ -35,7 +37,7 @@ void main() async {
     // Init app package info singleton instance
     PackageInfoModel.init(),
   ]);
- 
+
   // Check if user open app first time
   checkFirstTimeChecker();
   // Set bloc observer to log bloc events
@@ -47,13 +49,12 @@ void main() async {
   setupTimeAgoLocales();
 
   runApp(
-    
     EasyLocalization(
       supportedLocales: Language.locales,
       path: 'assets/translations',
       ignorePluralRules: false,
       child: InternetStateManagerInitializer.init(
-        options: InternetStateOptions( 
+        options: InternetStateOptions(
           autoCheckConnection: false,
           checkConnectionTimeout: const Duration(seconds: 5),
         ),
@@ -64,6 +65,14 @@ void main() async {
             BlocProvider(
                 create: (context) => DI.di<ThemeCubit>()..getAppTheme(),
                 lazy: false),
+            BlocProvider(
+              create: (context) => AddingProductToWishlistCubit(),
+              lazy: true,
+            ),
+            BlocProvider(
+              create: (context) => AddingProductToCartCubit(),
+              lazy: true,
+            ),
           ],
           child: RequestsInspector(
             enabled: kDebugMode,
@@ -74,7 +83,5 @@ void main() async {
         ),
       ),
     ),
-
   );
 }
-

@@ -24,58 +24,61 @@ class _OverviewReviewTabWidgetState extends State<OverviewReviewTabWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 10.w),
-      child: Column(
-        children: [
-          // Tabs Row
-          Container(
-            padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 5.h),
-            decoration: BoxDecoration(
-              color: AppWidgetColor.fillIconButtonWidgetColor(context),
-              borderRadius: BorderRadius.circular(16.r),
-            ),
-            child: Row(
-              children: List.generate(titles.length, (index) {
-                final isSelected = selectedIndex == index;
-                return Expanded(
-                  child: GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        selectedIndex = index;
-                      });
-                    },
-                    child: AnimatedContainer(
-                      duration: const Duration(milliseconds: 200),
-                      padding: const EdgeInsets.symmetric(vertical: 10),
-                      decoration: BoxDecoration(
-                        color: isSelected ? Colors.white : Colors.transparent,
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                      alignment: Alignment.center,
-                      child: Text(
-                        titles[index],
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: isSelected ? Colors.black : Colors.grey,
+    return Container(
+      color: AppWidgetColor.fillWidgetByLightBackgroundColor(context),
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 15.h),
+        child: Column(
+          children: [
+            // Tabs Row
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 5.h),
+              decoration: BoxDecoration(
+                color: AppWidgetColor.fillWidgetColor(context),
+                borderRadius: BorderRadius.circular(16.r),
+              ),
+              child: Row(
+                children: List.generate(titles.length, (index) {
+                  final isSelected = selectedIndex == index;
+                  return Expanded(
+                    child: GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          selectedIndex = index;
+                        });
+                      },
+                      child: AnimatedContainer(
+                        duration: const Duration(milliseconds: 200),
+                        padding: const EdgeInsets.symmetric(vertical: 10),
+                        decoration: BoxDecoration(
+                          color: isSelected ? Colors.white : Colors.transparent,
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        alignment: Alignment.center,
+                        child: Text(
+                          titles[index],
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: isSelected ? Colors.black : Colors.grey,
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                );
-              }),
+                  );
+                }),
+              ),
             ),
-          ),
 
-          verticalSpace(20),
-          IndexedStack(
-            index: selectedIndex,
-            children: [
-              _buildOverview(),
-              _buildReview(),
-            ],
-          )
-        ],
+            verticalSpace(20),
+            IndexedStack(
+              index: selectedIndex,
+              children: [
+                _buildOverview(),
+                _buildReview(),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
@@ -87,7 +90,7 @@ class _OverviewReviewTabWidgetState extends State<OverviewReviewTabWidget> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            LocaleKeys.product_details_over_view_review_tab_review_title.tr(),
+            LocaleKeys.product_details_over_view_review_tab_overview_title.tr(),
             style: AppTextStyles.meduimHead16w500TitleTextStyle(context),
           ),
           verticalSpace(10),

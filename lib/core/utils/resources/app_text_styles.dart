@@ -25,7 +25,9 @@ class AppTextStyles {
         fontWeight: FontWeight.w600,
         color: context.isDarkTheme ? AppColors.white : AppColors.darkBlue,
       );
-  static TextStyle headTitle14w500WhiteAndDarkBlueTextStyle(BuildContext context) => TextStyle(
+  static TextStyle headTitle14w500WhiteAndDarkBlueTextStyle(
+          BuildContext context) =>
+      TextStyle(
         fontSize: 14,
         fontWeight: FontWeight.w500,
         color: context.isDarkTheme ? AppColors.white : AppColors.darkBlue,
@@ -76,6 +78,14 @@ class AppTextStyles {
         fontSize: 16,
         fontWeight: FontWeight.w500,
         color: AppColors.white,
+      );
+
+  static TextStyle meduimBody16W500BlackAndWhiteTitleTextStyle(
+          BuildContext context) =>
+      TextStyle(
+        fontSize: 16,
+        fontWeight: FontWeight.w500,
+        color: AppColors.secondDarkBlue,
       );
 
   static TextStyle smallBodyTitle12w400TextStyle(BuildContext context) =>

@@ -168,7 +168,7 @@
     },
     "forget_password":{
       "title":"Forget Password?",
-      "label_emale":"Enter your email address to receive a password recovery message. \n Note: The message might be delivered to your Spam or Junk folder, so please check there if you don’t see it in your inbox.",
+      "label_email":"Enter your email address to receive a password recovery message. Note: The message might be delivered to your Spam or Junk folder, so please check there if you don’t see it in your inbox.",
       "label_phone":"Enter your phone number to receive a password recovery message on WhatsApp.",
       "recover_password":"Recover Password",
       "remember_your_password": "Remember Your Password ?"
@@ -425,8 +425,8 @@
   "star_low":"Star",
   "stars_high":"Stars"
  },
- "shop_screen":{
-  
+
+ "shop_screen":{ 
   "special_offers":"Special Offers",
   "flash_sale":"Flash sale",
   "new_arri":"New Arri"
@@ -436,15 +436,24 @@
   "home_title":"Home",
   "cart_title":"Cart",
   "profil_title":"Profil"
- }, "cart_screen":{
+ },
+  "cart_screen":{
   "cart_title":"Cart",
   "shopping_cart":"Your shopping cart looks empty",
   "shopping_title_button":"Go Shopping",
   "recently_viewed":"Recently viewed",
   "birthday_gifts":"Birthday gifts",
-  "remove":"Remove"
+  "remove":"Remove",
+  "apply":"Apply",
+  "coupon_code":"Coupon Code",
+  "items":"items",
+  "sub_total":"subtotal",
+  "total":"Total:",
+  "inclusive_of_vat":"(inclusive of VAT)",
+  "order_summary":"Order summary"
+ },
 
- },"profile_screen":{
+ "profile_screen":{
   "edit_profile":"Edit Profile",
   "share_profile":"Share Profile",
   "graduation":"Graduation",
@@ -476,23 +485,148 @@
 
   "info_settings_items":{
      "contact_us":"Contact us",
-     "customer_support":"Customer Support",
+     "customer_support":{
+      "customer_support":"Customer Support",
+      "help_center":"Help Center",
+      "any_question":"If you still have any question, Chat with us!",
+      "chat_with_us":"Chat with us",
+      "question_one":"Question 1",
+      "answer_q_one":"This is the detailed answer to Question 1. You can put any amount of text here, along with images, links, or other elements. This content will be hidden by default and revealed when you click on the header.",
+       "question_tow":"Question 2",
+      "answer_q_tow":"Here\\'s another example of expanded content for Question 2. This demonstrates how you can have multiple such widgets on a page.",
+      "question_three":"Question 3",
+      "answer_q_three":"A third question with a detailed explanation. Flutter makes creating dynamic UIs quite straightforward!"
+     
+    },
      "faqs":"FAQs",
      "blog":"Blog",
+     "blog_details":"Blog Details",
      "about":"About"
      
   },
   
   "policy_settings_items":{
-     "privacy_policy":"Privacy Policy",
-    "terms_and_condition":"Terms and Condition",
-    "warranty_policy":"Warranty Policy",
-    "return_and_exchange":"Return and Exchange",
+  "last_update":"Last Update:",
+  "privacy_policy":"Privacy Policy",
+  "terms_and_condition":{
+   "terms_and_condition":"Terms and Condition", 
+   "body_title_use_of_the_service":"You agree to:\n . Use our services only for lawful purposes\n . Not misuse or interfere with the platform\n. Provide accurate and current information\n . Maintain the confidentiality of your account credentials",
+   "body_title_terms_and_condition": "These Terms & Conditions (\"Terms\") govern your use of our mobile application. By accessing or using our services, you agree to be bound by these Terms. If you do not agree, please do not use our services.",
+   "body_title_acceptance_of_terms":"By using our services, you confirm that you are at least [13/16/18] years old or have the permission of a legal guardian, and that you agree to comply with these Terms and all applicable laws.",
+   "body_title_intellectual_property":"All content on our platform, including text, graphics, logos, images, and software, is the property of [Your Company Name] or its licensors and is protected by intellectual property laws. You may not reproduce, distribute, or create derivative works without our written consent.",
+   "acceptance_of_terms":"Acceptance of Terms",
+   "use_of_the_service":"Use of the Service",
+   "intellectual_property":"Intellectual Property"
+    },
+
+    "warranty_policy":
+    {
+     "warranty_policy": "Warranty Policy",
+     "body_title_warranty_policy": "we are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information",
+      "information_we_collect":{
+       "title_informatiom": "Information We Collect",
+       "personal_information":"Personal Information:",
+       "desc_personal_information":" Name, email address, phone number, etc.",
+       "usage_data":"Usage Data:",
+       "desc_usage_data": "How you interact with our app or website, such as pages visited, time spent, clicks, etc.",
+       "device_information":"Device Information:",
+       "desc_device_information": "IP address, browser type, device type, operating system, etc.",
+      "cookies_and_technologies":"Cookies and Tracking Technologies:",
+      "desc_cookies_and_technologies": "We may use cookies or similar tracking tools to enhance user experience."      
+      },
+      "hint_text": "We may collect the following types of information:",
+      "how_We_use_your_information":"How We Use Your Information",
+      "body_title_how_are_information":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
+    },
+    
+    "return_and_exchange":{
+
+"return_and_exchange": "Return & Exchange",
+"you_agree_to":"You agree to:",
+ "use_of_the_service":{
+"title_one":"Use our services only for lawful purposes",
+"title_tow":"Not misuse or interfere with the platform",
+"title_three": "Provide accurate and current information",
+"title_four":"Maintain the confidentiality of your account credentials"
+ }
+    },
+   
     "become_a_Seller":"Become a Seller",
     "logout":"Logout",
     "delete_account":"Delete Account"
+  },
+   "about":{
+   
+    "about_prize":"About Prize",
+    "vision":"Vision",
+    "mission":"Mission"
+
+
+  },
+  "change_password":{
+    "change_password":"Change Password",
+    "current_password":"your current password",
+    "new_password":"New Password",
+    "hint_new_password":"new password",
+    "confirm_new_password":"Confirm New Password",
+    "hint_confirm_password":"enter new password again",
+    "change_pssword":"Change Pssword",
+    "change":"Change"
+  },
+  "notification":{
+    "notification":"Notification",
+    
+      "following_and_followers":"Following & Followers",
+      "you_just_got_a_new_follower":"You just got a new follower",
+      "giftful_updates":"Giftful Updates",
+      "new_features_gift_guides_etc":"New features, gift guides, etc.",
+      "email_notifications":"Email Notifications",
+      "you_have_been_invited_to_collaborate":"You have been invited to collaborate"
+  },
+  "contact_us":{    
+    "name":"Name",
+    "enter_your_name":"enter your name",
+    "phone_number":"Phone Number",
+    "email":"Email",
+    "message":"Message",
+    "write_your_message":"write your message",
+    "contact_us":"Contact Us",
+    "haveing_a_problem":"Are you haveing a problem? How can we help you?",
+    "problems_in_our_application":"We are happy for you to send us any problems you face in our application",
+    "send":"Send"
+  },
+  "privacy_policy":{
+    "privacy_policy":"Privacy Policy",
+    "information_we_collect":"Information We Collect",
+    "how_we_use_your_information":"How We Use Your Information",
+    "privacy_body_titel":"we are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information",
+    "last_update_date":"22 Mar 2025",
+    
+      
+        "title_personal_information": "Personal Information:",
+        "description_personal_information": "Name, email address, phone number, etc."
+      ,
+      
+        "title_usage_data": "Usage Data:",
+        "description_usage_data":
+            "How you interact with our app or website, such as pages visited, time spent, clicks, etc.",
+      
+      
+        "title_device_information": "Device Information:",
+        "description_device_information": "IP address, browser type, device type, operating system, etc.",
+       "title_cookies": "Cookies and Tracking Technologies:",
+        "description_cookies":
+            "We may use cookies or similar tracking tools to enhance user experience."
+     
+    
+
+  
+ 
+ 
   }
- 
- 
+
  }
+
 }
+
+

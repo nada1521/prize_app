@@ -39,9 +39,10 @@ class UserProfileAppbarWidget extends StatelessWidget {
                   horizontalSpace(3),
                   Text(
                     "200",
-                    style: AppTextStyles.headTitle24w600TextStyle(context).copyWith(
-              color: AppColors.white,
-            ),
+                    style: AppTextStyles.headTitle24w600TextStyle(context)
+                        .copyWith(
+                      color: AppColors.darkModeTanOrange,
+                    ),
                   )
                 ],
               ),

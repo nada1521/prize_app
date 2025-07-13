@@ -23,12 +23,15 @@ class ForgetPasswordScreen extends StatefulWidget {
 }
 
 class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
-  final formKey = GlobalKey<FormState>();
 
+
+  final formKey = GlobalKey<FormState>();
   final phoneController = TextEditingController();
   final emailController = TextEditingController();
   late TextFieldModel _textField;
   String? textLabel;
+
+
   @override
   void initState() {
     super.initState();
@@ -46,7 +49,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
         ),
       );
     } else {
-      textLabel = LocaleKeys.auth_forget_password_label_male.tr();
+      textLabel = LocaleKeys.auth_forget_password_label_email.tr();
       _textField = TextFieldModel(
         isPhoneNumber: false,
         controller: emailController,

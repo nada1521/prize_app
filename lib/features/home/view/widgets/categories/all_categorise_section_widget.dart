@@ -25,53 +25,53 @@ class _AllCategoriseSectionWidgetState
     CategoryModel(
       title: LocaleKeys.home_categories_categories_section_kids_fashion.tr(),
       imagePath:
-          "https://cdn.pixabay.com/photo/2023/06/23/11/23/ai-generated-8083323_1280.jpg",
+          "https://vfgvipnlrjvzdoxiiaoj.supabase.co/storage/v1/object/public/product_images//image%201473.png",
     ),
     CategoryModel(
       title: LocaleKeys.home_categories_categories_section_mens_fashion.tr(),
       imagePath:
-          "https://cdn.pixabay.com/photo/2023/06/23/11/23/ai-generated-8083323_1280.jpg",
+          "https://vfgvipnlrjvzdoxiiaoj.supabase.co/storage/v1/object/public/product_images//24057%201.png",
     ),
     CategoryModel(
       title: LocaleKeys.home_categories_categories_section_Womens_fashion.tr(),
       imagePath:
-          "https://cdn.pixabay.com/photo/2023/06/23/11/23/ai-generated-8083323_1280.jpg",
+          "https://vfgvipnlrjvzdoxiiaoj.supabase.co/storage/v1/object/public/product_images//Image.png",
     ),
     CategoryModel(
       title: LocaleKeys.home_categories_categories_section_home_kitchen.tr(),
       imagePath:
-          "https://cdn.pixabay.com/photo/2023/06/23/11/23/ai-generated-8083323_1280.jpg",
+          "https://vfgvipnlrjvzdoxiiaoj.supabase.co/storage/v1/object/public/product_images//Image%20(1).png",
     ),
     CategoryModel(
       title: LocaleKeys.home_categories_categories_section_appliances.tr(),
       imagePath:
-          "https://cdn.pixabay.com/photo/2023/06/23/11/23/ai-generated-8083323_1280.jpg",
+          "https://vfgvipnlrjvzdoxiiaoj.supabase.co/storage/v1/object/public/product_images//Frame%201171274955.png",
     ),
     CategoryModel(
       title: LocaleKeys.home_categories_categories_section_mobiles.tr(),
       imagePath:
-          "https://cdn.pixabay.com/photo/2023/06/23/11/23/ai-generated-8083323_1280.jpg",
+          "https://vfgvipnlrjvzdoxiiaoj.supabase.co/storage/v1/object/public/product_images//image%201472.png",
     ),
     CategoryModel(
       title: LocaleKeys.home_categories_categories_section_video_games.tr(),
       imagePath:
-          "https://cdn.pixabay.com/photo/2023/06/23/11/23/ai-generated-8083323_1280.jpg",
+          "https://vfgvipnlrjvzdoxiiaoj.supabase.co/storage/v1/object/public/product_images//Image%20(2).png",
     ),
     CategoryModel(
       title: LocaleKeys.home_categories_categories_section_televisions.tr(),
       imagePath:
-          "https://cdn.pixabay.com/photo/2023/06/23/11/23/ai-generated-8083323_1280.jpg",
+          "https://vfgvipnlrjvzdoxiiaoj.supabase.co/storage/v1/object/public/product_images//Image%20(3).png",
     ),
-    CategoryModel(
-      title: LocaleKeys.home_categories_categories_section_headphones.tr(),
-      imagePath:
-          "https://cdn.pixabay.com/photo/2023/06/23/11/23/ai-generated-8083323_1280.jpg",
-    ),
-    CategoryModel(
-      title: LocaleKeys.home_categories_categories_section_cameras.tr(),
-      imagePath:
-          "https://cdn.pixabay.com/photo/2023/06/23/11/23/ai-generated-8083323_1280.jpg",
-    ),
+    //   CategoryModel(
+    //     title: LocaleKeys.home_categories_categories_section_headphones.tr(),
+    //     imagePath:
+    //         "https://cdn.pixabay.com/photo/2023/06/23/11/23/ai-generated-8083323_1280.jpg",
+    //   ),
+    //   CategoryModel(
+    //     title: LocaleKeys.home_categories_categories_section_cameras.tr(),
+    //     imagePath:
+    //         "https://cdn.pixabay.com/photo/2023/06/23/11/23/ai-generated-8083323_1280.jpg",
+    //   ),
   ];
 
   List<List<CategoryModel>> get _pages {

@@ -17,10 +17,10 @@ class ShowProductPriceWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ConstrainedBox(
-      constraints: BoxConstraints(maxHeight: 50.h),
-      child: Padding(
-        padding: EdgeInsetsDirectional.only(start: 8.w),
+    return Padding(
+      padding: EdgeInsets.only(bottom: 7.h),
+      child: ConstrainedBox(
+        constraints: BoxConstraints(maxHeight: 50.h),
         child: Row(
           children: [
             SvgPicture.asset(AppSvgs.currency),
