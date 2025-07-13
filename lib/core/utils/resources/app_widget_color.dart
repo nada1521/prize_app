@@ -1,11 +1,8 @@
 // ignore_for_file: deprecated_member_use
-
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import 'package:pinput/pinput.dart';
-
 import 'package:prize/core/utils/extensions/context_extension.dart';
 import 'package:prize/core/utils/extensions/is_dark_mode_extension.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
@@ -38,7 +35,7 @@ class AppWidgetColor {
       context.isDarkMode ? AppColors.white : AppColors.white;
 
   static Color fillWithContrastColor(BuildContext context) =>
-      context.isDarkMode ? AppColors.white : AppColors.darkBlue;
+      context.isDarkMode ? AppColors.darkBlue : AppColors.white;
 
   static Color fillWithGrayAndDiColor(BuildContext context) =>
       context.isDarkMode ? AppColors.darkBlue : AppColors.moreLightPeriwinkle;

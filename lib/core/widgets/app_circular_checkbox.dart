@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prize/core/utils/extensions/color_extension.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
-import 'package:prize/core/utils/resources/app_size.dart';
 
 class AppCircularCheckbox extends StatefulWidget {
   const AppCircularCheckbox({

@@ -1,8 +1,10 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
@@ -28,17 +30,18 @@ class OrderSummaryWidget extends StatelessWidget {
           Row(
             children: [
               Text(
-                "Order summary",
+                LocaleKeys.cart_screen_order_summary.tr(),
                 style: AppTextStyles.headTitle14w500WhiteAndDarkBlueTextStyle(
                         context)
                     .copyWith(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w600,
-                ),
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                        color: AppColors.periwinkle),
               ),
               horizontalSpace(10),
               Text(
-                "(${selectedProducts.length} items)",
+                "(${selectedProducts.length}${LocaleKeys.cart_screen_items.tr()})",
+              
                 style: AppTextStyles.smallBodyTitle12w400TextStyle(context)
                     .copyWith(
                   color: AppColors.periwinkle,
@@ -50,7 +53,7 @@ class OrderSummaryWidget extends StatelessWidget {
           Row(
             children: [
               Text(
-                "subtotal:",
+                LocaleKeys.cart_screen_sub_total.tr(),
                 style: AppTextStyles.smallBodyTitle12w400TextStyle(context)
                     .copyWith(
                   color: AppColors.periwinkle,
@@ -120,7 +123,7 @@ class OrderSummaryWidget extends StatelessWidget {
               Row(
                 children: [
                   Text(
-                    "Total:",
+                    LocaleKeys.cart_screen_total.tr(),
                     style: AppTextStyles
                             .meduimBody16W500BlackAndWhiteTitleTextStyle(
                                 context)
@@ -130,7 +133,7 @@ class OrderSummaryWidget extends StatelessWidget {
                   ),
                   horizontalSpace(8),
                   Text(
-                    "(inclusive of VAT)",
+                    LocaleKeys.cart_screen_inclusive_of_vat.tr(),
                     style: AppTextStyles.smallBodyTitle12w400TextStyle(context)
                         .copyWith(
                       color: AppColors.periwinkle,
