@@ -4,10 +4,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/constant/app_urls.dart';
-<<<<<<< HEAD
-import 'package:prize/core/utils/common/languages.dart';
-=======
->>>>>>> 4e3bf28d76696a3e6450082dddbf44893d0f9088
 import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
@@ -29,13 +25,8 @@ import 'package:prize/features/setting/help_center/view/screens/help_center_scre
 import 'package:prize/features/setting/view/widget/change_language_button.dart';
 import 'package:prize/features/setting/view/widget/change_theme_button.dart';
 import 'package:prize/features/setting/view/widget/points_widget.dart';
-<<<<<<< HEAD
-import 'package:prize/features/theme/bloc/theme_cubit.dart';
-import 'package:url_launcher/url_launcher.dart';
-=======
 import 'package:url_launcher/url_launcher.dart';
 
->>>>>>> 4e3bf28d76696a3e6450082dddbf44893d0f9088
 class SettingScreen extends StatefulWidget {
   const SettingScreen({super.key});
 
@@ -75,22 +66,6 @@ class _SettingScreenState extends State<SettingScreen> {
         title: LocaleKeys.setting_screen_general_settings_items_language.tr(),
         isChangeLanguageButton: true,
       ),
-<<<<<<< HEAD
-      SettingItemModel(
-          imagePath: AppSvgs.lockSettingChangePasswordIcon,
-          title: LocaleKeys
-              .setting_screen_general_settings_items_change_password
-              .tr()),
-      SettingItemModel(
-          imagePath: AppSvgs.notificationBingSettingsIcon,
-          title: LocaleKeys.setting_screen_general_settings_items_notification
-              .tr()),
-      SettingItemModel(
-          imagePath: AppSvgs.changeLanguageIcon,
-          title:
-              LocaleKeys.setting_screen_general_settings_items_language.tr()),
-=======
->>>>>>> 4e3bf28d76696a3e6450082dddbf44893d0f9088
       SettingItemModel(
           imagePath: AppSvgs.ordersIcon,
           title:
@@ -137,47 +112,12 @@ class _SettingScreenState extends State<SettingScreen> {
       ),
       SettingItemModel(
         imagePath: AppSvgs.infoCircle,
-<<<<<<< HEAD
-        title: "About",
-        onTap: () => pushTo(
-          context,
-          AboutScreen(),
-        ),
-      ),
-      SettingItemModel(
-          imagePath: AppSvgs.callContactUsSettingIcon,
-          title: LocaleKeys.setting_screen_info_settings_items_customer_support
-              .tr()),
-      SettingItemModel(
-          imagePath: AppSvgs.messageQuestion,
-          title: LocaleKeys.setting_screen_info_settings_items_faqs.tr()),
-      SettingItemModel(
-          imagePath: AppSvgs.blogIcon,
-          title: LocaleKeys.setting_screen_info_settings_items_blog.tr()),
-      SettingItemModel(
-          imagePath: AppSvgs.documentText,
-          title: LocaleKeys.setting_screen_policy_settings_items_privacy_policy
-              .tr(),
-        imagePath: AppSvgs.infoCircle,
-=======
->>>>>>> 4e3bf28d76696a3e6450082dddbf44893d0f9088
         title: LocaleKeys.setting_screen_info_settings_items_about.tr(),
         onTap: () => pushTo(
           context,
           AboutScreen(),
         ),
       ),
-<<<<<<< HEAD
-    List<SettingItemModel> policySettingsItems = [
-      SettingItemModel(
-          imagePath: AppSvgs.documentText,
-          onTap: () => pushTo(
-                context,
-                PrivacyPolicyScreen(),
-              ),
-          title: LocaleKeys.setting_screen_policy_settings_items_privacy_policy
-              .tr()),
-=======
     ];
 
     List<SettingItemModel> policySettingsItems = [
@@ -190,7 +130,6 @@ class _SettingScreenState extends State<SettingScreen> {
           PrivacyPolicyScreen(),
         ),
       ),
->>>>>>> 4e3bf28d76696a3e6450082dddbf44893d0f9088
       SettingItemModel(
         imagePath: AppSvgs.documentText,
         title: LocaleKeys
