@@ -582,8 +582,6 @@
       "new_features_gift_guides_etc":"New features, gift guides, etc.",
       "email_notifications":"Email Notifications",
       "you_have_been_invited_to_collaborate":"You have been invited to collaborate"
-
-    
   },
   "contact_us":{    
     "name":"Name",
@@ -628,6 +626,7 @@
   }
 
  }
+
 }
 
 
