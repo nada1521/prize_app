@@ -1,6 +1,5 @@
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:prize/core/utils/constants.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/navigation/push_to.dart';
@@ -8,7 +7,6 @@ import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/widgets/app_outline_button.dart';
 import 'package:prize/core/widgets/app_fill_background_button.dart';
 import 'package:prize/core/widgets/dialog/base/pop_up_dialog.dart';
-import 'package:prize/features/complete_profile/data/models/product_model.dart';
 import 'package:prize/features/complete_profile/view/widgets/bottom_sheets_and_pop_up_widgets/details_item_bottom_sheet_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/build_products_grid.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +14,6 @@ import 'package:prize/features/complete_profile/view/widgets/bottom_sheets_and_p
 import 'package:prize/features/complete_profile/wishlist/view/screens/sport_wishlsit_add_items.dart';
 import 'package:prize/features/complete_profile/wishlist/view/widgets/empty_sport_wishlist_widget.dart';
 import 'package:prize/features/complete_profile/wishlist/logic/adding_product_to_wishlist_cubit/adding_product_to_wishlist_cubit.dart';
-import 'package:prize/features/product_details/views/screens/product_details_screen.dart';
 
 class SportWishlistWidget extends StatefulWidget {
   const SportWishlistWidget({super.key, required this.pageController});

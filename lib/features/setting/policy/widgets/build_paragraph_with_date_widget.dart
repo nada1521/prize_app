@@ -1,5 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
@@ -27,7 +29,7 @@ class BuildParagraphWithDateWidget extends StatelessWidget {
           ),
         ),
         Text(
-          "Last Update: $lastUpdateDate",
+          "${LocaleKeys.setting_screen_policy_settings_items_last_update.tr()} $lastUpdateDate",
           style: AppTextStyles.smallBodyTitle12w400TextStyle(context).copyWith(
             fontSize: 14,
           ),

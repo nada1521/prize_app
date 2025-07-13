@@ -1,7 +1,9 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 
@@ -15,19 +17,22 @@ class ExpandedWidget extends StatefulWidget {
 class _ExpandedWidgetState extends State<ExpandedWidget> {
   final List<Map<String, String>> faqItems = [
     {
-      'question': 'Question 1',
+      'question':LocaleKeys.setting_screen_info_settings_items_customer_support_question_one.tr(),
       'answer':
-          'This is the detailed answer to Question 1. You can put any amount of text here, along with images, links, or other elements. This content will be hidden by default and revealed when you click on the header.',
-    },
+    LocaleKeys.setting_screen_info_settings_items_customer_support_answer_q_one.tr()  },
     {
-      'question': 'Question 2',
+      'question': LocaleKeys
+          .setting_screen_info_settings_items_customer_support_question_tow
+          .tr(),
       'answer':
-          'Here\'s another example of expanded content for Question 2. This demonstrates how you can have multiple such widgets on a page.',
-    },
+         LocaleKeys.setting_screen_info_settings_items_customer_support_answer_q_tow.tr()   },
     {
-      'question': 'Question 3',
-      'answer':
-          'A third question with a detailed explanation. Flutter makes creating dynamic UIs quite straightforward!',
+      'question': LocaleKeys
+          .setting_screen_info_settings_items_customer_support_question_three
+          .tr(),
+      'answer': LocaleKeys
+          .setting_screen_info_settings_items_customer_support_answer_q_three
+          .tr()
     },
   ];
 

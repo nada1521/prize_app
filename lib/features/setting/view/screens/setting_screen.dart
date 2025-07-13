@@ -4,7 +4,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/constant/app_urls.dart';
+<<<<<<< HEAD
 import 'package:prize/core/utils/common/languages.dart';
+=======
+>>>>>>> 4e3bf28d76696a3e6450082dddbf44893d0f9088
 import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
@@ -26,8 +29,13 @@ import 'package:prize/features/setting/help_center/view/screens/help_center_scre
 import 'package:prize/features/setting/view/widget/change_language_button.dart';
 import 'package:prize/features/setting/view/widget/change_theme_button.dart';
 import 'package:prize/features/setting/view/widget/points_widget.dart';
+<<<<<<< HEAD
 import 'package:prize/features/theme/bloc/theme_cubit.dart';
 import 'package:url_launcher/url_launcher.dart';
+=======
+import 'package:url_launcher/url_launcher.dart';
+
+>>>>>>> 4e3bf28d76696a3e6450082dddbf44893d0f9088
 class SettingScreen extends StatefulWidget {
   const SettingScreen({super.key});
 
@@ -40,8 +48,8 @@ class _SettingScreenState extends State<SettingScreen> {
   Widget build(BuildContext context) {
     List<SettingItemModel> generalSettingsItems = [
       SettingItemModel(
-         imagePath: AppSvgs.moonSettingChangeModeIcon,
-          title: LocaleKeys.setting_screen_general_settings_items_mode.tr(),
+        imagePath: AppSvgs.moonSettingChangeModeIcon,
+        title: LocaleKeys.setting_screen_general_settings_items_mode.tr(),
         isDarkModeButton: true,
       ),
       SettingItemModel(
@@ -67,6 +75,7 @@ class _SettingScreenState extends State<SettingScreen> {
         title: LocaleKeys.setting_screen_general_settings_items_language.tr(),
         isChangeLanguageButton: true,
       ),
+<<<<<<< HEAD
       SettingItemModel(
           imagePath: AppSvgs.lockSettingChangePasswordIcon,
           title: LocaleKeys
@@ -80,15 +89,22 @@ class _SettingScreenState extends State<SettingScreen> {
           imagePath: AppSvgs.changeLanguageIcon,
           title:
               LocaleKeys.setting_screen_general_settings_items_language.tr()),
+=======
+>>>>>>> 4e3bf28d76696a3e6450082dddbf44893d0f9088
       SettingItemModel(
           imagePath: AppSvgs.ordersIcon,
           title:
               LocaleKeys.setting_screen_general_settings_items_my_orders.tr()),
       SettingItemModel(
+          imagePath: AppSvgs.locationSettingIcon,
+          title:
+              LocaleKeys.setting_screen_general_settings_items_my_address.tr()),
+      SettingItemModel(
           imagePath: AppSvgs.wallet,
           title:
               LocaleKeys.setting_screen_general_settings_items_my_wallet.tr()),
     ];
+
     List<SettingItemModel> infoSettingsItems = [
       SettingItemModel(
         imagePath: AppSvgs.callContactUsSettingIcon,
@@ -100,16 +116,20 @@ class _SettingScreenState extends State<SettingScreen> {
       ),
       SettingItemModel(
         imagePath: AppSvgs.callContactUsSettingIcon,
-        title: "Customer Support",
+        title: LocaleKeys
+            .setting_screen_info_settings_items_customer_support_customer_support
+            .tr(),
         onTap: () => pushTo(
           context,
           HelpCenterScreen(),
         ),
       ),
-      SettingItemModel(imagePath: AppSvgs.messageQuestion, title: "FAQs"),
+      SettingItemModel(
+          imagePath: AppSvgs.messageQuestion,
+          title: LocaleKeys.setting_screen_info_settings_items_faqs.tr()),
       SettingItemModel(
         imagePath: AppSvgs.blogIcon,
-        title: "Blog",
+        title: LocaleKeys.setting_screen_info_settings_items_blog.tr(),
         onTap: () => pushTo(
           context,
           BlogScreen(),
@@ -117,6 +137,7 @@ class _SettingScreenState extends State<SettingScreen> {
       ),
       SettingItemModel(
         imagePath: AppSvgs.infoCircle,
+<<<<<<< HEAD
         title: "About",
         onTap: () => pushTo(
           context,
@@ -138,12 +159,15 @@ class _SettingScreenState extends State<SettingScreen> {
           title: LocaleKeys.setting_screen_policy_settings_items_privacy_policy
               .tr(),
         imagePath: AppSvgs.infoCircle,
+=======
+>>>>>>> 4e3bf28d76696a3e6450082dddbf44893d0f9088
         title: LocaleKeys.setting_screen_info_settings_items_about.tr(),
         onTap: () => pushTo(
           context,
           AboutScreen(),
         ),
       ),
+<<<<<<< HEAD
     List<SettingItemModel> policySettingsItems = [
       SettingItemModel(
           imagePath: AppSvgs.documentText,
@@ -153,41 +177,50 @@ class _SettingScreenState extends State<SettingScreen> {
               ),
           title: LocaleKeys.setting_screen_policy_settings_items_privacy_policy
               .tr()),
+=======
+    ];
+
+    List<SettingItemModel> policySettingsItems = [
       SettingItemModel(
-  imagePath: AppSvgs.documentText,
-          title: LocaleKeys
-              .setting_screen_policy_settings_items_terms_and_condition
-              .tr(),        onTap: () => pushTo(
+        imagePath: AppSvgs.documentText,
+        title:
+            LocaleKeys.setting_screen_policy_settings_items_privacy_policy.tr(),
+        onTap: () => pushTo(
+          context,
+          PrivacyPolicyScreen(),
+        ),
+      ),
+>>>>>>> 4e3bf28d76696a3e6450082dddbf44893d0f9088
+      SettingItemModel(
+        imagePath: AppSvgs.documentText,
+        title: LocaleKeys
+            .setting_screen_policy_settings_items_terms_and_condition_terms_and_condition
+            .tr(),
+        onTap: () => pushTo(
           context,
           TermsAndConditionsScreen(),
         ),
       ),
       SettingItemModel(
         imagePath: AppSvgs.documentText,
-        title: "Warranty Policy",
+        title: LocaleKeys
+            .setting_screen_policy_settings_items_warranty_policy_warranty_policy
+            .tr(),
         onTap: () => pushTo(
           context,
           WarrantyPolicyScreen(),
         ),
       ),
-      
       SettingItemModel(
         imagePath: AppSvgs.documentText,
-        title: "Return and Exchange",
+        title: LocaleKeys
+            .setting_screen_policy_settings_items_return_and_exchange_return_and_exchange
+            .tr(),
         onTap: () => pushTo(
           context,
           ReturnAndExchangeScreen(),
         ),
       ),
-      SettingItemModel(
-          imagePath: AppSvgs.documentText,
-          title: LocaleKeys.setting_screen_policy_settings_items_warranty_policy
-              .tr()),
-      SettingItemModel(
-          imagePath: AppSvgs.documentText,
-          title: LocaleKeys
-              .setting_screen_policy_settings_items_return_and_exchange
-              .tr()),
     ];
 
     List<SettingItemModel> becimeAsellerItems = [

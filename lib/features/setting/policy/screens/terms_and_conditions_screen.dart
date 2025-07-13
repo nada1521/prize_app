@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:prize/core/utils/constants.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
 import 'package:prize/features/setting/policy/widgets/build_normal_paragraph_widget.dart';
@@ -13,14 +15,17 @@ class TermsAndConditionsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Map<String, String>> useOfTheService = [
       {
-        "title":
-            "You agree to:\n . Use our services only for lawful purposes\n . Not misuse or interfere with the platform\n. Provide accurate and current information\n . Maintain the confidentiality of your account credentials",
+        "title": LocaleKeys
+            .setting_screen_policy_settings_items_terms_and_condition_body_title_use_of_the_service
+            .tr(),
         "description": "",
       },
     ];
     return Scaffold(
       appBar: OrangeAppbarWidget(
-        title: "Terms & Conditions",
+        title: LocaleKeys
+            .setting_screen_policy_settings_items_terms_and_condition_terms_and_condition
+            .tr(),
         showBackButton: true,
       ),
       body: ListView(
@@ -28,30 +33,39 @@ class TermsAndConditionsScreen extends StatelessWidget {
         children: [
           verticalSpace(25),
           BuildParagraphWithDateWidget(
-              headTitle: "Terms & Conditions",
+              headTitle: LocaleKeys
+                  .setting_screen_policy_settings_items_terms_and_condition_terms_and_condition
+                  .tr(),
               lastUpdateDate: "22 Mar 2025",
-              bodyTitle:
-                  "These Terms & Conditions (\"Terms\") govern your use of our mobile application. By accessing or using our services, you agree to be bound by these Terms. If you do not agree, please do not use our services."),
+              bodyTitle: LocaleKeys
+                  .setting_screen_policy_settings_items_terms_and_condition_body_title_terms_and_condition
+                  .tr()),
           verticalSpace(25),
           BuildNormalParagraphWidget(
-            index: 1,
-            headTitle: "Acceptance of Terms",
-            bodyTitle:
-                'By using our services, you confirm that you are at least [13/16/18] years old or have the permission of a legal guardian, and that you agree to comply with these Terms and all applicable laws.',
-          ),
+              index: 1,
+              headTitle: LocaleKeys
+                  .setting_screen_policy_settings_items_terms_and_condition_acceptance_of_terms
+                  .tr(),
+              bodyTitle: LocaleKeys
+                  .setting_screen_policy_settings_items_terms_and_condition_body_title_acceptance_of_terms
+                  .tr()),
           verticalSpace(25),
           BuildParagraphWithBulletWidget(
             index: 2,
-            paragraphTitle: "Use of the Service",
+            paragraphTitle: LocaleKeys
+                .setting_screen_policy_settings_items_terms_and_condition_use_of_the_service
+                .tr(),
             paragraphData: useOfTheService,
           ),
           verticalSpace(25),
           BuildNormalParagraphWidget(
-            index: 1,
-            headTitle: "Intellectual Property",
-            bodyTitle:
-                "All content on our platform, including text, graphics, logos, images, and software, is the property of [Your Company Name] or its licensors and is protected by intellectual property laws. You may not reproduce, distribute, or create derivative works without our written consent.",
-          ),
+              index: 1,
+              headTitle: LocaleKeys
+                  .setting_screen_policy_settings_items_terms_and_condition_intellectual_property
+                  .tr(),
+              bodyTitle: LocaleKeys
+                  .setting_screen_policy_settings_items_terms_and_condition_body_title_intellectual_property
+                  .tr()),
         ],
       ),
     );

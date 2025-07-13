@@ -436,13 +436,21 @@
   "home_title":"Home",
   "cart_title":"Cart",
   "profil_title":"Profil"
- }, "cart_screen":{
+ },
+  "cart_screen":{
   "cart_title":"Cart",
   "shopping_cart":"Your shopping cart looks empty",
   "shopping_title_button":"Go Shopping",
   "recently_viewed":"Recently viewed",
   "birthday_gifts":"Birthday gifts",
-  "remove":"Remove"
+  "remove":"Remove",
+  "apply":"Apply",
+  "coupon_code":"Coupon Code",
+  "items":"items",
+  "sub_total":"subtotal",
+  "total":"Total:",
+  "inclusive_of_vat":"(inclusive of VAT)",
+  "order_summary":"Order summary"
  },
 
  "profile_screen":{
@@ -477,18 +485,72 @@
 
   "info_settings_items":{
      "contact_us":"Contact us",
-     "customer_support":"Customer Support",
+     "customer_support":{
+      "customer_support":"Customer Support",
+      "help_center":"Help Center",
+      "any_question":"If you still have any question, Chat with us!",
+      "chat_with_us":"Chat with us",
+      "question_one":"Question 1",
+      "answer_q_one":"This is the detailed answer to Question 1. You can put any amount of text here, along with images, links, or other elements. This content will be hidden by default and revealed when you click on the header.",
+       "question_tow":"Question 2",
+      "answer_q_tow":"Here\\'s another example of expanded content for Question 2. This demonstrates how you can have multiple such widgets on a page.",
+      "question_three":"Question 3",
+      "answer_q_three":"A third question with a detailed explanation. Flutter makes creating dynamic UIs quite straightforward!"
+     
+    },
      "faqs":"FAQs",
      "blog":"Blog",
+     "blog_details":"Blog Details",
      "about":"About"
      
   },
   
   "policy_settings_items":{
-     "privacy_policy":"Privacy Policy",
-    "terms_and_condition":"Terms and Condition",
-    "warranty_policy":"Warranty Policy",
-    "return_and_exchange":"Return and Exchange",
+  "last_update":"Last Update:",
+  "privacy_policy":"Privacy Policy",
+  "terms_and_condition":{
+   "terms_and_condition":"Terms and Condition", 
+   "body_title_use_of_the_service":"You agree to:\n . Use our services only for lawful purposes\n . Not misuse or interfere with the platform\n. Provide accurate and current information\n . Maintain the confidentiality of your account credentials",
+   "body_title_terms_and_condition": "These Terms & Conditions (\"Terms\") govern your use of our mobile application. By accessing or using our services, you agree to be bound by these Terms. If you do not agree, please do not use our services.",
+   "body_title_acceptance_of_terms":"By using our services, you confirm that you are at least [13/16/18] years old or have the permission of a legal guardian, and that you agree to comply with these Terms and all applicable laws.",
+   "body_title_intellectual_property":"All content on our platform, including text, graphics, logos, images, and software, is the property of [Your Company Name] or its licensors and is protected by intellectual property laws. You may not reproduce, distribute, or create derivative works without our written consent.",
+   "acceptance_of_terms":"Acceptance of Terms",
+   "use_of_the_service":"Use of the Service",
+   "intellectual_property":"Intellectual Property"
+    },
+
+    "warranty_policy":
+    {
+     "warranty_policy": "Warranty Policy",
+     "body_title_warranty_policy": "we are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information",
+      "information_we_collect":{
+       "title_informatiom": "Information We Collect",
+       "personal_information":"Personal Information:",
+       "desc_personal_information":" Name, email address, phone number, etc.",
+       "usage_data":"Usage Data:",
+       "desc_usage_data": "How you interact with our app or website, such as pages visited, time spent, clicks, etc.",
+       "device_information":"Device Information:",
+       "desc_device_information": "IP address, browser type, device type, operating system, etc.",
+      "cookies_and_technologies":"Cookies and Tracking Technologies:",
+      "desc_cookies_and_technologies": "We may use cookies or similar tracking tools to enhance user experience."      
+      },
+      "hint_text": "We may collect the following types of information:",
+      "how_We_use_your_information":"How We Use Your Information",
+      "body_title_how_are_information":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
+    },
+    
+    "return_and_exchange":{
+
+"return_and_exchange": "Return & Exchange",
+"you_agree_to":"You agree to:",
+ "use_of_the_service":{
+"title_one":"Use our services only for lawful purposes",
+"title_tow":"Not misuse or interfere with the platform",
+"title_three": "Provide accurate and current information",
+"title_four":"Maintain the confidentiality of your account credentials"
+ }
+    },
+   
     "become_a_Seller":"Become a Seller",
     "logout":"Logout",
     "delete_account":"Delete Account"
@@ -564,5 +626,11 @@
  
  
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4e3bf28d76696a3e6450082dddbf44893d0f9088
  }
 }
+
+
