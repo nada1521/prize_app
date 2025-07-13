@@ -23,12 +23,15 @@ class ForgetPasswordScreen extends StatefulWidget {
 }
 
 class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
-  final formKey = GlobalKey<FormState>();
 
+
+  final formKey = GlobalKey<FormState>();
   final phoneController = TextEditingController();
   final emailController = TextEditingController();
   late TextFieldModel _textField;
   String? textLabel;
+
+
   @override
   void initState() {
     super.initState();

@@ -6,8 +6,6 @@ import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_circular_icon_button.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
-import 'package:prize/core/utils/resources/app_widget_color.dart';
-import 'package:prize/core/widgets/orange_appbar_widget.dart';
 
 class ChatWithUsLandingScreen extends StatelessWidget {
   const ChatWithUsLandingScreen({super.key});

@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:prize/core/constant/app_images.dart';
-import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/core/widgets/app_circular_checkbox.dart';
-import 'package:prize/core/widgets/main/app_checkbox.dart';
 import 'package:prize/features/cart/checkout/data/models/payment_method_model.dart';
 
 class SelectPaymentMethodWidget extends StatefulWidget {
