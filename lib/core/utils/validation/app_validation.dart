@@ -111,16 +111,4 @@ abstract class AppValidation {
   static String? contactUsMessageValidation(String message) {
     return null;
   }
-
-
-    static String? couponValidation(
-       String? coupon) {
-    if (coupon!.isEmpty) {
-      return LocaleKeys.common_validation_this_field_required.tr();
-    } else if (coupon != "111") {
-      return "Oops! Coupon code invalid";
-    } 
-    return null;
-  }
-
 }

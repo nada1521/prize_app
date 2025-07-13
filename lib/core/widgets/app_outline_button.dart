@@ -32,7 +32,6 @@ class AppOutLineButton extends StatelessWidget {
         width: width ?? double.infinity,
         height: height ?? 46.h,
         decoration: BoxDecoration(
-
           borderRadius: BorderRadius.circular(16.r),
           border: border ?? GlobalAppWidgetsStyles.containerOrangeBoxBorder(context),
         ),

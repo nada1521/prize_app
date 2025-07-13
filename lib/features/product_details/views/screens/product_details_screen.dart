@@ -177,7 +177,8 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                                     context,
                                   ),
                                 ),
-                                CounterAppWidget(onChanged: (value) {})
+                                CounterAppWidget(
+                                    value: 1, onChanged: (value) {})
                               ],
                             ),
                             verticalSpace(10),

@@ -117,7 +117,7 @@ abstract class AppColors {
   static const onWarningColor = Color(0xFF5e5c3a);
   static const blueColor = Color(0xFF1C72E3);
   static const redColor = Color(0xFFFF5C68);
-  static const greenColor = Color(0xFF2DB34D);
+  static const greenColor = Color(0xFF30c16c);
   static const goldenColor = Color(0xFFdaa520);
   static const white = Color(0xFFffffff);
 

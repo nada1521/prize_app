@@ -70,12 +70,9 @@ class _AppTextFormFieldState extends State<AppTextFormField> {
           isDense: true,
           contentPadding: widget.contentPadding ??
               EdgeInsets.symmetric(horizontal: 20.w, vertical: 18.h),
-          focusedBorder: widget.focusedBorder ??
-              GlobalAppWidgetsStyles.appEnabledBorder(context),
-          enabledBorder: widget.enabledBorder ??
-              GlobalAppWidgetsStyles.appEnabledBorder(context),
-          errorBorder: GlobalAppWidgetsStyles.appEnabledBorder(context),
-          focusedErrorBorder: GlobalAppWidgetsStyles.appEnabledBorder(context),
+          focusedBorder: GlobalAppWidgetsStyles.appFocusedBorder(context),
+          enabledBorder: GlobalAppWidgetsStyles.appEnabledBorder(context),
+          errorBorder: GlobalAppWidgetsStyles.appErrorBorder(context),
           // border: GlobalAppWidgetsStyles.appEnabledBorder(context),
           // focusedErrorBorder:AppWidgets.appErrorBorder(context),
           hintStyle: widget.hintStyle ??

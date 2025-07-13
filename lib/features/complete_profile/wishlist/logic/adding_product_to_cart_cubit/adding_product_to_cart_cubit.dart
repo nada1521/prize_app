@@ -39,16 +39,4 @@ class AddingProductToCartCubit extends Cubit<AddingProductToCartState> {
   bool isSelected(ProductModel product) {
     return state.selectedProducts.contains(product);
   }
-
-  void updateProduct(ProductModel updatedProduct) {
-  final updatedList = state.selectedProducts.map((product) {
-    if (product.title == updatedProduct.title) { 
-      return updatedProduct;
-    }
-    return product;
-  }).toList();
-
-  emit(state.copyWith(selectedProducts: updatedList));
-}
-
 }
