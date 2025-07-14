@@ -123,4 +123,10 @@ abstract class AppValidation {
     return null;
   }
 
+
+    static String? locationInDetailsValidation(String message) {
+    return null;
+  }
+
+
 }

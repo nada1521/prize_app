@@ -131,6 +131,14 @@ class AppTextStyles {
         fontWeight: FontWeight.w500,
         color: AppColors.white,
       );
+  static TextStyle smallBodyTitle12w500BlackAndWhiteOnlyTextStyle(
+          BuildContext context) =>
+      TextStyle(
+        fontSize: 12,
+        fontWeight: FontWeight.w500,
+        color:
+            context.isDarkTheme ? AppColors.primaryWhite : AppColors.darkBlue,
+      );
 
   // onBoarding
   static TextStyle skipButton18w400TextStyle(BuildContext context) => TextStyle(
@@ -228,15 +236,13 @@ class AppTextStyles {
                 : AppColors.white,
       );
 
-
-
-  //  chekOut screen 
-   static TextStyle bodyTitle14w500PeriwinkleTextStyle(BuildContext context) => TextStyle(
+  //  chekOut screen
+  static TextStyle bodyTitle14w500PeriwinkleTextStyle(BuildContext context) =>
+      TextStyle(
         fontSize: 16,
         fontWeight: FontWeight.w400,
         color: context.isDarkTheme
             ? AppColors.darkPeriwinkle
             : AppColors.periwinkle,
       );
-   
 }
