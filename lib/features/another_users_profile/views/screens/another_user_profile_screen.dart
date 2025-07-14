@@ -58,7 +58,8 @@ class AnotherUserProfileScreen extends StatelessWidget {
                           height: 50.h,
                           width: 300.w,
                           onTap: () {},
-                          title: "Follow",
+                          title: LocaleKeys.another_user_profile_screen_follow
+                              .tr(),
                           icon: SvgPicture.asset(AppSvgs.userAdd),
                         ),
                       ),

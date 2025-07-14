@@ -185,7 +185,7 @@
     "shoes_size_title":"Shoes Size",
     "shoes_size_place_holder":"ex: 40",
     "next_create_wishlist":"Next, Create Wishlist",
-    "next_add_items_to_wishlist":"Next, Add Items To Wishlist",
+    "next_add_items_to_wishlist":"Next Add Items To Wishlist",
     "add_items_to_wishlist":"Add Items To Wishlist",
     "profile_complete_succesed":"Your profile has been completed successfully.",
     "create_wishlist_widget":{
@@ -444,13 +444,22 @@
   "recently_viewed":"Recently viewed",
   "birthday_gifts":"Birthday gifts",
   "remove":"Remove",
+  "checkout":"Checkout",
+  "submit":"Submit",
   "apply":"Apply",
   "coupon_code":"Coupon Code",
   "items":"items",
   "sub_total":"subtotal",
   "total":"Total:",
   "inclusive_of_vat":"(inclusive of VAT)",
-  "order_summary":"Order summary"
+  "order_summary":"Order summary",
+  "change_address":{
+    "home_default":"Home (Default)",
+    "work":"Work",
+    "change_address": "Change Address",
+    "new_address_boutt":"Add New Address"
+
+  }
  },
 
  "profile_screen":{
@@ -477,10 +486,12 @@
     "mode":"Mode",
     "change_password":"Change Password",
     "notification":"Notification",
+    "no_notification":"There are no notifications yet.",
     "language":"Language",
     "my_orders":"My Orders",
     "my_address":"My Address",
     "my_wallet":"My Wallet"
+
   }, 
 
   "info_settings_items":{
@@ -501,7 +512,10 @@
      "faqs":"FAQs",
      "blog":"Blog",
      "blog_details":"Blog Details",
-     "about":"About"
+     "about":"About",
+     "bio":"Bio",
+     "update":"Update"
+
      
   },
   
@@ -625,7 +639,11 @@
  
   }
 
+ },
+ "another_user_profile_screen":{
+    "follow":"Follow"
  }
+
 
 }
 

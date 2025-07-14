@@ -383,6 +383,8 @@ abstract class  LocaleKeys {
   static const cart_screen_shopping_title_button = 'cart_screen.shopping_title_button';
   static const cart_screen_recently_viewed = 'cart_screen.recently_viewed';
   static const cart_screen_birthday_gifts = 'cart_screen.birthday_gifts';
+  static const cart_screen_checkout = 'cart_screen.checkout';
+  static const cart_screen_submit = 'cart_screen.submit';
   static const cart_screen_remove = 'cart_screen.remove';
   static const cart_screen_apply = 'cart_screen.apply';
   static const cart_screen_coupon_code = 'cart_screen.coupon_code';
@@ -391,6 +393,11 @@ abstract class  LocaleKeys {
   static const cart_screen_total = 'cart_screen.total';
   static const cart_screen_inclusive_of_vat = 'cart_screen.inclusive_of_vat';
   static const cart_screen_order_summary = 'cart_screen.order_summary';
+  static const cart_screen_change_address_home_default = 'cart_screen.change_address.home_default';
+  static const cart_screen_change_address_work = 'cart_screen.change_address.work';
+  static const cart_screen_change_address_change_address = 'cart_screen.change_address.change_address';
+  static const cart_screen_change_address_new_address_boutt = 'cart_screen.change_address.new_address_boutt';
+  static const cart_screen_change_address = 'cart_screen.change_address';
   static const cart_screen = 'cart_screen';
   static const profile_screen_edit_profile = 'profile_screen.edit_profile';
   static const profile_screen_share_profile = 'profile_screen.share_profile';
@@ -412,6 +419,7 @@ abstract class  LocaleKeys {
   static const setting_screen_general_settings_items_mode = 'setting_screen.general_settings_items.mode';
   static const setting_screen_general_settings_items_change_password = 'setting_screen.general_settings_items.change_password';
   static const setting_screen_general_settings_items_notification = 'setting_screen.general_settings_items.notification';
+  static const setting_screen_general_settings_items_no_notification = 'setting_screen.general_settings_items.no_notification';
   static const setting_screen_general_settings_items_language = 'setting_screen.general_settings_items.language';
   static const setting_screen_general_settings_items_my_orders = 'setting_screen.general_settings_items.my_orders';
   static const setting_screen_general_settings_items_my_address = 'setting_screen.general_settings_items.my_address';
@@ -433,6 +441,8 @@ abstract class  LocaleKeys {
   static const setting_screen_info_settings_items_blog = 'setting_screen.info_settings_items.blog';
   static const setting_screen_info_settings_items_blog_details = 'setting_screen.info_settings_items.blog_details';
   static const setting_screen_info_settings_items_about = 'setting_screen.info_settings_items.about';
+  static const setting_screen_info_settings_items_bio = 'setting_screen.info_settings_items.bio';
+  static const setting_screen_info_settings_items_update = 'setting_screen.info_settings_items.update';
   static const setting_screen_info_settings_items = 'setting_screen.info_settings_items';
   static const setting_screen_policy_settings_items_last_update = 'setting_screen.policy_settings_items.last_update';
   static const setting_screen_policy_settings_items_privacy_policy = 'setting_screen.policy_settings_items.privacy_policy';
@@ -520,5 +530,7 @@ abstract class  LocaleKeys {
   static const setting_screen_privacy_policy_description_cookies = 'setting_screen.privacy_policy.description_cookies';
   static const setting_screen_privacy_policy = 'setting_screen.privacy_policy';
   static const setting_screen = 'setting_screen';
+  static const another_user_profile_screen_follow = 'another_user_profile_screen.follow';
+  static const another_user_profile_screen = 'another_user_profile_screen';
 
 }

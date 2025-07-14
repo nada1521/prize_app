@@ -90,7 +90,7 @@ class CartScreen extends StatelessWidget {
                       ChekoutScreen(),
                     );
                   },
-                  title: "Checkout"),
+                  title: LocaleKeys.cart_screen_checkout.tr()),
             )
           : SizedBox.shrink(),
     );
