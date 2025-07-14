@@ -52,7 +52,7 @@ class EditProfileFormFieldWidget extends StatelessWidget {
         isPassword: false,
         controller: bioController,
         hintText: "FCIS .. CS Dept \n UI/UX Designer",
-        title: "Bio",
+        title: LocaleKeys.setting_screen_info_settings_items_bio.tr(),
         validator: AppValidation.bioValidation,
         maxLines: 3,
       ),
