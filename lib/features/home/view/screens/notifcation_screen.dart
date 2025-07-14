@@ -1,8 +1,10 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/constants.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
@@ -14,7 +16,8 @@ class NotifcationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: OrangeAppbarWidget(
-        title: "Notification",
+        title:
+            LocaleKeys.setting_screen_general_settings_items_notification.tr(),
         showBackButton: true,
       ),
       body: Center(
@@ -39,7 +42,8 @@ class NotifcationScreen extends StatelessWidget {
               ),
               verticalSpace(15),
               Text(
-                "There are no notifications yet.",
+                LocaleKeys.setting_screen_general_settings_items_no_notification
+                    .tr(),
                 style: AppTextStyles.bodyTitle18w400TextStyle(context).copyWith(
                   fontWeight: FontWeight.w500,
                 ),

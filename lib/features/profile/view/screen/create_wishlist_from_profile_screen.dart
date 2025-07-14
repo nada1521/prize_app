@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
 import 'package:prize/features/complete_profile/wishlist/view/widgets/create_wishlist_widget.dart';
@@ -13,7 +15,8 @@ class CreateWishlistFromProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: OrangeAppbarWidget(
-        title: "Create Wishlist",
+        title: LocaleKeys.complete_profile_create_wishlist_widget_appbar_title
+            .tr(),
       ),
       body: CustomScrollView(
         slivers: [
@@ -25,7 +28,9 @@ class CreateWishlistFromProfileScreen extends StatelessWidget {
                   onTap: () {
                     pushTo(context, SportWishlistOnProfileScreen());
                   },
-                  title: "Next Add items to wishlist",
+                  title: LocaleKeys.complete_profile_next_create_wishlist
+                      .tr()
+                      .tr(),
                 ),
               ),
             ),
