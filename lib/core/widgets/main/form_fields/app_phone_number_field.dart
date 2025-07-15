@@ -53,7 +53,7 @@ class AppPhoneNumberField extends StatelessWidget {
         _removeFirstZero();
         onChanged?.call(value);
       },
-      labelText: showLabel ? labelText ?? LocaleKeys.auth_label_phone_number.tr() : null,
+      labelText: showLabel ? labelText ?? LocaleKeys.core_phone_number.tr() : null,
       hintText: LocaleKeys.auth_placeholder_enter_phone_number_instruction.tr(),
       controller: controller,
       textInputAction: textInputAction,

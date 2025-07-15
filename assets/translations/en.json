@@ -55,7 +55,7 @@
   },
   "action": {
     "ok": "OK",
-    "confirm": "confirm",
+    
     "cancel": "Cancel",
     "clear": "Clear",
     "back": "Back",
@@ -78,13 +78,13 @@
       "sign_up": "Sign Up",
       "delete_account": "Delete the account",
       "or_skip_as_guest": "Or skip as a guest",
-      "name": "Name",
+     
       "first_name": "First name",
       "last_name": "Last name",
       "email": "E-mail",
       "password": "Password",
       "confirm_password": "Confirm the password",
-      "phone_number": "Phone number",
+      
       "new_password": "New password",
       "address": "Address",
       "birth_date": "Birth date",
@@ -144,7 +144,6 @@
     },
     "otp": {
       "select_otp_method":"Select Otp Method",
-      "phone_number":"Phone Number",
       "email":"Email",
       "label":"Verification code",
       "enter_verification_code": "Enter the verification code",
@@ -215,7 +214,12 @@
       "appbar_title":"Sport Wishlist",
       "wishlist_empty":"Your wishlist is empty!",
       "get_to_wishing":"Get To wishing!",
-      "add_items_to_wishlist":"+ Add items tho wishlist"
+      "check_out_this_awesome_product":"Check out this awesome product!",
+      "from_prize_app":"From Prize App",
+      "add_items_to_wishlist":"+ Add items tho wishlist",
+      "sport_wishlist":"Sport Wishlist",
+      "edit":"Edit",
+      "delete":"Delete"
     },
     "confirm_order":{
       "view_wishlist":"View wishlist",
@@ -234,7 +238,7 @@
     "change_language": "Change language",
     "select_language": "Choose the language",
     "profile_settings": "Profile settings",
-    "profile": "Profile",
+    
     "edit_profile": "Edit profile",
     "change_password": "Change password",
     "invite_friends": "Invite friends",
@@ -253,7 +257,6 @@
     "do_you_search_for_something": "Are you looking for something?"
   },
   "location": {
-    "location": "Location",
     "you_denied_location_permission": "You denied location permission",
     "ask_for_location_description": "Please allow the application to access your location to continue."
   },
@@ -433,7 +436,6 @@
   
  },"nav_title":{
   "shop_title":"Shop",
-  "home_title":"Home",
   "cart_title":"Cart",
   "profil_title":"Profil"
  },
@@ -445,6 +447,17 @@
   "birthday_gifts":"Birthday gifts",
   "remove":"Remove",
   "checkout":"Checkout",
+  "deliver_to": "Deliver to",
+  "riyad_saudi_arabia":"Riyad, Saudi Arabia",
+  "items_in_order":"Items in order",
+  "payment_method":"Payment Method",
+  "debit_credit":"Debit/Credit",
+  "order_successfully":"Order Successfully Placed",
+  "order_id":"Order ID ",
+  "track_your_order":"Track Your Order",
+  "aallet":"Wallet",
+  "mada":"Mada",
+  "coupon":"Coupon:",
   "submit":"Submit",
   "apply":"Apply",
   "coupon_code":"Coupon Code",
@@ -458,7 +471,6 @@
     "work":"Work",
     "change_address": "Change Address",
     "new_address_boutt":"Add New Address"
-
   }
  },
 
@@ -485,7 +497,6 @@
   "general_settings_items":{
     "mode":"Mode",
     "change_password":"Change Password",
-    "notification":"Notification",
     "no_notification":"There are no notifications yet.",
     "language":"Language",
     "my_orders":"My Orders",
@@ -588,7 +599,7 @@
     "change":"Change"
   },
   "notification":{
-    "notification":"Notification",
+ 
     
       "following_and_followers":"Following & Followers",
       "you_just_got_a_new_follower":"You just got a new follower",
@@ -598,9 +609,8 @@
       "you_have_been_invited_to_collaborate":"You have been invited to collaborate"
   },
   "contact_us":{    
-    "name":"Name",
+ 
     "enter_your_name":"enter your name",
-    "phone_number":"Phone Number",
     "email":"Email",
     "message":"Message",
     "write_your_message":"write your message",
@@ -614,35 +624,41 @@
     "information_we_collect":"Information We Collect",
     "how_we_use_your_information":"How We Use Your Information",
     "privacy_body_titel":"we are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information",
-    "last_update_date":"22 Mar 2025",
-    
-      
-        "title_personal_information": "Personal Information:",
-        "description_personal_information": "Name, email address, phone number, etc."
-      ,
-      
-        "title_usage_data": "Usage Data:",
-        "description_usage_data":
-            "How you interact with our app or website, such as pages visited, time spent, clicks, etc.",
-      
-      
-        "title_device_information": "Device Information:",
-        "description_device_information": "IP address, browser type, device type, operating system, etc.",
-       "title_cookies": "Cookies and Tracking Technologies:",
-        "description_cookies":
-            "We may use cookies or similar tracking tools to enhance user experience."
-     
-    
-
-  
- 
- 
+    "last_update_date":"22 Mar 2025",      
+    "title_personal_information": "Personal Information:",
+    "description_personal_information": "Name, email address, phone number, etc.",
+    "title_usage_data": "Usage Data:",
+    "description_usage_data": "How you interact with our app or website, such as pages visited, time spent, clicks, etc.",      
+    "title_device_information": "Device Information:",
+    "description_device_information": "IP address, browser type, device type, operating system, etc.",
+    "title_cookies": "Cookies and Tracking Technologies:",
+     "description_cookies":"We may use cookies or similar tracking tools to enhance user experience."
   }
-
  },
  "another_user_profile_screen":{
     "follow":"Follow"
- }
+ },
+ "location_screen":{
+  "work":"Work",
+  "location_in_details":"Location in details",
+    "label_other":"Other",
+  "ex_street_floor":"ex: street, Floor,.."
+  
+ },
+ "confirm_location_screen":{
+  "confirm_location":"Confirm Location"
+ },
+"core":{
+"name":"Name",
+"home":"Home",
+"total":"Total",
+"search":"Search",
+"confirm":"Confirm",
+"profile": "Profile",
+"location": "Location",
+"phone_number":"Phone Number",
+"notification":"Notification"
+}
 
 
 }

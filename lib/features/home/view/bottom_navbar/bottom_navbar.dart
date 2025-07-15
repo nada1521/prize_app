@@ -50,7 +50,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
                   selectedIndex: 0,
                   iconPath: AppSvgs.home,
                 ),
-                label: LocaleKeys.nav_title_home_title.tr(),
+                label: LocaleKeys.core_home.tr(),
               ),
               BottomNavigationBarItem(
                   icon: BottomNavbarIconWidget(
@@ -73,7 +73,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
                   selectedIndex: 3,
                   iconPath: AppSvgs.profile,
                 ),
-                label: LocaleKeys.nav_title_profil_title.tr(),
+                label: LocaleKeys.core_profile.tr(),
               ),
             ],
           ),

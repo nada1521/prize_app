@@ -1,6 +1,8 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:prize/core/constant/app_images.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
@@ -18,11 +20,11 @@ class SelectPaymentMethodWidget extends StatefulWidget {
 class _SelectPaymentMethodWidgetState extends State<SelectPaymentMethodWidget> {
   List<PaymentMethodModel> paymentMethods = [
     PaymentMethodModel(
-      paymentName: "Debit/Credit",
+      paymentName: LocaleKeys.cart_screen_debit_credit.tr(),
       paymentImage: AppImages.debitCartIcon,
     ),
     PaymentMethodModel(
-      paymentName: "Wallet",
+      paymentName: LocaleKeys.cart_screen_wallet.tr(),
       paymentImage: AppImages.walletIcon,
     ),
     PaymentMethodModel(
@@ -30,7 +32,7 @@ class _SelectPaymentMethodWidgetState extends State<SelectPaymentMethodWidget> {
       paymentImage: AppImages.stcPayIcon,
     ),
     PaymentMethodModel(
-      paymentName: "Mada",
+      paymentName: LocaleKeys.cart_screen_mada.tr(),
       paymentImage: AppImages.madaIcon,
     ),
   ];
@@ -44,7 +46,7 @@ class _SelectPaymentMethodWidgetState extends State<SelectPaymentMethodWidget> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Payment Method",
+            LocaleKeys.cart_screen_payment_method.tr(),
             style: AppTextStyles.meduimBody16W600BlackAndWhiteTitleTextStyle(
                 context),
           ),

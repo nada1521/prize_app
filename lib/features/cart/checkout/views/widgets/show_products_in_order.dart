@@ -1,6 +1,8 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
@@ -22,7 +24,7 @@ class ShowProductsInOrder extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "${selectedProducts.length} Items in order",
+            "${selectedProducts.length} ${LocaleKeys.cart_screen_items_in_order.tr()}",
             style: AppTextStyles.meduimBody16W500BlackAndWhiteTitleTextStyle(
                     context)
                 .copyWith(

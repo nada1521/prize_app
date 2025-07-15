@@ -89,7 +89,7 @@ class ConfirmOrderToCartBottomSheetWidget extends StatelessWidget {
               height: 50.h,
               child: Row(
                 children: [
-                  Text("Total",
+                  Text(LocaleKeys.core_total.tr(),
                       style: AppTextStyles
                               .meduimBody16W500DarkAndLightThemeTitleTextStyle(
                                   context)

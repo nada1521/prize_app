@@ -55,7 +55,7 @@ class _SettingScreenState extends State<SettingScreen> {
       SettingItemModel(
         imagePath: AppSvgs.notificationBingSettingsIcon,
         title:
-            LocaleKeys.setting_screen_general_settings_items_notification.tr(),
+            LocaleKeys.core_notification.tr(),
         onTap: () => pushTo(
           context,
           NotificationsScreen(),
