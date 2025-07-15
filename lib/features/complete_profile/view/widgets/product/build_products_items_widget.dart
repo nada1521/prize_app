@@ -56,7 +56,7 @@ class BuildProductsItemsWidget extends StatelessWidget {
                   padding:
                       EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
                   child: SvgPicture.asset(
-                    color: AppWidgetColor.fillWithContrastColor(context),
+                    color: AppWidgetColor.fillWithOppositeColor(context),
                     AppSvgs.setting,
                     width: 24.w,
                     height: 24.h,

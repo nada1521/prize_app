@@ -31,6 +31,7 @@ class AppSvgs {
   static const String documentUpload = 'assets/svgs/document-upload.svg';  
   static const String editPrfileIconButton = 'assets/svgs/edit-prfile_icon_button.svg';  
   static const String edit = 'assets/svgs/edit.svg';  
+  static const String editSavedLocationIcon = 'assets/svgs/edit_saved_location_icon.svg';  
   static const String email = 'assets/svgs/email.svg';  
   static const String emojes = 'assets/svgs/emojes.svg';  
   static const String emptyCart = 'assets/svgs/empty_cart.svg';  
@@ -61,6 +62,8 @@ class AppSvgs {
   static const String points = 'assets/svgs/points.svg';  
   static const String pointsIcon = 'assets/svgs/points_icon.svg';  
   static const String profile = 'assets/svgs/profile.svg';  
+  static const String rateStar = 'assets/svgs/rate_star.svg';  
+  static const String refreshIcon = 'assets/svgs/refresh_icon.svg';  
   static const String removeTrash = 'assets/svgs/remove_trash.svg';  
   static const String searchNormal = 'assets/svgs/search-normal.svg';  
   static const String setting = 'assets/svgs/setting.svg';  

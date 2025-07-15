@@ -32,10 +32,7 @@ class AppOutlineIconButton extends StatelessWidget {
           border: border ??
               GlobalAppWidgetsStyles.containerOrangeBoxBorder(context),
         ),
-        child: Center(
-          child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 15.w), child: icon),
-        ),
+        child: icon,
       ),
     );
   }

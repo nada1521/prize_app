@@ -29,6 +29,8 @@ class AppImages {
   static const String saller = 'assets/images/saller.png';  
   static const String stcPayIcon = 'assets/images/stc_pay_icon.png';  
   static const String successImage = 'assets/images/success_image.png';  
+  static const String tShirt = 'assets/images/T-Shirt.png';  
+  static const String tShirtBlack = 'assets/images/T-Shirt_black.png';  
   static const String userAvatar = 'assets/images/user_avatar.png';  
   static const String walletIcon = 'assets/images/wallet_icon.png';  
   static const String wedding = 'assets/images/wedding.png';  

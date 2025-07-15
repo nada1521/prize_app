@@ -34,10 +34,10 @@ class AppWidgetColor {
   static Color fillWidgetByLightBackgroundColor(BuildContext context) =>
       context.isDarkMode ? AppColors.white : AppColors.white;
 
-  static Color fillWithContrastColor(BuildContext context) =>
-      context.isDarkMode ? AppColors.darkBlue : AppColors.white;
   static Color fillWithOppositeColor(BuildContext context) =>
       context.isDarkMode ? AppColors.white : AppColors.darkBlue;
+  // static Color fillWithOppositeColor(BuildContext context) =>
+  //     context.isDarkMode ? AppColors.white : AppColors.darkBlue;
 
   static Color fillWithGrayAndDiColor(BuildContext context) =>
       context.isDarkMode ? AppColors.darkBlue : AppColors.moreLightPeriwinkle;

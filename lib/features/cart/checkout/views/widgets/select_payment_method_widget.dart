@@ -65,7 +65,12 @@ class _SelectPaymentMethodWidgetState extends State<SelectPaymentMethodWidget> {
                   AppCircularCheckbox(onChanged: (onChanged) {}),
                   Text(paymentMethods[index].paymentName),
                   Spacer(),
-                  Image.asset(paymentMethods[index].paymentImage),
+                  Padding(
+                    padding: EdgeInsetsDirectional.only(
+                      end: 10.w,
+                    ),
+                    child: Image.asset(paymentMethods[index].paymentImage),
+                  ),
                 ],
               ),
             ),
