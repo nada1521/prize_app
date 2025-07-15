@@ -1,7 +1,9 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_circular_icon_button.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
@@ -18,15 +20,19 @@ class SportWishlistOnProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: OrangeAppbarWidget(
-        title: "Sport Wishlist",
+        title: LocaleKeys.complete_profile_sport_wishlist_sport_wishlist.tr(),
         suffixIcon: Row(
           children: [
             AppCircularIconButton(
               iconPath: AppSvgs.shareForward,
               onTap: () {
                 Share.share(
-                  'Check out this awesome product!',
-                  subject: 'From Prize App',
+                  LocaleKeys
+                      .complete_profile_sport_wishlist_check_out_this_awesome_product
+                      .tr(),
+                  subject: LocaleKeys
+                      .complete_profile_sport_wishlist_from_prize_app
+                      .tr(),
                 );
 
                 //  showModalBottomSheet(
@@ -118,7 +124,8 @@ class SportWishlistOnProfileScreen extends StatelessWidget {
                               ),
                               horizontalSpace(15),
                               Text(
-                                "Edit",
+                                LocaleKeys.complete_profile_sport_wishlist_edit
+                                    .tr(),
                                 style: AppTextStyles
                                         .headTitle14w500WhiteAndDarkBlueTextStyle(
                                             context)
@@ -137,7 +144,9 @@ class SportWishlistOnProfileScreen extends StatelessWidget {
                                 height: 24.h,
                               ),
                               horizontalSpace(15),
-                              Text("Delete")
+                              Text(LocaleKeys
+                                  .complete_profile_sport_wishlist_delete
+                                  .tr())
                             ],
                           )
                         ],

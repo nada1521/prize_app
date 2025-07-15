@@ -21,6 +21,7 @@ class OrderSummaryWidget extends StatelessWidget {
         context.watch<AddingProductToCartCubit>().state.selectedProducts;
 
     return Container(
+      
       padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 20.h),
       decoration: BoxDecoration(
         color: AppWidgetColor.fillWidgetByLightBackgroundColor(context),

@@ -198,7 +198,7 @@ class _MultiItemsBottomSheetListBuilderState<T>
                   bottom: AppSize.padding16,
                 ),
                 child: AppButton(
-                  title: LocaleKeys.action_confirm.tr(),
+                  title: LocaleKeys.core_confirm.tr(),
                   onPressed: () {
                     Navigator.pop(context);
                   },

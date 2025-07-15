@@ -22,7 +22,7 @@ class ContactUsScreens extends StatelessWidget {
 
     final List<TextFieldModel> textFieldModels = [
       TextFieldModel(
-        title: LocaleKeys.setting_screen_contact_us_name.tr(),
+        title: LocaleKeys.core_name.tr(),
         hintText: LocaleKeys.setting_screen_contact_us_enter_your_name.tr(),
         validator: (data) {
           return AppValidation.nameValidation(data);
@@ -31,7 +31,7 @@ class ContactUsScreens extends StatelessWidget {
       ),
       TextFieldModel(
         isPhoneNumber: true,
-        title: LocaleKeys.setting_screen_contact_us_phone_number.tr(),
+        title: LocaleKeys.core_phone_number.tr(),
         hintText: "00000000",
         validator: (data) {
           return AppValidation.phoneNumberValidation(data);

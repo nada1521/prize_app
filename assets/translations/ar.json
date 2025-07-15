@@ -55,7 +55,6 @@
   },
   "action": {
     "ok": "موافق",
-    "confirm": "تأكيد",
     "cancel": "إلغاء",
     "clear": "محو",
     "back": "رجوع",
@@ -78,14 +77,13 @@
       "sign_up": "إنشاء حساب",
       "delete_account": "حذف الحساب",
       "or_skip_as_guest": "أو متابعة كضيف",
-      "name": "الاسم",
+     
       "first_name": "الاسم الأول",
       "last_name": "الاسم الأخير",
       "email": "البريد الإلكتروني",
       "password": "كلمة السر",
       "confirm_password": "تأكيد كلمة السر",
       "new_password": "كلمة السر الجديدة",
-      "phone_number": "رقم الهاتف",
       "address": "العنوان",
       "birth_date": "تاريخ الميلاد",
       "referral_code": "رمز الإحالة"
@@ -146,7 +144,6 @@
     },
     "otp": {
       "select_otp_method":"إختر طريقة إستلام رمز التحقق",
-      "phone_number":"رقم الهاتف",
       "email":"الإميل",
       "label":"تفعيل رمز التحقق",
       "enter_verification_code": "أدخل رمز التحقق",
@@ -192,6 +189,7 @@
     "next_add_items_to_wishlist": "التالي، إضافة عناصر إلى قائمة الأمنيات",
     "add_items_to_wishlist": "أضف عناصر إلى قائمة الأمنيات",
     "profile_complete_succesed": "تم إكمال ملفك الشخصي بنجاح.",
+    
 
     "create_wishlist_widget":{
       "appbar_title":"إنشاء قائمة الأمنيات",
@@ -219,13 +217,20 @@
   "view_wishlist": "عرض قائمة الأمنيات",
   "see_more_items": "عرض المزيد من العناصر"
 },
-    "sport_wishlist": {
-      "add_item": "إضافة عنصر",
+  "sport_wishlist": {
+  "add_item": "إضافة عنصر",
+  "sport_wishlist":"قائمة الأمنيات الرياضية",
   "appbar_title":"تكملة ملفك الشخصي",
   "wishlist_empty": "قائمة الأمنيات الخاصة بك فارغة!",
   "get_to_wishing": "ابدأ بإضافة أمنياتك!",
   "add_items_to_wishlist": "أضف عناصر إلى قائمة الأمنيات +",
-  "save_and_confirm": "حفظ وتأكيد"
+  "check_out_this_awesome_product": "اطّلع على هذا المنتج الرائع!",
+   "from_prize_app": "من تطبيق برايز",
+
+  "save_and_confirm": "حفظ وتأكيد",
+  "edit": "تعديل",
+  "delete": "حذف"
+
 
 },
 "sucsses_complet": {
@@ -240,7 +245,7 @@
     "change_language": "تغيير اللغة",
     "select_language": "اختر اللغة",
     "profile_settings": "إعدادات الحساب",
-    "profile": "الملف الشخصي",
+    
     "edit_profile": "تعديل الملف الشخصي",
     "change_password": "تغيير كلمة المرور",
     "invite_friends": "دعوة الأصدقاء",
@@ -258,7 +263,6 @@
     "do_you_search_for_something": "هل تبحث عن شيء؟"
   },
   "location": {
-    "location": "الموقع",
     "you_denied_location_permission": "لقد رفضت إذن الموقع",
     "ask_for_location_description": "يرجى السماح للتطبيق بالوصول إلى موقعك الحالي للمتابعة."
   },
@@ -448,9 +452,8 @@
 },
 "nav_title": {
   "shop_title": "المتجر",
-  "home_title": "الرئيسية",
-  "cart_title": "السلة",
-  "profil_title": "الملف الشخصي"
+  "cart_title": "السلة"
+  
 },
 "cart_screen": {
   "cart_title": "سلة المشتريات",
@@ -458,22 +461,21 @@
   "shopping_title_button": "ابدأ التسوق",
   "recently_viewed": "شوهد مؤخرًا",
   "birthday_gifts": "هدايا عيد الميلاد",
-<<<<<<< HEAD
-<<<<<<< HEAD
   "checkout": "إتمام الشراء",
+  "deliver_to": "التوصيل إلى",
+  "riyad_saudi_arabia": "الرياض، المملكة العربية السعودية",
+  "items_in_order": "العناصر في الطلب",
+  "payment_method": "طريقة الدفع",
+  "debit_credit": "بطاقة ائتمان/خصم",
+  "order_successfully": "تم تقديم الطلب بنجاح",
+  "order_id": "رقم الطلب",
+  "track_your_order": "تتبع طلبك",
+
+  "wallet": "المحفظة",
+  "mada": "مدى",
+  "coupon": "كوبون:",
   "submit": "إرسال",
   "remove": "إزالة", 
-=======
-  "remove": "إزالة",
->>>>>>> 4353140dd05fd8de72a3757a5f9a376bc61cebd5
-=======
-  "remove": "إزالة",
-=======
-  "checkout": "إتمام الشراء",
-  "submit": "إرسال",
-  "remove": "إزالة", 
->>>>>>> b6591b3753a52dddd7cfdd4017dcc7619ffaea29
->>>>>>> 6596e0ddc7a971376985d1c40eea064ad96fe6be
   "apply": "تطبيق",
   "coupon_code": "كود التخفيض",
   "items": "العناصر",
@@ -516,7 +518,6 @@
   "general_settings_items": {
     "mode": "الوضع",
     "change_password": "تغيير كلمة المرور",
-    "notification": "الإشعارات",
     "no_notification": "لا توجد إشعارات بعد.",
 
     "language": "اللغة",
@@ -620,8 +621,6 @@
   "change": "تغيير"
 },
 "notification": {
-  
-    "notification": "الإشعارات",
     "following_and_followers": "المتابَعين والمتابعين",
     "you_just_got_a_new_follower": "لقد حصلت على متابع جديد",
     "giftful_updates": "تحديثات Giftful",
@@ -631,9 +630,7 @@
   
 },
 "contact_us": {
-  "name": "الاسم",
   "enter_your_name": "أدخل اسمك",
-  "phone_number": "رقم الهاتف",
   "email": "البريد الإلكتروني",
   "message": "الرسالة",
   "write_your_message": "اكتب رسالتك",
@@ -669,7 +666,31 @@
 },
 "another_user_profile_screen": {
   "follow": "متابعة"
+},
+"location_screen": {
+  "work": "العمل",
+  "location_in_details": "تفاصيل الموقع",
+  "label_other":"أخرى",
+  "ex_street_floor": "مثال: الشارع، الطابق،..."
+
+},
+"confirm_location_screen": {
+  "confirm_location": "تأكيد الموقع"
+},
+
+"core":{
+ "name": "الاسم",
+ "search":"بحث",  
+ "total": "الإجمالي",
+ "home": "المنزل",
+ "confirm": "تأكيد",
+ "location": "الموقع",
+ "profile": "الملف الشخصي",
+ "notification": "الإشعارات",
+ "phone_number": "رقم الهاتف"
+
 }
+
 
 
 

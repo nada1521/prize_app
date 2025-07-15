@@ -65,7 +65,7 @@ class PikedAdressWidget extends StatelessWidget {
                             overflow: TextOverflow.ellipsis,
                           ),
                         ),
-                        verticalSpace(8),
+                        verticalSpace(6),
                         Text(
                           "Mansoura, Dakhlia",
                           style: AppTextStyles.bodyTitle18w400TextStyle(context)

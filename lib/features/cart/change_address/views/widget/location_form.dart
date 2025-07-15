@@ -1,4 +1,6 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/validation/app_validation.dart';
 import 'package:prize/features/auth/signup/data/text_field_model.dart';
@@ -25,8 +27,8 @@ class _LocationFormState extends State<LocationForm> {
           children: [
             CustomTextFieldWidget(
               textFieldModel: TextFieldModel(
-                title: "Location in details",
-                hintText: "ex: street, Floor,..",
+                title: LocaleKeys.location_screen_location_in_details.tr(),
+                hintText: LocaleKeys.location_screen_ex_street_floor.tr(),
                 validator: (data) =>
                     AppValidation.locationInDetailsValidation(data!),
                 controller: locationInDetailsController,
@@ -36,7 +38,7 @@ class _LocationFormState extends State<LocationForm> {
             CustomTextFieldWidget(
               textFieldModel: TextFieldModel(
                 isPhoneNumber: true,
-                title: "Phone Number",
+                title: LocaleKeys.core_phone_number.tr(),
                 hintText: "000000",
                 validator: (data) => AppValidation.phoneNumberValidation(data!),
                 controller: phoneNumberController,

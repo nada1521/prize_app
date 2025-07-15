@@ -59,7 +59,7 @@ class SelectOtpMethodWidget extends StatelessWidget {
                       Theme.of(context).colorScheme.onPrimary.withOpacity(.1),
                   borderColor: const Color(0xFFFFCCAA),
                   icon: AppSvgs.callCalling,
-                  text: LocaleKeys.auth_otp_phone_number.tr(),
+                  text: LocaleKeys.core_phone_number.tr(),
                   textStyle:
                       Theme.of(context).textTheme.font14RegularPrimary(context),
                 ),

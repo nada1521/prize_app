@@ -47,7 +47,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
         ),
       ),
       appBar: OrangeAppbarWidget(
-        title: LocaleKeys.nav_title_profil_title.tr(),
+        title: LocaleKeys.core_profile.tr(),
         showBackButton: true,
       ),
       body: Padding(

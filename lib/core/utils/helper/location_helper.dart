@@ -78,7 +78,7 @@ Future<void> _checkPermission(
       buttons: [
         // try again
         DialogButton(
-          title: LocaleKeys.action_confirm.tr(),
+          title: LocaleKeys.core_confirm.tr(),
           onPressed: () async {
             Navigator.pop(NavigatorManager.getContext());
             permission = await Geolocator.requestPermission();
@@ -95,7 +95,7 @@ Future<void> _checkPermission(
                         return await _checkPermission(callback);
                       }
                     },
-                    title: LocaleKeys.action_confirm.tr(),
+                    title: LocaleKeys.core_confirm.tr(),
                   ),
                   // cancel
                   DialogButton(

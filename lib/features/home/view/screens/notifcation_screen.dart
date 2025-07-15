@@ -17,7 +17,7 @@ class NotifcationScreen extends StatelessWidget {
     return Scaffold(
       appBar: OrangeAppbarWidget(
         title:
-            LocaleKeys.setting_screen_general_settings_items_notification.tr(),
+            LocaleKeys.core_notification.tr(),
         showBackButton: true,
       ),
       body: Center(
