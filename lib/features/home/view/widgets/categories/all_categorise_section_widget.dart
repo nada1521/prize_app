@@ -19,7 +19,7 @@ class AllCategoriseSectionWidget extends StatefulWidget {
 class _AllCategoriseSectionWidgetState
     extends State<AllCategoriseSectionWidget> {
   final PageController _pageController = PageController();
-  int _currentPage = 0;
+  int currentPage = 0;
 
   final List<CategoryModel> _allCategories = [
     CategoryModel(
@@ -98,7 +98,7 @@ class _AllCategoriseSectionWidgetState
           child: PageView.builder(
             controller: _pageController,
             onPageChanged: (index) {
-              setState(() => _currentPage = index);
+              setState(() => currentPage = index);
             },
             itemCount: _pages.length,
             itemBuilder: (_, pageIndex) {

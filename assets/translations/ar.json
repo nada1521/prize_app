@@ -459,12 +459,21 @@
   "recently_viewed": "شوهد مؤخرًا",
   "birthday_gifts": "هدايا عيد الميلاد",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "checkout": "إتمام الشراء",
   "submit": "إرسال",
   "remove": "إزالة", 
 =======
   "remove": "إزالة",
 >>>>>>> 4353140dd05fd8de72a3757a5f9a376bc61cebd5
+=======
+  "remove": "إزالة",
+=======
+  "checkout": "إتمام الشراء",
+  "submit": "إرسال",
+  "remove": "إزالة", 
+>>>>>>> b6591b3753a52dddd7cfdd4017dcc7619ffaea29
+>>>>>>> 6596e0ddc7a971376985d1c40eea064ad96fe6be
   "apply": "تطبيق",
   "coupon_code": "كود التخفيض",
   "items": "العناصر",

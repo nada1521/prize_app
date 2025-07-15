@@ -4,7 +4,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_images.dart';
 import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/helper/navigation/push_to.dart';
-import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/core/widgets/app_text_form_field.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
