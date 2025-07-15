@@ -29,14 +29,14 @@ class EditProfileFormFieldWidget extends StatelessWidget {
       TextFieldModel(
         controller: nameController,
         validator: AppValidation.fullNameValidation,
-        title: LocaleKeys.auth_label_name.tr(),
+        title: LocaleKeys.core_name.tr(),
         hintText: LocaleKeys.auth_placeholder_type_your_name.tr(),
       ),
       TextFieldModel(
         isPhoneNumber: true,
         controller: phoneController,
         hintText: LocaleKeys.auth_hint_texts_type_your_phone_number.tr(),
-        title: LocaleKeys.auth_label_phone_number.tr(),
+        title: LocaleKeys.core_phone_number.tr(),
         validator: (phone) => AppValidation.phoneNumberValidation(
           phone,
           requiredValidation: true,

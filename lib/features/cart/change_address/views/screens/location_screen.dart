@@ -1,7 +1,9 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/constants.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
 import 'package:prize/features/cart/change_address/views/widget/location_form.dart';
@@ -25,7 +27,7 @@ class _LocationScreenState extends State<LocationScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: OrangeAppbarWidget(
-        title: "Location",
+        title: LocaleKeys.core_location.tr(),
         showBackButton: true,
       ),
       body: Padding(
@@ -39,7 +41,7 @@ class _LocationScreenState extends State<LocationScreen> {
                 children: [
                   SelectableLocationItem(
                     isSelected: selectedType == LocationType.home,
-                    label: "Home",
+                    label: LocaleKeys.core_home.tr(),
                     iconPath: AppSvgs.locationHomeIcon,
                     onTap: () {
                       setState(() {
@@ -50,7 +52,7 @@ class _LocationScreenState extends State<LocationScreen> {
                   horizontalSpace(10),
                   SelectableLocationItem(
                     isSelected: selectedType == LocationType.work,
-                    label: "Work",
+                    label: LocaleKeys.location_screen_work.tr(),
                     iconPath: AppSvgs.briefcase,
                     onTap: () {
                       setState(() {
@@ -61,7 +63,7 @@ class _LocationScreenState extends State<LocationScreen> {
                   horizontalSpace(10),
                   SelectableLocationItem(
                     isSelected: selectedType == LocationType.other,
-                    label: "Other",
+                    label: LocaleKeys.location_screen_label_other.tr(),
                     iconPath: AppSvgs.moreIcon,
                     onTap: () {
                       setState(() {
@@ -83,7 +85,7 @@ class _LocationScreenState extends State<LocationScreen> {
           onTap: () {
             // use selectedType here
           },
-          title: "Confirm",
+          title: LocaleKeys.core_confirm.tr(),
         ),
       ),
     );

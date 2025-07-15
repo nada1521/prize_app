@@ -28,7 +28,7 @@ class LoginScreen extends StatelessWidget {
         isPhoneNumber: true,
         controller: phoneController,
         hintText: LocaleKeys.auth_hint_texts_type_your_phone_number.tr(),
-        title: LocaleKeys.auth_label_phone_number.tr(),
+        title: LocaleKeys.core_phone_number.tr(),
         validator: (phone) => AppValidation.phoneNumberValidation(
           phone,
           requiredValidation: true,

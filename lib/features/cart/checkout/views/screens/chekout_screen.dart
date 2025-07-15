@@ -41,7 +41,7 @@ class ChekoutScreen extends StatelessWidget {
           SelectPaymentMethodWidget(),
           verticalSpace(8),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 10.w),
+            padding: EdgeInsets.symmetric(horizontal: 8.w),
             child: OrderSummaryWidget(),
           )
         ],

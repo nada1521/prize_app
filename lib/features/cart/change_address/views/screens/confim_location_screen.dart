@@ -1,10 +1,11 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_images.dart';
 import 'package:prize/core/constant/app_svgs.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/navigation/push_to.dart';
-import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/core/widgets/app_text_form_field.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
@@ -18,7 +19,7 @@ class ConfimLocationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: OrangeAppbarWidget(
-        title: "Confirm Location",
+        title: LocaleKeys.confirm_location_screen_confirm_location.tr(),
         showBackButton: true,
       ),
       body: Stack(
@@ -38,7 +39,7 @@ class ConfimLocationScreen extends StatelessWidget {
               margin: EdgeInsets.symmetric(horizontal: 15.w, vertical: 10.h),
               //   width: 350.w,
               child: AppTextFormField(
-                hintText: "Search",
+                hintText: LocaleKeys.core_search.tr(),
                 validator: (validator) {},
                 prefixIcon: Padding(
                   padding:
@@ -69,7 +70,7 @@ class ConfimLocationScreen extends StatelessWidget {
           onTap: () {
             pushTo(context, LocationScreen());
           },
-          title: "Confirm",
+          title: LocaleKeys.core_confirm.tr(),
         ),
       ),
     );
