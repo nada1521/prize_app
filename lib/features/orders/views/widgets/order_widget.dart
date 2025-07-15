@@ -3,14 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/core/widgets/app_divder_widget.dart';
-import 'package:prize/core/widgets/app_fill_background_button.dart';
 import 'package:prize/core/widgets/app_outline_button.dart';
-import 'package:prize/core/widgets/app_outline_icon_button.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_image_widget.dart';
 import 'package:prize/features/orders/data/models/order_model.dart';
 import 'package:prize/features/orders/views/widgets/order_state_widget.dart';
@@ -42,7 +41,7 @@ class OrderWidget extends StatelessWidget {
                   RichText(
                     text: TextSpan(children: [
                       TextSpan(
-                        text: "ID ",
+                        text: LocaleKeys.my_order_screen_id.tr(),
                         style: AppTextStyles.smallBodyTitle12w500TextStyle(
                             context),
                       ),
@@ -98,7 +97,7 @@ class OrderWidget extends StatelessWidget {
             ),
             child: Row(
               children: [
-                FittedBox(child: Text("Total")),
+                FittedBox(child: Text(LocaleKeys.core_total.tr())),
                 Spacer(),
                 Row(
                   children: [
@@ -126,7 +125,7 @@ class OrderWidget extends StatelessWidget {
               Expanded(
                 child: AppOutLineButton(
                     onTap: () {},
-                    title: "Order again",
+                    title: LocaleKeys.my_order_screen_order_again.tr(),
                     icon: SvgPicture.asset(AppSvgs.refreshIcon)),
               ),
               horizontalSpace(16),

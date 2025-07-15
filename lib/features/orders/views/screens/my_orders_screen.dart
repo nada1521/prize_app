@@ -16,7 +16,7 @@ class MyOrdersScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: OrangeAppbarWidget(
-        title: "My Orders",
+        title: LocaleKeys.core_my_orders.tr(),
         showBackButton: true,
       ),
       body: CustomScrollView(
@@ -24,15 +24,15 @@ class MyOrdersScreen extends StatelessWidget {
           SliverToBoxAdapter(
             child: OrdersStatesTabBarWidget(
               tabItems: {
-                "In progress": ListView.builder(
+                LocaleKeys.my_order_screen_in_progress.tr(): ListView.builder(
                   shrinkWrap: true,
                   itemBuilder: (context, index) => OrderWidget(
                     order: inProgressOrders[index],
                   ),
                   itemCount: inProgressOrders.length,
                 ),
-                "Delivered": Column(),
-                "Cancelled": Column(),
+                LocaleKeys.my_order_screen_delivered.tr(): Column(),
+                LocaleKeys.my_order_screen_cancelled.tr(): Column(),
               },
             ),
           ),

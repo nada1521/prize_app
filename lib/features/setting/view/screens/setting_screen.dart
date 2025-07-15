@@ -68,7 +68,7 @@ class _SettingScreenState extends State<SettingScreen> {
       ),
       SettingItemModel(
         imagePath: AppSvgs.ordersIcon,
-        title: LocaleKeys.setting_screen_general_settings_items_my_orders.tr(),
+        title: LocaleKeys.core_my_orders.tr(),
         onTap: () => pushTo(
           context,
           MyOrdersScreen(),
