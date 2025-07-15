@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prize/core/utils/constants.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
-import 'package:prize/core/utils/resources/app_colors.dart';
-import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
 import 'package:prize/features/cart/change_address/data/models/address_model.dart';
 import 'package:prize/features/cart/change_address/views/widget/add_new_address_text_button.dart';
