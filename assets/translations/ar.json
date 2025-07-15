@@ -188,7 +188,7 @@
     "paints_size_place_holder": "مثال: ٤٠",
     "shoes_size_title": "مقاس الحذاء",
     "shoes_size_place_holder": "مثال: ٤٠",
-    "next_create_wishlist": "التالي، إنشاء قائمة الأمنيات",
+    "next_create_wishlist": "التالي إنشاء قائمة الأمنيات",
     "next_add_items_to_wishlist": "التالي، إضافة عناصر إلى قائمة الأمنيات",
     "add_items_to_wishlist": "أضف عناصر إلى قائمة الأمنيات",
     "profile_complete_succesed": "تم إكمال ملفك الشخصي بنجاح.",
@@ -458,14 +458,27 @@
   "shopping_title_button": "ابدأ التسوق",
   "recently_viewed": "شوهد مؤخرًا",
   "birthday_gifts": "هدايا عيد الميلاد",
+<<<<<<< HEAD
   "remove": "إزالة",
+=======
+  "checkout": "إتمام الشراء",
+  "submit": "إرسال",
+  "remove": "إزالة", 
+>>>>>>> b6591b3753a52dddd7cfdd4017dcc7619ffaea29
   "apply": "تطبيق",
   "coupon_code": "كود التخفيض",
   "items": "العناصر",
   "sub_total": "الإجمالي الفرعي",
   "total": ":الإجمالي الكلي",
   "inclusive_of_vat": "(شامل ضريبة القيمة المضافة)",
-  "order_summary": "ملخص الطلب"
+  "order_summary": "ملخص الطلب",
+  "change_address": {
+  "home_default": "المنزل (افتراضي)",
+  "work": "العمل",
+  "change_address": "تغيير العنوان",
+  "new_address_boutt": "إضافة عنوان جديد"
+}
+
 
 
 },
@@ -495,6 +508,8 @@
     "mode": "الوضع",
     "change_password": "تغيير كلمة المرور",
     "notification": "الإشعارات",
+    "no_notification": "لا توجد إشعارات بعد.",
+
     "language": "اللغة",
     "my_orders": "طلباتي",
     "my_address": "عناويني",
@@ -521,7 +536,10 @@
     "faqs": "الأسئلة الشائعة",
     "blog": "المدونة",
     "blog_details": "تفاصيل المقال",
-    "about": "حول"
+    "about": "حول",
+    "bio":"عنى",
+   
+    "update": "تحديث"
   },
   "policy_settings_items": {
     "last_update": "آخر تحديث:",
@@ -571,11 +589,7 @@
     "title_three": "تقديم معلومات دقيقة وحديثة",
     "title_four": "الحفاظ على سرية بيانات تسجيل الدخول الخاصة بك"
   }
-},
-
-
-
-    
+},   
     "become_a_Seller": "كن بائعًا",
     "logout": "تسجيل الخروج",
     "delete_account": "حذف الحساب"
@@ -643,7 +657,11 @@
 
 
 
+},
+"another_user_profile_screen": {
+  "follow": "متابعة"
 }
+
 
 
 

@@ -1,8 +1,10 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
@@ -27,7 +29,7 @@ class ChekoutScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: OrangeAppbarWidget(
-        title: "Checkout",
+        title: LocaleKeys.cart_screen_checkout.tr(),
         showBackButton: true,
       ),
       body: ListView(
@@ -53,7 +55,8 @@ class ChekoutScreen extends StatelessWidget {
             verticalSpace(16),
             Row(
               children: [
-                Text("${selectedProducts.length} items"),
+                Text(
+                    "${selectedProducts.length} ${LocaleKeys.cart_screen_items.tr()}"),
                 Spacer(),
                 SvgPicture.asset(
                   AppSvgs.currency,
@@ -80,7 +83,7 @@ class ChekoutScreen extends StatelessWidget {
               onTap: () {
                 showPopup(context, OrderSuccessfullyPlacedWidget());
               },
-              title: "Submit",
+              title: LocaleKeys.cart_screen_submit.tr(),
             )
           ],
         ),
