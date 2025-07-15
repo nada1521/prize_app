@@ -36,6 +36,8 @@ class AppWidgetColor {
 
   static Color fillWithContrastColor(BuildContext context) =>
       context.isDarkMode ? AppColors.darkBlue : AppColors.white;
+  static Color fillWithOppositeColor(BuildContext context) =>
+      context.isDarkMode ? AppColors.white : AppColors.darkBlue;
 
   static Color fillWithGrayAndDiColor(BuildContext context) =>
       context.isDarkMode ? AppColors.darkBlue : AppColors.moreLightPeriwinkle;
@@ -106,7 +108,7 @@ class GlobalAppWidgetsStyles {
       );
 
   static BoxBorder containerGrayBoxBorder(BuildContext context) => Border.all(
-      color: AppWidgetColor.outlineWidgetColor.withOpacity(.4), width: 1);
+      color: AppWidgetColor.outlineWidgetColor.withOpacity(.9), width: 2);
   static BoxBorder containerPeriwinkleBoxBorder(BuildContext context) =>
       Border.all(color: AppColors.darkPeriwinkle, width: 1);
   static BoxBorder containerOrangeBoxBorder(BuildContext context) =>

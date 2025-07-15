@@ -458,9 +458,13 @@
   "shopping_title_button": "ابدأ التسوق",
   "recently_viewed": "شوهد مؤخرًا",
   "birthday_gifts": "هدايا عيد الميلاد",
+<<<<<<< HEAD
+  "remove": "إزالة",
+=======
   "checkout": "إتمام الشراء",
   "submit": "إرسال",
   "remove": "إزالة", 
+>>>>>>> b6591b3753a52dddd7cfdd4017dcc7619ffaea29
   "apply": "تطبيق",
   "coupon_code": "كود التخفيض",
   "items": "العناصر",
