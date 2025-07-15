@@ -12,6 +12,7 @@ class AppSvgs {
   static const String arrowLeft = 'assets/svgs/arrow-left.svg';  
   static const String arrowRight = 'assets/svgs/arrow-right.svg';  
   static const String blogIcon = 'assets/svgs/blog_icon.svg';  
+  static const String briefcase = 'assets/svgs/briefcase.svg';  
   static const String calendar = 'assets/svgs/calendar.svg';  
   static const String calendarProfileCommingEvent = 'assets/svgs/calendar_profile_comming_event.svg';  
   static const String calendarWithDay = 'assets/svgs/calendar_with_day.svg';  
@@ -35,6 +36,7 @@ class AppSvgs {
   static const String emptyCart = 'assets/svgs/empty_cart.svg';  
   static const String fiilHeartIcon = 'assets/svgs/fiil_heart_icon.svg';  
   static const String gift = 'assets/svgs/gift.svg';  
+  static const String gps = 'assets/svgs/gps.svg';  
   static const String heart = 'assets/svgs/heart.svg';  
   static const String home = 'assets/svgs/home.svg';  
   static const String homeLocationIcon = 'assets/svgs/home_location_icon.svg';  
@@ -42,12 +44,14 @@ class AppSvgs {
   static const String infoCircle = 'assets/svgs/info-circle.svg';  
   static const String lightModeIcon = 'assets/svgs/light_mode_icon.svg';  
   static const String location = 'assets/svgs/location.svg';  
+  static const String locationHomeIcon = 'assets/svgs/location_home_icon.svg';  
   static const String locationSettingIcon = 'assets/svgs/location_setting_icon.svg';  
   static const String lockSettingChangePasswordIcon = 'assets/svgs/lock_setting_change_password_icon.svg';  
   static const String logout = 'assets/svgs/logout.svg';  
   static const String menuIconButton = 'assets/svgs/menu_icon_button.svg';  
   static const String messageQuestion = 'assets/svgs/message-question.svg';  
   static const String moonSettingChangeModeIcon = 'assets/svgs/moon_setting_change_mode_icon.svg';  
+  static const String moreIcon = 'assets/svgs/more_icon.svg';  
   static const String notificationBing = 'assets/svgs/notification-bing.svg';  
   static const String notificationBingSettingsIcon = 'assets/svgs/notification-bing_settings_icon.svg';  
   static const String onboardingImageOne = 'assets/svgs/onboarding_image_one.svg';  
@@ -77,4 +81,5 @@ class AppSvgs {
   static const String userTag = 'assets/svgs/user-tag.svg';  
   static const String userAvatar = 'assets/svgs/user_avatar.svg';  
   static const String wallet = 'assets/svgs/wallet.svg';  
+  static const String walltIcon = 'assets/svgs/wallt_icon.svg';  
 }

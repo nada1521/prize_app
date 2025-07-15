@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
+import 'package:prize/features/cart/change_address/views/screens/confim_location_screen.dart';
 
 class AddNewAddressTextButton extends StatelessWidget {
   const AddNewAddressTextButton({super.key});
@@ -8,6 +10,9 @@ class AddNewAddressTextButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      onTap: () {
+        pushTo(context, ConfimLocationScreen());
+      },
       child: Row(
         children: [
           Icon(

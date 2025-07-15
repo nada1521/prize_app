@@ -26,7 +26,7 @@ class ChangeAddressScreen extends StatelessWidget {
       ),
     ];
     return Scaffold(
-      appBar: OrangeAppbarWidget(
+      appBar:  OrangeAppbarWidget(
         title: "Change Address",
         showBackButton: true,
       ),

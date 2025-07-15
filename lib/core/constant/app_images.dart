@@ -17,12 +17,14 @@ class AppImages {
   static const String gaduationImage = 'assets/images/gaduation_image.png';  
   static const String happyEmoje = 'assets/images/happy_emoje.png';  
   static const String madaIcon = 'assets/images/mada_icon.png';  
+  static const String mapFrame = 'assets/images/map_frame.png';  
   static const String onboardingImageOne = 'assets/images/onboarding_image_one.png';  
   static const String onboardingImageOneDarkMode = 'assets/images/onboarding_image_one_dark_mode.png';  
   static const String onboardingImageThree = 'assets/images/onboarding_image_three.png';  
   static const String onboardingImageThreeDarkMode = 'assets/images/onboarding_image_three_dark_mode.png';  
   static const String onboardingImageTwo = 'assets/images/onboarding_image_two.png';  
   static const String onboardingImageTwoDarkMode = 'assets/images/onboarding_image_two_dark_mode.png';  
+  static const String pikedAddressImage = 'assets/images/piked_address_image.png';  
   static const String prizeIcon = 'assets/images/prize_icon.jpg';  
   static const String saller = 'assets/images/saller.png';  
   static const String stcPayIcon = 'assets/images/stc_pay_icon.png';  
