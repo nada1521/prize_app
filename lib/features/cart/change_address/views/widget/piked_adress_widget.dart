@@ -53,7 +53,7 @@ class PikedAdressWidget extends StatelessWidget {
                       children: [
                         Container(
                           constraints: BoxConstraints(
-                            maxWidth: 250.w,
+                            maxWidth: 240.w,
                           ),
                           child: Text(
                             "81 algumhuryia street, 123 montaser street",
@@ -78,15 +78,20 @@ class PikedAdressWidget extends StatelessWidget {
                   ),
                   horizontalSpace(10),
                   Expanded(
+                    flex: 1,
                     child: AppOutlineIconButton(
-                      height: 40.h,
-                      width: 40.w,
                       onTap: () {},
                       border: GlobalAppWidgetsStyles.containerGrayBoxBorder(
                           context),
-                      icon: SvgPicture.asset(
-                        AppSvgs.editPrfileIconButton,
-                        color: AppWidgetColor.fillWithOppositeColor(context),
+                      icon: Padding(
+                        padding: EdgeInsets.symmetric(
+                          vertical: 10.h,
+                          horizontal: 10.w,
+                        ),
+                        child: SvgPicture.asset(
+                          AppSvgs.editPrfileIconButton,
+                          color: AppWidgetColor.fillWithOppositeColor(context),
+                        ),
                       ),
                     ),
                   )

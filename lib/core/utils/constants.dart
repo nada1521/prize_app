@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:prize/core/constant/app_images.dart';
 import 'package:prize/core/utils/extensions/context_extension.dart';
 import 'package:prize/features/complete_profile/data/models/product_model.dart';
+import 'package:prize/features/orders/data/models/order_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'helper/navigation/navigation_manager.dart';
@@ -111,6 +113,57 @@ final List<ProductModel> productsWitOffer = [
 ];
 
 List<ProductModel> selectedProducts = [];
+
+final List<OrderModel> inProgressOrders = [
+  OrderModel(
+      orderId: "#82569841",
+      orderPlaced: DateTime.now(),
+      orderState: OrderState.inProgress,
+      orderProductDataModel: [
+        OrderProductDataModel(
+          productImageUrl: AppImages.tShirt,
+          productCount: 2,
+          productPrice: 1443,
+        ),
+        OrderProductDataModel(
+          productImageUrl: AppImages.tShirtBlack,
+          productCount: 1,
+          productPrice: 1443,
+        ),
+      ]),
+  OrderModel(
+      orderId: "#82669841",
+      orderPlaced: DateTime.now(),
+      orderState: OrderState.shipped,
+      orderProductDataModel: [
+        OrderProductDataModel(
+          productImageUrl: AppImages.tShirt,
+          productCount: 2,
+          productPrice: 1443,
+        ),
+        OrderProductDataModel(
+          productImageUrl: AppImages.tShirtBlack,
+          productCount: 1,
+          productPrice: 1443,
+        ),
+      ]),
+  OrderModel(
+      orderId: "#82769841",
+      orderPlaced: DateTime.now(),
+      orderState: OrderState.inProgress,
+      orderProductDataModel: [
+        OrderProductDataModel(
+          productImageUrl: AppImages.tShirt,
+          productCount: 2,
+          productPrice: 1443,
+        ),
+        OrderProductDataModel(
+          productImageUrl: AppImages.tShirtBlack,
+          productCount: 1,
+          productPrice: 1443,
+        ),
+      ]),
+];
 
 abstract class AppConstants {
   static const String dialCode = "20";

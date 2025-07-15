@@ -11,6 +11,7 @@ import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
+import 'package:prize/features/orders/views/screens/my_orders_screen.dart';
 import 'package:prize/features/setting/about/views/screens/about_screen.dart';
 import 'package:prize/features/setting/blog/view/screens/blog_screen.dart';
 import 'package:prize/features/setting/change_password/views/screens/change_password_screen.dart';
@@ -54,8 +55,7 @@ class _SettingScreenState extends State<SettingScreen> {
       ),
       SettingItemModel(
         imagePath: AppSvgs.notificationBingSettingsIcon,
-        title:
-            LocaleKeys.core_notification.tr(),
+        title: LocaleKeys.core_notification.tr(),
         onTap: () => pushTo(
           context,
           NotificationsScreen(),
@@ -67,9 +67,13 @@ class _SettingScreenState extends State<SettingScreen> {
         isChangeLanguageButton: true,
       ),
       SettingItemModel(
-          imagePath: AppSvgs.ordersIcon,
-          title:
-              LocaleKeys.setting_screen_general_settings_items_my_orders.tr()),
+        imagePath: AppSvgs.ordersIcon,
+        title: LocaleKeys.setting_screen_general_settings_items_my_orders.tr(),
+        onTap: () => pushTo(
+          context,
+          MyOrdersScreen(),
+        ),
+      ),
       SettingItemModel(
           imagePath: AppSvgs.locationSettingIcon,
           title:

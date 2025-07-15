@@ -122,7 +122,7 @@ class AppTextStyles {
       TextStyle(
         fontSize: 12,
         fontWeight: FontWeight.w400,
-        color: AppWidgetColor.fillWithContrastColor(context),
+        color: AppWidgetColor.fillWithOppositeColor(context),
       );
   static TextStyle smallBodyTitle12w500WhiteOnlyTextStyle(
           BuildContext context) =>

@@ -18,11 +18,13 @@ class ChangeAddressScreen extends StatelessWidget {
         title: LocaleKeys.cart_screen_change_address_home_default.tr(),
         body:
             "Damietta El-Gadeeda City, Kafr Saad Al - markazeia City grand mall , B.Tech ",
+        isDefault: true,    
       ),
       AddressModel(
         title: LocaleKeys.cart_screen_change_address_work.tr(),
         body:
             "Damietta El-Gadeeda City, Kafr Saad Al - markazeia City grand mall , B.Tech ",
+            isDefault: false,
       ),
     ];
     return Scaffold(

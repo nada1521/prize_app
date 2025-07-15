@@ -92,7 +92,7 @@ class _PriceRangeSliderWidgetState extends State<PriceRangeSliderWidget> {
               const Spacer(),
               SvgPicture.asset(
                 AppSvgs.currency,
-                color: AppWidgetColor.fillWithContrastColor(context),
+                color: AppWidgetColor.fillWithOppositeColor(context),
               ),
               Text(
                 "${widget.initialValues.end.toInt()}",
@@ -113,7 +113,7 @@ class _PriceRangeSliderWidgetState extends State<PriceRangeSliderWidget> {
       children: [
         SvgPicture.asset(
           iconPath,
-          color: AppWidgetColor.fillWithContrastColor(context),
+          color: AppWidgetColor.fillWithOppositeColor(context),
         ),
         horizontalSpace(4),
         Text(

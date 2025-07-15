@@ -13,12 +13,14 @@ class ShowProductImageWidget extends StatelessWidget {
     this.width,
     this.fillWidgetColor,
     this.isOffer = false,
+    this.image,
   });
 
   final String imageUrl;
   final double? height, maxHeight, imageScale, width;
   final bool? isOffer;
   final bool? fillWidgetColor;
+  final ImageProvider<Object>? image;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -44,7 +46,7 @@ class ShowProductImageWidget extends StatelessWidget {
               image: DecorationImage(
                 scale: imageScale ?? 4,
                 // fit: BoxFit.cover,
-                image: NetworkImage(
+                image: image ?? NetworkImage(
                   imageUrl,
                 ),
               ),
