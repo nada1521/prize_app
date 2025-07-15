@@ -26,8 +26,13 @@ class ChangeAddressScreen extends StatelessWidget {
       ),
     ];
     return Scaffold(
+<<<<<<< HEAD
       appBar: OrangeAppbarWidget(
         title: LocaleKeys.cart_screen_change_address_change_address.tr(),
+=======
+      appBar:  OrangeAppbarWidget(
+        title: "Change Address",
+>>>>>>> 4353140dd05fd8de72a3757a5f9a376bc61cebd5
         showBackButton: true,
       ),
       body: ListView(

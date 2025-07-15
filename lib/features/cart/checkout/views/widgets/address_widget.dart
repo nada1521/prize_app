@@ -67,7 +67,7 @@ class AddressWidget extends StatelessWidget {
                 },
                 icon: Icon(
                   Icons.arrow_forward_ios_outlined,
-                  color: AppWidgetColor.fillWithContrastColor(context),
+                  color: AppWidgetColor.fillWithOppositeColor(context),
                 ),
               ),
             ],

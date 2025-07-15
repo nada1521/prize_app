@@ -38,11 +38,7 @@ class AppOutlineIconButton extends StatelessWidget {
         ),
         child: Center(
           child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 15.w),
-              child: SvgPicture.asset(
-                AppSvgs.shareForward,
-                color: color ?? AppColors.orangeTanHide,
-              )),
+              padding: EdgeInsets.symmetric(horizontal: 15.w), child: icon),
         ),
       ),
     );
