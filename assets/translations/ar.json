@@ -519,9 +519,7 @@
     "mode": "الوضع",
     "change_password": "تغيير كلمة المرور",
     "no_notification": "لا توجد إشعارات بعد.",
-
     "language": "اللغة",
-    "my_orders": "طلباتي",
     "my_address": "عناويني",
     "my_wallet": "محفظتي"
   },
@@ -677,14 +675,30 @@
 "confirm_location_screen": {
   "confirm_location": "تأكيد الموقع"
 },
-
+"my_order_screen": {
+  "id": "رقم الطلب",
+  "rate": "التقييم",
+  "delivered": "تم التوصيل",
+  "cancelled": "تم الإلغاء",
+  "order_again": "اطلب مرة أخرى",
+  "in_progress": "قيد التنفيذ"
+},
+"OrderState": {
+  "inprogress": "قيد التنفيذ",
+  "delivered": "تم التوصيل",
+  "cancelled": "تم الإلغاء",
+  "ordered": "تم الطلب",
+  "confirmed": "تم التأكيد",
+  "shipped": "تم الشحن"
+},
 "core":{
  "name": "الاسم",
  "search":"بحث",  
- "total": "الإجمالي",
  "home": "المنزل",
+ "total": "الإجمالي",
  "confirm": "تأكيد",
  "location": "الموقع",
+ "my_orders": "طلباتي",
  "profile": "الملف الشخصي",
  "notification": "الإشعارات",
  "phone_number": "رقم الهاتف"

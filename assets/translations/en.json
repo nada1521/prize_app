@@ -499,7 +499,6 @@
     "change_password":"Change Password",
     "no_notification":"There are no notifications yet.",
     "language":"Language",
-    "my_orders":"My Orders",
     "my_address":"My Address",
     "my_wallet":"My Wallet"
 
@@ -648,6 +647,22 @@
  "confirm_location_screen":{
   "confirm_location":"Confirm Location"
  },
+ "my_order_screen":{
+    "id":"ID ",
+    "rate":"Rate",
+    "delivered":"Delivered",
+    "cancelled":"Cancelled",
+    "order_again":"Order again",
+    "in_progress":"In progress"
+ },
+ "OrderState":{
+    "inprogress":"inProgress",
+    "delivered":"delivered",
+    "cancelled":"cancelled",
+    "ordered":"ordered",
+    "confirmed":"confirmed",
+    "shipped":"shipped"
+ },
 "core":{
 "name":"Name",
 "home":"Home",
@@ -656,6 +671,7 @@
 "confirm":"Confirm",
 "profile": "Profile",
 "location": "Location",
+"my_orders":"My Orders",
 "phone_number":"Phone Number",
 "notification":"Notification"
 }
