@@ -114,7 +114,7 @@ final List<ProductModel> productsWitOffer = [
 
 List<ProductModel> selectedProducts = [];
 
-final List<OrderModel> inProgressOrders = [
+final List<OrderModel> orders = [
   OrderModel(
       orderId: "#82569841",
       orderPlaced: DateTime.now(),
@@ -151,6 +151,102 @@ final List<OrderModel> inProgressOrders = [
       orderId: "#82769841",
       orderPlaced: DateTime.now(),
       orderState: OrderState.inProgress,
+      orderProductDataModel: [
+        OrderProductDataModel(
+          productImageUrl: AppImages.tShirt,
+          productCount: 2,
+          productPrice: 1443,
+        ),
+        OrderProductDataModel(
+          productImageUrl: AppImages.tShirtBlack,
+          productCount: 1,
+          productPrice: 1443,
+        ),
+      ]),
+  OrderModel(
+      orderId: "#85769841",
+      orderPlaced: DateTime.now(),
+      orderState: OrderState.delivered,
+      orderProductDataModel: [
+        OrderProductDataModel(
+          productImageUrl: AppImages.tShirt,
+          productCount: 2,
+          productPrice: 1443,
+        ),
+        OrderProductDataModel(
+          productImageUrl: AppImages.tShirtBlack,
+          productCount: 1,
+          productPrice: 1443,
+        ),
+      ]),
+  OrderModel(
+      orderId: "#86769841",
+      orderPlaced: DateTime.now(),
+      orderState: OrderState.delivered,
+      orderProductDataModel: [
+        OrderProductDataModel(
+          productImageUrl: AppImages.tShirt,
+          productCount: 2,
+          productPrice: 1443,
+        ),
+        OrderProductDataModel(
+          productImageUrl: AppImages.tShirtBlack,
+          productCount: 1,
+          productPrice: 1443,
+        ),
+      ]),
+  OrderModel(
+      orderId: "#87769841",
+      orderPlaced: DateTime.now(),
+      orderState: OrderState.delivered,
+      orderProductDataModel: [
+        OrderProductDataModel(
+          productImageUrl: AppImages.tShirt,
+          productCount: 2,
+          productPrice: 1443,
+        ),
+        OrderProductDataModel(
+          productImageUrl: AppImages.tShirtBlack,
+          productCount: 1,
+          productPrice: 1443,
+        ),
+      ]),
+  OrderModel(
+      orderId: "#87769841",
+      orderPlaced: DateTime.now(),
+      orderState: OrderState.cancelled,
+      orderProductDataModel: [
+        OrderProductDataModel(
+          productImageUrl: AppImages.tShirt,
+          productCount: 2,
+          productPrice: 1443,
+        ),
+        OrderProductDataModel(
+          productImageUrl: AppImages.tShirtBlack,
+          productCount: 1,
+          productPrice: 1443,
+        ),
+      ]),
+  OrderModel(
+      orderId: "#87769841",
+      orderPlaced: DateTime.now(),
+      orderState: OrderState.cancelled,
+      orderProductDataModel: [
+        OrderProductDataModel(
+          productImageUrl: AppImages.tShirt,
+          productCount: 2,
+          productPrice: 1443,
+        ),
+        OrderProductDataModel(
+          productImageUrl: AppImages.tShirtBlack,
+          productCount: 1,
+          productPrice: 1443,
+        ),
+      ]),
+  OrderModel(
+      orderId: "#87769841",
+      orderPlaced: DateTime.now(),
+      orderState: OrderState.cancelled,
       orderProductDataModel: [
         OrderProductDataModel(
           productImageUrl: AppImages.tShirt,
