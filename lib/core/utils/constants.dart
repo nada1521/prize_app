@@ -4,6 +4,7 @@ import 'package:prize/core/constant/app_images.dart';
 import 'package:prize/core/utils/extensions/context_extension.dart';
 import 'package:prize/features/complete_profile/data/models/product_model.dart';
 import 'package:prize/features/orders/data/models/order_model.dart';
+import 'package:prize/features/orders/data/models/order_state_and_translation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'helper/navigation/navigation_manager.dart';
@@ -125,6 +126,7 @@ final List<OrderModel> inProgressOrders = [
           productCount: 2,
           productPrice: 1443,
         ),
+       
         OrderProductDataModel(
           productImageUrl: AppImages.tShirtBlack,
           productCount: 1,
