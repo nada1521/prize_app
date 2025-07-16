@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
-
-import 'package:prize/features/orders/data/models/order_model.dart';
+import 'package:prize/features/orders/data/models/order_state_and_translation.dart';
 
 class OrderStateWidget extends StatelessWidget {
   const OrderStateWidget({
@@ -22,10 +21,10 @@ class OrderStateWidget extends StatelessWidget {
         color: _getBackgroundColor(orderState),
       ),
       child: Padding(
-        padding: EdgeInsetsGeometry.symmetric(horizontal: 10.w, vertical: 5.h),
+        padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 5.h),
         child: FittedBox(
           child: Text(
-            orderState.name,
+            orderState.translated,
             style: AppTextStyles.smallBodyTitle12w400WithContrastColorTextStyle(
                     context)
                 .copyWith(
@@ -48,10 +47,8 @@ class OrderStateWidget extends StatelessWidget {
       case OrderState.cancelled:
         return AppColors.errorRed.withOpacity(.15);
       case OrderState.ordered:
-        // TODO: Handle this case.
         throw UnimplementedError();
       case OrderState.confirmed:
-        // TODO: Handle this case.
         throw UnimplementedError();
     }
   }
@@ -67,10 +64,8 @@ class OrderStateWidget extends StatelessWidget {
       case OrderState.cancelled:
         return AppColors.errorRed;
       case OrderState.ordered:
-        // TODO: Handle this case.
         throw UnimplementedError();
       case OrderState.confirmed:
-        // TODO: Handle this case.
         throw UnimplementedError();
     }
   }

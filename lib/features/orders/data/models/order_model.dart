@@ -1,4 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+
+import 'package:prize/features/orders/data/models/order_state_and_translation.dart';
+
 class OrderModel {
   final String orderId;
   final DateTime orderPlaced;
@@ -12,14 +15,6 @@ class OrderModel {
   });
 }
 
-enum OrderState {
-  inProgress,
-  delivered,
-  cancelled,
-  ordered,
-  confirmed,
-  shipped,
-}
 
 class OrderProductDataModel {
   final String productImageUrl;
