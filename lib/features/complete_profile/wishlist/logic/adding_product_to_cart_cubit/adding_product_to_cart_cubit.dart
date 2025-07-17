@@ -6,7 +6,9 @@ part 'adding_product_to_cart_state.dart';
 part 'adding_product_to_cart_cubit.freezed.dart';
 
 class AddingProductToCartCubit extends Cubit<AddingProductToCartState> {
-  AddingProductToCartCubit() : super(AddingProductToCartState.initial());
+  AddingProductToCartCubit() : super(AddingProductToCartState.initial(
+    
+  ));
 
   void addProduct(ProductModel product) {
     if (!state.selectedProducts.contains(product)) {

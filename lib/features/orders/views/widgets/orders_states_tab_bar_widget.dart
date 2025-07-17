@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 88ebb915b88034c51a3af2c2dfa1a016c6870496
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:prize/core/utils/helper/spacing.dart';

@@ -12,11 +12,13 @@ class AppSvgs {
   static const String arrowLeft = 'assets/svgs/arrow-left.svg';  
   static const String arrowRight = 'assets/svgs/arrow-right.svg';  
   static const String blogIcon = 'assets/svgs/blog_icon.svg';  
+  static const String boxTick = 'assets/svgs/box-tick.svg';  
   static const String briefcase = 'assets/svgs/briefcase.svg';  
   static const String calendar = 'assets/svgs/calendar.svg';  
   static const String calendarProfileCommingEvent = 'assets/svgs/calendar_profile_comming_event.svg';  
   static const String calendarWithDay = 'assets/svgs/calendar_with_day.svg';  
   static const String callCalling = 'assets/svgs/call-calling.svg';  
+  static const String callCallingOutline = 'assets/svgs/call-calling_outline.svg';  
   static const String callContactUsSettingIcon = 'assets/svgs/call-contact-us_setting_icon.svg';  
   static const String cart = 'assets/svgs/cart.svg';  
   static const String changeLanguageIcon = 'assets/svgs/change_language_icon.svg';  
@@ -28,6 +30,7 @@ class AppSvgs {
   static const String darkModeChangeThemeToDark = 'assets/svgs/dark_mode_change_theme_to_dark.svg';  
   static const String darkModeIcon = 'assets/svgs/dark_mode_icon.svg';  
   static const String documentText = 'assets/svgs/document-text.svg';  
+  static const String documentTextIcon = 'assets/svgs/document-text_icon.svg';  
   static const String documentUpload = 'assets/svgs/document-upload.svg';  
   static const String editPrfileIconButton = 'assets/svgs/edit-prfile_icon_button.svg';  
   static const String edit = 'assets/svgs/edit.svg';  
@@ -58,7 +61,10 @@ class AppSvgs {
   static const String onboardingImageOne = 'assets/svgs/onboarding_image_one.svg';  
   static const String onboardingImageThree = 'assets/svgs/onboarding_image_three.svg';  
   static const String onboardingImageTwo = 'assets/svgs/onboarding_image_two.svg';  
+  static const String ordersBox = 'assets/svgs/orders_box.svg';  
+  static const String ordersCube = 'assets/svgs/orders_cube.svg';  
   static const String ordersIcon = 'assets/svgs/orders_icon.svg';  
+  static const String outlineLocation = 'assets/svgs/outline_location.svg';  
   static const String points = 'assets/svgs/points.svg';  
   static const String pointsIcon = 'assets/svgs/points_icon.svg';  
   static const String profile = 'assets/svgs/profile.svg';  
@@ -78,8 +84,10 @@ class AppSvgs {
   static const String sportWishlistTrushIconButtomSheet = 'assets/svgs/sport_wishlist_trush_icon_buttom_sheet.svg';  
   static const String star = 'assets/svgs/star.svg';  
   static const String successImage = 'assets/svgs/success_image.svg';  
+  static const String tickCircleIcon = 'assets/svgs/tick-circle_icon.svg';  
   static const String ticket = 'assets/svgs/ticket.svg';  
   static const String trash = 'assets/svgs/trash.svg';  
+  static const String truckIcon = 'assets/svgs/truck_icon.svg';  
   static const String userAdd = 'assets/svgs/user-add.svg';  
   static const String userTag = 'assets/svgs/user-tag.svg';  
   static const String userAvatar = 'assets/svgs/user_avatar.svg';  
