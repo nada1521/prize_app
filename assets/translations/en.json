@@ -442,7 +442,6 @@
   "cart_screen":{
   "cart_title":"Cart",
   "shopping_cart":"Your shopping cart looks empty",
-  "shopping_title_button":"Go Shopping",
   "recently_viewed":"Recently viewed",
   "birthday_gifts":"Birthday gifts",
   "remove":"Remove",
@@ -648,14 +647,16 @@
   "confirm_location":"Confirm Location"
  },
  "my_order_screen":{
-    "id":"ID ",
+   
     "rate":"Rate",
     "delivered":"Delivered",
     "cancelled":"Cancelled",
     "order_again":"Order again",
-    "in_progress":"In progress"
+    "in_progress":"In progress",
+    "message_not_order":"You have not placed any orders yet"
+    
  },
- "OrderState":{
+ "order_state":{
     "inprogress":"inProgress",
     "delivered":"delivered",
     "cancelled":"cancelled",
@@ -663,17 +664,27 @@
     "confirmed":"confirmed",
     "shipped":"shipped"
  },
+"OrderDetails":{
+  "order_details":"Order Details",
+  "tracking_order":"Tracking order",
+  "order_placed": "Order Placed: ",
+  "delivery_address":"Delivery Address",
+  "items_summary":"Items Summary"
+},
+
 "core":{
-"name":"Name",
-"home":"Home",
-"total":"Total",
-"search":"Search",
-"confirm":"Confirm",
-"profile": "Profile",
-"location": "Location",
-"my_orders":"My Orders",
-"phone_number":"Phone Number",
-"notification":"Notification"
+  "id":"ID ",
+  "name":"Name",
+  "home":"Home",
+  "total":"Total",
+  "search":"Search",
+  "confirm":"Confirm",
+  "profile": "Profile",
+  "location": "Location",
+  "my_orders":"My Orders",
+  "go_shopping":"Go Shopping",
+  "phone_number":"Phone Number",
+  "notification":"Notification"
 }
 
 

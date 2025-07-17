@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
@@ -5,6 +6,7 @@ import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_image_widget.dart';
 import 'package:prize/features/orders/data/models/order_model.dart';
+import 'package:prize/generated/locale_keys.g.dart';
 
 class ItemsSummaryWidget extends StatelessWidget {
   const ItemsSummaryWidget({super.key, required this.order});
@@ -19,7 +21,7 @@ class ItemsSummaryWidget extends StatelessWidget {
           Row(
             children: [
               Text(
-                "items Summary",
+                LocaleKeys.OrderDetails_items_summary.tr(),
                 style: AppTextStyles
                     .meduimBody16W500DarkAndLightThemeTitleTextStyle(context),
               ),

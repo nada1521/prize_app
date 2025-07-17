@@ -4,14 +4,15 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
-import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
 import 'package:prize/features/orders/data/models/order_model.dart';
 import 'package:prize/features/orders/views/widgets/delivery_address_widget.dart';
 import 'package:prize/features/orders/views/widgets/items_summary_widget.dart';
+import 'package:prize/features/orders/views/widgets/order_id_and_date_widget.dart';
 import 'package:prize/features/orders/views/widgets/order_state_widget.dart';
 import 'package:prize/features/orders/views/widgets/tracking_order_widget.dart';
+import 'package:prize/generated/locale_keys.g.dart';
 
 class OrdersDetailsScreen extends StatelessWidget {
   const OrdersDetailsScreen({super.key, required this.order});
@@ -21,7 +22,7 @@ class OrdersDetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: OrangeAppbarWidget(
-        title: "Order Details",
+        title: LocaleKeys.OrderDetails_order_details.tr(),
         showBackButton: true,
       ),
       body: CustomScrollView(
@@ -50,28 +51,7 @@ class OrdersDetailsScreen extends StatelessWidget {
                     ),
                   ),
                   horizontalSpace(10),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      RichText(
-                        text: TextSpan(children: [
-                          TextSpan(
-                            text: "ID ",
-                            style: AppTextStyles.smallBodyTitle12w500TextStyle(
-                                context),
-                          ),
-                          TextSpan(
-                              text: order.orderId,
-                              style: AppTextStyles
-                                  .headTitle14w500WhiteAndDarkBlueTextStyle(
-                                      context)),
-                        ]),
-                      ),
-                      Text(DateFormat('dd MMM yyyy')
-                          .format(order.orderPlaced)
-                          .toString()),
-                    ],
-                  ),
+                  OrderIDAndDateWidget(order: order),
                   Spacer(),
                   OrderStateWidget(orderState: order.orderState),
                 ],

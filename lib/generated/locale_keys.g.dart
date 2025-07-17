@@ -377,7 +377,6 @@ abstract class  LocaleKeys {
   static const nav_title = 'nav_title';
   static const cart_screen_cart_title = 'cart_screen.cart_title';
   static const cart_screen_shopping_cart = 'cart_screen.shopping_cart';
-  static const cart_screen_shopping_title_button = 'cart_screen.shopping_title_button';
   static const cart_screen_recently_viewed = 'cart_screen.recently_viewed';
   static const cart_screen_birthday_gifts = 'cart_screen.birthday_gifts';
   static const cart_screen_checkout = 'cart_screen.checkout';
@@ -542,21 +541,28 @@ abstract class  LocaleKeys {
   static const location_screen = 'location_screen';
   static const confirm_location_screen_confirm_location = 'confirm_location_screen.confirm_location';
   static const confirm_location_screen = 'confirm_location_screen';
-  static const my_order_screen_id = 'my_order_screen.id';
   static const my_order_screen_rate = 'my_order_screen.rate';
   static const my_order_screen_delivered = 'my_order_screen.delivered';
   static const my_order_screen_cancelled = 'my_order_screen.cancelled';
   static const my_order_screen_order_again = 'my_order_screen.order_again';
   static const my_order_screen_in_progress = 'my_order_screen.in_progress';
+  static const my_order_screen_message_not_order = 'my_order_screen.message_not_order';
   static const my_order_screen = 'my_order_screen';
-  static const OrderState_inprogress = 'OrderState.inprogress';
-  static const OrderState_delivered = 'OrderState.delivered';
-  static const OrderState_cancelled = 'OrderState.cancelled';
-  static const OrderState_ordered = 'OrderState.ordered';
-  static const OrderState_confirmed = 'OrderState.confirmed';
-  static const OrderState_shipped = 'OrderState.shipped';
-  static const OrderState = 'OrderState';
+  static const order_state_inprogress = 'order_state.inprogress';
+  static const order_state_delivered = 'order_state.delivered';
+  static const order_state_cancelled = 'order_state.cancelled';
+  static const order_state_ordered = 'order_state.ordered';
+  static const order_state_confirmed = 'order_state.confirmed';
+  static const order_state_shipped = 'order_state.shipped';
+  static const order_state = 'order_state';
+  static const OrderDetails_order_details = 'OrderDetails.order_details';
+  static const OrderDetails_tracking_order = 'OrderDetails.tracking_order';
+  static const OrderDetails_order_placed = 'OrderDetails.order_placed';
+  static const OrderDetails_delivery_address = 'OrderDetails.delivery_address';
+  static const OrderDetails_items_summary = 'OrderDetails.items_summary';
+  static const OrderDetails = 'OrderDetails';
   static const core_name = 'core.name';
+  static const core_id = 'core.id';
   static const core_search = 'core.search';
   static const core_home = 'core.home';
   static const core_total = 'core.total';
@@ -566,6 +572,7 @@ abstract class  LocaleKeys {
   static const core_profile = 'core.profile';
   static const core_notification = 'core.notification';
   static const core_phone_number = 'core.phone_number';
+  static const core_go_shopping = 'core.go_shopping';
   static const core = 'core';
 
 }
