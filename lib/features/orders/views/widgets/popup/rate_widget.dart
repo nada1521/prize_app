@@ -1,4 +1,20 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:prize/core/constant/app_svgs.dart';
+import 'package:prize/core/utils/constants.dart';
+import 'package:prize/core/utils/extensions/navigation_extension.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
+import 'package:prize/core/utils/helper/spacing.dart';
+import 'package:prize/core/utils/resources/app_text_styles.dart';
+import 'package:prize/core/utils/resources/app_widget_color.dart';
+import 'package:prize/core/utils/validation/app_validation.dart';
+import 'package:prize/core/widgets/app_fill_background_button.dart';
+import 'package:prize/core/widgets/app_outline_button.dart';
+import 'package:prize/features/auth/signup/data/text_field_model.dart';
+import 'package:prize/features/auth/signup/view/widgets/custom_text_field_widget.dart';
+import 'package:prize/features/profile/view/widgets/bio_widget.dart';
 
 class RateWidget extends StatefulWidget {
   const RateWidget({super.key});
@@ -13,128 +29,80 @@ class _RateWidgetState extends State<RateWidget> {
 
   @override
   Widget build(BuildContext context) {
+    final TextFieldModel textFieldModel = TextFieldModel(
+      isPassword: false,
+      controller: bioController,
+      hintText: "FCIS .. CS Dept \n UI/UX Designer",
+      title: LocaleKeys.setting_screen_info_settings_items_bio.tr(),
+      validator: AppValidation.bioValidation,
+      maxLines: 3,
+    );
+
     return Container(
-      width: 300,
-      padding: const EdgeInsets.all(20),
+      padding: screensPadding,
       decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(18),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.grey.shade300,
-            blurRadius: 10,
-            offset: const Offset(0, 4),
-          ),
-        ],
+        color: AppWidgetColor.fillWidgetColor(context),
+        borderRadius: BorderRadius.circular(32.r),
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           // Title
-          const Text(
+          Text(
             "Rate",
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.w700,
-              color: Colors.black,
-            ),
+            style: AppTextStyles.headTitle24w600TextStyle(context),
           ),
-          const SizedBox(height: 16),
+          verticalSpace(24),
 
           // ⭐ Stars
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: List.generate(5, (index) {
               final isSelected = index < selectedStars;
-              return IconButton(
-                icon: Icon(
-                  Icons.star,
-                  color: isSelected ? Colors.orange : Colors.grey[300],
-                  size: 30,
-                ),
-                onPressed: () {
+              return InkWell(
+                onTap: () {
                   setState(() {
                     selectedStars = index + 1;
                   });
                 },
+                child: SvgPicture.asset(
+                  isSelected ? AppSvgs.fillColorStarIcon : AppSvgs.rateStarIcon,
+                  width: 48.w,
+                  height: 48.h,
+                  // color: isSelected ? Colors.orange : Colors.grey[300],
+                ),
               );
             }),
           ),
 
-          const SizedBox(height: 16),
+          verticalSpace(24),
 
-          // BIO Label
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Text(
-              "BIO",
-              style: TextStyle(
-                fontWeight: FontWeight.w600,
-                fontSize: 14,
-                color: Colors.indigo[900],
-              ),
-            ),
+          CustomTextFieldWidget(
+            textFieldModel: textFieldModel,
           ),
-          const SizedBox(height: 6),
+          verticalSpace(24),
 
-          // BIO TextField
-          TextField(
-            controller: bioController,
-            maxLines: 3,
-            decoration: InputDecoration(
-              hintText: "Write something...",
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide(color: Colors.grey.shade300),
-              ),
-              focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide: const BorderSide(color: Colors.orange),
-              ),
-            ),
-          ),
-
-          const SizedBox(height: 20),
-
-          // Buttons
           Row(
             children: [
               Expanded(
-                child: OutlinedButton(
-                  onPressed: () {
-                    // Handle cancel
+                child: AppOutLineButton(
+                  onTap: () {
+                    context.pop();
                   },
-                  style: OutlinedButton.styleFrom(
-                    foregroundColor: Colors.orange,
-                    side: const BorderSide(color: Colors.orange),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                  ),
-                  child: const Text("Cancel"),
+                  title: "Cancel",
                 ),
               ),
-              const SizedBox(width: 12),
+              horizontalSpace(12),
               Expanded(
-                child: ElevatedButton(
-                  onPressed: () {
-                    // Handle send
-                    final rating = selectedStars;
-                    final bio = bioController.text;
-                    // Use them as needed
+                child: AppFillBckgroundButton(
+                  onTap: () {
+                    context.pop();
                   },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.orange,
-                    foregroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                  ),
-                  child: const Text("Send"),
+                  title: "Send",
                 ),
-              ),
+              )
             ],
-          ),
+          )
         ],
       ),
     );

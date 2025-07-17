@@ -263,8 +263,14 @@ final List<OrderModel> orders = [
       ]),
 ];
 
+
+
+
+
+
 abstract class AppConstants {
   static const String dialCode = "20";
+  static const String dateFormatterPattern = "dd MMM yyyy";
   static const String dialCodePlus = "+$dialCode";
   static const double _aspectRatioTablet = 4.5;
   static const double _aspectRatioMobile = 2.5;
