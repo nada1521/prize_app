@@ -14,8 +14,10 @@ import 'package:prize/features/complete_profile/view/widgets/product/show_produc
 import 'package:prize/features/orders/data/models/order_model.dart';
 import 'package:prize/features/orders/data/models/order_state_and_translation.dart';
 import 'package:prize/features/orders/views/screens/orders_details_screen.dart';
+import 'package:prize/features/orders/views/widgets/order_id_and_date_widget.dart';
 import 'package:prize/features/orders/views/widgets/order_state_widget.dart';
 import 'package:prize/features/orders/views/widgets/rate_icon_button.dart';
+import 'package:prize/generated/locale_keys.g.dart';
 
 class OrderWidget extends StatelessWidget {
   const OrderWidget({super.key, required this.order});
@@ -25,9 +27,11 @@ class OrderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => pushTo(context, OrdersDetailsScreen(
-        order: order,
-      )),
+      onTap: () => pushTo(
+          context,
+          OrdersDetailsScreen(
+            order: order,
+          )),
       child: Container(
         padding: EdgeInsets.symmetric(
           horizontal: 10.w,
@@ -44,28 +48,7 @@ class OrderWidget extends StatelessWidget {
           children: [
             Row(
               children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    RichText(
-                      text: TextSpan(children: [
-                        TextSpan(
-                          text: "ID ",
-                          style: AppTextStyles.smallBodyTitle12w500TextStyle(
-                              context),
-                        ),
-                        TextSpan(
-                            text: order.orderId,
-                            style: AppTextStyles
-                                .headTitle14w500WhiteAndDarkBlueTextStyle(
-                                    context)),
-                      ]),
-                    ),
-                    Text(DateFormat('dd MMM yyyy')
-                        .format(order.orderPlaced)
-                        .toString()),
-                  ],
-                ),
+                OrderIDAndDateWidget(order: order),
                 Spacer(),
                 OrderStateWidget(
                   orderState: order.orderState,
@@ -136,7 +119,7 @@ class OrderWidget extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  FittedBox(child: Text("Total")),
+                  FittedBox(child: Text(LocaleKeys.core_total.tr())),
                   Spacer(),
                   Row(
                     children: [
@@ -169,7 +152,7 @@ class OrderWidget extends StatelessWidget {
                       Expanded(
                         child: AppOutLineButton(
                             onTap: () {},
-                            title: "Order again",
+                            title: LocaleKeys.my_order_screen_order_again.tr(),
                             icon: SvgPicture.asset(AppSvgs.refreshIcon)),
                       ),
                       if (order.orderState == OrderState.cancelled)

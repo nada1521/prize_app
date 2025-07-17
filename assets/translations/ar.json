@@ -458,7 +458,7 @@
 "cart_screen": {
   "cart_title": "سلة المشتريات",
   "shopping_cart": "سلة التسوق الخاصة بك فارغة",
-  "shopping_title_button": "ابدأ التسوق",
+  
   "recently_viewed": "شوهد مؤخرًا",
   "birthday_gifts": "هدايا عيد الميلاد",
   "checkout": "إتمام الشراء",
@@ -676,14 +676,16 @@
   "confirm_location": "تأكيد الموقع"
 },
 "my_order_screen": {
-  "id": "رقم الطلب",
   "rate": "التقييم",
+  
   "delivered": "تم التوصيل",
   "cancelled": "تم الإلغاء",
   "order_again": "اطلب مرة أخرى",
-  "in_progress": "قيد التنفيذ"
+  "in_progress": "قيد التنفيذ",
+  "message_not_order": "لم تقم بأي طلب حتى الآن"
+
 },
-"OrderState": {
+"order_state": {
   "inprogress": "قيد التنفيذ",
   "delivered": "تم التوصيل",
   "cancelled": "تم الإلغاء",
@@ -691,8 +693,16 @@
   "confirmed": "تم التأكيد",
   "shipped": "تم الشحن"
 },
+"OrderDetails": {
+  "order_details": "تفاصيل الطلب",
+  "tracking_order": "تتبع الطلب",
+  "order_placed": "تاريخ الطلب: ",
+  "delivery_address": "عنوان التسليم",
+  "items_summary": "ملخص العناصر"
+},
 "core":{
  "name": "الاسم",
+ "id": " رقم الطلب",
  "search":"بحث",  
  "home": "المنزل",
  "total": "الإجمالي",
@@ -701,7 +711,9 @@
  "my_orders": "طلباتي",
  "profile": "الملف الشخصي",
  "notification": "الإشعارات",
- "phone_number": "رقم الهاتف"
+ "phone_number": "رقم الهاتف",
+ "go_shopping": "ابدأ التسوق"
+
 
 }
 

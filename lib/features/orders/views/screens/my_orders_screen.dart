@@ -38,7 +38,7 @@ class MyOrdersScreen extends StatelessWidget {
           SliverToBoxAdapter(
             child: OrdersStatesTabBarWidget(
               tabItems: {
-                "In progress": ListView.builder(
+                LocaleKeys.my_order_screen_in_progress.tr(): ListView.builder(
                   physics: NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
                   itemBuilder: (context, index) => inProgressOrder.isEmpty
@@ -48,7 +48,7 @@ class MyOrdersScreen extends StatelessWidget {
                         ),
                   itemCount: inProgressOrder.length,
                 ),
-                "Delivered": ListView.builder(
+                LocaleKeys.my_order_screen_delivered.tr(): ListView.builder(
                   physics: NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
                   itemBuilder: (context, index) => deliveredOrder.isEmpty
@@ -56,7 +56,7 @@ class MyOrdersScreen extends StatelessWidget {
                       : OrderWidget(order: deliveredOrder[index]),
                   itemCount: deliveredOrder.length,
                 ),
-                "Cancelled": ListView.builder(
+                LocaleKeys.my_order_screen_cancelled.tr(): ListView.builder(
                   physics: NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
                   itemBuilder: (context, index) => canceledOrder.isEmpty

@@ -13,12 +13,12 @@ enum OrderState {
 //كدا مشتغلش ف سألت واتعلمت حاجة جديدة map لما عملت ال
 // OrderState.inProgress: LocaleKeys.OrderState_inprogress.tr(),
 final Map<OrderState, String> orderStatetranslation = {
-  OrderState.inProgress: LocaleKeys.OrderState_inprogress,
-  OrderState.delivered: LocaleKeys.OrderState_delivered,
-  OrderState.cancelled: LocaleKeys.OrderState_cancelled,
-  OrderState.ordered: LocaleKeys.OrderState_ordered,
-  OrderState.confirmed: LocaleKeys.OrderState_confirmed,
-  OrderState.shipped: LocaleKeys.OrderState_shipped
+  OrderState.inProgress: LocaleKeys.order_state_inprogress,
+  OrderState.delivered: LocaleKeys.order_state_delivered,
+  OrderState.cancelled: LocaleKeys.order_state_cancelled,
+  OrderState.ordered: LocaleKeys.order_state_ordered,
+  OrderState.confirmed: LocaleKeys.order_state_confirmed,
+  OrderState.shipped: LocaleKeys.order_state_shipped
 };
 
 //واضيف لها خاصية جديدة on دى بتخلينى اعرف اعمل اى امتداد ل اى قيمة من الحاجة البعد كلمه  extension

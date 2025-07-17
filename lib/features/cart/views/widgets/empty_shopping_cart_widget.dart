@@ -49,7 +49,7 @@ class EmptyShoppingCartWidget extends StatelessWidget {
             onTap: () {
               AppNavigator.pushSlideX(context, SportWishlsitAddItems());
             },
-            title: LocaleKeys.cart_screen_shopping_title_button.tr(),
+            title: LocaleKeys.core_go_shopping.tr(),
           )
         ],
       ),

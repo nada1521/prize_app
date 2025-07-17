@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
@@ -26,7 +28,7 @@ class TrackingOrderWidget extends StatelessWidget {
                 start: 10.w,
               ),
               child: Text(
-                "Tracking order",
+                LocaleKeys.OrderDetails_tracking_order.tr(),
                 style:
                     AppTextStyles.meduimBody16W500BlackAndWhiteTitleTextStyle(
                         context),
@@ -43,7 +45,7 @@ class TrackingOrderWidget extends StatelessWidget {
               child: Row(
                 children: [
                   Text(
-                    "Order Placed: ",
+                    LocaleKeys.OrderDetails_order_placed.tr(),
                     style: AppTextStyles
                             .smallBodyTitle12w400WithContrastColorTextStyle(
                                 context)
@@ -51,7 +53,9 @@ class TrackingOrderWidget extends StatelessWidget {
                       fontSize: 14,
                     ),
                   ),
-                  Text("27 Nov 2025"),
+                  Text(DateFormat('dd MMM yyyy')
+                      .format(order.orderPlaced)
+                      .toString()),
                 ],
               ),
             )
