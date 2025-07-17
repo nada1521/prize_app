@@ -9,6 +9,7 @@ import 'package:prize/core/widgets/orange_appbar_widget.dart';
 import 'package:prize/features/home/view/widgets/appbar/home_features_appbar.dart';
 import 'package:prize/features/home/view/widgets/mothers_day_gifts/all_mothers_day_gifts_widget.dart';
 import 'package:prize/features/orders/data/models/order_model.dart';
+import 'package:prize/features/orders/data/models/order_state_and_translation.dart';
 import 'package:prize/features/orders/views/widgets/empty_orders_widget.dart';
 import 'package:prize/features/orders/views/widgets/order_widget.dart';
 import 'package:prize/features/orders/views/widgets/orders_states_tab_bar_widget.dart';
@@ -37,12 +38,8 @@ class MyOrdersScreen extends StatelessWidget {
           SliverToBoxAdapter(
             child: OrdersStatesTabBarWidget(
               tabItems: {
-<<<<<<< HEAD
-                LocaleKeys.my_order_screen_in_progress.tr(): ListView.builder(
-=======
                 "In progress": ListView.builder(
                   physics: NeverScrollableScrollPhysics(),
->>>>>>> 88ebb915b88034c51a3af2c2dfa1a016c6870496
                   shrinkWrap: true,
                   itemBuilder: (context, index) => inProgressOrder.isEmpty
                       ? EmptyOrdersWidget()
@@ -67,11 +64,6 @@ class MyOrdersScreen extends StatelessWidget {
                       : OrderWidget(order: canceledOrder[index]),
                   itemCount: canceledOrder.length,
                 ),
-<<<<<<< HEAD
-                LocaleKeys.my_order_screen_delivered.tr(): Column(),
-                LocaleKeys.my_order_screen_cancelled.tr(): Column(),
-=======
->>>>>>> 88ebb915b88034c51a3af2c2dfa1a016c6870496
               },
             ),
           ),

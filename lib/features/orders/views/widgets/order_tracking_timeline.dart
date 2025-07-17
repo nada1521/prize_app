@@ -4,7 +4,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
-import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:timelines_plus/timelines_plus.dart';
 
 class OrderTrackingTimeline extends StatelessWidget {

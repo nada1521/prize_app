@@ -33,7 +33,7 @@ class _ShowCartProductsWidgetState extends State<ShowCartProductsWidget> {
 
   @override
   Widget build(BuildContext context) {
-    final selectedProducts = context.watch<AddingProductToCartCubit>();
+    context.watch<AddingProductToCartCubit>();
     return Visibility(
       visible: isVisible,
       child: Container(
