@@ -38,7 +38,7 @@ class AppTextStyles {
         fontWeight: FontWeight.w400,
         color: AppColors.greenColor,
       );
-  static TextStyle smallHeadTitle22w400TextStyle(BuildContext context) =>
+  static TextStyle smallHeadTitle12w400TextStyle(BuildContext context) =>
       TextStyle(
         fontSize: 12,
         fontWeight: FontWeight.w400,

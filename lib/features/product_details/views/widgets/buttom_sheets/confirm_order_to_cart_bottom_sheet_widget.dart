@@ -70,7 +70,7 @@ class ConfirmOrderToCartBottomSheetWidget extends StatelessWidget {
                   maxLines: 2,
                   textHeight: 50.h,
                   maxHeight: 60.h,
-                  style: AppTextStyles.smallHeadTitle22w400TextStyle(context)
+                  style: AppTextStyles.smallHeadTitle12w400TextStyle(context)
                       .copyWith(
                     fontSize: 14,
                   ),

@@ -6,6 +6,8 @@ import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
+import 'package:prize/features/cart/views/widgets/coupon_code_widget.dart';
+import 'package:prize/features/cart/views/widgets/order_summary_widget.dart';
 import 'package:prize/features/orders/data/models/order_model.dart';
 import 'package:prize/features/orders/views/widgets/delivery_address_widget.dart';
 import 'package:prize/features/orders/views/widgets/items_summary_widget.dart';
@@ -64,16 +66,25 @@ class OrdersDetailsScreen extends StatelessWidget {
             ),
           ),
           SliverToBoxAdapter(
+            child: verticalSpace(10),
+          ),
+          SliverToBoxAdapter(
             child: DeliveryAddressWidget(),
+          ),
+          SliverToBoxAdapter(
+            child: verticalSpace(10),
           ),
           SliverToBoxAdapter(
             child: ItemsSummaryWidget(
               order: order,
             ),
           ),
-          // SliverToBoxAdapter(
-          //   child: CouponCodeWidget(),
-          // )
+          SliverToBoxAdapter(
+            child: verticalSpace(10),
+          ),
+          SliverToBoxAdapter(
+            child: OrderSummaryWidget(),
+          )
         ],
       ),
     );

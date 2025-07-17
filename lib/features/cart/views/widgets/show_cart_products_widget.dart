@@ -122,16 +122,12 @@ class _ShowCartProductsWidgetState extends State<ShowCartProductsWidget> {
                   height: 40.h,
                   width: 100.w,
                   onTap: () {
-                    final selectedProducts = context
-                        .watch<AddingProductToCartCubit>()
-                        .state
-                        .selectedProducts;
-                    selectedProducts.removeWhere(
-                      (element) => element.title == widget.product.title,
-                    );
                     setState(() {
                       isVisible = false;
                     });
+                    context
+                        .read<AddingProductToCartCubit>()
+                        .removeProduct(widget.product);
                   },
                   title: LocaleKeys.cart_screen_remove.tr(),
                   icon: SvgPicture.asset(AppSvgs.removeTrash),

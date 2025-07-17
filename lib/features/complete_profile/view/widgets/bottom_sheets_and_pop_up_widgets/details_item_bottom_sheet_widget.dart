@@ -58,7 +58,7 @@ class _DetailsItemBottomSheetWidgetState
                       AppCloseButton(),
                     ],
                   ),
-    
+
                   // product image
                   ShowProductImageWidget(
                     height: 282.h,
@@ -68,7 +68,7 @@ class _DetailsItemBottomSheetWidgetState
                     imageScale: 2.5,
                   ),
                   verticalSpace(10),
-    
+
                   ShowProductRatingWidget(
                     rating: '4.1',
                   ),
@@ -77,9 +77,8 @@ class _DetailsItemBottomSheetWidgetState
                     maxLines: 3,
                     textHeight: 50.h,
                     maxHeight: 60.h,
-                    style:
-                        AppTextStyles.smallHeadTitle22w400TextStyle(context)
-                            .copyWith(
+                    style: AppTextStyles.smallHeadTitle12w400TextStyle(context)
+                        .copyWith(
                       fontSize: 14,
                     ),
                   ),
@@ -96,7 +95,7 @@ class _DetailsItemBottomSheetWidgetState
               ),
             ),
           ),
-    
+
           // Adding items to wishlist button
           Positioned(
             bottom: 5,

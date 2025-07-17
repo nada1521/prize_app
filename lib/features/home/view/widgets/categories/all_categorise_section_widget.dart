@@ -131,7 +131,7 @@ class _AllCategoriseSectionWidgetState
                       Text(
                         category.title,
                         style:
-                            AppTextStyles.smallHeadTitle22w400TextStyle(context)
+                            AppTextStyles.smallHeadTitle12w400TextStyle(context)
                                 .copyWith(
                           fontSize: 10,
                         ),

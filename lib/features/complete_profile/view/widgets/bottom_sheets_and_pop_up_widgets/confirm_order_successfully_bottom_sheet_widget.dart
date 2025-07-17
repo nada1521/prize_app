@@ -33,7 +33,7 @@ class ConfirmOrderSuccessfullyBottomSheetWidget extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
         child: Column(
           children: [
-           BottomSheetDotedBorderWidget(),
+            BottomSheetDotedBorderWidget(),
             verticalSpace(15),
             Row(
               children: [
@@ -56,7 +56,7 @@ class ConfirmOrderSuccessfullyBottomSheetWidget extends StatelessWidget {
                   maxLines: 2,
                   textHeight: 50.h,
                   maxHeight: 60.h,
-                  style: AppTextStyles.smallHeadTitle22w400TextStyle(context)
+                  style: AppTextStyles.smallHeadTitle12w400TextStyle(context)
                       .copyWith(
                     fontSize: 14,
                   ),
@@ -75,7 +75,7 @@ class ConfirmOrderSuccessfullyBottomSheetWidget extends StatelessWidget {
                         title: LocaleKeys
                             .complete_profile_confirm_order_see_more_items
                             .tr())),
-                                 horizontalSpace(12),
+                horizontalSpace(12),
                 Expanded(
                     child: AppFillBckgroundButton(
                         onTap: () {
@@ -84,8 +84,6 @@ class ConfirmOrderSuccessfullyBottomSheetWidget extends StatelessWidget {
                         title: LocaleKeys
                             .complete_profile_confirm_order_view_wishlist
                             .tr())),
-
-                         
               ],
             ),
             verticalSpace(10),
