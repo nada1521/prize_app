@@ -26,6 +26,7 @@ import 'package:prize/features/setting/help_center/view/screens/help_center_scre
 import 'package:prize/features/setting/view/widget/change_language_button.dart';
 import 'package:prize/features/setting/view/widget/change_theme_button.dart';
 import 'package:prize/features/setting/view/widget/points_widget.dart';
+import 'package:prize/features/wallet/view/screen/wallet_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SettingScreen extends StatefulWidget {
@@ -81,7 +82,12 @@ class _SettingScreenState extends State<SettingScreen> {
       SettingItemModel(
           imagePath: AppSvgs.wallet,
           title:
-              LocaleKeys.setting_screen_general_settings_items_my_wallet.tr()),
+              LocaleKeys.setting_screen_general_settings_items_my_wallet.tr(),
+                onTap: () => pushTo(
+          context,
+          WalletScreen(),
+        ),),
+        
     ];
 
     List<SettingItemModel> infoSettingsItems = [
