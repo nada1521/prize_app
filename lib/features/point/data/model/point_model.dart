@@ -1,0 +1,4 @@
+enum ClaimedState{
+  claimed,
+  voucher
+}
