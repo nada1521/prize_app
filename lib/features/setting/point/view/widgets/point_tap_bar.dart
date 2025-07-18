@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
-import 'package:prize/features/point/view/widgets/item_point_voucher.dart';
-import 'package:prize/features/point/view/widgets/item_point_claimed.dart';
+import 'package:prize/features/setting/point/view/widgets/item_point_voucher.dart';
+import 'package:prize/features/setting/point/view/widgets/item_point_claimed.dart';
 
 class PointTabBar extends StatefulWidget {
   const PointTabBar({super.key});

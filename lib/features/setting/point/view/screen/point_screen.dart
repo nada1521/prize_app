@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:prize/features/point/view/widgets/appbare_and_current_widget.dart';
-import 'package:prize/features/point/view/widgets/point_tap_bar.dart';
+import 'package:prize/features/setting/point/view/widgets/appbar_and_current_widget.dart';
+import 'package:prize/features/setting/point/view/widgets/point_tap_bar.dart';
 
 class PointScreen extends StatelessWidget {
   const PointScreen({super.key});
@@ -11,11 +11,10 @@ class PointScreen extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          AppbarAndCurrentPointWidget(),
+          AppBarAndCurrentPointWidget(),
           Expanded(child: PointTabBar()),
         ],
       ),
     );
   }
 }
-

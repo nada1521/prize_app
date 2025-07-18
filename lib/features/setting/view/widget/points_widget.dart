@@ -8,7 +8,7 @@ import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
-import 'package:prize/features/point/view/screen/point_screen.dart';
+import 'package:prize/features/setting/point/view/screen/point_screen.dart';
 
 class PointsWidget extends StatelessWidget {
   const PointsWidget({super.key});

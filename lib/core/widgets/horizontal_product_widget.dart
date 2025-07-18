@@ -8,7 +8,6 @@ import 'package:prize/features/complete_profile/view/widgets/product/show_produc
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_price_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_title_widget.dart';
 
-
 class HorizontalProductWidget extends StatelessWidget {
   const HorizontalProductWidget(
       {super.key, required this.productPath, required this.productCount});
@@ -71,14 +70,20 @@ class HorizontalProductWidget extends StatelessWidget {
                           .copyWith(
                         fontSize: 14,
                       )),
-                  ShowProductTitleWidget(
-                    title: productsWitOffer.first.title,
-                    maxLines: 2,
-                    textHeight: 45.h,
-                    maxHeight: 40.h,
-                    style: AppTextStyles.smallHeadTitle12w400TextStyle(context)
-                        .copyWith(
-                      fontSize: 14,
+                  Container(
+                    constraints: BoxConstraints(
+                      maxWidth: 170.w,
+                    ),
+                    child: ShowProductTitleWidget(
+                      title: productsWitOffer.first.title,
+                      maxLines: 2,
+                      textHeight: 45.h,
+                      maxHeight: 40.h,
+                      style:
+                          AppTextStyles.smallHeadTitle12w400TextStyle(context)
+                              .copyWith(
+                        fontSize: 14,
+                      ),
                     ),
                   ),
                   // price widget

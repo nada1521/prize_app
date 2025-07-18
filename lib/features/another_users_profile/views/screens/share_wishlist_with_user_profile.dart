@@ -1,11 +1,10 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/constants.dart';
 import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
-import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
@@ -13,18 +12,60 @@ import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/core/widgets/app_back_button.dart';
 import 'package:prize/core/widgets/app_fill_background_button.dart';
 import 'package:prize/core/widgets/app_outline_icon_button.dart';
-import 'package:prize/features/another_users_profile/views/screens/share_wishlist_with_user_profile.dart';
+import 'package:prize/features/another_users_profile/data/product_wishlist_product_progress_model.dart';
+import 'package:prize/features/another_users_profile/views/widgets/product_wishlist_progress_widget.dart';
 import 'package:prize/features/home/view/widgets/user_avatar_widget.dart';
-import 'package:prize/features/profile/view/widgets/personal_sizes.dart';
-import 'package:prize/features/profile/view/widgets/show_all_user_events.dart';
 import 'package:prize/features/profile/view/widgets/user_info_widget.dart';
 import 'package:share_plus/share_plus.dart';
 
-class AnotherUserProfileScreen extends StatelessWidget {
-  const AnotherUserProfileScreen({super.key});
+class ShareWishlistWithUserProfile extends StatelessWidget {
+  const ShareWishlistWithUserProfile({super.key});
 
   @override
   Widget build(BuildContext context) {
+    List<ProductWishlistProductProgressModel> products = [
+      ProductWishlistProductProgressModel(
+          product: productsWitOffer[0],
+          precent: .6,
+          eventDate: DateTime(2025, 7, 24),
+          contributors: [
+            ContributorsModel(
+                contributorName: "Abdo",
+                contributorProfileUrl:
+                    "https://cdn.pixabay.com/photo/2021/12/22/01/41/man-6886497_960_720.jpg")
+          ],
+          eventName: "Abdelrahman Birthday 🎂",
+          
+          ),
+      ProductWishlistProductProgressModel(
+          product: productsWitOffer[0],
+          precent: .3,
+          eventDate: DateTime(2025, 7, 24),
+          contributors: [
+            ContributorsModel(
+                contributorName: "Mohamed",
+                contributorProfileUrl:
+                    "https://cdn.pixabay.com/photo/2018/11/08/23/52/man-3803551_960_720.jpg")
+          ],
+          
+                    eventName: "Abdelrahman Birthday 🎂",
+
+          ),
+      ProductWishlistProductProgressModel(
+          product: productsWitOffer[0],
+          precent: .3,
+          eventDate: DateTime(2025, 7, 24),
+          contributors: [
+            ContributorsModel(
+                contributorName: "Ahmed",
+                contributorProfileUrl:
+                    "https://cdn.pixabay.com/photo/2020/04/08/07/15/coffee-5016043_1280.jpg")
+          ],
+          
+                    eventName: "Abdelrahman Birthday 🎂",
+
+          )
+    ];
     return Scaffold(
       appBar: AppBar(
         leading: AppBackButton(),
@@ -35,8 +76,6 @@ class AnotherUserProfileScreen extends StatelessWidget {
             child: Padding(
               padding: screensPadding,
               child: Column(
-                mainAxisSize: MainAxisSize.max,
-                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -72,8 +111,7 @@ class AnotherUserProfileScreen extends StatelessWidget {
                           height: 50.h,
                           width: 50.w,
                           onTap: () {
-                            pushTo(context, ShareWishlistWithUserProfile());
-                            // Share.share("text");
+                            Share.share("text");
                           },
                           icon: Padding(
                             padding: EdgeInsets.symmetric(
@@ -88,25 +126,7 @@ class AnotherUserProfileScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  verticalSpace(20),
-                  Container(
-                    constraints: BoxConstraints(
-                      maxHeight: 50.h,
-                      maxWidth: 150.w,
-                    ),
-                    child: Text(
-                      "FCIS ... CS Dept✌🏻 UI/UX Designer",
-                      maxLines: 2,
-                      style: AppTextStyles
-                          .meduimBody16W500BlackAndWhiteTitleTextStyle(context),
-                    ),
-                  ),
-                  verticalSpace(18),
-                  PersonalSizes(
-                    textColor: AppColors.orangeTanHide,
-                    backGroundColor: AppColors.orangeTanHide.withOpacity(.06),
-                  ),
-                  verticalSpace(10),
+                  verticalSpace(15),
                   Container(
                     width: 350.w,
                     height: 56.h,
@@ -172,10 +192,18 @@ class AnotherUserProfileScreen extends StatelessWidget {
             ),
           ),
           SliverToBoxAdapter(
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10.w),
-              child: ShowAllUserEvents(),
+            child: verticalSpace(5),
+          ),
+          SliverGrid.builder(
+            itemCount: products.length,
+            itemBuilder: (context, index) => Padding(
+              padding: EdgeInsetsDirectional.only(end: 5.w),
+              child: ProductWishlistProgressWidget(
+                product: products[index],
+              ),
             ),
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 3, childAspectRatio: .7),
           )
         ],
       ),

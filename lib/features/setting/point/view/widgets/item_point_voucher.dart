@@ -5,9 +5,9 @@ import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
-import 'package:prize/features/point/view/widgets/custom_item_container_point.dart';
-import 'package:prize/features/point/view/widgets/ticket_container.dart';
-import 'package:prize/features/point/view/widgets/voucher_text_column.dart';
+import 'package:prize/features/setting/point/view/widgets/custom_item_container_point.dart';
+import 'package:prize/features/setting/point/view/widgets/ticket_container.dart';
+import 'package:prize/features/setting/point/view/widgets/voucher_text_column.dart';
 
 class ItemPointVoucher extends StatelessWidget {
   const ItemPointVoucher({super.key});
