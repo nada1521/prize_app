@@ -90,6 +90,7 @@ dependencies:
   syncfusion_flutter_sliders: ^30.1.39
   syncfusion_flutter_core: ^30.1.39
   timelines_plus: ^1.0.7
+  percent_indicator: ^4.2.5
 
 dependency_overrides:
   win32: ^5.13.0

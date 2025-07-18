@@ -25,6 +25,11 @@ class AppTextStyles {
         fontWeight: FontWeight.w600,
         color: context.isDarkTheme ? AppColors.white : AppColors.darkBlue,
       );
+  static TextStyle headTitle20w500TextStyle(BuildContext context) => TextStyle(
+        fontSize: 20,
+        fontWeight: FontWeight.w500,
+        color: context.isDarkTheme ? AppColors.white : AppColors.darkBlue,
+      );
   static TextStyle headTitle14w500WhiteAndDarkBlueTextStyle(
           BuildContext context) =>
       TextStyle(
@@ -238,6 +243,14 @@ class AppTextStyles {
 
   //  chekOut screen
   static TextStyle bodyTitle14w500PeriwinkleTextStyle(BuildContext context) =>
+      TextStyle(
+        fontSize: 14,
+        fontWeight: FontWeight.w500,
+        color: context.isDarkTheme
+            ? AppColors.darkPeriwinkle
+            : AppColors.periwinkle,
+      );
+  static TextStyle bodyTitle16w400PeriwinkleTextStyle(BuildContext context) =>
       TextStyle(
         fontSize: 16,
         fontWeight: FontWeight.w400,

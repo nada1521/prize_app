@@ -41,6 +41,7 @@ class AppSvgs {
   static const String fiilHeartIcon = 'assets/svgs/fiil_heart_icon.svg';  
   static const String fillColorStarIcon = 'assets/svgs/fill_color_star_icon.svg';  
   static const String gift = 'assets/svgs/gift.svg';  
+  static const String giftIcon = 'assets/svgs/gift_icon.svg';  
   static const String gps = 'assets/svgs/gps.svg';  
   static const String heart = 'assets/svgs/heart.svg';  
   static const String home = 'assets/svgs/home.svg';  

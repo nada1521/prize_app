@@ -12,6 +12,7 @@ import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
 import 'package:prize/features/orders/views/screens/my_orders_screen.dart';
+import 'package:prize/features/setting/point/view/screen/point_screen.dart';
 import 'package:prize/features/setting/about/views/screens/about_screen.dart';
 import 'package:prize/features/setting/blog/view/screens/blog_screen.dart';
 import 'package:prize/features/setting/change_password/views/screens/change_password_screen.dart';
@@ -80,6 +81,9 @@ class _SettingScreenState extends State<SettingScreen> {
           title:
               LocaleKeys.setting_screen_general_settings_items_my_address.tr()),
       SettingItemModel(
+          onTap: () {
+            pushTo(context, PointScreen());
+          },
           imagePath: AppSvgs.wallet,
           title:
               LocaleKeys.setting_screen_general_settings_items_my_wallet.tr(),
