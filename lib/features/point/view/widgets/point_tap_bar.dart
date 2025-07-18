@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/features/point/view/widgets/item_point_voucher.dart';
 import 'package:prize/features/point/view/widgets/item_point_claimed.dart';
@@ -14,7 +16,10 @@ class PointTabBar extends StatefulWidget {
 class _PointTabBarState extends State<PointTabBar> {
   int selectedIndex = 0;
 
-  final List<String> titles = ["Claimed", "Voucher"];
+  final List<String> titles = [
+    LocaleKeys.point_screen_claimed.tr(),
+    LocaleKeys.point_screen_Voucher.tr()
+  ];
 
   @override
   Widget build(BuildContext context) {

@@ -14,7 +14,6 @@ import 'package:prize/core/widgets/app_fill_background_button.dart';
 import 'package:prize/core/widgets/app_outline_button.dart';
 import 'package:prize/features/auth/signup/data/text_field_model.dart';
 import 'package:prize/features/auth/signup/view/widgets/custom_text_field_widget.dart';
-import 'package:prize/features/profile/view/widgets/bio_widget.dart';
 
 class RateWidget extends StatefulWidget {
   const RateWidget({super.key});

@@ -700,6 +700,15 @@
   "delivery_address": "عنوان التسليم",
   "items_summary": "ملخص العناصر"
 },
+"point_screen": {
+  "point": "النقاط",
+  "Voucher": "كوبون",
+  "claimed": "تم الحصول عليها",
+  "used": "مستخدمة",
+  "claim": "احصل عليها",
+  "off": "خصم",
+  "current_points": "النقاط الحالية"
+},
 "core":{
  "name": "الاسم",
  "id": " رقم الطلب",
