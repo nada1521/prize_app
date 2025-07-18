@@ -1,7 +1,9 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/widgets/orange_appbar_widget.dart';
 
@@ -18,7 +20,7 @@ class AppbarAndCurrentPointWidget extends StatelessWidget {
             height: 150.h,
             width: double.infinity,
             child: OrangeAppbarWidget(
-              title: "Point",
+              title: LocaleKeys.point_screen_point.tr(),
               showBackButton: true,
               height: 500.h,
             ),
@@ -45,7 +47,7 @@ class AppbarAndCurrentPointWidget extends StatelessWidget {
                     width: 30.w,
                     height: 30.h,
                   ),
-                  Text("Current Points",
+                  Text(LocaleKeys.point_screen_current_points.tr(),
                       style: AppTextStyles
                               .headTitle14w500WhiteAndDarkBlueTextStyle(context)
                           .copyWith(color: Color(0xff5c5a72))),

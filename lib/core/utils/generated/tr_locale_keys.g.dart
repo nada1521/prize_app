@@ -561,6 +561,14 @@ abstract class  LocaleKeys {
   static const OrderDetails_delivery_address = 'OrderDetails.delivery_address';
   static const OrderDetails_items_summary = 'OrderDetails.items_summary';
   static const OrderDetails = 'OrderDetails';
+  static const point_screen_point = 'point_screen.point';
+  static const point_screen_Voucher = 'point_screen.Voucher';
+  static const point_screen_claimed = 'point_screen.claimed';
+  static const point_screen_used = 'point_screen.used';
+  static const point_screen_claim = 'point_screen.claim';
+  static const point_screen_off = 'point_screen.off';
+  static const point_screen_current_points = 'point_screen.current_points';
+  static const point_screen = 'point_screen';
   static const core_name = 'core.name';
   static const core_id = 'core.id';
   static const core_search = 'core.search';

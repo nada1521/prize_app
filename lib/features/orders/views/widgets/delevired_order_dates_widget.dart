@@ -1,7 +1,4 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:prize/core/utils/constants.dart';
-import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/features/orders/views/widgets/build_date_row_widget.dart';
 
 class DeleviredOrderDatesWidget extends StatelessWidget {

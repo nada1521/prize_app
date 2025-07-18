@@ -7,7 +7,7 @@ import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_image_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_price_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_title_widget.dart';
-import 'package:prize/features/orders/data/models/order_model.dart';
+
 
 class HorizontalProductWidget extends StatelessWidget {
   const HorizontalProductWidget(

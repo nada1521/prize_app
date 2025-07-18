@@ -671,6 +671,15 @@
   "delivery_address":"Delivery Address",
   "items_summary":"Items Summary"
 },
+"point_screen":{
+"point":"Point",
+"Voucher":"Voucher",
+"claimed":"Claimed",
+"used":"Used",
+"claim":"claim",
+"off":"OFF",
+"current_points":"Current Points"
+},
 
 "core":{
   "id":"ID ",
