@@ -1,7 +1,9 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
@@ -15,11 +17,11 @@ class WalletScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: OrangeAppbarWidget(title: "Wallet"),
+      appBar: OrangeAppbarWidget(title: LocaleKeys.core_wallet.tr()),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 16),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Stack(children: [
               Container(
@@ -30,10 +32,10 @@ class WalletScreen extends StatelessWidget {
                     color: Colors.pinkAccent,
                     borderRadius: BorderRadius.circular(18)),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "balance",
+                      LocaleKeys.wallet_screen_balance.tr(),
                       style: TextStyle(
                         color: Colors.white.withOpacity(0.7),
                         fontSize: 14,
@@ -42,7 +44,7 @@ class WalletScreen extends StatelessWidget {
                     ),
                     verticalSpace(10),
                     Text(
-                      "0 LE",
+                      "0 ${LocaleKeys.wallet_screen_le.tr()}",
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 28.sp,
@@ -65,7 +67,7 @@ class WalletScreen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "charge",
+                              LocaleKeys.wallet_screen_charge.tr(),
                               style: TextStyle(
                                 fontWeight: FontWeight.w600,
                                 fontSize: 14.sp,
@@ -86,7 +88,7 @@ class WalletScreen extends StatelessWidget {
             ]),
             verticalSpace(12),
             Text(
-              "Transactions",
+              LocaleKeys.wallet_screen_transactions.tr(),
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w600,
@@ -107,7 +109,7 @@ class WalletScreen extends StatelessWidget {
                     ),
                   ),
                   verticalSpace(17),
-                  Text("You have not made any\ntransactions before.",
+                  Text(LocaleKeys.wallet_screen_not_made_transactions.tr(),
                       textAlign: TextAlign.center,
                       style: AppTextStyles
                               .headTitle14w500WhiteAndDarkBlueTextStyle(context)

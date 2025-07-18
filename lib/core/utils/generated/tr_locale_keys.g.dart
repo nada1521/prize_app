@@ -364,7 +364,6 @@ abstract class  LocaleKeys {
   static const filter_product_rating = 'filter_product.rating';
   static const filter_product_product_rat = 'filter_product.product_rat';
   static const filter_product_filter = 'filter_product.filter';
-  static const filter_product_price = 'filter_product.price';
   static const filter_product_star_low = 'filter_product.star_low';
   static const filter_product_stars_high = 'filter_product.stars_high';
   static const filter_product = 'filter_product';
@@ -388,7 +387,6 @@ abstract class  LocaleKeys {
   static const cart_screen_order_successfully = 'cart_screen.order_successfully';
   static const cart_screen_order_id = 'cart_screen.order_id';
   static const cart_screen_track_your_order = 'cart_screen.track_your_order';
-  static const cart_screen_wallet = 'cart_screen.wallet';
   static const cart_screen_mada = 'cart_screen.mada';
   static const cart_screen_coupon = 'cart_screen.coupon';
   static const cart_screen_submit = 'cart_screen.submit';
@@ -577,6 +575,18 @@ abstract class  LocaleKeys {
   static const cancel_order_screen_reason_for_cancellation = 'cancel_order_screen.reason_for_cancellation';
   static const cancel_order_screen_confirm_cancellation = 'cancel_order_screen.confirm_cancellation';
   static const cancel_order_screen = 'cancel_order_screen';
+  static const wallet_screen_order_summary = 'wallet_screen.order_summary';
+  static const wallet_screen_balance = 'wallet_screen.balance';
+  static const wallet_screen_le = 'wallet_screen.le';
+  static const wallet_screen_vat = 'wallet_screen.vat';
+  static const wallet_screen_subtotal = 'wallet_screen.subtotal';
+  static const wallet_screen_item = 'wallet_screen.item';
+  static const wallet_screen_pay = 'wallet_screen.pay';
+  static const wallet_screen_charge = 'wallet_screen.charge';
+  static const wallet_screen_charge_wallet = 'wallet_screen.charge_wallet';
+  static const wallet_screen_transactions = 'wallet_screen.transactions';
+  static const wallet_screen_not_made_transactions = 'wallet_screen.not_made_transactions';
+  static const wallet_screen = 'wallet_screen';
   static const core_name = 'core.name';
   static const core_id = 'core.id';
   static const core_search = 'core.search';
@@ -592,6 +602,8 @@ abstract class  LocaleKeys {
   static const core_order_again = 'core.order_again';
   static const core_go_shopping = 'core.go_shopping';
   static const core_i_change_my_mind = 'core.i_change_my_mind';
+  static const core_wallet = 'core.wallet';
+  static const core_price = 'core.price';
   static const core = 'core';
 
 }

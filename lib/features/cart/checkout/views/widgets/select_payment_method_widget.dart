@@ -24,7 +24,7 @@ class _SelectPaymentMethodWidgetState extends State<SelectPaymentMethodWidget> {
       paymentImage: AppImages.debitCartIcon,
     ),
     PaymentMethodModel(
-      paymentName: LocaleKeys.cart_screen_wallet.tr(),
+      paymentName: LocaleKeys.core_wallet.tr(),
       paymentImage: AppImages.walletIcon,
     ),
     PaymentMethodModel(
