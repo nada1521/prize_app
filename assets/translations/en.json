@@ -424,7 +424,7 @@
   "rating":"Rating",
   "product_rat":"This is the score of the product from a customer who purchased a product",
   "filter":"Filter",
-  "price":"Price",
+  
   "star_low":"Star",
   "stars_high":"Stars"
  },
@@ -454,7 +454,7 @@
   "order_successfully":"Order Successfully Placed",
   "order_id":"Order ID ",
   "track_your_order":"Track Your Order",
-  "aallet":"Wallet",
+ 
   "mada":"Mada",
   "coupon":"Coupon:",
   "submit":"Submit",
@@ -692,7 +692,19 @@
  "confirm_cancellation":"Confirm Cancellation"
 
 },
-
+"wallet_screen":{
+  "order_summary":"Order summary",
+  "balance":"balance",
+  "le":"LE",
+  "vat":"VAT",
+  "subtotal":"Subtotal:",
+  "item":"item",
+  "pay":"Pay",
+  "charge":"charge",
+  "charge_wallet":"Charge wallet",
+   "transactions": "Transactions",
+   "not_made_transactions":"You have not made any\ntransactions before."
+},
 "core":{
   "id":"ID ",
   "name":"Name",
@@ -709,7 +721,9 @@
   "phone_number":"Phone Number",
   "notification":"Notification",
   "i_changed_my_mind":" I changed my mind ",
-  "other":"Other"
+  "other":"Other",
+  "wallet":"Wallet",
+  "price":"Price"
 }
 
 

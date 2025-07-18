@@ -38,7 +38,7 @@ class _PriceRangeSliderWidgetState extends State<PriceRangeSliderWidget> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          LocaleKeys.filter_product_price.tr(),
+          LocaleKeys.core_price.tr(),
           style: AppTextStyles.bodyTitle18w400darkPeriwinkleTextStyle(context)
               .copyWith(fontWeight: FontWeight.w600),
         ),

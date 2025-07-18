@@ -21,7 +21,8 @@ class AppTextFormField extends StatefulWidget {
   final Widget? prefixIcon;
   final int? maxLines;
   final Color? fillColor;
-
+  final TextInputType? keyboardType;
+  final Function(String)? onChang;
   const AppTextFormField({
     super.key,
     this.contentPadding,
@@ -40,6 +41,7 @@ class AppTextFormField extends StatefulWidget {
     this.prefixIcon,
     this.maxLines,
     this.fillColor,
+    this.keyboardType,  this.onChang,
   });
 
   @override
@@ -65,8 +67,11 @@ class _AppTextFormFieldState extends State<AppTextFormField> {
           ? TextDirection.ltr
           : Directionality.of(context),
       child: TextFormField(
+        onChanged:widget.onChang ,
+        keyboardType: widget.keyboardType,
         controller: widget.controller,
         decoration: InputDecoration(
+          
           isDense: true,
           contentPadding: widget.contentPadding ??
               EdgeInsets.symmetric(horizontal: 20.w, vertical: 18.h),

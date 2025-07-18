@@ -440,7 +440,7 @@
   "product_rat": "هذا هو تقييم المنتج من عميل قام بشرائه",
 
 "filter": "تصفية",
-"price": "السعر",
+
 "star_low": "نجمة",
 "stars_high": "نجوم"
 
@@ -471,7 +471,7 @@
   "order_id": "رقم الطلب",
   "track_your_order": "تتبع طلبك",
 
-  "wallet": "المحفظة",
+  
   "mada": "مدى",
   "coupon": "كوبون:",
   "submit": "إرسال",
@@ -722,6 +722,21 @@
   "confirm_cancellation": "تأكيد الإلغاء"
 },
 
+  "wallet_screen": {
+    "order_summary": "ملخص الطلب",
+    "balance": "الرصيد",
+    "le": "ج.م",
+    "vat": "ضريبة القيمة المضافة",
+    "subtotal": "الإجمالي الفرعي:",
+    "item": "عنصر",
+    "pay": "ادفع",
+    "charge": "شحن",
+    "charge_wallet": "شحن المحفظة",
+    "transactions": "المعاملات",
+    "not_made_transactions": "لم تقم بأي\nمعاملات من قبل."
+  
+},
+
 "core":{
  "name": "الاسم",
  "id": " رقم الطلب",
@@ -738,7 +753,9 @@
  "order_again": "اطلب مرة أخرى",
  "go_shopping": "ابدأ التسوق",
  "i_change_my_mind": " غيّرت رأيي ",
- "other":"أخرى"
+ "other":"أخرى",
+ "wallet": "المحفظة",
+ "price": "السعر"
 
 
 }
