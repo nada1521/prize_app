@@ -53,7 +53,7 @@ class WalletScreen extends StatelessWidget {
                     InkWell(
                       onTap: () => pushTo(
                         context,
-                        ChargeWalletScreen(),
+                        ChargeWalletPage(),
                       ),
                       child: Container(
                         height: 30,
