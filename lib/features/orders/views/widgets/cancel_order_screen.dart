@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
@@ -22,10 +24,14 @@ class CancelOrderScreen extends StatefulWidget {
 class _CancelOrderScreenState extends State<CancelOrderScreen> {
   // ✅ موديل السبب
   final List<CancelReasonModel> cancelReasons = [
-    CancelReasonModel(id: 1, name: 'No reason'),
-    CancelReasonModel(id: 2, name: 'I changed my mind'),
-    CancelReasonModel(id: 3, name: 'I want to buy another product'),
-    CancelReasonModel(id: 4, name: 'Other'),
+    CancelReasonModel(
+        id: 1, name: LocaleKeys.cancel_order_screen_no_reason.tr()),
+    CancelReasonModel(id: 2, name: LocaleKeys.core_i_change_my_mind.tr()),
+    CancelReasonModel(
+        id: 3,
+        name:
+            LocaleKeys.cancel_order_screen_i_want_to_buy_another_product.tr()),
+    CancelReasonModel(id: 4, name: LocaleKeys.location_screen_label_other.tr()),
   ];
 
   // ✅ السبب المختار
@@ -34,7 +40,7 @@ class _CancelOrderScreenState extends State<CancelOrderScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: OrangeAppbarWidget(
-        title: "Cancel Order",
+        title: LocaleKeys.cancel_order_screen_cancel_order.tr(),
         showBackButton: true,
       ),
       body: Container(
@@ -43,12 +49,12 @@ class _CancelOrderScreenState extends State<CancelOrderScreen> {
           padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 10.h),
           children: [
             Text(
-              "Your order is going to be canceled",
+              LocaleKeys.cancel_order_screen_i_want_to_buy_another_product.tr(),
               style: AppTextStyles.headTitle24w600TextStyle(context),
             ),
             verticalSpace(10),
             Text(
-              "Reason for Cancellation",
+              LocaleKeys.cancel_order_screen_reason_for_cancellation.tr(),
               style: AppTextStyles.smallHeadTitle12w400TextStyle(context),
             ),
             verticalSpace(10),
@@ -104,16 +110,15 @@ class _CancelOrderScreenState extends State<CancelOrderScreen> {
         child: Row(
           children: [
             Expanded(
-              child: AppOutLineButton(onTap: () {}, title: "Cancel"),
+              child: AppOutLineButton(
+                  onTap: () {}, title: LocaleKeys.action_cancel.tr()),
             ),
             horizontalSpace(10),
             Expanded(
               flex: 2,
               child: AppFillBckgroundButton(
-                onTap: () {
-                  
-                },
-                title: "Confirm Cancellation",
+                onTap: () {},
+                title: LocaleKeys.cancel_order_screen_confirm_cancellation.tr(),
               ),
             ),
           ],

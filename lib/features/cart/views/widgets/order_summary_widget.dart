@@ -21,7 +21,6 @@ class OrderSummaryWidget extends StatelessWidget {
         context.watch<AddingProductToCartCubit>().state.selectedProducts;
 
     return Container(
-      
       padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 20.h),
       decoration: BoxDecoration(
         color: AppWidgetColor.fillWidgetByLightBackgroundColor(context),
@@ -41,8 +40,7 @@ class OrderSummaryWidget extends StatelessWidget {
               ),
               horizontalSpace(10),
               Text(
-                "(${selectedProducts.length}${LocaleKeys.cart_screen_items.tr()})",
-              
+                "(${selectedProducts.length}${LocaleKeys.core_items.tr()})",
                 style: AppTextStyles.smallBodyTitle12w400TextStyle(context)
                     .copyWith(
                   color: AppColors.periwinkle,
@@ -90,7 +88,7 @@ class OrderSummaryWidget extends StatelessWidget {
             Row(
               children: [
                 Text(
-                  "Coupon:",
+                  LocaleKeys.cart_screen_coupon.tr(),
                   style: AppTextStyles.smallBodyTitle12w400TextStyle(context)
                       .copyWith(
                     color: AppColors.periwinkle,
