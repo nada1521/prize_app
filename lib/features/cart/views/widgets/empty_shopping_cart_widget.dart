@@ -27,7 +27,7 @@ class EmptyShoppingCartWidget extends StatelessWidget {
             constraints: BoxConstraints(maxWidth: 100.w, maxHeight: 100.h),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: Theme.of(context).colorScheme.outline,
+              color: AppWidgetColor.fillWidgetColor(context),
             ),
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),

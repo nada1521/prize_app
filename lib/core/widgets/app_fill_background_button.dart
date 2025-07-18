@@ -10,7 +10,9 @@ class AppFillBckgroundButton extends StatelessWidget {
   final Function() onTap;
   final Color? startColor;
   final Color? endColor;
+  final Color? color;
   final Widget? icon;
+  final TextStyle? textStyle;
   final BorderRadiusGeometry? borderRadius;
 
   const AppFillBckgroundButton({
@@ -20,9 +22,11 @@ class AppFillBckgroundButton extends StatelessWidget {
     this.width,
     this.height,
     this.startColor,
+    this.color,
     this.endColor,
     this.icon,
     this.borderRadius,
+    this.textStyle,
   });
 
   @override
@@ -45,6 +49,7 @@ class AppFillBckgroundButton extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: borderRadius ?? BorderRadius.circular(16.r),
           gradient: gradient,
+          color: color ?? AppColors.darkModeTanOrange,
         ),
         child: Center(
           child: FittedBox(
@@ -54,11 +59,10 @@ class AppFillBckgroundButton extends StatelessWidget {
                 children: [
                   icon ?? SizedBox.shrink(),
                   horizontalSpace(5),
-                  Text(
-                    title,
-                    style: AppTextStyles.appFillColorButton16w500TextStyle(
-                        context),
-                  ),
+                  Text(title,
+                      style: textStyle ??
+                          AppTextStyles.appFillColorButton16w500TextStyle(
+                              context)),
                 ],
               ),
             ),

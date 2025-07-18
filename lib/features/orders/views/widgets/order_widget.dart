@@ -17,6 +17,7 @@ import 'package:prize/features/orders/views/screens/orders_details_screen.dart';
 import 'package:prize/features/orders/views/widgets/order_id_and_date_widget.dart';
 import 'package:prize/features/orders/views/widgets/order_state_widget.dart';
 import 'package:prize/features/orders/views/widgets/rate_icon_button.dart';
+import 'package:prize/features/shop/views/screens/shop_products_screen.dart';
 import 'package:prize/generated/locale_keys.g.dart';
 
 class OrderWidget extends StatelessWidget {
@@ -151,7 +152,9 @@ class OrderWidget extends StatelessWidget {
                     children: [
                       Expanded(
                         child: AppOutLineButton(
-                            onTap: () {},
+                            onTap: () {
+                              pushTo(context, ShopProductsScreen());
+                            },
                             title: LocaleKeys.my_order_screen_order_again.tr(),
                             icon: SvgPicture.asset(AppSvgs.refreshIcon)),
                       ),

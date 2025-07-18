@@ -30,7 +30,7 @@ class OrderTrackingTimeline extends StatelessWidget {
         theme: TimelineThemeData(
           direction: Axis.horizontal,
           connectorTheme: const ConnectorThemeData(
-            thickness: 2.5,
+            thickness: 0.5,
           ),
           indicatorTheme: const IndicatorThemeData(
             size: 24.0,
@@ -60,7 +60,7 @@ class OrderTrackingTimeline extends StatelessWidget {
             final isActive = index <= currentStep;
             return DotIndicator(
               color: isActive
-                  ? _getStepColor(index)
+                  ? AppColors.greenColor
                   : AppColors.moreLighterDarkPeriwinkle,
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 5.h),
@@ -72,7 +72,7 @@ class OrderTrackingTimeline extends StatelessWidget {
             final isActive = index < currentStep;
             return SolidLineConnector(
               color: isActive
-                  ? _getStepColor(index)
+                  ? AppColors.greenColor
                   : AppColors.moreLighterDarkPeriwinkle,
             );
           },

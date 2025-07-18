@@ -15,9 +15,10 @@ class DeliveryAddressWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 15.w, vertical: 10.h),
+      // margin: EdgeInsets.symmetric(horizontal: 15.w, vertical: 10.h),
       padding: EdgeInsets.symmetric(
         vertical: 20.h,
+        horizontal: 20.h,
       ),
       decoration: BoxDecoration(
         color: AppWidgetColor.fillWidgetByLightBackgroundColor(context),

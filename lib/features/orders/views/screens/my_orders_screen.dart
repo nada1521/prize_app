@@ -26,7 +26,7 @@ class MyOrdersScreen extends StatelessWidget {
         .where((order) => order.orderState == OrderState.delivered)
         .toList();
     final List<OrderModel> canceledOrder = orders
-        .where((order) => order.orderState == OrderState.delivered)
+        .where((order) => order.orderState == OrderState.cancelled)
         .toList();
     return Scaffold(
       appBar: OrangeAppbarWidget(

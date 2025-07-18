@@ -6,6 +6,9 @@ import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/features/orders/data/models/order_model.dart';
+import 'package:prize/features/orders/data/models/order_state_and_translation.dart';
+import 'package:prize/features/orders/views/widgets/delevired_order_dates_widget.dart';
+import 'package:prize/features/orders/views/widgets/order_cancelled_widget.dart';
 import 'package:prize/features/orders/views/widgets/order_tracking_timeline.dart';
 
 class TrackingOrderWidget extends StatelessWidget {
@@ -23,45 +26,62 @@ class TrackingOrderWidget extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
-              padding: EdgeInsetsDirectional.only(
-                start: 10.w,
-              ),
-              child: Text(
-                LocaleKeys.OrderDetails_tracking_order.tr(),
-                style:
-                    AppTextStyles.meduimBody16W500BlackAndWhiteTitleTextStyle(
-                        context),
-              ),
-            ),
-            OrderTrackingTimeline(
-              currentStep: 0,
-            ),
-            verticalSpace(24),
-            Padding(
-              padding: EdgeInsetsDirectional.only(
-                start: 10.w,
-              ),
-              child: Row(
-                children: [
-                  Text(
-                    LocaleKeys.OrderDetails_order_placed.tr(),
-                    style: AppTextStyles
-                            .smallBodyTitle12w400WithContrastColorTextStyle(
-                                context)
-                        .copyWith(
-                      fontSize: 14,
-                    ),
-                  ),
-                  Text(DateFormat('dd MMM yyyy')
-                      .format(order.orderPlaced)
-                      .toString()),
-                ],
-              ),
-            )
+            order.orderState != OrderState.cancelled
+                ? Column(
+                    children: [
+                      Padding(
+                        padding: EdgeInsetsDirectional.only(
+                          start: 10.w,
+                        ),
+                        child: Text(
+                          LocaleKeys.OrderDetails_tracking_order.tr(),
+                          style: AppTextStyles
+                              .meduimBody16W500BlackAndWhiteTitleTextStyle(
+                                  context),
+                        ),
+                      ),
+                      OrderTrackingTimeline(
+                        currentStep:
+                            getCurrentStep(order.orderState).keys.first,
+                      ),
+                    ],
+                  )
+                : SizedBox.shrink(),
+            verticalSpace(15),
+            getCurrentStep(order.orderState).values.first,
+            verticalSpace(8),
           ],
         ),
       ),
     );
+  }
+
+  Map<int, Widget> getCurrentStep(OrderState state) {
+    switch (state) {
+      case OrderState.ordered:
+        return {
+          0: DeleviredOrderDatesWidget(),
+        };
+      case OrderState.confirmed:
+        return {
+          1: DeleviredOrderDatesWidget(),
+        };
+      case OrderState.shipped:
+        return {
+          2: DeleviredOrderDatesWidget(),
+        };
+      case OrderState.delivered:
+        return {
+          3: DeleviredOrderDatesWidget(),
+        };
+      case OrderState.cancelled:
+        return {
+          4: OrderCancelledWidget(),
+        };
+      default:
+        return {
+          0: DeleviredOrderDatesWidget(),
+        };
+    }
   }
 }
