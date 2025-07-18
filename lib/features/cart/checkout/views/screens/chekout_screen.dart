@@ -56,7 +56,7 @@ class ChekoutScreen extends StatelessWidget {
             Row(
               children: [
                 Text(
-                    "${selectedProducts.length} ${LocaleKeys.cart_screen_items.tr()}"),
+                    "${selectedProducts.length} ${LocaleKeys.core_items.tr()}"),
                 Spacer(),
                 SvgPicture.asset(
                   AppSvgs.currency,

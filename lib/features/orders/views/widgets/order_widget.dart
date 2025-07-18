@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:prize/core/constant/app_svgs.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
@@ -18,7 +19,6 @@ import 'package:prize/features/orders/views/widgets/order_id_and_date_widget.dar
 import 'package:prize/features/orders/views/widgets/order_state_widget.dart';
 import 'package:prize/features/orders/views/widgets/rate_icon_button.dart';
 import 'package:prize/features/shop/views/screens/shop_products_screen.dart';
-import 'package:prize/generated/locale_keys.g.dart';
 
 class OrderWidget extends StatelessWidget {
   const OrderWidget({super.key, required this.order});
@@ -155,7 +155,7 @@ class OrderWidget extends StatelessWidget {
                             onTap: () {
                               pushTo(context, ShopProductsScreen());
                             },
-                            title: LocaleKeys.my_order_screen_order_again.tr(),
+                            title: LocaleKeys.OrderDetails_order_again.tr(),
                             icon: SvgPicture.asset(AppSvgs.refreshIcon)),
                       ),
                       if (order.orderState == OrderState.cancelled)

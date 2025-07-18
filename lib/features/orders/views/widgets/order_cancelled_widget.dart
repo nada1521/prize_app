@@ -1,4 +1,6 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
@@ -12,7 +14,7 @@ class OrderCancelledWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "Order Cancelled",
+          LocaleKeys.OrderDetails_order_cancelled.tr(),
           style: AppTextStyles.bodyTitle14w500PeriwinkleTextStyle(context)
               .copyWith(
             color: AppColors.errorRed,
@@ -29,7 +31,7 @@ class OrderCancelledWidget extends StatelessWidget {
         Row(
           children: [
             Text(
-              "Cancellation Reason :",
+              LocaleKeys.OrderDetails_cancellation_reason.tr(),
               style:
                   AppTextStyles.meduimBody16W500DarkAndLightThemeTitleTextStyle(
                           context)
@@ -38,7 +40,7 @@ class OrderCancelledWidget extends StatelessWidget {
               ),
             ),
             Text(
-              'I change my mind',
+              LocaleKeys.core_i_change_my_mind.tr(),
               style: AppTextStyles.bodyTitle14w500PeriwinkleTextStyle(context),
             ),
           ],

@@ -395,7 +395,6 @@ abstract class  LocaleKeys {
   static const cart_screen_remove = 'cart_screen.remove';
   static const cart_screen_apply = 'cart_screen.apply';
   static const cart_screen_coupon_code = 'cart_screen.coupon_code';
-  static const cart_screen_items = 'cart_screen.items';
   static const cart_screen_sub_total = 'cart_screen.sub_total';
   static const cart_screen_total = 'cart_screen.total';
   static const cart_screen_inclusive_of_vat = 'cart_screen.inclusive_of_vat';
@@ -544,7 +543,6 @@ abstract class  LocaleKeys {
   static const my_order_screen_rate = 'my_order_screen.rate';
   static const my_order_screen_delivered = 'my_order_screen.delivered';
   static const my_order_screen_cancelled = 'my_order_screen.cancelled';
-  static const my_order_screen_order_again = 'my_order_screen.order_again';
   static const my_order_screen_in_progress = 'my_order_screen.in_progress';
   static const my_order_screen_message_not_order = 'my_order_screen.message_not_order';
   static const my_order_screen = 'my_order_screen';
@@ -560,11 +558,31 @@ abstract class  LocaleKeys {
   static const OrderDetails_order_placed = 'OrderDetails.order_placed';
   static const OrderDetails_delivery_address = 'OrderDetails.delivery_address';
   static const OrderDetails_items_summary = 'OrderDetails.items_summary';
+  static const OrderDetails_order_cancelled = 'OrderDetails.order_cancelled';
+  static const OrderDetails_cancellation_reason = 'OrderDetails.cancellation_reason';
+  static const OrderDetails_i_change_my_mind = 'OrderDetails.i_change_my_mind';
+  static const OrderDetails_order_again = 'OrderDetails.order_again';
   static const OrderDetails = 'OrderDetails';
+  static const point_screen_point = 'point_screen.point';
+  static const point_screen_Voucher = 'point_screen.Voucher';
+  static const point_screen_claimed = 'point_screen.claimed';
+  static const point_screen_used = 'point_screen.used';
+  static const point_screen_claim = 'point_screen.claim';
+  static const point_screen_off = 'point_screen.off';
+  static const point_screen_current_points = 'point_screen.current_points';
+  static const point_screen = 'point_screen';
+  static const cancel_order_screen_cancel_order = 'cancel_order_screen.cancel_order';
+  static const cancel_order_screen_no_reason = 'cancel_order_screen.no_reason';
+  static const cancel_order_screen_i_want_to_buy_another_product = 'cancel_order_screen.i_want_to_buy_another_product';
+  static const cancel_order_screen_order_going_to_be_canceled = 'cancel_order_screen.order_going_to_be_canceled';
+  static const cancel_order_screen_reason_for_cancellation = 'cancel_order_screen.reason_for_cancellation';
+  static const cancel_order_screen_confirm_cancellation = 'cancel_order_screen.confirm_cancellation';
+  static const cancel_order_screen = 'cancel_order_screen';
   static const core_name = 'core.name';
   static const core_id = 'core.id';
   static const core_search = 'core.search';
   static const core_home = 'core.home';
+  static const core_items = 'core.items';
   static const core_total = 'core.total';
   static const core_confirm = 'core.confirm';
   static const core_location = 'core.location';
@@ -572,7 +590,9 @@ abstract class  LocaleKeys {
   static const core_profile = 'core.profile';
   static const core_notification = 'core.notification';
   static const core_phone_number = 'core.phone_number';
+  static const core_order_again = 'core.order_again';
   static const core_go_shopping = 'core.go_shopping';
+  static const core_i_change_my_mind = 'core.i_change_my_mind';
   static const core = 'core';
 
 }

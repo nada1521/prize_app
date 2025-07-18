@@ -460,7 +460,7 @@
   "submit":"Submit",
   "apply":"Apply",
   "coupon_code":"Coupon Code",
-  "items":"items",
+  
   "sub_total":"subtotal",
   "total":"Total:",
   "inclusive_of_vat":"(inclusive of VAT)",
@@ -647,11 +647,9 @@
   "confirm_location":"Confirm Location"
  },
  "my_order_screen":{
-   
     "rate":"Rate",
     "delivered":"Delivered",
     "cancelled":"Cancelled",
-    "order_again":"Order again",
     "in_progress":"In progress",
     "message_not_order":"You have not placed any orders yet"
     
@@ -669,7 +667,10 @@
   "tracking_order":"Tracking order",
   "order_placed": "Order Placed: ",
   "delivery_address":"Delivery Address",
-  "items_summary":"Items Summary"
+  "items_summary":"Items Summary",
+  "order_cancelled":"Order Cancelled",
+  "cancellation_reason":"Cancellation Reason :",
+  "order_again":"Order again"
 },
 "point_screen":{
 "point":"Point",
@@ -681,19 +682,34 @@
 "current_points":"Current Points"
 },
 
+
+"cancel_order_screen":{
+"cancel_order":"Cancel Order",
+"no_reason":"No reason",
+"i_want_to_buy_another_product":"I want to buy another product",
+ "order_going_to_be_canceled": "Your order is going to be canceled",
+ "reason_for_cancellation":"Reason for Cancellation",
+ "confirm_cancellation":"Confirm Cancellation"
+
+},
+
 "core":{
   "id":"ID ",
   "name":"Name",
   "home":"Home",
   "total":"Total",
+  "items":"items",
   "search":"Search",
   "confirm":"Confirm",
   "profile": "Profile",
   "location": "Location",
   "my_orders":"My Orders",
+  "order_again":"Order again",
   "go_shopping":"Go Shopping",
   "phone_number":"Phone Number",
-  "notification":"Notification"
+  "notification":"Notification",
+  "i_changed_my_mind":" I changed my mind ",
+  "other":"Other"
 }
 
 

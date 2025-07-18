@@ -478,7 +478,6 @@
   "remove": "إزالة", 
   "apply": "تطبيق",
   "coupon_code": "كود التخفيض",
-  "items": "العناصر",
   "sub_total": "الإجمالي الفرعي",
   "total": ":الإجمالي الكلي",
   "inclusive_of_vat": "(شامل ضريبة القيمة المضافة)",
@@ -680,7 +679,7 @@
   
   "delivered": "تم التوصيل",
   "cancelled": "تم الإلغاء",
-  "order_again": "اطلب مرة أخرى",
+  
   "in_progress": "قيد التنفيذ",
   "message_not_order": "لم تقم بأي طلب حتى الآن"
 
@@ -698,8 +697,13 @@
   "tracking_order": "تتبع الطلب",
   "order_placed": "تاريخ الطلب: ",
   "delivery_address": "عنوان التسليم",
-  "items_summary": "ملخص العناصر"
+  "items_summary": "ملخص العناصر",
+  "order_cancelled": "تم إلغاء الطلب",
+"cancellation_reason": "سبب الإلغاء:",
+"order_again": "اطلب مرة أخرى"
+
 },
+
 "point_screen": {
   "point": "النقاط",
   "Voucher": "كوبون",
@@ -709,11 +713,21 @@
   "off": "خصم",
   "current_points": "النقاط الحالية"
 },
+"cancel_order_screen": {
+  "cancel_order": "إلغاء الطلب",
+  "no_reason": "لا يوجد سبب",
+  "i_want_to_buy_another_product": "أرغب في شراء منتج آخر",
+  "order_going_to_be_canceled": "سيتم إلغاء طلبك",
+  "reason_for_cancellation": " سبب الإلغاء",
+  "confirm_cancellation": "تأكيد الإلغاء"
+},
+
 "core":{
  "name": "الاسم",
  "id": " رقم الطلب",
  "search":"بحث",  
  "home": "المنزل",
+ "items": "العناصر",
  "total": "الإجمالي",
  "confirm": "تأكيد",
  "location": "الموقع",
@@ -721,7 +735,10 @@
  "profile": "الملف الشخصي",
  "notification": "الإشعارات",
  "phone_number": "رقم الهاتف",
- "go_shopping": "ابدأ التسوق"
+ "order_again": "اطلب مرة أخرى",
+ "go_shopping": "ابدأ التسوق",
+ "i_change_my_mind": " غيّرت رأيي ",
+ "other":"أخرى"
 
 
 }

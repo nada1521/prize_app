@@ -48,7 +48,7 @@ class _RateWidgetState extends State<RateWidget> {
         children: [
           // Title
           Text(
-            "Rate",
+            LocaleKeys.my_order_screen_rate.tr(),
             style: AppTextStyles.headTitle24w600TextStyle(context),
           ),
           verticalSpace(24),
@@ -79,7 +79,7 @@ class _RateWidgetState extends State<RateWidget> {
           CustomTextFieldWidget(
             textFieldModel: textFieldModel,
           ),
-          verticalSpace(24),
+          verticalSpace(20.h),
 
           Row(
             children: [
@@ -88,7 +88,7 @@ class _RateWidgetState extends State<RateWidget> {
                   onTap: () {
                     context.pop();
                   },
-                  title: "Cancel",
+                  title: LocaleKeys.action_cancel.tr(),
                 ),
               ),
               horizontalSpace(12),
@@ -97,7 +97,7 @@ class _RateWidgetState extends State<RateWidget> {
                   onTap: () {
                     context.pop();
                   },
-                  title: "Send",
+                  title: LocaleKeys.action_send.tr(),
                 ),
               )
             ],
