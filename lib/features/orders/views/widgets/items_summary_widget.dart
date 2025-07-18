@@ -38,7 +38,7 @@ class ItemsSummaryWidget extends StatelessWidget {
               ),
               Spacer(),
               Text(
-                "(2 item)",
+                "(2 ${LocaleKeys.core_items.tr()})",
                 style: AppTextStyles
                         .meduimBody16W500DarkAndLightThemeTitleTextStyle(
                             context)
@@ -62,12 +62,14 @@ class ItemsSummaryWidget extends StatelessWidget {
           horizontalSpace(10),
           TextButton(
             onPressed: () {
-              pushTo(context, CancelOrderScreen(
-                order: order,
-              ));
+              pushTo(
+                  context,
+                  CancelOrderScreen(
+                    order: order,
+                  ));
             },
             child: Text(
-              "Cancel order",
+              LocaleKeys.cancel_order_screen_cancel_order.tr(),
               style: TextStyle(
                 color: AppColors.darkModeTanOrange,
               ),

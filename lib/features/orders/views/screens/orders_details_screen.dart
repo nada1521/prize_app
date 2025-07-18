@@ -112,7 +112,7 @@ class OrdersDetailsScreen extends StatelessWidget {
             Expanded(
               child: AppOutLineButton(
                 onTap: () {},
-                title: "Order again",
+                title: LocaleKeys.OrderDetails_order_again.tr(),
                 icon: SvgPicture.asset(AppSvgs.refreshIcon),
               ),
             ),
@@ -125,7 +125,7 @@ class OrdersDetailsScreen extends StatelessWidget {
                     builder: (context) => RateWidget(),
                   );
                 },
-                title: "Rate",
+                title: LocaleKeys.my_order_screen_rate.tr(),
                 textStyle:
                     AppTextStyles.appFillColorButton16w500TextStyle(context)
                         .copyWith(
@@ -142,7 +142,7 @@ class OrdersDetailsScreen extends StatelessWidget {
           onTap: () {
             pushTo(context, ShopProductsScreen());
           },
-          title: "Order again",
+          title: LocaleKeys.OrderDetails_order_again.tr(),
           icon: SvgPicture.asset(AppSvgs.refreshIcon),
         );
       default:
