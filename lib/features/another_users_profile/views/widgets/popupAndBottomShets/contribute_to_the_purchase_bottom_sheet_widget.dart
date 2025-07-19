@@ -1,16 +1,17 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:prize/core/constant/app_images.dart';
 import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/constants.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/core/widgets/horizontal_product_widget.dart';
 import 'package:prize/features/another_users_profile/data/product_wishlist_product_progress_model.dart';
-import 'package:prize/features/another_users_profile/views/screens/contribute_to_the_gift_product_screen.dart';
 import 'package:prize/features/another_users_profile/views/screens/contribute_to_the_gift_screen_product_details.dart';
 import 'package:prize/features/another_users_profile/views/widgets/diagonal_progress_bar.dart';
 import 'package:prize/features/another_users_profile/views/widgets/overlapping_avatars_widget.dart';
@@ -82,7 +83,7 @@ class ContributeToThePurchaseBottomSheetWidget extends StatelessWidget {
                       ),
                       horizontalSpace(5),
                       Text(
-                        "Funded of",
+                        LocaleKeys.contribute_the_gift_screen_funded_of.tr(),
                         style: AppTextStyles.bodyTitle14w500PeriwinkleTextStyle(
                                 context)
                             .copyWith(
@@ -128,7 +129,8 @@ class ContributeToThePurchaseBottomSheetWidget extends StatelessWidget {
                           ),
                         ),
                         horizontalSpace(10),
-                        Text("5 contribute to the gift"),
+                        Text(
+                            "5 ${LocaleKeys.contribute_the_gift_screen_contribute_to_the_gift.tr()}"),
                       ],
                     ),
                   ),
@@ -140,7 +142,9 @@ class ContributeToThePurchaseBottomSheetWidget extends StatelessWidget {
                             ContributeToTheGiftScreenProductDetails(
                                 product: productProgressModel));
                       },
-                      title: "Continue to contribute")
+                      title: LocaleKeys
+                          .contribute_the_gift_screen_continue_to_contribute
+                          .tr())
                 ],
               )
             ],

@@ -12,17 +12,12 @@ import 'package:prize/core/widgets/app_back_button.dart';
 import 'package:prize/core/widgets/app_fill_background_button.dart';
 import 'package:prize/features/another_users_profile/data/product_wishlist_product_progress_model.dart';
 import 'package:prize/features/another_users_profile/views/widgets/popupAndBottomShets/contribute_to_the_purchase_bottom_sheet_widget.dart';
-import 'package:prize/features/complete_profile/data/models/product_model.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_price_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_rating_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/product/show_product_title_widget.dart';
 import 'package:prize/features/complete_profile/view/widgets/select_size_multi_choise.dart';
 import 'package:prize/features/complete_profile/view/widgets/show_available_colors_widget.dart';
-import 'package:prize/features/home/view/widgets/mothers_day_gifts/mothers_day_gifts_widget.dart'
-    show MothersDayGiftsWidget;
 import 'package:prize/features/product_details/views/widgets/images_slider_widget.dart';
-import 'package:prize/features/product_details/views/widgets/overview_review_tab_widget.dart';
-import 'package:prize/features/product_details/views/widgets/sold_by_widget.dart';
 
 class ContributeToTheGiftProductScreen extends StatelessWidget {
   const ContributeToTheGiftProductScreen({super.key, required this.product});
@@ -119,7 +114,9 @@ class ContributeToTheGiftProductScreen extends StatelessWidget {
               ),
             );
           },
-          title: "Contribute to the gift",
+          title: LocaleKeys
+              .contribute_the_gift_screen_contribute_to_the_gift_capital
+              .tr(),
           icon: SvgPicture.asset(AppSvgs.giftIcon),
         ),
       ),

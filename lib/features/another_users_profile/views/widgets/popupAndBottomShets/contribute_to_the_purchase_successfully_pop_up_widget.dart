@@ -1,8 +1,9 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:prize/core/constant/app_images.dart';
-import 'package:prize/core/utils/constants.dart';
 import 'package:prize/core/utils/extensions/navigation_extension.dart';
+import 'package:prize/core/utils/generated/tr_locale_keys.g.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
@@ -34,18 +35,18 @@ class ContributeToThePurchaseSuccessfullyPopUpWidget extends StatelessWidget {
           ),
           verticalSpace(10),
           Text(
-            "Contribution Successfully",
+            LocaleKeys.payment_screen_contribution_successfully.tr(),
             style: AppTextStyles.headTitle24w600TextStyle(context),
           ),
           verticalSpace(8),
           Text(
-            "Consider inviting athers to help fund this Gift",
+            LocaleKeys.payment_screen_Consider_inviting_athers.tr(),
             style: AppTextStyles.bodyTitle16w400PeriwinkleTextStyle(context),
           ),
           verticalSpace(20),
           CustomTextFieldWidget(
             textFieldModel: TextFieldModel(
-              title: "Share Link",
+              title: LocaleKeys.payment_screen_share_link.tr(),
               hintText: "https://example.com/gift-12432094u9",
               validator: (c) {
                 return null;
@@ -58,7 +59,7 @@ class ContributeToThePurchaseSuccessfullyPopUpWidget extends StatelessWidget {
               onTap: () {
                 context.pop();
               },
-              title: "Done"),
+              title: LocaleKeys.payment_screen_done.tr()),
         ],
       ),
     );

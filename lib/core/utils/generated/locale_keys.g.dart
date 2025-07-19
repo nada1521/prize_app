@@ -538,9 +538,6 @@ abstract class  LocaleKeys {
   static const contribute_the_gift_screen_continue = 'contribute_the_gift_screen.continue';
   static const contribute_the_gift_screen_contribute_anonymously = 'contribute_the_gift_screen.contribute_anonymously';
   static const contribute_the_gift_screen_amount = 'contribute_the_gift_screen.amount';
-  static const contribute_the_gift_screen_contribute_to_the_gift = 'contribute_the_gift_screen.contribute_to_the_gift';
-  static const contribute_the_gift_screen_contribute_to_the_gift_capital = 'contribute_the_gift_screen.contribute_to_the_gift_capital';
-  static const contribute_the_gift_screen_continue_to_contribute = 'contribute_the_gift_screen.continue_to_contribute';
   static const contribute_the_gift_screen = 'contribute_the_gift_screen';
   static const payment_screen_payment = 'payment_screen.payment';
   static const payment_screen_continue_to_pay = 'payment_screen.continue_to_pay';

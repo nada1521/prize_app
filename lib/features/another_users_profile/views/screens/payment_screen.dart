@@ -24,7 +24,7 @@ class PaymentScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: OrangeAppbarWidget(
-        title: "Payment",
+        title: LocaleKeys.payment_screen_payment.tr(),
         showBackButton: true,
       ),
       body: CustomScrollView(
@@ -101,7 +101,7 @@ class PaymentScreen extends StatelessWidget {
                         showPopup(context,
                             ContributeToThePurchaseSuccessfullyPopUpWidget());
                       },
-                      title: "Continue To pay"))
+                      title: LocaleKeys.payment_screen_continue_to_pay.tr()))
             ],
           ),
         ),
