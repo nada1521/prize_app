@@ -1,12 +1,13 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:prize/core/constant/app_images.dart';
 import 'package:prize/core/constant/app_svgs.dart';
 import 'package:prize/core/utils/constants.dart';
+import 'package:prize/core/utils/generated/locale_keys.g.dart';
 import 'package:prize/core/utils/helper/navigation/push_to.dart';
 import 'package:prize/core/utils/helper/spacing.dart';
-import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_text_styles.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/core/widgets/horizontal_product_widget.dart';
@@ -29,7 +30,7 @@ class ContributeToTheGiftScreenProductDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: OrangeAppbarWidget(
-        title: "Contribute the gift",
+        title: LocaleKeys.contribute_the_gift_screen_contribute_the_gift.tr(),
         showBackButton: true,
       ),
       body: Padding(
@@ -68,7 +69,7 @@ class ContributeToTheGiftScreenProductDetails extends StatelessWidget {
                       ),
                       horizontalSpace(5),
                       Text(
-                        "Funded of",
+                        LocaleKeys.contribute_the_gift_screen_funded_of.tr(),
                         style: AppTextStyles.bodyTitle14w500PeriwinkleTextStyle(
                                 context)
                             .copyWith(
@@ -102,14 +103,14 @@ class ContributeToTheGiftScreenProductDetails extends StatelessWidget {
                 children: [
                   verticalSpace(20),
                   Text(
-                    "Choose an anount you want to contribute towards this gift.",
+                    LocaleKeys.contribute_the_gift_screen_choose_an_anount.tr(),
                     style: AppTextStyles.bodyTitle14w500PeriwinkleTextStyle(
                         context),
                   ),
                   verticalSpace(10),
                   CustomTextFieldWidget(
                     textFieldModel: TextFieldModel(
-                      title: "Amount",
+                      title: LocaleKeys.contribute_the_gift_screen_amount.tr(),
                       hintText: "00",
                       validator: (data) {
                         return null;
@@ -119,7 +120,8 @@ class ContributeToTheGiftScreenProductDetails extends StatelessWidget {
                   ),
                   verticalSpace(20),
                   Text(
-                    "if you want to be anonymous select contribute anonymously",
+                    LocaleKeys.contribute_the_gift_screen_if_you_want_to_be
+                        .tr(),
                     style: AppTextStyles.bodyTitle14w500PeriwinkleTextStyle(
                         context),
                   ),
@@ -137,7 +139,7 @@ class ContributeToTheGiftScreenProductDetails extends StatelessWidget {
             onTap: () {
               pushTo(context, PaymentScreen());
             },
-            title: "Continue"),
+            title: LocaleKeys.contribute_the_gift_screen_continue.tr()),
       ),
     );
   }

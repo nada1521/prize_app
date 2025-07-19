@@ -351,7 +351,6 @@
     "payment_done_successfully": "Payment done successfully"
   },
   "home":{
-    
   "wishist":{
     "banar_title":"Create Your Wishlist",
     "banar_button_title":"+ Create Your Wishlist"
@@ -635,7 +634,29 @@
  },
  "another_user_profile_screen":{
     "follow":"Follow"
- },
+    
+ 
+  },
+  "contribute_the_gift_screen":{
+   "contribute_the_gift":"Contribute the gift",
+    "funded_of":"Funded of",
+    "choose_an_anount":"Choose an anount you want to contribute towards this gift.",
+    "if_you_want_to_be": "if you want to be anonymous select contribute anonymously",
+    "continue": "Continue",
+    "contribute_anonymously":"Contribute anonymously",
+    "amount":"Amount",
+    "contribute_to_the_gift":"contribute to the gift",
+    "contribute_to_the_gift_capital":"Contribute to the gift",
+    "continue_to_contribute":"Continue to contribute"
+  },
+  "payment_screen":{
+   "payment":"Payment",
+   "continue_to_pay":"Continue To pay",
+   "contribution_successfully":"Contribution Successfully",
+   "Consider_inviting_athers":"Consider inviting athers to help fund this Gift",
+   "share_link":"Share Link",
+   "done":"Done"
+  },
  "location_screen":{
   "work":"Work",
   "location_in_details":"Location in details",

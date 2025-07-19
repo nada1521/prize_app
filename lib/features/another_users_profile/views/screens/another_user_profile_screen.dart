@@ -18,7 +18,6 @@ import 'package:prize/features/home/view/widgets/user_avatar_widget.dart';
 import 'package:prize/features/profile/view/widgets/personal_sizes.dart';
 import 'package:prize/features/profile/view/widgets/show_all_user_events.dart';
 import 'package:prize/features/profile/view/widgets/user_info_widget.dart';
-import 'package:share_plus/share_plus.dart';
 
 class AnotherUserProfileScreen extends StatelessWidget {
   const AnotherUserProfileScreen({super.key});

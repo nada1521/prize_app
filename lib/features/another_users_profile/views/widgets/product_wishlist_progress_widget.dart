@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:percent_indicator/multi_segment_linear_indicator.dart';
 import 'package:prize/core/constant/app_images.dart';
 import 'package:prize/core/utils/helper/navigation/push_to.dart';
-import 'package:prize/core/utils/resources/app_colors.dart';
 import 'package:prize/core/utils/resources/app_widget_color.dart';
 import 'package:prize/features/another_users_profile/data/product_wishlist_product_progress_model.dart';
 import 'package:prize/features/another_users_profile/views/screens/contribute_to_the_gift_product_screen.dart';

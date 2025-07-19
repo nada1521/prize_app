@@ -663,6 +663,28 @@
 },
 "another_user_profile_screen": {
   "follow": "متابعة"
+  
+},
+"contribute_the_gift_screen":{
+"contribute_the_gift": "المساهمة في الهدية",
+  "funded_of": "تم تمويل",
+  "choose_an_anount": "اختر المبلغ الذي ترغب في المساهمة به لهذه الهدية.",
+  "if_you_want_to_be": "إذا كنت ترغب في أن تكون مجهولاً، اختر المساهمة بشكل مجهول",
+  "continue": "استمرار",
+  "contribute_anonymously": "المساهمة بشكل مجهول",
+  "amount": "المبلغ",
+  "contribute_to_the_gift": "المساهمة في الهدية",
+  "contribute_to_the_gift_capital": "المساهمة في الهدية",
+  "continue_to_contribute": "متابعة المساهمة"
+
+},
+"payment_screen": {
+  "payment": "الدفع",
+  "continue_to_pay": "المتابعة للدفع",
+  "contribution_successfully": "تمت المساهمة بنجاح",
+  "Consider_inviting_athers": "فكر في دعوة الآخرين للمساعدة في تمويل هذه الهدية",
+  "share_link": "مشاركة الرابط",
+  "done": "تم"
 },
 "location_screen": {
   "work": "العمل",
